@@ -1,0 +1,11 @@
+\select@language {british}
+\contentsline {section}{Disclaimer}{i}{section*.2}
+\contentsline {section}{Abstract}{iii}{section*.3}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Foo}{1}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}FooBar}{2}{subsection.1.1.1}
+\contentsline {subsubsection}{Widgets}{2}{section*.4}
+\contentsline {chapter}{\numberline {2}SN1572}{3}{chapter.2}
+\contentsline {chapter}{\numberline {3}SN1006}{7}{chapter.3}
+\contentsline {chapter}{\numberline {4}SN1604}{11}{chapter.4}
+\contentsline {chapter}{Appendices}{15}{section*.6}

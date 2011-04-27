@@ -1,0 +1,7 @@
+*.dvi
+*.log
+*.bbl
+*.aux
+*.DS_Store
+template/*
+*synctex*
