@@ -1,0 +1,14 @@
+\select@language {british}
+\contentsline {section}{Disclaimer}{i}{section*.2}
+\contentsline {section}{Abstract}{iii}{section*.3}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Ancient Supernovae}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}Modern observations and surveys}{2}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Novae and Supernovae}{2}{subsection.1.2.1}
+\contentsline {section}{\numberline {1.3}Supernovae in modern Astrophysics}{3}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}Core-Collapse}{3}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}Thermonuclear Supernovae}{3}{subsection.1.3.2}
+\contentsline {section}{\numberline {1.4}Progenitors of Type Ia progenitors}{3}{section.1.4}
+\contentsline {chapter}{\numberline {2}SN1572}{5}{chapter.2}
+\contentsline {chapter}{\numberline {3}SN1006}{9}{chapter.3}
+\contentsline {chapter}{Appendices}{15}{section*.5}
