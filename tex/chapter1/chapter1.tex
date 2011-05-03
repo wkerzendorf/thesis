@@ -66,19 +66,93 @@ Faint supernovae are fast decliners both in velocity as well as luminosity \cite
 
 In summary, although there are several different subclasses the \snia as a class itself is relatively homogenous when compared to the different \sneii. ??? rates????
 
-
-\sneii span large ranges in observables like luminosity, explosion energies, etc. We can divide the main class into three main subclasses Type II Plateau \citet[\sniip][]{1979A&A....72..287B} which have a relatively flat lightcurve after an initial maximum, in contrast the Type II Linear \cite[\sniil][]{1990MNRAS.244..269S} has a rapid linear decline after the maximum. The third subclass is the narrow-lined \snii (\sniin) which is characterized by narrow emission lines, which are thought to come from interaction with the \csm. Unlike the \sneia there are numerous intermediate objects among these three basic classes. 
+\begin{figure}[htbp] %  figure placement: here, top, bottom, or page
+   \centering
+   \includegraphics[width=\textwidth]{chapter1/plots/snii_lc_comparison.pdf} 
+   \caption{example caption}
+   \label{fig:snii_lc_comparison}
+\end{figure}
+\sneii span large ranges in observables like luminosity, explosion energies, etc. We can divide the main class into three main subclasses Type II Plateau \citet[\sniip][]{1979A&A....72..287B} which have a relatively flat light curve after an initial maximum (see Figure \ref{fig:sniil_sniip}), in contrast the Type II Linear \cite[\sniil][]{1990MNRAS.244..269S} has a rapid linear decline after the maximum. The third subclass is the narrow-lined \snii (\sniin) which is characterized by narrow emission lines, which are thought to come from interaction with the \csm. Unlike the \sneia there are numerous intermediate objects among these three basic classes. 
 
 ???? 
 
 For a more comprehensive review of the classification of supernovae the reader should consult \citet{2003LNP...598...21T, 2007AIPC..937..187T}.
 
-\section{Type II Supernova}
+\section{Core Collapse Supernova}
 \subsection{Observation}
 
 \subsection{Theory}
+All \snii are believed to be powered by the collapse of the electron-degenerate iron core of massive stars. For the iron core to form there had to be several prior stages of evolution.
+
+\paragraph{Evolution of Massive Stars:}  To understand the state of the star shortly before supernova evolution it is imperative to follow its evolution. For the topic of \snii we will concentrate on the nuclear physics issues of massive star evolution in this section. In the scope of this work we will follow a single massive star as a progenitor. There has been ample of suggestions that \snii progenitors are binary, but their evolution is much more complex and is outside the scope of this work?? citation needed??.  In this context massive stars are stars bigger than 8 \msun. This is the minimum mass for a star that is believed to explode in a \snii. Like all stars massive stars spend most of their lives on the main-sequence burning hydrogen. This happens via the carbon-nitrogen-oxygen cycle and its various side-channels (e.g $^{12}C(p,\gamma)\rightarrow^{13}N(e^+\nu)\rightarrow^{13}C(p,\gamma)\rightarrow^{14}N(p,\gamma)^{15}O(e^+\nu)\rightarrow^{15}N(p,\alpha)\rightarrow^{12}C$). For a 20 \msun star this phase lasts for 8.13 \myr (see \citet{2002RvMP...74.1015W}).
+
+As the star evolves it begins to ignite Helium which burns via the triple-$\alpha$ process to Carbon ($3\alpha\rightarrow^{12}C$) and then to Oxygen ($^{12}C(\alpha,\gamma)\rightarrow^{16}O$). Table 1 in \citet{2002RvMP...74.1015W}) lists 1.17 \myr\ for this phase. 
+
+Due to neutrino losses the stellar evolution is qualitatively different after helium burning. A neutrino-mediated Kelvin-Helmholtz contraction of the carbon-oxygen core describes the advanced stages of nuclear burning in massive stars well (\citet{2002RvMP...74.1015W}). This is contraction is occasionally delayed when the burning of new fuel sources counter-acts the neutrino losses. The star in the end is composited of a series of shells that burn the above fuel and deposit the ashes on the shell below (see Figure \ref{fig:fusion_shells}). There are four distinct burning stages. Their principal fuels are carbon, neon, oxygen, magnesium and silicon.
+
+\begin{figure}[htbp] %  figure placement: here, top, bottom, or page
+   \centering
+   \includegraphics[width=\textwidth]{chapter1/plots/fusion_shells.pdf} 
+   \caption{example caption}
+   \label{fig:fusion_shells}
+\end{figure}
 
 
+In the carbon burning stage two $^{12}$C nuclei are fused to an excited state of Magnesium which then decays slowly to $^{23}$Na (see \ref{eqn:c_burning}).
+\begin{eqnarray}
+^{12}C+^{12}C\rightarrow^{24}Mg&\rightarrow&^{23}Mg+n \nonumber \\
+	&\rightarrow&^{20}Ne + \alpha \nonumber \\
+	&\rightarrow&^{23}Na +p \nonumber \\
+	\label{eqn:c_burning}
+\end{eqnarray}
+
+Although oxygen has a lower Coulomb barrier, the next nucleus to burn after Carbon is Neon. This layer is composed of of  $^{16}$O, $^{20}$Ne and $^{24}$Mg and burns Neon with high-energy photons from the tail of the Planck distribution ($\rm ^{20}Ne(\gamma,\alpha)^{16}O$). 
+
+Going down one shell, one has now a composition of mainly $^{16}$O, $^{24}$Mg and $^{28}$Si. The bulk nucleosynthetic reaction is shown in \ref{eqn:c_burnin}. 
+
+\begin{eqnarray}
+^{16}C+^{16}O\rightarrow^{28}Si&\rightarrow&^{31}S+n \nonumber \\
+	&\rightarrow&^{31}P + p \nonumber \\
+	&\rightarrow&^{30}P + d \nonumber \\
+	&\rightarrow&^{28}Si + \alpha \nonumber \\
+	\label{eqn:c_burning}
+\end{eqnarray}
+
+The last shell is of burning $^{28}$Si to $^{56}$Ni is very complex. The obvious reaction $^{28}\textrm{Si}+^{28}\textrm{Si}\rightarrow^{56}\textrm{Ni}$ does not take place, but is replaced by a very complex network of isotopes to burn to $^{56}\textrm{Ni}$. In simulations this is computationally intensive and numerically unstable (e.g .  \citet{1978ApJ...225.1021W} who carry a 128-isotope network). 
+Following silicon burning the composition consists of mainly iron-group nuclei. 
+At the end of silicon burning we are reaching nuclear statistical equilibrium. 
+
+\paragraph{Core collapse} Before the collapse the core, consisting of iron peak elements. Neutrino losses during carbon and oxygen burning decreased the central entropy sufficiently so that the core becomes electron degenerate. Such a degenerate core, which is higher than the Chandrasekhar mass (adjusted for Y$_e$, entropy, boundary pressure and other parameters will collapse. 
+
+There are two main instabilities that facilitate the collapse. AS the density rises the Fermi-Energy becomes high enough for electrons to capture onto iron-group nuclei. This capture process removes electrons that were providing degeneracy pressure and reduces the structural adiabatic index. 
+The second instability is the rise to temperatures where the nuclear statistical equilibrium favours free $\alpha$-particles. The collapse eventually leads to nuclear densities, the hard-core potential acts as a stiff spring during the compressive phase. It stores up energy and eventually releases this energy. The core bounces.  
+\citet{1985PhRvL..55..126B,1987PhRvL..59..736B} believed the core bounce to provide the energy for the ensuing supernova explosion. More recent simulations however show that the bounce shock is not sufficient for a \snii explosion. The bounce shock looses energy by photodisintegrating the nuclei it encounters (loosing roughly $10^{51}$\,\erg\ per 0.1\,\msun). Different neutrino flavours  that the resulting neutrino winds likely play a big role. 
+
+The energy for a successful explosion is now thought to come from neutrino energy deposition. This reinvigorates the shock and leads eventually to an explosion which ejects the envelope of the massive star. A newly born neutron star is left behind.
+
+The precise explosion mechanism is unknown. Using progenitor models with different parameters like rotation and mass lead to different outcomes. \citet{2002RvMP...74.1015W}provide a very comprehensive review of the theory of evolution and core collapse. In particular they lay out a more extensive description of the scenarios after core-bounce.
+
+\paragraph{Pair instability}
+One explosion scenario worth mentioning is that of the pair-instability supernova. This course of events only affects stars with a helium core of more than 40\,\msun. After core helium burning the star starts to contract at an accelerated rate. The energy releases during this process is used to produce electron-positron pairs rather than raising the temperature. If significant densities are reached, oxygen fusion eventually halts the implosion and the collapse bounces to an explosion. For very high stellar masses it is believed that oxygen fusion does not provide enough energy to halt the collapse and the star becomes a black hole.
+
+\paragraph{Type II Supernovae}
+The observables of these stellar cataclysm are the light curve, spectra and for one case even the neutrino wind. The supernovae goes through three distinct phases whcih can be observed. 
+
+The shock-breakout is the first visible signal from the supernova.  \cite{1992ApJ...393..742E} calculated a duration for the  shock breakout of SN1987A to 180\,s three minutes, its  luminosity of $5\times10^{44}$\erg\,s$^{-1}$. 
+Thus far it has been observed only once in 2008D \citep{2008Natur.453..469S}. They report a duration of 400\,s with a luminosity of $6.1\times10^{43}$\erg\,s$^{-1}$.
+
+The plateau seen in many \snii (see figure \ref{fig:snii_lc_comparison}) is produced by the recombination of hydrogen when hydrogen-rich zones cool to less than 5500\,K. The radiation comes effectively from a blackbody, whose luminosity is determined  by the radius of the photosphere.
+Supernovae of Type IIL do not show this behaviour and are thus thought to have no or a very small hydrogen envelope.
+
+After the recombination of hydrogen the light-curve drops off linearly and we see radioactivity providing the main energy source. \nififtysix decays to \cofiftysix with a half-life of 6.1\,d and then further to \fefiftysix with a half-life of 77\,d. Most of the energy of the \nififtysix decay is used to accelerated the expansion of the core. The tail of the light-curve after the plateau is mainly powered by the decay of \cofiftysix. Some light be also produced by shock interaction with the \csm.
+
+\paragraph{Type Ib/c supernovae}
+If the star lost all of it's hydrogen envelope prior to core-collapse there is no plateau visible in the light-curve. Instead the light-curve is powered by radio-active decay after shock breakout. In addition, the hydrogen lines are not visible in the spectrum. This leads to the supernova being classified as Type I. If both hydrogen and helium envelopes are lost then the supernova is classified as Type Ic. 
+This loss of envelope is presumed to be caused by stellar winds or binary interactions (citation needed). 
+
+\subsection{Type II supernovae as cosmological probes}
+
+\vspace{3cm}
 nucelosynthesis
 first stars
 hypernovae
