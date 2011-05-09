@@ -150,7 +150,13 @@ After the recombination of hydrogen the light-curve drops off linearly and we se
 If the star lost all of it's hydrogen envelope prior to core-collapse there is no plateau visible in the light-curve. Instead the light-curve is powered by radio-active decay after shock breakout. In addition, the hydrogen lines are not visible in the spectrum. This leads to the supernova being classified as Type I. If both hydrogen and helium envelopes are lost then the supernova is classified as Type Ic. 
 This loss of envelope is presumed to be caused by stellar winds or binary interactions (citation needed). 
 
+\subsection{Gamma Ray Burst}
+
 \subsection{Type II supernovae as cosmological probes}
+\sniip have been suggested as cosmological probes by \citet{1974ApJ...193...27K}. The importance for cosmological distance probes is that the intrinsic luminosity is known well. Then a simple comparison of apparent magnitude with absolute magnitude results in a distance. At the plateau-phase of the supernova, caused by the hydrogen-recombination,  the temperature is well known(T=5000\,K). In addition it is assumed that the supernova is in free expansion, thus a measurement of the velocity and an assumption of the initial radius results in a known radius. Assuming the supernova to be a blackbody during plateau-phase one can then calculate a luminosity using the radius and the temperature. \sniip as distance candles, however, are observationally expensive and not as accurate as \snia as standard candels (15\% error for \snii  \citep{2006ApJ...645..841N} vs 7\% error for \snia).
+
+
+
 
 \vspace{3cm}
 nucelosynthesis
@@ -161,10 +167,87 @@ massive stars
 expanding photosphere -> distance measurements
 binary evoltion
 
-\section{Type Ib/c Supernova}
+
 
 
 \section{Type Ia Supernova}
+Although known for a long time, \sneia\ have been prominently featured in astronomy in the last two decades. Their use as standard candles made the measurement of the accelerating universe possible \citep{1998AJ....116.1009R, 1999ApJ...517..565P}
+
+\section{Observation}
+
+\paragraph{Type Ia Supernova rates} 
+The observed supernova frequency carries important information about the underlying progenitor population. The two main suggested progenitors are the single-degenerate system, in which a white dwarf accretes from an non-degenerate companion . The second suggested possibility is the merger of two white dwarfs which results in a \snia-explosion (For a more detailed explanation see Section \ref{sec:ia_progenitors}). 
+
+\citet{1938ApJ....88..529Z} was the first work that tried to measure the supernova rate. By monitoring a large number of fields monthly, they arrived at a supernova rate by merely dividing the number of supernova detection by the number of monitoring time and galaxies. This crude method resulted in a rate of one supernova per six centuries. 
+
+Over time many improvements were made to this first method. The rate was divided by galaxy morphological class as well as different supernova types. In addition, rates were then defined the supernova rate as number of events per century per $10^{10}$\,\lsun\ \citep[e.g.][]{1991ARA&A..29..363V,1994ApJS...92..487T}. In recent years, however, rate measurements is in relation to star formation rather than photometry (\sn\ per century per $10^{10}$\,\msun).  Therefore the community \citep[e.g.][]{2005A&A...433..807M} have switched to the use infrared photometry for the galaxy as it is thought to better represent star-formation rate then B-Band photometry \citep{2003A&A...410...83H}. 
+\begin{figure}[htbp] %  figure placement: here, top, bottom, or page
+   \centering
+   \includegraphics[width=\textwidth]{chapter1/plots/snrates_mannucci05.pdf} 
+   \caption{example caption}
+   \label{fig:snrates_mannucci05}
+\end{figure}
+
+Figure \ref{fig:snrates_mannucci05} clearly shows that there is a strong connection between morphology and supernova rates. 
+Both progenitor scenarios (single-degenerate and double-degenerate) suggest an "evolved" binary system. It is therefore puzzling that most supernovae occur in late-type spirals with a relative young stellar population. 
+In addition, there is evidence that underluminous \sneia\ (e.g. SN 1991bg) are twice as common in late-type galaxies than in early-type galaxies \citep{2001ApJ...554L.193H}. 
+Furthermore it appears that radio-loud early-type galaxies have an enhanced rate of \sneia over radio-quiet galaxies \citep{2003ApJ...587L..71D}. 
+
+All of these factors suggest that \sneia\ can originate from two distinct progenitor scenarios and/or different explosion mechanisms \citep{1994ApJ...423L..31D,  1995ApJ...447L..69R}.
+
+\paragraph{Light curves} Light curves are one of the most important observables. The late-time phase gave an important clue to the energy source of the light curve (radioactive decay of \nififtysix). In addition, light curves have been successfully used to calibrate \sneia as standard candles.
+
+
+\begin{figure}[htbp] %  figure placement: here, top, bottom, or page
+   \centering
+   \includegraphics[width=\textwidth]{chapter1/plots/lightcurve_2002bo.pdf} 
+   \caption{example caption}
+   \label{fig:lightcurve_2002bo}
+\end{figure}
+
+The light curve can be divided in four different phases (see Figure \ref{fig:lightcurve_2002bo}). In the first phase the \sneia  rises to the maximum brightness. Although only a small fraction of \sneia have been observed in that phase. By approximating the very early phase of a \sneia with an expanding fireball it is possible to calculate that the rise is 19.5 days \citep{1999AJ....118.2675R}. The luminosity of the fireball is 
+\[L\propto v^2 (t+t_\textrm{r})^2 T\,,\]
+where v is the photospheric velocity, T is the temperature of the fireball, t is the time relative to the maximum and $t_\textrm{r}$ is the rise time.
+
+The rise is very steep and the brightness increases by a factor of $\approx 1.5$ per day until 10 days before maximum. 
+
+The \snia reaches the maximum first in the \nir roughly 5 days before the maximum in the B-Band \citep{2000MNRAS.314..782M}. 
+During the pre-maximum phase the color stays fairly constant at B-V=0.1, but changes non-monotonically to B-V=1.1 30 days after maximum. 
+
+The \snia\ starts to fade but  a second maximum is observed in the \nir \citep{2008ApJ...689..377W} ??multiple citations.  \citep{2006ApJ...649..939K} has succesfully explained this by fluorescence of iron-peak elements in the \nir. See section \ref{sec:snia_lightcurve_theory}.
+
+At roughly 600 days after maximum the light curve begins ???? 1991t had a foreground dust??? 
+
+
+Arguably the most important use of light curves is their application in normalizing \sneia\ to standard candles (see Figure \ref{fig:lsnia}). \citet[][]{1993ApJ...413L.105P} plotted the magnitude at maximum in different filters against the decline of the B-Band magnitude after 15 days (\dmb).  They found a strong linear relation with a very high correlation coefficient ($>$ 0.9). Dust extinction in the host is one of the major systematic problems and remains so to this day. 
+
+\cite{1995ApJ...438L..17R} refined the method by using a linear estimation algorithm. This method would deliver a distance modulus by finding the offset between a template and the supernova lightcurve. They calibrated this method against a set of \sneia\ with known distances. 
+Light curve fitting tools are to this day in active development \cite[e.g.][]{2007ApJ...659..122J, 2007A&A...466...11G}.
+
+In summary, ...... see figure x
+
+
+
+\paragraph{Spectra} Similar to light curves spectra have different phases. In the pre-maximum phase (tanaka 2010 )
+polarization
+\paragraph{X-Ray}
+
+\paragraph{Radio}
+
+
+
+
+
+
+
+
+
+
+\subsection{Theory}
+
+
+\section{Progenitors of Type Ia Supernovae}
+\label{sec:snia_progenitor}
 binary evolution
 chandrasekhar
 white dwarfs
@@ -173,7 +256,9 @@ iron in particular
 
 cosmology
 
-\section{Progenitors of Type Ia progenitors}
-\label{sec:snia_progenitor}
+
+\section{test}
+
+
 
 
