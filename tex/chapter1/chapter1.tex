@@ -78,7 +78,7 @@ In summary, although there are several different subclasses the \snia as a class
 
 For a more comprehensive review of the classification of supernovae the reader should consult \citet{2003LNP...598...21T, 2007AIPC..937..187T}.
 
-\section{Core Collapse Supernova}
+\section{Type II/Ibc Supernova}
 \subsection{Observation}
 
 \subsection{Theory}
@@ -173,7 +173,7 @@ binary evoltion
 \section{Type Ia Supernova}
 Although known for a long time, \sneia\ have been prominently featured in astronomy in the last two decades. Their use as standard candles made the measurement of the accelerating universe possible \citep{1998AJ....116.1009R, 1999ApJ...517..565P}
 
-\section{Observation}
+\subsection{Observation}
 
 \paragraph{Type Ia Supernova rates} 
 The observed supernova frequency carries important information about the underlying progenitor population. The two main suggested progenitors are the single-degenerate system, in which a white dwarf accretes from an non-degenerate companion . The second suggested possibility is the merger of two white dwarfs which results in a \snia-explosion (For a more detailed explanation see Section \ref{sec:ia_progenitors}). 
@@ -289,31 +289,163 @@ A search for radio emission from \sneia\ \citep{2006ApJ...646..369P} has not res
 In this section we will discuss the theory of \sneia. We will, however, focus mainly on the explosion mechanism and not the theoretical implications of different progenitor scenarios. As this work is focussing considerably on \snia-progenitors we will dedicate a section on the different progenitor models (see \ref{sec:snia_progenitor}).
 
 \paragraph{White Dwarfs}
-White dwarfs are thought to be the progenitor stars of Type Ia supernovae. These objects are among the few that do not have hydrogen, which would explain the lack of hydrogen in \snia-spectra. It is a general believe in the community that these objects accrete matter (for the possible scenarios see section \ref{sec:snia_progenitor}) until they get close to the Chandrasekhar-mass
+White dwarfs are thought to be the progenitor stars of Type Ia supernovae. These objects are among the few that do not have hydrogen, which would explain the lack of hydrogen in \snia-spectra. It is a general believe in the community that these objects accrete matter (for the possible scenarios see section \ref{sec:snia_progenitor}) until they get close to the Chandrasekhar-mass \citep{1931ApJ....74...81C}. It is a delicate balance between the ignition point that results in the thermonuclear run-away and the Chandrasekhar threshold which leads to a collapse of the star to a neutron star.
  
-There are three main classes of white dwarfs: Helium, Carbon/Oxygen and Oxygen/Neon/Magnesium white dwarfs. Helium white dwarfs can be easily ruled out as progenitors for \sneia. The copious amounts of \ige\ produced in \sneia\ requires heavier nuclei as the initial abundance. 
+There are three main classes of white dwarfs: Helium, Carbon/Oxygen (henceforth \cowd) and Oxygen/Neon/Magnesium (henceforth \onemgwd) white dwarfs. Helium white dwarfs would start burning their Helium to Carbon and Oxygen well before it gets near the Chandrasekhar mass.. In addition, these objects can also be ruled out as progenitors for \sneia as copious amounts of \ige\ produced in \sneia\, which are not consistent with the burning of a Helium white dwarf. 
 
-\paragraph{simmering}
+The ultimate fate of a \onemgwd\ is thought to be the collapse into a neutron star. Once the \onemgwd\ is heavy enough electron capture begins in the core ($\Ne(e^-,\nu)\F[20](e^-,\nu)\Ox[20]$). Heating by the resulting $\gamma$-rays starts explosive Oxygen burning. However, the electron-capture is much faster than the Oxygen burning and promotes the collapse to a neutron star \citep{1991ApJ...367L..19N, 2005A&A...435..231G}. 
 
-\paragraph{ignition}
+The favoured progenitor for a \snia\  are \cowd s. Most of these objects are born, however, with a mass around 0.6 \msun \citep{2007MNRAS.375.1315K}. It is thought that they accrete mass until they are getting close to the Chandrasekhar mass and then explode as a \snia.
+
+\paragraph{Pre-supernova evolution}
+The white dwarf gradually accretes more and more material. At some instant mild carbon burning ensues
+\begin{align}
+\nonumber
+\Carb(\Carb,p) &\rightarrow \Na \\  \nonumber
+\Carb(\Carb,\alpha) &\rightarrow \Ne \\ 
+\Carb(\Carb,n) &\rightarrow \Mg[23]
+\end{align},
+but is mediated by photon and neutrino loses \citep{2005NuPhA.758..463L, 2007nps..book.....I}. As the cooling processes become less effective convection starts in the core. The energy output in the core increases. At this stage the thermal structure is largely controlled by Urca pairs. These reaction pairs consist of alternating electron captures and $\beta^-$\,-decays involving the same pair of parent and daughter nuclei. Two prominent examples which are important in pre-supernova evolution are \Ne[21]/\F[21]:
+\begin{align}
+\nonumber
+\Ne[21](e^-, \nu) &\rightarrow \F[21] \\
+\F[21](\beta^- \nu) &\rightarrow \Ne[21]
+\end{align}
+These processes can lead to either cooling or heating. \cite{2005NuPhA.758..463L} have modelled this process in a convective core. 
+
+Ultimatley, the pre-supernova evolution is hard to model theoretically as it is likely to be nonlocal, time-dependent, three dimensional and stretches over very long timescale. The exact conditions at the time of explosion are therefore unknown. All explosion models have to assume simple initial conditions. 
+
+\paragraph{Ignition}
+The \urca processes will dominate core evolution for the last thousand years until explosion. As the temperature rises to $T\approx7 \times 10^8$\,K \citep{2000ARA&A..38..191H} the convection time ($\tau_c$) increases and becomes comparable to the burning time ($\tau_b$). Consequently the convective plumes burn as they circulate. Once the temperature reaches $T\approx 10^9$\,K $\tau_b$ becomes very small compared to $\tau_c$ and Carbon and Oxygen essentially burn in place. 
+This is the moment of ignition. As the convective plumes burn while they rise it is likely that the initial flame seed does not start in the center of the core. \cite{2005A&A...431..635R} have used multiple flame seeds in their three dimensional full star models.  
+
+\paragraph{Thermonuclear Explosion}
+From this point, initially there were two main options. The first option was the complete detonation (supersonic flame front) of the \cowd\ \citep{1969Ap&SS...5..180A}. It was quickly, discovered, however that this method burns to \nse and thus produces no \ime. These \ime are observed in \snia.
+
+For a long time it was then suspected that the star instead of detonating would deflagrate (subsonic flame wave, mediated by thermal conduction). The fuel in front of the deflagration gets rarified by the energy from the flame. Hot light burning bubbles rise into the cold dense fuel and create Rayleigh-Taylor instabilities (see Figure \ref{fig:snia_ddt_roepke2007} at t=0.72\,s). 
+Once the deflagration wave has run through the star, the resulting production of \Ni[56] is not enough to explain the light curve of normal \snia. The deflagration produces roughly 0.3\,\msun of \Ni[56], to power the light curve of normal \sneia\ one needs 0.6???\,\msun.
+
+The currently favored scenario is the one of delayed detonation. The star initially burns like in the deflagration scenario, then inhomogeneities in the deflagration front produce hotspots. In these hotspots the temperature gradients are so high that detonation waves form. The ensuing detonation front can only burn the cold unburnt-fuel and does not penetrate the ashes of the deflagration. Figure \ref{fig:snia_ddt_roepke2007} shows clearly how the detonation wave wraps around the cold ashes over the course of the detonation.
 
 
+\begin{figure}[htbp] %  figure placement: here, top, bottom, or page
+   \centering
+   \includegraphics[width=\textwidth]{chapter1/plots/roepke2007.pdf}
+   \caption{example caption}
+   \label{fig:snia_ddt_roepke2007}
+\end{figure}
+
+An open question is if and how these transitions from deflagration to detonation occur in \sneia. This scenario reproduces the light curves and spectra reasonably well \citep{2009Natur.460..869K}. 
+
+
+\paragraph{sub-Chandrasekhar-mass detonations}
+The main theme of this explosion mechanism is that a surface detonation drives a shock-wave into the core. In the core this shockwave triggers an ignition by compression. \citet{2010A&A...514A..53F} have explored this scenario theoretically. As an initial model they use a \cowd accreting from a helium rich companion building a thin helium shell around its CO interior \citep[described in][]{2007ApJ...662L..95B}. This helium shell is ignited (maybe due to accretion) and sends out a shockwave. As the helium flame spreads on the shell around the star it sends a shockwave into the core. Once 
+the shockwaves converge off-center they create a the right environment for the launch of a detonation wave (see Figure \ref{fig:subch_fink2010}.) 
+The resulting detonation consumes the star. \citet{2010ApJ...714L..52S} have simulated the off-center detonation of a sub-Chandrasekhar-mass \cowd and the resulting light-curve and spectra reproduce observed ones fairly well. 
+This scenario reproduces the intrinisic luminosity variability in the class of \snia\ as each exploding white dwarf can have a different mass. An additional advantage of this model is that it is not in conflict with population synthesis predictions \citep{2009ApJ...699.2026R}.
+
+\begin{figure}[htbp] %  figure placement: here, top, bottom, or page
+   \centering
+   \includegraphics[width=\textwidth]{chapter1/plots/subchandra_fink2010.pdf} 
+   \caption{example caption}
+   \label{fig:subch_fink2010}
+\end{figure}
+
+\paragraph{\WD-\WD\ mergers}
+\cowd\ mergers for a long time were thought to lead to a gravitational collapse \citep[same mechanism as the \onemgwd][]{1985A&A...150L..21S}. \citet{2010Natur.463...61P} has, however, successfully simulated the explosion of two merging \cowd s. The initial model was two equal mass 0.8\,\msun\ \cowd s. The merging process created a hotspot from which a detonation wave eminates. 
+The resulting light-curves and spectra are very faint but are similar to sub-luminous \snia (e.g. SN 1991bg). 
+
+\section{Type Ia Supernovae as cosmological distance probes}
+
+suggested as early as....
 
 \section{Progenitors of Type Ia Supernovae}
 \label{sec:snia_progenitor}
 
+\citet{1973ApJ...186.1007W} first introduced the modern binary evolution paradigm for \snia-progenitors. In their model a \cowd\ accreted from a red giant. A degenerate \cowd\ accreting from a non-degenerate companion is now known as the single degenerate scenario. 
 
-binary evolution
-chandrasekhar
-white dwarfs
-nucleosynthesis
-iron in particular
-
-cosmology
+\cite{1985ApJ...297..531N} were one of the first to suggest that the merging of two \cowd s could also produce \sneia. This scenario is now commonly referred to as the double degenerate scenario. 
+Embarrassingly forty years after first progenitor suggestion the progenitors of \snia\ are still not known. Without knowing the precise channel (or channels) for \snia it is hard to make precise statements about yields, rates and explosion energies. One of this thesis main goals is finding the remaining companions in ancient \snia-remnants (see Chapter \ref{chap:sn1572_starg} and Chapter \ref{chap:sn1572_hires}). 
 
 
-\section{test}
+\subsection{Single Degenerate Scenario}
+In the single degenerate scenario assumes a binary system with one evolved white dwarf and one non-degenerate companion. In most cases this non-degenerate companion is thought to be main-sequence to red giant phase. There are scenario that involve "exotic" companions such as helium stars. The companion (or donor) star is believed to have filled its Roche-Lobe and lose mass via Roche-Lobe-Overflow (\rlof). Different scenarios see accretion from the wind of the companion rather than from \rlof\ \citep{2011apn5.confE.295M}.
+
+\paragraph{Evolution}
+
+see mennekens ....
 
 
+\paragraph{Accretion}
+The main problem of the \sd-scenario is the accretion process.  As most white dwarfs are born with masses around 1.6\,\msun they need to accrete mass to reach the critical 1.38\,\msun. The process needs to be efficient as well as burn most accreted hydrogen to explain its lack in the spectrum.
+ If the mass-accretion rate is too low it causes nova explosions which eject are thought to eject more mass than they had accreted prior \citep{Nomoto:1982p451}. There are however systems (e.g. RS Oph, U Sco) that have white dwarf masses close to 1.4\,\msun\ which have recurrent nova outbursts. It is very likely that these systems weren't born with a white dwarf that massive, but that these white dwarfs accreted all the material. This suggest that despite nova outbursts efficient accretion is possible.
+ 
+ 
+ A degenerate layer of helium can form at moderate accretion rates. This layer may flash and could give rise to sub-Chandrasekhar-mass explosions.
+ 
+ A class of binaries called Supersoft X-Ray sources (\sss) probably accrete hydrogen at a high rate. At this rate Hydrogen and Helium burn hydrostatically, if retained, make these objects very strong contenders for \snia\ progenitors. \cite{2010Natur.463..924G} however have not found enough  X-ray flux from elliptical galaxies if all \snia-progenitors were these \sss\ (assuming the X-Ray flux calculated for these objects is correct). 
+ 
+At extremely high accretion rates the white dwarf would be engulfed in an extended red giant envelope. Debris of this envelope is not seen in \snia-explosions. 
+
+Another subclass of \sd-progenitors are AM CVn stars. These type of cataclysmic variable accretes from a helium star. This scenario would very conveniently explain the lack of hydrogen in \snia-explosions. \citet[see section \ref{sec:snia_theory}][]{2010A&A...514A..53F} have found a way that such systems can explode in a \snia.
+
+
+\subsubsection{Donor Stars}
+The \sd-scenario requires a secondary companion (also known as donor) star. If this companion survives the explosion it would be a calling card for the \sd-scenario. 
+
+\citet{2000ApJS..128..615M} have simulated the impact of \snia-ejecta on main-sequence, sub-giant and red-giant companion. In the case of the main-sequence companion the supernova ejecta heats a small fraction (1-2\%) of the envelope which is lost post-explosion. The stellar core cools and expands. It subsequently pulses while going back to hydrostatic-equilibrium. \citet{2008A&A...489..943P} have repeated the simulations for the main-sequence companion and find similar results to \citet{2000ApJS..128..615M}. Post-explosion the star could be very luminous (500 -- 5000 \lsun)  due to its asymmetrical temperature distribution. It is expected to cool down between 1400 -- 11000 yrs and follow the main-sequence track. 
+
+For the sub-giant companion the simulations show very similar results to the main-sequence companion. In summary, the subgiant looses only a small fraction of the envelope (10 -- 15\%) and will be very luminous shortly after the explosion. After thermal equilibrium is established the companion will return to a post-main-sequence track. 
+
+The case of the red-giant, however, is very different. \citet{2000ApJS..128..615M} suggest that it will loose most of its loosely bound envelope. Post-explosion the remaining core rises contracts and the temperature rises to more than $3 \times 10^4$\,K. The object may appear as an under luminous main-sequence O or B star. 
+
+
+\cite{2009A&A...493.1081J} have suggested low-mass single white dwarfs to be the remaining cores of red-giant donor stars. This would result in a convenient explanation for the existence of these objects. 
+
+One feature of surviving companions may be an unusually large rotational velocity post-explosion \citep[][chapter \ref{ch:sn1572_starg} of this work]{2009ApJ...701.1665K}. Due to tidal coupling during the \rlof-phase one calculate the expected rotational velocity from the escape velocity of the donor (see Figure \ref{fig:theorot}). Late-type stars usually don't display such high rotational velocities. Thus this feature is a very useful discriminant when looking for donor stars. 
+
+ Most simulations suggest that the donor-star would survive the explosion one way or another. There have been several attempts to find these objects in ancient supernova remnants. \citet{1980ApJ...241.1039S} found a OB subdwarf star located 2.5 \arcmin from the center of the remnant of SN1006 and suggested this as the donor star. Subsequent analysis by XXX have however revealed however strong red and blue shifted iron lines. The velocities of these lines are on order of 5000\,\kms which is the same as the velocity of the freely expanding remnant of SN1006.
+ 
+\citet{2004Natur.431.1069R} have suggested a star called \starg\ by their nomenclature as the progenitor of SN1572. \citep[][chapter \ref{ch:sn1572_starg} of this work and \ref{ch:sn1572_hires}]{2009ApJ...701.1665K, xxx} have followed this up and did not find \starg\ to be very unusual to the other stars in the field. 
+
+citekerz11b have observed 80 stars in the center of SN1006 and have not found an obvious donor star.....
+?????
+ 
+
+
+
+
+\subsection{Double Degenerate Scenario}
+\citet{1984ApJ...277..355W} was one of the first to suggest merging white dwarfs as progenitors for \snia. The one big advantage of the \dd-scenario is that it naturally explains the lack of hydrogen in \snia-spectra. The accretion problem encountered in the \sd-scenario is also eleviated with \dd, as long as the sum of masses of both \cowd's is above \mchan. The work in this thesis has failed to find the companion which may result from the \sd-scenario. This would be a further encouragement for the \dd-scenario. 
+
+The problem, however, is that most \snia\ are relatively homogeneous. It is hard to reconcile this fact with the merger of two white dwarfs with different initial masses, composition, angular momenta and different impact parameters. 
+
+\cite{2010Natur.463...61P} have simulated the merger of two equal-mass white dwarfs (0.8\,\msun). Their simulations suggest that the outcomes of these mergers would be subluminous. As the star cools after the contraction phase it may become a single Helium white dwarf.
+
+\cite{2009A&A...493.1081J} proposes that 
+In summary, mergers of white dwarfs can definitley explain some of \snia. It is however questionable if these events are responsible for the main body of \sneia. 
+
+\subsection{Population Synthesis}
+
+Population synthesis have been an important step in exploring the different progenitor scenarios. This science is still in its infancy, but results from new all-sky surveys will make this a very precise tool. 
+\citet{2009ApJ...699.2026R, 2010A&A...515A..89M} have explored the \snia-rate using different progenitor scenarios (\sd, \dd and \amcvn). Both suggest that the \sd-scenario on its own can not explain the observed supernova rate. The \dd-rate seems to be much closer to the observed frequency. Possibly a mix of all channels is required to explain the observed rate. 
+
+
+
+\section{Thesis motivation}
+One of the most pivotal moments in astronomy in recent years was the discovery of the acclerating expanding universe by \citet{1998AJ....116.1009R} and \citet{1999ApJ...517..565P}. This discovery catapulted \sneia\ into the limelight of the astronomical community. There has been many advances in recent years in the understanding of these cataclysmic events (explosion models, rates, etc.). One critical piece of the puzzle, however, has so far eluded discovery: The progenitors of \sneia\ remain a mystery to this day. This work's main aim was to find evidence for one \snia-progenitor scenario. The \sd-scenario proposes a white dwarf accreting from a non-degenerate donor star. To the best of our knowledge this donor star is thought to survive the explosion and would be visible thereafter. We have tried to find this companion in two of three easily accessible ancient supernova remnants (SN1572 and SN1006). 
+In chapter \ref{ch:sn1572_starg} we have obtained spectra of \starg\ which had been suggested as the donor star of SN1572 \citep{2004Natur.431.1069R}. Although we confirmed some of the suggested parameters we could not reproduce the unusually high radial velocity which led to the claim. 
+
+We revisited SN1572 in chapter \ref{ch:sn1572_hires} with new observations of \starg and five other stars in the neighbourhood of SN1572. This resulted in \starg\ to be not a very viable donor star (it is hard to completely rule stars out). We discovered a curious A-Star located serendiptiously right in the center of SN1572. Despite its bizarre parameters we could not reconcile this star (\starb) with any feasable progenitor model. We, however, found a scenario which explains \starb's features but does not involve it in SN1572. 
+
+SN1006 provides a perfect opportunity to search for progenitor stars. It is the closest known remnant of a \snia (2\,kpc). We have obtained 80 spectra of stars close to the center of the remnant and present them in chapter \ref{ch:sn1006}. Again we did not find any obvious donor stars. 
+
+We have obtained spectra of stars around SN1604 but these are not presented in this work.
+
+Progenitor hunts provide us with information of the scenarios pre-explosion. Spectra on the other hand help to unravel the happenings during and post-explosion. mazzali et al. ??? have developed a code that can produce synthetic \snia-spectra from fundamental input parameters. Fitting an observed \snia\ is for the moment a manual task. This requires many days, if not weeks, of tweaking. The deluge of spectroscopically well-sampled \sneia\ from surveys is already hitting us. Manual analysis of all these spectra is impossible. The information about the explosion hidden in the spectra is, however, crucial to our understanding of these events. In chapter \ref{ch:dalek} we present our work towards automating this fitting process. We have tried a variety of algorithms to explore the vast and extremely complex search space. Working together with members of the computer science community we are exploring the use of genetic algorithms to solve this problem. 
+This work is not finished yet, but we present preliminary methods in \snia-fitting. Once finished we can apply this method not only in fitting \snia, but fitting other supernovae and other areas of astronomy. 
+
+In summary, this work explores two areas of supernova physics. The hunt for progenitors has not yielded obvious candidates, but may suggest a rethinking of the "normal" \sd-scenario. The automation of the supernova fitting is in its infancy stage. We have however shown that it is possible to explore the space in an automated fashion. This will hopefully yield parameters for many thousand supernovae and the next few years. 
+The close collaboration with computer science community has shown how important cross-disciplinanry research is in this era of science. 
 
 

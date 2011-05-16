@@ -16,7 +16,7 @@
 % you have installed.  Besides, why use that style file if you 
 % have no idea what it actually does?  You will probably just redefine
 % all of its customisations anyway...
-\documentclass[12pt,openright]{report} 
+\documentclass[11pt,openright]{report} 
 
 % define some constants that can be used in various places to easily
 % specify title, subjects, author etc.
@@ -50,7 +50,7 @@
 % for papers by simply changing 'british' above to 'american', and
 % flyspell will check your paper in american-english.
 \usepackage[british]{babel}
-
+%\usepackage{hyperref}
 
 % ---------------------------------------------------------------------
 % page size and margins
@@ -153,12 +153,12 @@
 %   anchorcolor=CadetBlue4}
 %for printing, make all colours black...
 \hypersetup{pdftitle=\thesistitle\ - \shortname,%
-  pdfauthor=\fullname,%
-  pdfsubject={\thesissubjects},%
-  citecolor=black,%
-  filecolor=black,%
-  linkcolor=black,%
-  urlcolor=black%
+pdfauthor=\fullname,%
+pdfsubject={\thesissubjects},%
+%citecolor=green,%
+%filecolor=blue,%
+%linkcolor=blue,%
+%urlcolor=blue%
 }
 % Drop capitals at the start of chapters
 \usepackage{lettrine}
@@ -353,8 +353,8 @@
 
 \include{chapter1/chapter1}
 \include{chapter2/chapter2}
-\include{chapter4/chapter3}
-\include{chapter5/chapter5}
+%\include{chapter4/chapter3}
+%\include{chapter5/chapter5}
 
 %
 %%% BACK CONTENT:
@@ -372,7 +372,7 @@
 %
 % bibliography
 % \phantomsection\addcontentsline{toc}{chapter}{Bibliography}
-\bibliographystyle{hapj}
+\bibliographystyle{astroads}
 \bibliography{thesis}
 %
 % appendices
