@@ -1,0 +1,1281 @@
+\documentclass{nature1}
+\usepackage{graphicx}
+\bibliographystyle{naturemag}
+\title{A Review of Type Ia Supernovae as Stellar Endpoints and Cosmological Tools}
+
+%% Notice placement of commas and superscripts and use of &
+%% in the author list
+
+\author{D. Andrew Howell$^{1,2}$}
+
+\usepackage[super]{natbib}
+
+\begin{document}
+
+\maketitle
+
+\begin{affiliations}
+\item Las Cumbres Observatory Global Telescope Network,
+ 6740 Cortona Dr., Suite 102, Goleta, CA 93117
+\item Department of Physics, University of California,
+ Santa Barbara, Broida Hall, Mail Code 9530, Santa Barbara, CA 93106-9530
+\end{affiliations}
+
+\newcommand\ion[2]{#1$\;${\small\rmfamily\@Roman{#2}}\relax}%
+\newcommand\nodata{ ~$\cdots$~ }%
+\newcommand\arcdeg{\mbox{$^\circ$}}%
+\newcommand\degr{\arcdeg}%
+\newcommand{\etal}{et~al.\,}
+\newcommand{\Msun}{${\rm M}_\odot$}          
+\newcommand{\drp}{$\Delta m_{15}(B)$} 
+\newcommand{\Ni}{$^{56}\rm Ni$} 
+\newcommand{\Co}{$^{56}\rm Co$} 
+\newcommand{\Fe}{$^{56}\rm Fe$} 
+\newcommand{\kps}{km s$^{-1}$}
+\newcommand{\kms}{km s$^{-1}$}
+\newcommand{\MCh}{$M_{\rm Ch}$}
+\newcommand{\hof}{H\"oflich}
+\newcommand{\eg}{e.\,g.\,}
+\newcommand{\ie}{i.\,e.\,}
+\newcommand{\OI}{\ion{O}{1}}
+\newcommand{\SiII}{\ion{Si}{2}}
+\newcommand{\Si}{\ion{Si}{2}}
+\newcommand{\Simain}{\ion{Si}{2} 6150\AA}
+\newcommand{\Sifour}{\ion{Si}{2} 4000\AA}
+\newcommand{\SII}{\ion{S}{2}}
+\newcommand{\CaII}{\ion{Ca}{2}}
+\newcommand{\Camain}{\ion{Ca}{2} 3800\AA}
+\newcommand{\Ca}{\ion{Ca}{2}}
+\newcommand{\TiII}{\ion{Ti}{2}}
+\newcommand{\MgII}{\ion{Mg}{2}}
+\newcommand{\iab}{i\arcmin (AB)}
+\newcommand{\gt}{$>$}
+\newcommand{\us}{$u$*}
+\newcommand{\gp}{$g$\arcmin}
+\newcommand{\rp}{$r$\arcmin}
+\newcommand{\ip}{$i$\arcmin}
+\newcommand{\zp}{$z$\arcmin}
+\newcommand\arcmin{\mbox{$^\prime$}}%
+\newcommand\arcsec{\mbox{$^{\prime\prime}$}}%
+\newcommand\araa{Ann. Rev. Astron. Astrophys.}%
+\newcommand\apj{Astrophys. J.}%
+\newcommand\aj{Astron. J.}%
+\newcommand\apjl{Astrophys. J. Lett.}%
+\newcommand\nar{New Astron. Rev.}%
+\newcommand\apjs{Astrophys. J. Suppl.}%
+\newcommand\apss{Astrophys. Sp. Sci..}%
+\newcommand\aap{Astron. \& Astrophys.}%
+\newcommand\mnras{MNRAS}%
+\newcommand\nat{Nature}%
+\newcommand\iaucirc{IAU~Circ.}%
+\newcommand\gca{Geochim.~Cosmochim.~Acta}%
+\newcommand\aaps{Astron. \& Astrophys. Suppl. Ser.}%
+\newcommand\pasp{PASP}
+\newcommand\pasj{PASJ}
+
+
+\begin{abstract}
+  Empirically, Type Ia supernovae are the most useful, precise, and
+  mature tools for determining astronomical distances.  Acting as
+  calibrated candles they revealed the presence of dark energy and are
+  being used to measure its properties.  However, the nature of
+  the SN Ia explosion, and the progenitors involved, have remained
+  elusive, even after seven decades of research.  But now new large
+  surveys are bringing about a paradigm shift --- we can finally
+  compare samples of hundreds of supernovae to isolate critical
+  variables.  As a result of this, and advances in modeling,
+  breakthroughs in understanding all aspects of SNe Ia are finally
+  starting to happen.
+\end{abstract}
+
+``Guest stars'' (who could have imagined they were distant stellar
+explosions) have been surprising humans for at least 950 years, but
+probably far longer.  They amazed and confounded the likes of Tycho,
+Kepler, and Galileo, to name a few.  But it was not until the
+separation of these events into novae and supernovae by Baade and
+Zwicky that progress understanding them began in
+earnest\citep{1934PhRv...46...76B}.  This process of splitting a
+diverse group into related subsamples to yield insights into their
+origin would be repeated again and again over the years, first by
+Minkowski when he separated supernovae of Type I (no hydrogen in their
+spectra) from Type II (have hydrogen)\citep{1941PASP...53..224M}, and
+then by Elias et al. when they determined that Type Ia supernovae (SNe
+Ia) were distinct\citep{1985ApJ...296..379E}.  We now define Type Ia
+supernovae as those without hydrogen or helium in their spectra, but
+with strong SiII, which has observed absorption lines at 6150, 5800
+and 4000\AA\ \citep{1997ARA&A..35..309F}.  The progenitor of a Type Ia
+supernova has never been seen, but the consensus is that they are the
+result of the thermonuclear explosion of a degenerate carbon-oxygen
+white dwarf (WD) star\citep{1960ApJ...132..565H} gaining mass in a binary
+system\citep{1973ApJ...186.1007W}, in contrast to the other types of
+supernovae, which are thought to result from the collapse of the core
+of a massive star.  Much about them remains unknown --- the process of
+categorizing and trying to understand them continues.
+
+As distance indicators, SNe Ia are capable of better than 6\% precision in
+distance after empirical corrections are made for their lightcurve
+shape and color.  Just over a decade ago, they were used to deliver
+perhaps the most shocking scientific discovery in the last
+half-century: the expansion of the universe is not slowing, but is
+instead accelerating\citep{1998AJ....116.1009R,1999ApJ...517..565P}.
+The ``dark energy'' required to power this acceleration is prodigious,
+and indeed must be the dominant constituent of the universe by a
+factor of 17 over normal matter, and 3 over dark matter (which,
+despite the name, is probably unrelated).  But because dark energy is so dilute
+(one cubic meter contains the energy equivalent to a few atoms of
+hydrogen), its effects can only be seen on vast scales.  We must
+compare supernovae across $\sim 10$ Gyr of cosmic time, during which
+stars and galaxies have undergone substantial evolution.  Therefore it
+is critical to understand supernovae if they are to be relied on as
+the primary distance probe in astrophysics.
+
+The use of SNe Ia for cosmology has been refined to the point that is
+now sensitive to subtle, systematic effects.  The most important of
+these are those due to calibration, reddening, the ultraviolet, and
+differences between SNe Ia in different environments.  However, many
+of these are being addressed by comparing large subsamples of hundreds
+of SNe Ia, possible for the first time only in the last few years.
+
+The first accurate SN rates with respect to redshift are also being
+measured.  The properties of SNe Ia are being correlated with the
+stellar populations in their host galaxies, yielding real progenitor
+constraints.  Dramatic new discoveries, like supernovae that appear to
+require a progenitor above the Chandrasekhar mass, are challenging
+pre-existing theories.  Evidence has been mounting that the
+long-favored scenario of accretion from a main sequence or red giant
+companion star cannot account for all SNe Ia, if it accounts for
+any.  Instead, the white dwarf merger and even the sub-Chandrasekhar
+mass explosion models have been experiencing a revival.  Meanwhile new
+multidimensional simulations are revealing once-elusive details of the
+explosion, such as how asymmetry contributes to the diversity seen in
+SNe Ia.
+
+\section{Lightcurves and spectra}
+In a SN Ia, a wave of thermonuclear fusion rips through a degenerate
+white dwarf star, synthesizing iron-peak elements (Ni, Co, Fe) in the
+dense inner regions, intermediate mass elements (Si, S, Ca, Mg, O)
+where burning is incomplete, and sometimes leaving unburned material
+(C,O) near the outer layers\citep{2000ARA&A..38..191H}.  Though the
+explosion provides the kinetic energy of the SN Ia, and unbinds the
+white dwarf, this is not what we see as the supernova.  The lightcurve
+is powered by the radioactive decay of $^{56}$Ni (half-life 6.1 days)
+to $^{56}$Co, and ultimately to $^{56}$Fe (half-life 77
+days)\citep{1967CaJPh..45.2315T, 1969ApJ...157..623C}.  Gamma rays
+produced in the decays are thermalized, and at peak light $\sim 85\%$
+of the light output of the SN Ia is in the optical
+(Fig.~\ref{maxspec}), peaking at 4000\AA , with the remainder mostly
+radiated in the near-ultraviolet (NUV) and near-infrared
+(NIR)\citep{2009ApJ...691..661H}.
+
+Figure~\ref{fluxspec} shows the quasi-bolometric (UV-optical-IR)
+lightcurve evolution of a typical SN Ia, SN
+2003du\citep{2007A&A...469..645S}, along with representative spectra.
+SNe Ia rise to maximum light over $\sim 13-23$ days in the $B$-band,
+with a typical rise time of about 17.5
+days\citep{2010ApJ...712..350H}.  Initially, the time for photons to
+diffuse out of the dense ejecta is high, so that the rate of
+deposition of energy by radioactive decay exceeds the energy radiated
+by the SN.  Thus, at early times, spectra show only absorption lines
+probing the outer layers of the SN.  As the SN expands and thins, the
+light-emitting region (the photosphere) recedes (in mass or velocity
+coordinates), and spectra start to probe deeper layers.  Eventually
+the ejecta reach a point where the rate of energy deposition by
+radioactive decay is equal to the radiated luminosity of the SN, and
+the SN starts to decline in luminosity\citep{1982ApJ...253..785A}.
+Around or after maximum light, spectra show P-Cygni profiles --
+emission at the rest wavelength (initially weak), and blueshifted
+absorption.  Weeks after maximum light, the spectra start becoming
+dominated by scattering from permitted lines (at least in the
+blue)\citep{2008PASP..120..135B} and ultimately become dominated by
+emission features as the ejecta start to become optically thin, and
+the SN makes the transition from the photospheric to the nebular
+phase.  At late times (hundreds of days), gamma rays can freely
+escape, but positrons may be trapped\citep{2006AJ....132.2024L}, and
+the lightcurve slope may match the slope expected from the decay of
+$^{56}$Co, or can be steeper than this in the case of incomplete
+trapping.  Late time spectra are dominated by emission lines from
+iron-peak elements, synthesized in the deepest regions where the white
+dwarf was densest.
+
+\section{Cosmology}
+Dark energy is often characterized by its ratio of pressure to
+density, i.e., its equation of state, $w=P/\rho c^2$
+(Fig.~\ref{wplot}).  If $a$ is an arbitrary length scale in the
+universe, then the density of some component of the universe evolves
+as $\rho \propto a^{-3(1+w)}.$ Normal matter has $w=0$; it dilutes
+with volume as space expands.  If dark energy has an equation of state
+$w=-1$, corresponding to Einstein's cosmological constant, $\Lambda$,
+then it has the strange property that the energy density does not
+dilute as the universe expands; it must be a property of the vacuum.
+Other possibilities exist: if $w<-1$ the dark energy density is
+ever-growing, and will ultimately result in a ``big rip,'' destroying
+galaxies and even subatomic particles.  However, $w$ can also be a
+scalar field with $w>-1$ (generally known as quintessence), and the
+value of $w$ can evolve over time.
+%This is often
+%arameterized as $w(z)=w_0+w_a\frac{z}{1+z}$, where $z$ is redshift,
+%though more arbitrary forms are possible.
+
+Measurements of $\langle w \rangle$ or $w(z)$ are obtained by building
+a map of the history of the expansion of the universe using SNe Ia as
+standardized candles.  SNe Ia can show a factor of 10 or more
+difference in peak luminosity, but the luminosity is correlated with
+the time it takes the supernova to rise and fall in
+brightness\citep{1993ApJ...413L.105P}.  Therefore, the width of the
+lightcurve is measured and used to correct the peak luminosity.
+Common parametrizations include the ``stretch
+factor\citep{1997ApJ...483..565P}'', $s$, proportional to lightcurve
+width, or \drp , the number of magnitudes the $B$-band lightcurve
+falls in 15 days after peak brightness, inversely proportional to
+lightcurve width\citep{1993ApJ...413L.105P}.  A correction must also
+be made for color, since redder SNe are dimmer, both intrinsically,
+and due to dust\citep{1996ApJ...473...88R,2007ApJ...664L..13C}.
+Various techniques are used to determine these parameters by fitting
+lightcurve models to the data, but leading fitters include
+MLCS2k2\citep{2007ApJ...659..122J}, SALT2\citep{2007A&A...466...11G},
+and SiFTO\citep{2008ApJ...681..482C}.
+
+To determine cosmological parameters, an observed Hubble diagram
+(distance versus redshift) is constructed, and cosmological parameters
+are varied in a model that is fitted to the data.  If we express
+distances as magnitudes, as a distance estimator, we can
+use\citep{2006A&A...447...31A}:
+$$\mu_B=m^*_B-M+\alpha (s-1)-\beta c,$$ 
+where $m^*_B$ is the peak magnitude of the SN in the $B$-band (the blue filter where the SN is brightest; Fig.~\ref{maxspec}), $s$ is the lightcurve stretch, $c$ is
+the color of the SN (a linear combination of $U-B$ and $B-V$, relative
+to some reference
+color\citep{2006A&A...447...31A,2008ApJ...681..482C}), $\alpha$ is the
+slope of the stretch-luminosity relation, $\beta $ is the slope of the
+color-luminosity relation, and $M$ is a measure of the absolute
+magnitude of the SN combined with the Hubble constant.  Note that
+since relative magnitudes are used, neither the absolute magnitude of
+the SN, nor the value of the Hubble constant must be known.  $m^*_B$,
+$s$, and $c$ are measured from a fit to each SN lightcurve, while $M$,
+$\alpha $, and $\beta$ are constants determined from the overall
+cosmological fit.  More precisely, SALT2 and SiFTO work in this way,
+determining ``nuisance parameters'' from a fit to all of the data.
+However MLCS2k2 is ``trained'' on low redshift data, and the relations
+are applied to high redshift data, making it potentially more
+susceptible to evolution.  MLCS2k2 also attempts to separate the
+effects of intrinsic SN reddening and reddening due to dust.
+
+\section{Systematic uncertainties}
+Cosmological studies using SNe Ia, have reached a point where over
+most redshift ranges systematic errors (those that affect many
+measurements simultaneously in a correlated way) dominate statistical
+errors (i.e. those that are reduced by
+$\sqrt{N}$)\citep{2009ApJS..185...32K, 2009ApJ...700.1097H,
+  2010ApJ...716..712A} --- see Fig.~\ref{wplot}.  This is often
+erroneously characterized as an ``error floor.''  In actuality many
+systematic uncertainties can be lowered with new methods, improved
+statistics, by comparing subsamples of supernovae, or breakthroughs in
+understanding.  Authors disagree on the primary systematic uncertainty
+affecting SNe Ia, partly because it is survey dependent.  However,
+there is general consensus that the largest are: calibration to the
+historic Landolt photometric system, treatment of the ultraviolet,
+reddening due to dust, the differences supernovae show with respect to
+environment, and the possible evolution of SNe with redshift.  See
+Table 1 for a summary of recent SN Ia constraints on $\langle w
+\rangle$ and dominant systematic uncertainties.
+
+\subsection{Calibration}
+As supernovae are observed at high redshift, the region of the
+spectrum seen through a given broadband filter changes (see Fig.~\ref{maxspec} for the $z=0$ case).  A correction
+must be made for this, the k-correction, which requires
+knowledge of the spectral energy distribution of an average
+supernova\citep{2007ApJ...663.1187H}, and precise knowledge of the
+filter transmission curves and calibration system used for each
+supernova.  Unfortunately, many historical low-redshift supernovae
+were transformed to the Landolt photometric standard system, which is
+poorly understood and no longer reproducible, as the filter and
+instrument transmission curves used to establish it are not known to 
+modern precision and no longer exist.  The fact that the low-z sample
+is on the Landolt system has forced many high redshift surveys to
+transform to it, incurring a systematic uncertainty in zero points and
+color terms\citep{2006A&A...447...31A}.  These systematic
+uncertainties will be reduced once a large new low-redshift sample of
+SNe is assembled, calibrated onto a new system (e.g. Sloan).  A
+related problem is that Vega is often used as the primary calibrator,
+but its SED and photometry, both intrinsically and on the Landolt
+system, are imprecisely known, due its brightness.
+
+\subsection{The Ultraviolet}\label{uv}
+At redshifts above $z\sim 0.2$, the restframe $U$-band and
+ultraviolet is redshifted into the optical region of the spectrum.
+Unfortunately, there is a great deal of scatter in restframe $U$
+observations.  Some surveys rely heavily on the restframe $U$, so uncertainties from this region can translate into dominant
+systematic uncertainties\citep{2009ApJS..185...32K}.  In fact, differences
+seen between the distances determined by different lightcurve fitters,
+e.g MLCS2k2\citep{2007ApJ...659..122J},
+SALT2\citep{2007A&A...466...11G}, and SiFTO\citep{2008ApJ...681..482C}
+boil down largely to the way they treat the restframe $U$-band.
+
+There are two possibilities for $U$-band uncertainty: (1) SNe
+intrinsically show more variation in $U$\citep{2008ApJ...674...51E},
+and/or (2) the $U$-band is poorly calibrated.  The Supernova Legacy Survey (SNLS) has shown that
+when longer-wavelength high redshift observations from a
+well-calibrated single survey are k-corrected to restframe $U$-band,
+the dispersion is more than 3 times lower than for low-redshift data
+where the $U$-band is observed directly\citep{2006A&A...447...31A}.
+Therefore, discrepancies are most likely due to problematic low
+redshift observations where many factors conspire to make $U$
+observations difficult, including atmospheric variation, extinction,
+nonstandard filters, and poor calibrators\citep{2006AJ....131..527J}.
+This systematic can be dealt with by building a new, better-calibrated
+low redshift sample, and possibly by avoiding the restframe $U$-band.
+
+\subsection{Reddening}\label{reddening}
+Lightcurve fitters must correct for the fact that redder supernovae
+are dimmer.  This is due to a combination of an intrinsic
+color-luminosity relation (faint supernovae are intrinsically
+red\citep{1996ApJ...473...88R}), and reddening due to dust.  While
+there is consensus that the two effects ought to be corrected for
+independently, there is disagreement over whether this can be
+practically achieved given current data limitations.
+
+MLCS2k2 attempts to separate intrinsic and dust reddening and make
+different corrections for each\citep{2007ApJ...659..122J}.  
+SALT2 and SiFTO work under the assumption that it is difficult or
+impossible to separate the effects of dust and intrinsic reddening, so
+they make an empirical reddening correction by solving for the slope
+of the color-luminosity relation, $\beta $.  If this reddening were
+only due to dust, then $\beta=R_B=R_V+1.$ For Milky Way dust,
+$R_B=4.1$\citep{1989ApJ...345..245C}.  However, as shown in
+Fig.~\ref{redfig}, shallower slopes are found for
+$\beta$.  This may result from the
+conflation of dust and intrinsic SN reddening, and would indicate that
+the intrinsic SN Ia reddening-luminosity relation has a shallower
+slope than the dust relation.  However, since the lightcurve
+shape-luminosity relation is already factored out in this
+method\citep{2006A&A...447...31A}, it means there must be a component
+of intrinsic color that does not correlate with lightcurve
+shape\citep{2007ApJ...664L..13C}.  If so, this calls into question the
+MLCS2k2 assumption that the intrinsic colors of SNe can be determined
+from lightcurve shapes, necessary to separate out the dust component.
+An alternative is that the dust along the line of sight to SNe Ia is
+intrinsically different, or that scattering effects in the
+circumstellar environment result in a different apparent reddening
+law\citep{2005ApJ...635L..33W, 2008ApJ...686L.103G}.
+%Low values of
+%$R_V$ are even found with the MLCS method\citep{2009ApJ...700.1097H}.
+
+If the intrinsic and dust reddening slopes are different, then
+conflating them into a single correction could have deleterious
+effects, as the mix of supernovae and galactic environments evolves
+with redshift\citep{2007ApJ...667L..37H}.  This can partially be
+mitigated by making separate reddening corrections for different
+subsets of supernovae, for example supernovae in passive or
+star-forming galaxies, or those in high- and low-mass galaxies.
+Indeed, host galaxies with low star formation have lower values of
+$R_V$ or $\beta $\citep{2010MNRAS.406..782S,2010ApJ...722..566L}
+(Fig.~\ref{redfig}).
+
+One way to separate the intrinsic/dust reddening degeneracy is through
+infrared observations, where the effects of dust are minimized.
+Infrared observations have shown that many SNe seem to have a
+sub-Milky Way value of $R_V$, sometimes as low as
+$R_V=1.5$\citep{2008MNRAS.384..107E,2007AJ....133...58K}.  A
+comprehensive study by the Carnegie Supernova Project (see
+Fig.~\ref{redfig}) shows tantalizing hints that lightly reddened SNe
+may have an $R_V$ close to that in the Milky Way, while heavily
+extincted SNe Ia have lower values\citep{2010AJ....139..120F}.
+However, this is opposite to earlier findings from 
+optical data\citep{2008A&A...487...19N}, and the small sample size makes it
+difficult to draw reliable conclusions.
+
+There are indications that supernovae with higher velocity ejecta have
+lower inferred $R_V$ values\citep{2009ApJ...699L.139W}
+(Fig.~\ref{redfig}).  Since the color is correlated with physical SN
+features, this may indicate that sometimes an intrinsic color
+difference in SNe is wrongly ascribed to dust reddening (though this
+can be mitigated by making a color cut), or perhaps that there are
+different progenitor scenarios, with different circumstellar dust
+scattering properties, that produce SNe with different velocities.
+
+Various authors have exploited the low sensitivity to dust in the IR
+to make infrared Hubble diagrams.  This is doubly attractive, because
+SNe Ia intrinsically show reduced scatter in the IR --- in the $H$
+band SNe Ia have an rms dispersion of only 0.15 mag {\it without}
+correction for lightcurve shape or
+color\citep{2004ApJ...602L..81K,2008ApJ...689..377W}.  This is
+theoretically expected, in part because less luminous SNe are cooler
+and radiate a larger fraction of their luminosity in the
+IR\citep{2006ApJ...649..939K}.  While heroic attempts have been made
+to produce high redshift IR Hubble diagrams of SNe Ia\citep{2009ApJ...704.1036F}, the massive
+amount of observing time required, and the fact that the restframe IR
+is redshifted to even longer wavelengths, has made serious
+cosmological constraints from this method
+elusive.
+
+%Most SN Ia IR lightcurves show a secondary peak $\sim 20-30$ days
+%after $B$-band maximum light (see Fig.~\ref{mlcs} for the $I$
+%equivalent).  This secondary peak is larger in more luminous SNe Ia,
+%and nonexistent in subluminous SNe Ia\citep{2010AJ....139..120F}.
+%The secondary peak in the
+%IR in SNe Ia is due to the recombination of iron-group elements, as
+%they go from being doubly to singly ionized\citep{2006ApJ...649..939K}.  
+
+%Understanding it first requires an explanation of how the IR
+%spectrum is formed in SNe Ia.  In the IR, supernovae show a
+%pseudocontinuum superimposed with absorption
+%features\citep{2009AJ....138..727M}.  It arises from the
+%redistribution of radiation from the blue and UV, primarily through
+%fluorescence\citep{1995ApJ...444..831H,2000ApJ...530..757P}.  A UV
+%photon excites an atomic transition, which de-excites into a cascade
+%of longer-wavelength transitions.  The line from each transition is
+%Doppler broadened, and the radiation from millions of lines blurs
+%together to form the NIR pseudocontinuum.  
+%The NIR emissivity of
+%iron/cobalt gas peaks sharply at this transition temperature $\approx
+%7000$K, resulting in enhanced redistribution of radiation from blue to
+%NIR.  The IR emission arises from a thin shell of material at this
+%temperature, which rises to a maximum as a recombination wave recedes
+%into the ejecta\citep{2006ApJ...649..939K}.
+
+\subsection{Populations and evolution}
+Even before SNe Ia were used for cosmology, it was known that the most
+luminous SNe Ia (those with the broadest lightcurves), occur only in
+late-type galaxies\citep{1996AJ....112.2391H}.  Likewise, subluminous
+SNe Ia are preferentially found in galaxies with a significant old
+population, although it took several more years to discover this,
+since old stars are found in both elliptical and spiral
+galaxies\citep{2001ApJ...554L.193H}.  Fitting models of the stellar
+populations in the host galaxies of supernovae to the observations
+allowed such studies to become
+quantitative\citep{2006ApJ...648..868S}, and as a result SN lightcurve
+width and luminosity has been shown to correlate with host galaxy star
+formation rate, galaxy mass, and
+metallicity,\citep{2006ApJ...648..868S,2008ApJ...685..752G,
+  2009ApJ...691..661H,2009ApJ...707.1449N,2010MNRAS.406..782S}.
+
+Since star formation increases by a factor of 10 up to redshift 1.5,
+and bright, broad-lightcurve supernovae favor star forming hosts, it
+is expected that the mix of supernovae will change with redshift.
+Indeed it has been shown that supernovae at $z=1$ are intrinsically
+$\sim 12\%$ more luminous than local SNe Ia
+\citep{2007ApJ...667L..37H}.  The spectra of high-redshift supernovae
+also show fewer intermediate mass elements, consistent with the idea
+that they make more iron-peak elements to power their
+luminosity\citep{2009ApJ...693L..76S}.  A changing mix of supernovae
+with redshift is not necessarily problematic for cosmology if
+lightcurve shape and color corrections allow all supernovae to be
+corrected to the same absolute magnitude.  Unfortunately, early
+indications that lightcurve fitters did not correct all supernovae to
+the same absolute
+magnitude\citep{2008ApJ...685..752G,2009ApJ...700.1097H,2010ApJ...715..743K}
+have now been borne out by large data sets using multiple lightcurve
+fitters\citep{2010MNRAS.406..782S,2010ApJ...722..566L}.  As is shown in
+Fig.~\ref{sullivan}, supernovae in high and low mass galaxies each
+correct to an absolute magnitude different by $0.08\pm0.02$ mag.  This
+trend is also present (though weaker), if SNe are split by host star
+formation rate, or metallicity.  If not corrected, this can lead to a
+$\sim 0.04$ systematic error in $w$\citep{2010MNRAS.406..782S}.
+Therefore, aside from color and lightcurve shape, a third correction,
+one for host galaxy properties, must be applied to SNe Ia to avoid
+systematic residuals with respect to the Hubble diagram.
+
+\section{The SN Ia zoo}
+In the absence of a proper theoretical understanding of SNe Ia, there
+have been various attempts at dividing SNe into groups based on their
+observed spectra, and using this knowledge to improve cosmological
+constraints or understanding of the progenitors.  The ratio of the
+depth of the SiII 6150\AA\ feature to that at 5800\AA\ is one
+indicator of luminosity\citep{1995ApJ...455L.147N}.  Meanwhile, the
+relative width of these features has been used to separate SNe Ia into
+groups\citep{2009PASP..121..238B}.  Factors controlling these
+groupings may include the relative amount of intermediate mass
+elements to iron peak elements\citep{2007Sci...315..825M}, the
+temperature of the SN\citep{1995ApJ...455L.147N}, and the distribution
+of Si within the ejecta, possibly related to the type of
+burning\citep{2009Natur.460..869K}.  Similarly the velocity evolution
+of the features relative to the decline rate of the supernova has been
+used to split supernovae into {\it high velocity}, {\it low velocity},
+and {\it faint} groups\citep{2005ApJ...623.1011B}.  Empirical measures
+of lines can also be used to correct SNe Ia for luminosity,
+independent of their stretches and colors\citep{2008A&A...477..717B}.
+In fact, with exquisite data cubes of flux vs. wavelength vs. time,
+optimal ratios of different points in SN Ia spectra can be found to
+reduce their dispersion in luminosity\citep{2009A&A...500L..17B}.
+
+\section{Explosion theory and observational constraints}
+In what might be called the standard model for a SN Ia, a CO white
+dwarf accretes matter until it compresses to the point that carbon is
+ignited just before the Chandrasekhar limit (note that the common
+misconception that the WD goes {\it over} the Chandrasekhar limit is
+wrong -- this would lead to collapse to a neutron star).  The evidence
+that the exploding star is a white dwarf is strong, albeit
+circumstantial\citep{2001sgrb.conf..334L}: neither hydrogen nor helium
+is seen in the spectrum of a SN Ia\citep{2007ApJ...670.1275L}, SNe Ia
+can happen long after star formation has ceased, the explosive process
+may implicate degenerate matter, the energy obtained by the
+thermonuclear burning of a white dwarf minus the binding energy
+roughly matches the kinetic energy of SNe Ia, and simulations of the
+process have been successful at reproducing SN Ia lightcurves and
+spectra\citep{1984ApJ...286..644N,
+  1991A&A...245..114K,1993A&A...270..223K, 2000ARA&A..38..191H,
+  2007ApJ...656..661K}.
+
+The white dwarf may have a ``simmering'' phase
+of order a thousand years following unstable carbon ignition, where
+thermonuclear runaway is prevented by
+convection\citep{2008ApJ...678.1158P}.  Ultimately, however, explosive
+burning is ignited and the white dwarf is incinerated in seconds.  
+
+If a white dwarf near the Chandrasekhar mass is detonated (i.e. the
+burning occurs supersonically), then the white dwarf burns at such a
+high density that the fusion products consist almost entirely of
+iron-peak elements\citep{1969Ap&SS...5..180A}.  This does not match
+the spectra or lightcurves of SNe Ia.  A deflagration (subsonic
+burning), on the other hand, gives the SN time to pre-expand.  Burning
+at a lower density can produce intermediate mass elements and
+reproduce many of the observational features of SNe
+Ia\citep{1984ApJ...286..644N}.  However, pure deflagrations fail to
+produce the high velocity material (Fig.~\ref{fluxspec}) that seems to be
+nearly ubiquitous in SNe Ia in the outer
+layers\citep{2005ApJ...623L..37M}, and in two- and three dimensional
+simulations they leave too much carbon and oxygen
+unburned\citep{2005ApJ...623..337G}.  Therefore, the consensus is that
+in a Chandrasekhar mass explosion, the flame must start out
+subsonically, but at some point become
+supersonic\citep{1991A&A...245..114K}.  Though the physics remains
+poorly understood, models that start as a deflagration but impose a
+transition to a detonation under certain conditions have been
+successful at reproducing normal SN Ia lightcurves and
+spectra\citep{1993A&A...270..223K}, and even lightcurve
+width-luminosity relations and metallicity
+effects\citep{2009Natur.460..869K}.  Explosions dominated by
+deflagration produce more intermediate mass elements (dimmer SNe Ia),
+while those dominated by detonation produce brighter and more \Ni
+-rich SNe Ia (Fig.~\ref{kasen})\citep{2009Natur.460..869K}.
+
+It is possible to gain insight into the explosion physics with
+spectropolarimetry or other techniques that reveal asphericity ---
+recent work indicates that some of the dispersion in SN properties
+results from broken symmetries\citep{2009Natur.460..869K}.  SN
+asymmetry can be measured via spectropolarimetry, since asymmetric
+electron scattering leads to polarization vectors that do not cancel.
+Most normal SNe Ia are found to be spherically
+symmetric\citep{2005ApJ...632..450L,2008ARA&A..46..433W}.  The first
+convincing evidence for significant deviations from spherical symmetry
+was seen in a subluminous SN Ia\citep{2001ApJ...556..302H}, which may
+make sense if they are deflagration-dominated.  However, supernovae
+with high velocity features often show even stronger
+spectropolarimetric signatures of asymmetry, possibly due to clumpy
+ejecta\citep{2003ApJ...593..788K,2005ApJ...632..450L}.  These features
+are often detached from the photosphere, but they are not well
+understood theoretically.  
+
+Strangely, SNe Ia whose spectroscopic
+features start off with high velocity and evolve rapidly, often show
+nebular lines that appear redshifted, while SNe Ia with slower
+velocity evolution show blueshifted nebular
+lines\citep{2010Natur.466...82M}.  This probably indicates asymmetry
+in the explosion, in qualitative agreement with models where a
+deflagration burns off-center, and is followed by a detonation.
+
+SN 2002cx is the prototype member of a class of supernovae that may be
+a failed deflagration. These SNe are several magnitudes less luminous
+than normal SNe Ia, and have low expansion velocities, only a few
+thousand kilometers per second\citep{2003PASP..115..453L}.  At late
+times SN 2002cx did not have the forbidden lines that are ubiquitous
+in SNe Ia, but instead showed very low expansion velocity P-Cygni FeII
+lines at $~\sim 700$ km s$^{-1}$, and possibly low-velocity
+OI\citep{2006AJ....132..189J}.  Some have claimed that these SNe,
+including another prominent member of the class, 2008ha, are actually
+core-collapse SNe\citep{2009Natur.459..674V}.  The counterargument is
+that intermediate mass elements in the spectra are indicative of
+carbon and oxygen burning, and they are therefore thermonuclear
+supernovae, though possibly failed ones\citep{2010ApJ...708L..61F}.
+
+\section{The progenitor question\label{progen}}
+Even if there is agreement that the primary star in a SN Ia is a white
+dwarf, the identity of the secondary star in the binary system is
+uncertain.  There are three broad classes of models: (1) single
+degenerate\citep{1973ApJ...186.1007W} (SD), where the companion is a
+main sequence or red giant star that loses mass via either Roche lobe
+overflow, or a wind (symbiotic star), (2) double degenerate (DD),
+where two white dwarfs merge and explode\citep{1984ApJS...54..335I,
+  1984ApJ...277..355W}, and (3)
+sub-Chandra\citep{1986ARA&A..24..205W}, where a layer of helium builds
+up on the surface of a white dwarf below the Chandrasekhar mass until
+it detonates.  
+
+%The star that explodes cannot be a He white dwarf because they are too
+%ow in mass, long-lived, and would not produce the correct spectra. An
+%O-Ne WD is also not favored, because they probably undergo accretion
+%induced collapse from electron capture, and are more difficut to
+%ignite than carbon-rich white dwarfs.  Furthermore, carbon is seen in
+%the spectra of some SNe, particularly at early times
+%Ia\citep{2003AJ....126.1489B,2006Natur.443..308H,2007ApJ...654L..53T}.
+
+
+\subsection{Slow accretion}
+In the single degenerate model, a white dwarf ignites
+carbon burning, causing it to explode, by accreting matter from a
+nondegenerate companion to near the Chandra mass.
+Since CO white dwarfs are thought to start no larger than $\sim 1-1.2$
+solar masses, a significant amount of accretion from a secondary star
+is required.  However hydrogen must be
+accreted at a rate between $10^{-7}-10^{-8}$ \Msun\ yr$^{-1}$ to
+steadily burn to carbon or oxygen on the surface of the white
+dwarf\citep{1982ApJ...253..798N}.  If it accretes faster, it will form
+a red giant-like envelope.  Slower accretion is thought to lead to the
+build up of matter that results in novae, and mass being lost from the
+system.  The apparently required steady burning generates supersoft
+X-rays, and as a result systems in this phase of their evolution are
+observable as supersoft X-ray sources\citep{1992A&A...262...97V}.  If
+these are the progenitors of SNe Ia, at any given time $\sim 1000$ of
+these sources should be visible in a typical galaxy.  However, the
+observed rates of supersoft sources in the Milky Way and external
+galaxies can only account for $\sim 5\%$ of the SN Ia
+rate\citep{2010ApJ...712..728D, 2010Natur.463..924G}, possibly posing serious problems for the SD model.  It may favor
+the double degenerate model, although many of these systems ought to
+pass through a supersoft phase as well\citep{2010ApJ...719..474D}.
+
+\subsection{White dwarf mergers}
+In the double degenerate scenario, two white dwarfs merge to achieve
+the Chandra mass\citep{1984ApJS...54..335I,1984ApJ...277..355W}.  The
+less massive white dwarf is disrupted into a disk that will eventually
+accrete onto the more massive white dwarf\citep{1990ApJ...348..647B}.
+In this case, carbon may be ignited on the surface of the more massive
+white dwarf during the accretion process, resulting in non-explosive
+carbon burning, converting the star to an O-Ne white dwarf.  This
+should ultimately undergo accretion induced collapse to a neutron star
+rather than producing a SN Ia\citep{1985A&A...150L..21S}, though it
+may be possible to avoid this fate under certain
+conditions\citep{2007MNRAS.380..933Y}.  The simulated merger of two
+equal mass 0.9 \Msun\ WDs has been shown to lead to a SN Ia, although
+it was subluminous\citep{2010Natur.463...61P}, due to the low central
+density of a 0.9 \Msun\ WD.  More massive equal-mass mergers may
+produce normal, or even overluminous SNe Ia, but would be more rare.
+Lower-mass mergers should be common, though it is not clear if they
+lead to SNe Ia\citep{2010ApJ...722L.157V}.  The merger of two white
+dwarfs is a very complicated three dimensional process (necessitating
+approximations in current models), and very few simulations have been
+completed.
+
+\subsection{Sub-Chandrasekhar mass explosions}
+While approaching the Chandra mass is convenient method for triggering
+carbon burning, there is no hard evidence that the Chandra mass is
+required.  While many feel that the ``standard'' nature of SNe Ia
+arises because they explode at a common mass, this is not necessarily
+a constraint: SNe Ia show an order of magnitude range in luminosity
+and $^{56}$Ni mass -- they are only standardized after empirical
+corrections are applied\citep{1996AJ....112.2391H}.
+
+There are several arguments against the Chandra mass being the
+trigger, aside from the ad hoc nature of the deflagration to detonation
+transition.  Determinations of the total ejected mass in SNe Ia tend
+to come out under the Chandra mass, sometimes significantly
+so\citep{2006A&A...460..793S}.  And it seems difficult to accrete
+enough material without blowing it off in
+novae\citep{1982ApJ...253..798N}.
+
+Part of the argument for the Chandra mass comes from the argument
+against the sub-Chandra model.  In the classical sub-Chandra
+models\citep{1986ARA&A..24..205W}, known as ``double detonation'' or
+``edge-lit detonations,'' a layer of accreted helium ($\sim 0.2$\Msun
+) is built up either by burning accreted hydrogen to helium or by
+accretion from a helium rich donor.  When the pressure at the base of
+the helium layer reaches a critical threshold, it detonates, driving a
+shock into the core of the WD.  This causes a second detonation,
+resulting in a flame propagating outward from the core (or near it),
+destroying the WD.  Because the sub-Chandra white dwarf has a lower
+density throughout, a simple detonation does not burn the entire star
+to iron peak elements.  This model thus has the advantage that an ad
+hoc deflagration to detonation transition is avoided.  However, the
+significant outer helium layer is efficiently burned to $^{56}$Ni,
+resulting in early time spectra that should be rich in \Ni , which
+does not match observations\citep{1997ApJ...485..812N}.  If helium can
+detonate with a smaller layer, which some studies
+hint\citep{2010ApJ...715..767S}, then sub-Chandra simulations can
+reproduce many of the observed properties of SNe
+Ia\citep{2010ApJ...714L..52S}.  Some of the elegance of the model is
+undercut by the required narrow range of WD masses: $\sim 0.9-1.1$
+\Msun , in order to achieve the central densities necessary to produce
+iron-peak elements.
+
+\subsection{Constraints on progenitors from rates}
+Different progenitor scenarios lead to different delay times between
+the birth of the binary system and the explosion as a SN
+Ia\citep{2005A&A...441.1055G}.  So there is hope of constraining the
+progenitors by measuring the delay time distribution (DTD;
+Fig.~\ref{maoz}).  One approach is to measure the lag between the
+cosmic star formation rate and the SN Ia rate as a function of
+redshift.  However, large uncertainties in each make this particularly
+difficult, leading authors to different conclusions even
+when using largely the same
+data\citep{2010ApJ...713...32S,2008ApJ...673..981K}.  The
+heterogeneity of SN Ia rates from different sources with poorly
+understood selection effects is partly to blame, but new
+surveys are allowing rate evolution to be measured
+from a single, well-controlled study\citep{2010ApJ...713.1026D}.
+
+Another approach is to use the relative SN rates in different types of
+galaxies to constrain the DTD.  It was recognized early on that the
+rates of Type I SNe are higher in late-type
+galaxies\citep{1979AJ.....84..985O}, although it took the separation
+of the Ia subclass and more careful modern work showing that the SN Ia
+rate in late-type galaxies is a factor of $\sim 20$ higher than it is
+in non-star-forming galaxies to build wide community consensus that
+there is a significant population of short-lived thermonuclear SN
+progenitors\citep{2005A&A...433..807M}.  Taking the argument a step
+farther, a high SN Ia rate in radio-loud galaxies has been used to
+argue for a bimodal distribution of SN
+ages\citep{2006MNRAS.370..773M}.  A popular version of the two
+population case is the ``$A+B$ model\citep{2005ApJ...629L..85S},'' where
+the SN rate is parametrized by SNR$ = A M + B \dot{M}$, where $M$ is
+the host galaxy mass, $\dot{M}$ is the star formation rate, and $A$
+and $B$ are constants.  $A$ is the SN rate per unit mass (measured in
+elliptical, or quiescent galaxies), while $B$ is the SN rate per unit
+solar masses formed.
+
+A leap forward in the determination of the $A$ and $B$ parameters (and
+more generally, DTDs) came with the application of SED fitting
+techniques to SN host galaxies by modeling their stellar
+populations\citep{2006ApJ...648..868S}.  This has allowed more
+complicated DTDs to be determined: for example, the SNLS data is well
+fit\citep{2008ApJ...683L..25P} by a declining power law proportional
+to $t^{-0.5\pm 0.2}$.  Other authors using likely SNe Ia from the
+SXDS\citep{2008PASJ...60.1327T} (squares in Fig.~\ref{maoz}), or those in
+clusters\citep{2010ApJ...722.1879M} (filled circles), find a DTD proportional to
+$t^{-1}$ instead.  Another trick is to study
+elliptical hosts in the ultraviolet to look for young stars and
+determine the minimum time delay necessary to make a SN
+Ia\citep{2009MNRAS.397..717S}.  While the single degenerate scenario
+is consistent with the UV minimum time delay constraint, it is
+difficult to explain the power law DTD results using the single
+degenerate scenario
+alone\citep{2005A&A...441.1055G,2008ApJ...683L..25P,2008PASJ...60.1327T},
+though there is at least one claim\citep{2008ApJ...679.1390H}.
+
+Host galaxy spectroscopy contains even more information to constrain
+progenitors.  New studies using different
+methods, different data sets (the Lick Observatory Supernova
+Search\citep{2010arXiv1002.3056M} and
+Sloan Digital Sky Survey-II [SDSS-II\citep{2010AJ....140..804B}]), but the same galaxy fitting code
+(VESPA), have determined the relative rates of supernovae in 0-0.42 Gy
+(prompt), 0.42 to 2.4 Gyr (medium), and $>$2.4 Gyr (delayed) bins
+(open circles Fig~\ref{maoz}).  They find that ``prompt'' and ``delayed''
+supernovae are required at several sigma.  They also confirm earlier
+findings that bright, broad-lightcurve supernovae favor a prompt
+population, while dim, narrow-lightcurve SNe Ia favor a delayed
+population.  Intriguingly, the average spectra of the host galaxies of
+broad and narrow lightcurve SNe Ia are different, and the difference
+looks like a 7 \Msun\ star\citep{2010AJ....140..804B}.
+
+Pinpointing the locations of SNe Ia relative to the stellar
+populations in which they reside can give some information on
+progenitors, even if it is imprecise due to the probability that the
+SN has migrated from its birth site after a long time delay.
+Comparing the distributions of SNe Ia to the blue light in galaxies
+reveals that even ``prompt'' SNe Ia are significantly delayed, with
+delay times 200-500 Myr\citep{2009ApJ...707...74R}.  Additional
+constraints have been obtained by comparing SN Ia remnants in the
+Magellanic Clouds (triangles in Fig.~\ref{maoz}) to their local
+resolved stellar populations\citep{2010MNRAS.407.1314M}.  At a $>99\%$
+confidence level, ``prompt'' SNe Ia that explode within 330 Myr of
+star formation are required.
+
+\subsection{Surviving or preceding material\label{stuff}}
+If white dwarfs grow to become SNe Ia via hydrogen accretion, then it
+ought to be possible to to see this hydrogen in the SN Ia in some
+form.  However, despite decades of searching, no such smoking gun has
+been found.  No SN Ia has ever been seen in the
+radio\citep{2006ApJ...646..369P}, establishing an upper limit on
+steady mass loss of material before the SN of $~\sim 3 \times 10^{-8}$
+\Msun\ yr$^{-1}$.  This disfavors the symbiotic star hypothesis, where
+the white dwarf accretes matter from the stellar wind of its
+companion.  X-ray limits are less
+constraining\citep{2007ApJ...670.1260H}, $~\sim 2 \times 10^{-5}$
+\Msun\ yr$^{-1}$.  If, on the other hand, white dwarf is accreting
+from Roche lobe overflow of a companion, the outer hydrogen layers of
+the secondary ought to become stripped and entrained in the SN ejecta,
+where it will show up at low velocities when the ejecta become
+optically thin\citep{2000ApJS..128..615M}.  However, in a couple of
+well observed SNe Ia, upper limits on the amount of hydrogen detected
+are 0.01 \Msun , which would seem to rule out this
+scenario\citep{2007ApJ...670.1275L}, at least for these SNe.  In a
+few cases, apparent SNe Ia have been seen interacting with
+pre-existing hydrogen, as in SN 2002ic\citep{2003Natur.424..651H},
+although it is not clear these are really SNe
+Ia\citep{2006ApJ...653L.129B}, and even if they are, these systems are
+the exception rather than the rule.
+
+The impact of the SN ejecta on any companion star would shock the
+ejecta, leaving observational signatures along certain lines of sight
+for several days, long after the ejecta has overtaken the
+companion\citep{2010ApJ...708.1025K}.  This would lead to distortions
+in the early-time lightcurves of SNe Ia around 10\% of the time,
+especially in the UV to $B$ regions of the spectrum.  If the companion
+star is a red giant, particularly large distortions ought to be seen --
+the fact that they never have been would seem to be problematic for
+this scenario\citep{2010ApJ...722.1691H}.
+
+Variable sodium lines have been seen in high resolution spectra of
+some SNe Ia, and their variability, assumed to be from ionization of
+circumstellar clouds by the SN, has been taken to be evidence of
+significant circumstellar material.  This ostensibly favors the single
+degenerate scenario\citep{2007Sci...317..924P}, although maybe only in
+rare cases --- variable sodium was only seen in 6\% of cases in a
+sample of 31 observations, and then only in the most reddened SNe
+Ia\citep{2009ApJ...693..207B}.  Not all variable sodium SNe Ia are
+reddened, however, nor do all reddened supernovae show variable
+sodium\citep{2009ApJ...702.1157S}.  There have also been doubts that
+this material is truly circumstellar\citep{2008AstL...34..389C}.
+There is tentative evidence for a link to {\it high velocity
+  group}\citep{2005ApJ...623.1011B} or {\it broad
+  line}\citep{2009PASP..121..238B} SNe Ia, however, and if confirmed,
+this would indicate a physical association\citep{2009ApJ...702.1157S}.
+
+SN remnants provide more clues to the origin of SNe Ia.  They may
+reveal the progenitor's metallicity\citep{2008ApJ...680.1149B}, for
+example.  But even more exciting is the prospect that they may house a
+surviving progenitor star.  Tycho's remnant (SN 1572), long suspected
+of being a SN Ia, has been definitively revealed to be so by modern
+spectroscopic observations of the SN light, delayed in transit by
+reflections off of distant interstellar
+clouds\citep{2008Natur.456..617K}.  In the single degenerate scenario,
+the secondary star should survive the SN explosion, but may be
+stripped of its outer layers, and heated, such that it takes of order
+1000 years to return to thermal equilibrium\citep{2000ApJS..128..615M}.
+One star, Tycho G, has been claimed as evidence for a surviving
+progenitor\citep{2004Natur.431.1069R,2009ApJ...691....1G}, though
+there are many doubts about this hypothesis.  It was significantly
+displaced from the center of the remnant, and its proper motion shows
+it did not come from that direction.  Also, it was not apparently out
+of thermal equilibrium, and does not have the expected rotational
+characteristics\citep{2009ApJ...701.1665K}.
+
+\subsection{Super-Chandra}
+SNLS-03D3bb (aka SN 2003fg) was clearly a SN Ia, yet it showed
+properties never before seen in any member of this class.  It was
+$>40\%$ more luminous than any previously discovered SN Ia, and yet
+counterintuitively had one of the slowest expansion velocities of any
+SN Ia (as measured by SiII at maximum light --- 8000 km/s).  It had
+rare evidence for CII in its +2d spectrum, and was discovered in a
+star-forming dwarf galaxy only a few times the size of the
+LMC\citep{2006Natur.443..308H}.  The theoretical interpretation tying
+together all of these trends is that it resulted from the explosion of
+a white dwarf that exceeded the Chandrasekhar mass --- the \Ni\ yield
+alone was 1.3 \Msun\ --- taking into account other elements, the WD
+would have to be slightly more massive than 2 \Msun .  While high \Ni\
+mass would imply more thorough burning and thus high kinetic energy
+(and high ejecta velocity) in the Chandrasekhar mass case, the larger
+binding energy of the super-Chandra model provides a natural
+explanation for the lower velocities.  The CII shows that there is
+unburned carbon mixed deep into the ejecta -- an indication that
+burning was not complete (and perhaps confirmation that the progenitor
+was a C/O WD).  Finally, the SN was discovered in a young population,
+perhaps less than 1 Gyr old, where the only white dwarfs present are
+massive enough that any merger must exceed the Chandra mass.
+
+Other potential members of this subclass of SNe have been discovered
+with many of the same properties: SN
+2006gz\citep{2007ApJ...669L..17H}, SN
+2007if\citep{2010ApJ...713.1073S,2010ApJ...715.1338Y}, and SN
+2009dc\citep{2010ApJ...714.1209T,2009ApJ...707L.118Y,2010arXiv1003.2417S}.
+SN 2006gz had a long rise to maximum light, evidence for CII in the
+spectrum, and a slow velocity evolution in the SiII feature, although
+whether or not its luminosity requires a super-Chandra progenitor
+depends on the reddening correction adopted.  SN 2007if and SN 2009dc,
+on the other hand, seem more extreme than SNLS-03D3bb --- they each
+unambiguously have long rise times, a high luminosity, low Si
+velocities, and obvious CII features.  From spectropolarimetric
+observations, it seems that asphericity cannot explain the
+overluminosity of SN 2009dc\citep{2010ApJ...714.1209T}.  The total
+ejected mass of SN 2007if was estimated at $2.4\pm 0.2$ \Msun , which
+would seem to require a white dwarf merger as a
+progenitor\citep{2010ApJ...713.1073S}.  Furthermore, its slow
+velocities measured from the SiII feature and slow velocity evolution
+has been interpreted as evidence that the ejecta hit an over-dense
+shell from a common envelope of unburned progenitor material, also
+indicative of a merger\citep{2010ApJ...713.1073S}.
+
+\subsection{Progenitor summary}
+The evidence for and against different progenitor scenarios is shown
+in Fig.~\ref{evidence}.  It has become
+increasingly clear that the previously favored model, slow accretion
+onto a white dwarf from a main sequence or red giant companion (the
+single degenerate scenario), at the very least cannot account for all
+SNe Ia.  It has problems accounting for SN rates in elliptical
+galaxies, explaining the relative dearth of supersoft x-ray sources,
+explaining the lack of hydrogen seen in SNe Ia, and cannot easily
+account for apparently super-Chandra SNe Ia.  In addition, evidence of
+a surviving companion star is either nonexistent or highly
+controversial.  It is also not immediately clear how this model can
+account for brighter SNe in a younger environment.  On the positive
+side, relatively high mass white dwarfs that have been accreting from
+a companion have been found\citep{2007NewAR..51..524P}.  Also, SNe
+like SN 2002ic, and observations of variable inter- or circumstellar
+sodium would seem to indicate that some SN Ia progenitors have
+undergone recent mass loss.  However, these account for only a few
+percent of supernovae.
+
+In contrast, the white dwarf merger (double degenerate) model can
+apparently satisfy the relative (but perhaps not overall)
+rates\citep{2010ApJ...722.1879M}, hydrogen, lack of evidence for
+companions, and super-Chandra constraints.  It may account for the
+brighter-younger relation, as WDs in a young environment must be
+larger (since only the most massive stars, which produce massive WDs,
+have evolved)\citep{2001ApJ...554L.193H,2006Natur.443..308H}.  The
+fact that there don't seem to be enough supersoft x-ray sources is a
+mild argument against the DD model, since these stars ought to go
+through that phase, but it is not as strong as in the SD case, where
+protracted accretion is necessary\citep{2010ApJ...712..728D}.  The
+strongest argument against WD mergers is that the carbon should ignite
+closer to the surface than the core during the merger, resulting in a
+dud, rather than a SN Ia\citep{2004ApJ...615..444S}.  However,
+relatively few studies have been done, and some indicate this may not
+be a show-stopper\citep{2007MNRAS.380..933Y,2010Natur.463...61P}.
+Given the relative strength of the DD model, much more study is needed
+on the merger process.  Might it be possible to ignite carbon without
+resorting to the Chandra mass\citep{2010ApJ...722L.157V}?
+
+Finally, the sub-Chandra model, despite being ruled out in its early
+form, may yet be viable if detonation can be achieved in a thin Helium
+layer.  Its advantages are that it elegantly explains the population
+effects seen in SNe Ia as a natural consequence of the mass of the
+exploding white dwarf, while avoiding the 
+deflagration to detonation transition.
+More study is needed to see if the model matches the
+lack of hydrogen, supersoft sources, variable sodium, and rate
+constraints.  However, by construction, it seems impossible to make a
+super-Chandra supernova in this way. 
+
+\section{Metallicity and age}
+The physical origins for the differences in supernova properties in
+spiral and elliptical galaxies have been
+elusive\citep{1996AJ....112.2391H,2001ApJ...554L.193H,2006ApJ...648..868S}
+-- are they related to progenitor age, metallicity, or entirely
+different progenitors?  The recently discovered trend that galaxy mass
+may play the most significant role in determining SN
+properties\citep{2009ApJ...691..661H,2010MNRAS.406..782S} would seem
+to implicate metallicity, since higher mass galaxies retain more
+metals in their deeper potential wells.  Still, the age-metallicity
+degeneracy precludes firm conclusions on this evidence
+alone\citep{2005ApJ...634..210G}.  Theoretically, there are reasons
+that high metallicity progenitors should produce subluminous SNe
+Ia\citep{2003ApJ...590L..83T}: increased $^{22}$Ne in high metallicity
+white dwarfs provides more neutrons during the nucleosynthesis that
+occurs during the explosion, and thus yields more stable $^{58}$Ni and
+less of the radioactive lightcurve-powering $^{56}$Ni.  However, this
+has only a $\sim 10\%$ effect on SN luminosity, perhaps indicating
+that an as-yet unknown metallicity effect or progenitor age is the
+more important in controlling \Ni\ yield and SN
+luminosity\citep{2009ApJ...691..661H}.  The hard work of determining
+galaxy metallicity from absorption and emission line studies is in its
+infancy\citep{2008ApJ...685..752G,2005ApJ...634..210G}.
+
+If progenitor age is the predominant effect controlling SN luminosity,
+this has implications for SN progenitors.  In the single
+degenerate scenario the time to explosion is controlled by the main
+sequence lifetime of the secondary (mass transferring) star, since the
+mass transfer timescale is thought to be negligible, only $\sim 10^7$
+years.  Therefore, in this model, the delay time is a direct
+indication of the secondary star's mass.  But if all supernovae
+explode at the Chandra mass, why should the mass of the secondary
+affect the luminosity of the SN\citep{2001ApJ...556..302H}?  Either
+the amount of accreted material matters in a way that is not
+theoretically understood (accreted matter is thought to burn to C and
+O on the surface of the WD, but maybe cooling time and the WD central density are affected?), or perhaps the SD scenario is not valid.
+The WD merger scenario has a natural explanation for greater SN
+luminosity in young environments: younger, more massive stars produce
+more massive white dwarfs.  Massive white dwarf mergers have more
+potential fuel than less massive mergers.
+
+%\section{Clusters and abundances}
+%SNe Ia are a significant source of iron-peak elements and energy input
+%into the intergalactic medium.  The realization that a significant
+%fraction of SNe Ia occur only a few hundred million years after star
+%formation solved problems regarding cluster iron abundances
+%\citep{2006MNRAS.372..265M,2005ApJ...629L..85S}.  X-ray observations
+%of clusters can also constrain SN Ia rates and models
+%\citep{2007A&A...465..345D}.  There are claims that the SN Ia rate in
+%early-type galaxies in clusters is enhanced over that in the
+%field\citep{2008MNRAS.383.1121M}, although small number statistics
+%make a verification of this result
+%difficult\citep{2008AJ....135.1343G,2010arXiv1003.1521D}.
+
+\section{Final Thoughts}
+SN Ia are mature probes of cosmology: systematic uncertainties now dominate
+statistical uncertainties up to $z=1$, and the systematic uncertainties are well
+characterized.  Still, there is plenty of room for improvement in the
+use of SNe Ia as standard candles.  New low-z surveys will allow
+advanced calibration of SNe Ia, finally allowing second generation
+surveys to reach their full potential.  More thorough study of the
+restframe UV properties of SNe Ia ought to allow better agreement
+between lightcurve fitters and a removal of one of the primary
+systematic uncertainties.  Several studies of low-z SNe Ia in the IR will
+soon help to break the intrinsic/dust reddening degeneracy.  Finally,
+host galaxy studies have already started to allow corrections for
+Hubble residuals that remain after empirical correction for lightcurve
+shape and color are made.  Further study of host stellar populations
+will provide better insight into possible SN Ia evolution with
+redshift.
+
+It is possible that no single model can describe all SNe Ia.  Perhaps
+some SNe Ia are sub-Chandra, some are the result of mergers, and some
+are caused by Roche Lobe overflow.  They explosion of a white dwarf
+may be similar no matter how it is triggered.  If it is not required
+that a model explain all SNe, this opens the door to scenarios that do
+not have high expected event rates, like accretion from symbiotic
+stars (a kind of single degenerate) and the direct collision of two
+white dwarf stars in a cluster\citep{2009ApJ...705L.128R}.
+
+In the study of SNe Ia, we have left the ``serendipity era,'' when we
+could only discover what nature happened to tell us through chance
+encounters with nearby supernovae, and we are entering the ``database
+era,'' where we can proactively ask and answer questions about
+supernovae by comparing large subsamples.  The legacy yields of the
+multi-year second-generation SN surveys,
+SNLS\citep{2006A&A...447...31A}, ESSENCE\citep{2007ApJ...666..694W},
+and SDSS-II\citep{2009ApJS..185...32K}, are just becoming apparent, as
+hundreds of SNe Ia are being published at $0.1<z<1.0$.  At low
+redshift, large samples from the Lick Observatory Supernova
+Search\citep{2010arXiv1002.3056M}, the Carnegie Supernova
+Project\citep{2010AJ....139..120F}, the
+CfA\citep{2009ApJ...700.1097H}, and the
+SNfactory\citep{2009A&A...500L..17B} are also starting to appear.
+Meanwhile, some third-generation surveys like the Palomar Transient
+Factory, Pan-STARRS, the Dark Energy Survey, and Skymapper, have
+already started to produce results, and promise thousands more SNe Ia
+in the next few years.  Finally, fourth-generation surveys, the Large
+Synoptic Survey Telescope (LSST), and possible space missions promise
+unimaginable riches on the horizon.
+
+While an incredible amount has been learned about supernovae and dark
+energy in the last decade, the pace of discoveries (in terms of number
+of SNe discovered and scientific breakthroughs) is quickening.  New
+techniques like comparing large subsamples, using UV and IR data,
+state of the art calibration, using host galaxy observations, and 3d
+modeling, have started to yield results, but are still in their
+infancy. The next decade holds real promise of making serious progress
+understanding nearly every aspect of SNe Ia, from their explosion
+physics, to their progenitors, to their use as standard candles.  And
+with this knowledge may come the key to unlocking the darkest secrets
+of dark energy.
+
+\bibliography{astro}
+
+\begin{center}
+\begin{table}
+\begin{tabular}{lllll}
+\hline
+Systematic & SNLS3\citep{2010conley} & CfA\citep{2009ApJ...700.1097H}/ESSENCE\citep{2008ApJ...689..377W} & SDSS-II\citep{2009ApJS..185...32K}&SCP\citep{2010ApJ...716..712A}\\
+\hline
+Best fit $w$ (assuming flatness)&\nodata& -0.987&-0.96  &-0.997 \\
+Statistical error               &\nodata& 0.067 & 0.06  & 0.052 \\
+Total stat+systematic error     &\nodata& 0.13  & 0.13  & 0.08  \\
+\hline
+Systematic error breakdown\\
+Flux reference                 &0.053  &0.02   & 0.02  &0.042  \\
+Experiment zero points         &0.01   &0.04   & 0.030 &0.037  \\
+Low-z photometry               &0.02   &0.005  &\nodata&\nodata\\
+Landolt bandpasses             &0.01   &\nodata& 0.008 &\nodata\\
+Local flows                    &0.014  &\nodata& 0.03  &\nodata\\
+Experiment bandpasses          &0.01   &\nodata& 0.016 &\nodata\\
+Malmquist bias model           &0.01   &0.02   &\nodata &0.026 \\
+Dust/Color-luminosity ($\beta$)&0.02   &0.08   &0.013  &0.026  \\
+SN Ia Evolution                &\nodata&0.02   &\nodata&\nodata\\
+Restframe U band               &\nodata&\nodata&0.104  &0.010  \\
+Contamination                  &\nodata&\nodata&\nodata&0.021  \\
+Galactic Extinction            &\nodata&\nodata&0.022  &0.012  \\
+\hline
+\end{tabular}
+\caption{{\bf \textsf{Best-fit values of $\langle w\rangle$ and error estimates.}}  For the CfA3/ESSENCE column, $w$ is from Hicken et al. 2009\citep{2009ApJ...700.1097H}, though uncertainties are from ESSENCE\citep{2007ApJ...666..694W}, as they are stated to be similar but are 
+  not separately tabulated.  The SDSS numbers\citep{2009ApJS..185...32K} 
+  are for their SALT2 fit.  Errors for each survey use their largest sample.  SNLS3 cosmological results are not yet published, so are not included, although preliminary systematic uncertainty estimates are\citep{2009arXiv0903.1086H}.
+ \label{tabsys}
+}
+\end{table}
+\end{center}
+
+\begin{figure}
+\includegraphics[width=7in]{fluxspec.pdf} 
+\caption{\textsf{ {\bf \textsf{UVOIR lightcurve and selected spectra from the normal SN
+    Ia SN 2003du.}}  (a) Quasi-bolometric (UV-optical-infrared)
+  lightcurve for SN 2003du\citep{2007A&A...469..645S}.  Orange points
+  mark the dates of spectra shown in panel b. (b) Spectra of SN
+  2003du\citep{2007A&A...469..645S}, with phases relative to maximum
+  light listed in orange.  Characteristic intermediate mass element
+  features seen in maximum light spectra of SNe Ia are noted in green:
+  CaII, SII, and SiII.  Before maximum light, when we are seeing the
+  outermost layers of the ejecta, CaII is seen at high velocity, a
+  common feature in SNe Ia.  SN ejecta thin with time, and we see to
+  deeper layers.  As SNe leave the photospheric phase and enter the
+  nebular phase, emission features start to dominate.}}
+\label{fluxspec}
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=7in]{wplots4c.pdf} 
+%\includegraphics[0,0][700, 10000]{wplots4c.pdf} 
+\caption{\textsf{ {\bf\textsf{Improvements in dark energy equation of state
+    constraints from Type Ia supernovae over time.}}  The top two
+  panels show the remarkable improvements in $w$ made using SNe Ia
+  over the past decade (assuming a flat universe), the bottom two show
+  the importance of improving systematics in the early years of the
+  next decade\citep{2009arXiv0903.1086H}.  (a) $\Omega_M - w$
+  statistical-only constraints circa 1998\citep{1998ApJ...493L..53G}.
+  (b) By 2008, Kowalski et al., combining many data sets, showed
+  that systematic uncertainties are
+  significant\citep{2008ApJ...686..749K}. (c) Expected
+  constraints for the year 5 results of SNLS, assuming additional
+  low-z SNe, and double the number of $z > 1$ SNe from HST, assuming
+  there is no improvement in systematic uncertainties from the 3rd
+  year result.  (d) Assumes the low-z data are on the
+  Sloan photometric system, and a factor of two improvement in
+  measurements of fundamental flux standards.  Judged by the area of
+  the inner 68.3\% contour, the improvement from the 1998 results is a
+  factor of 3, 5, and 10, including systematics.}}
+\label{wplot}
+\vskip 0.05 in
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=7in]{maxspec.pdf} 
+\caption{\textsf{{\bf \textsf{Average spectrum of a SN Ia at maximum light and the
+    percentage of flux transmitted through various filters.}} 
+    (a) Average UVOIR spectrum of many SNe Ia at maximum
+  light\citep{2007ApJ...663.1187H}.  (b) Filter transmission curves commonly used in SN research.  Numbers indicate the percentage of maximum-light SN flux transmitted in each filter.  The solid line shows the
+  cumulative SN flux with wavelength from the UV to the IR (e.g. $\sim
+  5\%$ of the SN flux is emitted in the UV before the U-band, and $\sim 85\%$ is emitted up to 9000\AA , the end of the I filter. Figure from Howell et al.\citep{2009ApJ...691..661H}}}
+\label{maxspec}
+\end{figure}
+
+
+\begin{figure}
+\includegraphics[width=5in]{redfig.pdf} 
+\caption{\textsf{{\bf \textsf{Determination of the reddening law along the line of
+    site to SNe Ia.}}  In most cases $R_V=A_V/E(B-V)$ is shown, but in
+  the S10 data, $\beta$-1 is shown, equivalent to $R_V$ if
+  the colors of supernovae after lightcurve shape correction are due
+  to dust reddening.  Different symbols/colors correspond to different
+  techniques.  The most reliable is using $u$ to IR data to determine
+  the reddening law (red stars), but this can only be done for a few
+  individual SNe Ia.  Data is from K06\citep{2006AJ....131.1639K},
+  K07\citep{2007AJ....133...58K}, E06\citep{2006MNRAS.369.1880E},
+  E08\citep{2008MNRAS.384..107E}, and F10\citep{2010AJ....139..120F}.
+  The average from the Carnegie Supernova Program (F10) IR data,
+  excluding their most reddened events, is shown as a red circle, the
+  only determination consistent with Milky Way dust (dotted line).
+  However, NG08\citep{2008A&A...487...19N} (green triangles) come to
+  the opposite conclusion (albeit using only UBVRI data): when they
+  restrict themselves to the least reddened supernovae, they find a
+  lower value of $R_V$.  Blue squares show reddening behavior
+  determined by solving for the reddening law for ensembles of SNe
+  that would minimize their residual on the Hubble diagram.  Results
+  split by star forming galaxies and those with low star formation are
+  shown from the SDSS-II SN Survey (L10\citep{2010ApJ...722..566L})
+  and the SNLS (S10\citep{2010MNRAS.406..782S}).  There are some
+  indications that solving for reddening by minimizing Hubble
+  residuals is incompatible with IR
+  determinations\citep{2010AJ....139..120F}.  Finally,
+  W09\citep{2009ApJ...699L.139W} find that supernovae with high
+  velocity features in their spectra have a lower $R_V$, perhaps an
+  indication that there is a component of reddening that is intrinsic
+  to the SN. }}
+\label{redfig}
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=7in]{fig4a.pdf} 
+\caption{\textsf{{\bf \textsf{Residuals from the Hubble diagram for SNLS SNe Ia as a
+    function of host galaxy mass {\it after} correction for lightcurve
+    shape and color.}}  Figure from Sullivan et
+  al.\citep{2010MNRAS.406..782S} Red points are averages.  Histograms
+  on the right show the differences for high and low mass host
+  galaxies, split at $M=10^{10}$ \Msun .  Horizontal lines show the
+  average residual for each histogram.  SNe Ia in high and low mass
+  hosts correct to an absolute magnitude different by $0.08\pm 0.02$
+  mag ($4\sigma $).  Supernovae in low mass galaxies are on average
+  brighter than those in high mass galaxies {\it before} correction,
+  but are dimmer {\it after} $s$ and $c$ correction.  This
+  galaxy-dependent residual can be corrected by taking host galaxy
+  information into account.}}
+\label{sullivan}
+\vskip 0.05 in
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=7in]{kasen_f1.pdf} 
+\caption{\textsf{{\bf \textsf{Two dimensional SN Ia models showing the relative
+    importance of deflagrations, detonations, and asymmetry.}}  Figure
+  from Kasen et al.\citep{2009Natur.460..869K} Blue shows
+  intermediate mass elements (Si, S, Ca), green is stable iron group
+  elements, and red is \Ni .  An initial deflagration wave produces
+  turbulent instabilities, but a later detonation wave burns much of
+  the remaining fuel to \Ni .  In low density outer regions the
+  detonation produces only intermediate mass elements.  Weak detonations produce the lower
+  \Ni\ mass, less luminous SNe Ia.}}
+\label{kasen}
+\vskip 0.05 in
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=7in]{maozdtd.pdf} 
+\caption{\textsf{{\bf \textsf{Delay time distribution for SNe Ia.}}  Figure from Maoz,
+  Sharon, and Gal-Yam\citep{2010ApJ...722.1879M}.  All solid circles
+  except the first are delay times derived from cluster SN rates,
+  assuming formation at $z=3$.  The first solid circle results from a
+  constraint on the observed iron-to-stellar mass ratio in clusters.
+  Open circles are derived from SN rates and galaxy stellar
+  populations in the Lick Observatory Supernova
+  Survey\citep{2010arXiv1002.3056M}.  Triangles (including an arrow
+  denoting the 95\% confidence upper limit) are constraints from SN
+  remnants in the Magellanic Clouds.  Squares are based on SN Ia
+  candidates in E/S0 galaxies at
+  $z=0.4-1.2$\citep{2008PASJ...60.1327T}. Solid curves are power laws
+  $t^{-1.1}$ and $t^{-1.3}$, constrained to pass through the last
+  point.  The prediction\citep{2005A&A...441.1055G} from DD mergers is
+  $t^{-1}$}}
+\label{maoz}
+\vskip 0.05 in
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=7in]{evidence.pdf} 
+\caption{\textsf{{\bf \textsf{Schematic illustration of the arguments for and against a
+  given progenitor scenario being the predominant mechanism for SNe
+  Ia.}}  Arguments on the left strongly disfavor a certain scenario,
+  while arguments on the right strongly favor that model.  Note
+  that an argument against a given scenario need not be an equally
+  strong argument for another scenario (i.e. the diagram need not be
+  symmetric).  Though all evidence is subject to theoretical
+  interpretation, italics indicate exclusively theoretical arguments.
+  Relative rankings reflect an effort to distill community consensus,
+  but are subjective.  Arguments and references are described in the text.
+}}
+% Abbreviations: No shock\citep{2010ApJ...708.1025K}, Few super-soft sources\citep{2010ApJ...712..728D,2010arXiv1004.1193D,2010Natur.463..924G}, H not seen\citep{2007ApJ...670.1275L}, super-Chandra\citep{2006Natur.443..308H,2010ApJ...713.1073S}, rates\citep{2005A&A...441.1055G,2004astro.ph..6242P}, pop. effects: brighter SNe in star forming environments\citep{2001ApJ...554L.193H,2010ApJ...714L..52S}, deflagration to detonation transition\citep{1991A&A...245..114K,2009Natur.460..869K}, no survivor in Tycho\citep{2004Natur.431.1069R,2009ApJ...701.1665K}, 2002ic\citep{2003Natur.424..651H}, variable sodium\citep{2007Sci...317..924P,2009ApJ...693..207B,2009ApJ...702.1157S}, ignite to AIC (accretion induced collapse) during merger\citep{1985A&A...150L..21S}, thick He\citep{1997ApJ...485..812N}}
+\label{evidence}
+\vskip 0.05 in
+\end{figure}
+
+
+%\begin{thebibliography}{99}
+%\bibitem{dummy} Articles are restricted to 50 references, Letters
+%to 30.
+%\bibitem{dummyb} No compound references -- only one source per
+%reference.
+%\end{thebibliography}
+
+
+%% Here is the endmatter stuff: Supplementary Info, etc.
+%% Use \item's to separate, default label is "Acknowledgements"
+
+\begin{addendum}
+ \item DAH acknowledges support from LCOGT.
+ \item[Competing Interests] The authors declare that they have no
+competing financial interests.
+ \item[Correspondence] Correspondence and requests for materials
+should be addressed to DAH~(email: ahowell@lcogt.net).
+\end{addendum}
+
+%%
+%% TABLES
+%%
+%% If there are any tables, put them here.
+%%
+
+\end{document}

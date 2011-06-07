@@ -1,0 +1,1409 @@
+%%RECOMMENDED%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\documentclass[runningheads]{svmult}
+%
+\usepackage{makeidx}   % allows index generation
+\usepackage{graphicx}  % standard LaTeX graphics tool
+%                       % for including eps-figure files
+\usepackage{subeqnar}  % subnumbers individual equations
+%                       % within an array
+\usepackage{multicol}  % used for the two-column index
+\usepackage{cropmark} % cropmarks for pages without
+%                       % pagenumbers - only needed when manuscript
+%                       % is printed from paper and not from data
+\usepackage{physprbb}  % centered layout of diverse elements, etc.
+%\makeindex             % used for the subject index
+%                       % please use the style sprmidx.sty with
+%                       % your makeindex program
+%
+%%%upright Greek letters (example below: upright "mu")
+%\newcommand{\greeksym}[1]{{\usefont{U}{psy}{m}{n}#1}}
+%\newcommand{\umu}{\mbox{\greeksym{m}}}
+%\newcommand{\udelta}{\mbox{\greeksym{d}}}
+%\newcommand{\uDelta}{\mbox{\greeksym{D}}}
+%\newcommand{\uPi}{\mbox{\greeksym{P}}}
+%%\Definitions
+\newcommand{\age}{\mathrel{\hbox{\rlap{\hbox{\lower4pt\hbox{$\sim$}}}\hbox{$>$}}}}
+\newcommand{\arcdeg}{\mbox{$^\circ$}}% 
+\newcommand{\arcmin}{\mbox{$^\prime$}}% 
+\newcommand{\arcsec}{\mbox{$^{\prime\prime}$}}% 
+\newcommand{\boldf}{\mbox{\boldmath$f$\unboldmath}}
+\newcommand{\boldfeq}[1]{\mbox{\boldmath$f = #1$\unboldmath}}
+%\newcommand{\ccm}{\rm cm^{-3}}
+\newcommand{\cmq}{\mbox{~cm$^{-3}$}}
+\newcommand{\cms}{\mbox{~cm$^{-2}$}}
+\newcommand{\cmssec}{\mbox{~cm$^{-2}$ s$^{-1}$}}
+\newcommand{\cmsec}{\mbox{~cm s$^{-1}$}}
+%\newcommand{\cf}{{\it cf.~}}
+\newcommand{\EE}[1]{\ensuremath{\times 10^{#1}}}
+\newcommand{\eg}{e.g., } 
+%\newcommand{\ergs}{\rm ~erg~s^{-1}}
+\newcommand{\ergsec}{\mbox{~erg s$^{-1}$}}
+\newcommand{\ergsecHz}{\mbox{~erg s$^{-1}$ Hz$^{-1}$}}
+\newcommand{\ergcm}{\mbox{~erg cm$^{-2}$}}
+%\newcommand{\ergcms}{\mbox{erg cm$^{-2}$ s$^{-1}$}}
+\newcommand{\ergcmsec}{\mbox{~erg cm$^{-2}$ s$^{-1}$}}
+\newcommand{\ergcmsecHz}{\mbox{~erg cm$^{-2}$ s$^{-1}$ Hz$^{-1}$}}
+\newcommand{\erggm}{\mbox{~erg g$^{-1}$}}
+\newcommand{\etal}{et al.}
+\newcommand{\etc}{etc.}
+%\def\farcs{\hbox{$.\!\!^{\prime\prime}$}}
+\newcommand{\farcm}{\hbox{$.\mkern-4mu^\prime$}}
+\newcommand{\farcs}{\mbox{$.\!\!^{\prime\prime}$}}
+\newcommand{\fd}{\hbox{$.\!\!^{\rm d}$}}
+\newcommand{\fdg}{\hbox{$.\!\!^\circ$}}
+\newcommand{\fh}{\hbox{$.\!\!^{\rm h}$}}
+%\newcommand{\flux}{\mbox{ erg cm}^{-2}\,\mbox{s}^{-1}}
+\newcommand{\fm}{\hbox{$.\!\!^{\rm m}$}}
+\newcommand{\fs}{\hbox{$.\!\!^{\rm s}$}}
+\newcommand{\fp}{\mbox{$.\!\!^{\scriptscriptstyle\mathrm p}$}}% 
+\newcommand{\Fx}{\mbox{$F_{\rm x}$}}
+\newcommand{\fx}{\mbox{$f_{\rm x}$}}
+\newcommand{\gae}{\mathrel{>\kern-1.0em\lower0.9ex \hbox{$\sim$}}} 
+\newcommand{\gcmq}{\mbox{~g cm$^{-3}$}}
+\newcommand{\GeV}{\mbox{~GeV}}
+\newcommand{\greeksym}[1]{{\usefont{U}{psy}{m}{n}#1}}
+\newcommand{\gsim}{\!\!\!\phantom{\ge}\smash{\buildrel{}\over {\lower2.5dd\hbox{$\buildrel{\lower2dd\hbox{$\displaystyle>$}}\over \sim$}}}\,\,}
+\newcommand{\gtap}{\mathrel{\hbox{\rlap{\lower.55ex \hbox {$\sim$}}\kern-.3em \raise.4ex \hbox{$>$}}}}
+\newcommand{\gtrsim}{\mathrel{\hbox{\rlap{\hbox{\lower4pt\hbox{$\sim$}}}\hbox{$>$}}}}
+\newcommand{\Ha}{${\rm H}\alpha$}
+\newcommand{\hr}{\mbox{~hr}} 
+\newcommand{\ie}{i.e., }
+\newcommand{\keV}{\mbox{~keV}}
+\newcommand{\kmsMpc}{\mbox{~km s$^{-1}$ Mpc$^{-1}$}}
+\newcommand{\kpc}{\mbox{~kpc}}
+\newcommand{\KT}{\mbox{~K}}
+%\newcommand{\KK}{\rm ~K}
+%\newcommand{\kmsec}{\mbox{km~s$^{-1}$}}
+\newcommand{\kms}{\mbox{~km s$^{-1}$}}
+\newcommand{\La}{${\rm Ly}\alpha$}
+\newcommand{\lae}{\mathrel{<\kern-1.0em\lower0.9ex \hbox{$\sim$}}}
+\newcommand{\lesssim}{\mathrel{\hbox{\rlap{\hbox{\lower4pt\hbox{$\sim$}}}\hbox{$<$}}}}
+\newcommand{\lsim}{\!\!\!\phantom{\le}\smash{\buildrel{}\over {\lower2.5dd\hbox{$\buildrel{\lower2dd\hbox{$\displaystyle<$}}\over \sim$}}}\,\,}
+\newcommand{\Lsun}{\mbox{~L$_{\odot}$}}
+\newcommand{\ltap}{\mathrel{\hbox{\rlap{\lower.55ex \hbox {$\sim$}} \kern-.3em \raise.4ex \hbox{$<$}}}}
+\newcommand{\ltsima}{$\; \buildrel < \over \sim \;$}
+\newcommand{\Lx}{\mbox{~L$_{\rm x}$}}
+\newcommand{\MAs}{\mbox{milliarcsec (mas)}}
+\newcommand{\mas}{\mbox{mas}}
+\newcommand{\Mdot}{\dot M}
+\newcommand\micron{\mbox{$\mu$m}}% 
+\newcommand{\minu}{\mbox{~min}} 
+%\newcommand{\ml}{\mbox{M$_\odot$ yr$^{-1}$}}
+\newcommand{\Msunsec}{\mbox{~M$_\odot$ s$^{-1}$}}
+\newcommand{\Msunyr}{\mbox{~M$_\odot$ yr$^{-1}$}}
+\newcommand{\Msun}{\mbox{~M$_\odot$}}
+\newcommand{\Msunpcs}{\mbox{~M$_\odot$ pc$^{-2}$}}
+%\newcommand{\myemail}{weiler@rsd.nrl.navy.mil}
+\newcommand{\NV}{N\,{\sc v} $\lambda\lambda 1239, 1243$}
+%\newcommand{\pcc}{\mbox{ cm}^{-3}}
+%\newcommand{\pcm}{\mbox{cm$^{-3}$}}
+%\newcommand{\pryr}{\mbox{yr}^{-1}} 
+\newcommand{\rsiii}{\cal{R}(Si~II)}
+%\newcommand{\sax}{{\it BeppoSAX}}
+\newcommand{\so}{\mbox{~s$^{-1}$}}
+\newcommand{\simlt}{\lower.5ex\hbox{\ltsima}} %< over ~
+\newcommand{\umu}{\mbox{\greeksym{m}}}
+\newcommand{\udelta}{\mbox{\greeksym{d}}}
+\newcommand{\uDelta}{\mbox{\greeksym{D}}}
+\newcommand{\uJy}{\mbox{~$\mu$Jy}}
+\newcommand{\um}{\mbox{~$\mu$m}} 
+\newcommand{\uPi}{\mbox{\greeksym{P}}}
+\newcommand{\vdag}{(v)^\dagger}
+\newcommand{\vmek}{\textsc{vmekal}}
+\newcommand{\xspec}{\textsc{xspec}}
+\newcommand{\yr}{\mbox{~yr}} 
+\newcommand{\yro}{\mbox{~yr$^{-1}$}} 
+%
+\newcommand{\Co}{^{56}\mbox{Co}}
+\newcommand{\Fe}{^{56}\mbox{Fe}}
+\newcommand{\Ni}{^{56}\mbox{Ni}}
+\newcommand{\Ti}{^{44}\mbox{Ti}}
+
+%\newcommand{\kms}\mbox{km~s$^{-1}$}
+
+
+%
+%\def\EE#1{\times 10^{#1}}
+%\def\SNR(#1.#2)#3(#4.#5){{G#1${\kern0.5pt\cdot\kern1.0pt}$#2$#3$#4${\kern0.5pt\cdot\kern1.0pt}$#5}}
+%
+%%Telescopes and Instruments
+\def\AAT{{\sl Anglo-Australian Telescope (AAT)}}
+\def\AAt{{\sl AAT}}
+\def\AAO{{\sl Anglo-Australian Observatory (AAO)}}
+\def\AAo{{\sl AAO}}
+\def\ACS{{\sl Advanced Camera for Surveys (ACS)}}
+\def\ACs{{\sl ACS}}
+\def\AGASA{{\sl Akeno Giant Air Shower Array (AGASA)}}
+\def\AGASa{{\sl AGASA}}
+\def\AGILE{{\sl Astro-rivelatore Gamma a Immagini LEggero (AGILE)}}
+\def\AGILe{{\sl AGILE}}
+\def\ASM{{\sl All-Sky Monitor (ASM)}}
+\def\ASm{{\sl ASM}}
+\def\ALMA{{\sl Atacama Large Millimeter Array (ALMA)}}
+\def\ALMa{{\sl ALMA}}
+\def\ASCA{{\sl Advanced Satellite for Cosmology and Astrophysics (ASCA)}}
+\def\A{{\sl ASCA}}
+\def\ATCA{{\sl Australia Telescope Compact Array (ATCA)}}
+\def\AT{{\sl ATCA}}
+\def\ANU{{\sl Australian National University (ANU)}}
+\def\ANu{{\sl ANU}}
+\def\ASM{{\sl All Sky Monitor (ASM)}}
+\def\ASm{{\sl ASM}}
+\def\B{{\sl BeppoSAX}}
+\def\BATSE{{\sl Burst and Transient Source Experiment (BATSE)}}
+\def\BA{{\sl BATSE}}
+\def\CfA{{\sl Harvard-Smithsonian Center for Astrophysics (CfA)}}
+\def\Cfa{{\sl CfA}}
+\def\CFHT{{\sl Canada France Hawaii Telescope (CFHT)}}
+\def\CFHt{{\sl CFHT}}
+\def\CGRO{{\sl Compton Gamma-Ray Observatory (CGRO)}}
+\def\C{{\sl CGRO}}
+\def\CGRO{{\sl Compton Gamma-Ray Observatory (CGRO)}}
+\def\C{{\sl CGRO}}
+\def\CLUMP{{\sl CLUMPYSYN}}
+\def\CMB{{\sl Cosmic Microwave Background (CMB)}}
+\def\CMb{{\sl CMB}}
+\def\COBE{{\sl Cosmic Background Explorer (COBE)}}
+\def\COBe{{\sl COBE}}
+\def\COMTEL{{\sl Compton Telescope (COMTEL)}}
+\def\COMTEl{{\sl COMTEL}}
+\def\CTIO{{\sl Cerro Tololo Inter-American Observatory (CTIO)}}
+\def\CPA{{\sl Center for Particle Astrophysics}}
+\def\CT{{\sl CTIO}}
+\def\CTSS{{\sl Calan/Tololo Supernova Search (CTSS)}}
+\def\CTSs{{\sl CTSS}}
+\def\CXO{{\sl Chandra X-ray Observatory -- AXAF (CHANDRA)}}
+\def\CO{{\sl CHANDRA}}
+\def\DSS{{\sl Digitized Sky Survey (DSS)}}
+\def\DSs{{\sl DSS}}
+\def\EGRET{{\sl Energetic Gamma Ray Experiment Telescope (EGRET)}}
+\def\EGR{{\sl EGRET}}
+\def\EO{{\sl Einstein Observatory -- HEAO-2 (Einstein)}}
+\def\E{{\sl Einstein}}
+\def\ESO{{\sl European Southern Observatory (ESO)}}
+\def\ES{{\sl ESO}}
+\def\ESA{{\sl European Space Agency (ESA)}}
+\def\Es{{\sl ESA}}
+\def\FES{{\sl Fine Error Sensor (FES)}}
+\def\FEs{{\sl FES}}
+\def\FLWO{{\sl Fred L. Whipple Observatory (FLWO)}}
+\def\FLW{{\sl FLWO}}
+\def\FOC{{\sl Faint Object Camera (FOC)}}
+\def\FO{{\sl FOC}}
+\def\FOS{{\sl Faint Object Spectrograph (FOS)}}
+\def\FOs{{\sl FOS}}
+\def\GIS{{\sl Gas Imaging Spectrometer (GIS)}}
+\def\GIs{{\sl GIS}}
+\def\GCN{{\sl GRB Coordinates Network (GCN)}}
+\def\GCn{{\sl GCN}}
+\def\GLAST{{\sl Gamma-Ray Large Area Space Telescope (GLAST)}}
+\def\GLASt{{\sl GLAST}}
+\def\GSFC{{\sl Goddard Space Flight Center (GSFC)}}
+\def\GS{{\sl GSFC}}
+\def\GRBM{{\sl Gamma-Ray Burst Monitor (GRBM)}}
+\def\G{{\sl GRBM}}
+\def\HETE{{\sl High Energy Transient Explorer (HETE-2)}}
+\def\HETe{{\sl HETE-2}}
+\def\HEASARC{{\sl High Energy Astrophysics Science Archive Research Center (HEASARC)}}
+\def\HEAS{{\sl HEASARC}}
+\def\HIRES{{\sl High Resolution Fly's Eye (HiRes)}}
+\def\HiRes{{\sl HiRes}}
+\def\HPGSPC{{\sl High Pressure Gas Scintillation Proportional Counter (HPGSPC)}}
+\def\HPGSPc{{\sl HPGSPC}}
+\def\HZSNS{{\sl High-Z SN Search (HZSNS)}}
+\def\HZSNs{{\sl HZSNS}}
+\def\HST{{\sl Hubble Space Telescope (HST)}}
+\def\H{{\sl HST}}
+\def\HRI{{\sl High Resolution Imager (HRI)}}
+\def\HRi{{\sl HRI}}
+\def\IDT{{\sl Investigation Definition Team (IDT)}}
+\def\IDt{{\sl IDT}}
+\def\INTEGRAL{{\sl International Gamma-Ray Astrophysics Laboratory (INTEGRAL)}}
+\def\INTEGRAl{{\sl INTEGRAL}}
+\def\IPC{{\sl Imaging Proportional Counter (IPC)}}
+\def\IPc{{\sl IPC}}
+\def\IPAC{{\sl Infrared Processing and Analysis Center (IPAC)}}
+\def\IPa{{\sl IPAC}}
+\def\IPN{{\sl Interplanetary Network (IPN)}}
+\def\IP{{\sl IPN}}
+\def\IUE{{\sl International Ultraviolet Explorer (IUE)}}
+\def\IU{{\sl IUE}}
+\def\IRAS{{\sl Infrared Astronomy Satellite (IRAS)}}
+\def\I{{\sl IRAS}}
+\def\IRTF{{\sl NASA Infrared Telescope Facility (IRTF)}}
+\def\IRT{{\sl IRTF}}
+\def\JCMT{{\sl James Clerk Maxwell Telescope (JCMT)}}
+\def\J{{\sl JCMT}}
+\def\KI{{\sl W.M. Keck Telescope I (KECK I)}}
+\def\Ki{{\sl KECK I}}
+\def\KII{{\sl W.M. Keck Telescope II (KECK II)}}
+\def\Kii{{\sl KECK II}}
+\def\KPNO{{\sl Kitt Peak National Observatory (KPNO)}}
+\def\K{{\sl KPNO}}
+\def\LBNL{{\sl Lawrence Berkeley National Laboratory (LBNL)}}
+\def\LBNl{{\sl LBNL}}
+\def\LECS{{\sl Low-Energy Concentrator Spectrometer (LECS)}}
+\def\LECs{{\sl LECS}}
+\def\LIGO{{\sl Laser Interferometer Gravitational Wave Observatory (LIGO)}}
+\def\LIGo{{\sl LIGO}}
+\def\LMC{{\sl Large Magellanic Cloud (LMC)}}
+\def\LM{{\sl LMC}}
+\def\LO{{\sl Lick Observatory}}
+\def\LOTIS{{\sl Livermore Optical Transient Imaging System (LOTIS)}}
+\def\LOTIs{{\sl LOTIS}}
+\def\LOTOSS{{\sl Lick Observatory and Tenagra Observatory Supernova Search (LOTOSS)}}
+\def\LOT{{\sl LOTOSS}}
+\def\MAP{{\sl Microwave Anisotropy Probe (MAP)}}
+\def\MAp{{\sl MAP}}
+\def\MECS{{\sl Medium-Energy Concentrator Spectrometers (MECS)}}
+\def\MECs{{\sl MECS}}
+\def\MIDEX{{\sl Medium-sized Explorer  (MIDEX)}}
+\def\MIDEx{{\sl MIDEX}}
+\def\MGRO{{\sl Milagro Gamma-Ray Observatory (MGRO)}}
+\def\MGRo{{\sl MGRO}}
+\def\MDM{{\sl MDM Observatory}}
+\def\MLMC{{\sl ML MONTE CARLO}}
+\def\MMT{{\sl Multiple Mirror Telescope (MMT)}}
+\def\Mmt{{\sl MMT}}
+\def\MSO{{\sl Mount Stromlo Observatory (MSO)}}
+\def\M{{\sl MSO}}
+\def\MWO{{\sl Mount Wilson Observatory (MWO)}}
+\def\NASA{{\sl National Aeronautics and Space Administration (NASA)}}
+\def\NA{{\sl NASA}}
+\def\NFI{{\sl Narrow Field Instruments (NFI)}}
+\def\NFi{{\sl NFI}}
+\def\NGST{{\sl Next Generation Space Telescope (NGST)}}
+\def\Ngst{{\sl NGST}}
+\def\NICMOS{{\sl Near Infrared Camera and Multi-Object Spectrometer (NICMOS)}}
+\def\NIC{{\sl NICMOS}}
+\def\NTT{{\sl New Technology Telescope (NTT)}}
+\def\NTt{{\sl NTT}}
+\def\ONR{{\sl Office of Naval Research (ONR)}}
+\def\OIR{{\sl Optical/Infrared (OIR)}}
+\def\OIr{{\sl OIR}}
+\def\OSSE{{\sl Oriented Scintillation Spectrometer Experiment (OSSE)}}
+\def\O{{\sl OSSE}}
+\def\PCA{{\sl Proportional Counter Array (PCA)}}
+\def\PCa{{\sl PCA}}
+\def\PHX{{\sl PHOENIX}}
+\def\PDS{{\sl Phoswich Detector System  (PDS)}}
+\def\PDs{{\sl PDS}}
+\def\PLANCK{{\sl Planck}}
+\def\PSPC{{\sl Position Sensitive Proportional Counter (PSPC)}}
+\def\PSP{{\sl PSPC}}
+\def\RLN{{\sl RL NEBULAR}}
+\def\ROSAT{{\sl R\"{o}ntgensatellit (ROSAT)}}
+\def\R{{\sl ROSAT}}
+\def\RXTE{{\sl Rossi X-ray Timing Explorer (RXTE)}}
+\def\RXTe{{\sl RXTE}}
+\def\ROTSE{{\sl Robotic Optical Transient Search Experiment (ROTSE)}}
+\def\ROT{{\sl ROTSE}}
+\def\RXTE{{\sl Rossi X-ray Timing Explorer (RXTE)}}
+\def\RX{{\sl RXTE}}
+\def\SCP{{\sl Supernova Cosmological Project (SCP)}}
+\def\SCp{{\sl SCP}}
+\def\SERC{{\sl UK Science and Engineering Research Council (SERC)}}
+\def\SER{{\sl SERC}}
+\def\SINS{{\sl Supernova INtensive Study (SINS)}}
+\def\SIN{{\sl SINS}}
+\def\SIS{{\sl Solid state Imaging Spectrometer (SIS)}}
+\def\SIs{{\sl SIS}}
+\def\SMC{{\sl Small Magellanic Cloud (SMC)}}
+\def\SM{{\sl SMC}}
+\def\SMM{{\sl Solar Maximum Mission (SMM)}}
+\def\SMm{{\sl SMM}}
+\def\SNAP{{\sl SuperNova/Acceleration Probe (SNAP)}}
+\def\SNAp{{\sl SNAP}}
+\def\SSO{{\sl Siding Spring Observatory (SSO)}}
+\def\SSo{{\sl SSO}}
+\def\STIS{{\sl Space Telescope Imaging Spectrograph (STIS)}}
+\def\ST{{\sl STIS}}
+\def\STSCI{{\sl Space Telescope Science Institute (STScI)}}
+\def\STSCi{{\sl STScI}}
+\def\SUBARU{{\sl Subaru Telescope}}
+\def\SWIFT{{\sl Swift Gamma-Ray Burst Explorer (Swift)}}
+\def\SW{{\sl Swift}}
+\def\SYN{{\sl SYNOW}}
+\def\TAROT{{\sl T\'{e}lescope \`{a} Action Rapide pour les Objets Transitoires (TAROT -- Rapid Action Telescope for Transient Objects)}}
+\def\TAROt{{\sl TAROT}}
+\def\ULY{{\sl Ulysses}}
+\def\UKIRT{{\sl United Kingdom Infra-Red Telescope (UKIRT)}}
+\def\UK{{\sl UKIRT}}
+\def\UTONE{{\sl Unit Telescope (UT1)}}
+\def\UT{{\sl UT1}}
+\def\UVOT{{\sl UltraViolet and Optical Telescope (UVOT)}}
+\def\UVOt{{\sl UVOT}}
+\def\VELA{{\sl VELA}}
+\def\VILSPA{{\sl Villafranca Satellite Tracking Station (VILSPA)}}
+\def\VIL{{\sl VILSPA}}
+\def\VLA{{\sl Very Large Array (VLA)}}
+\def\V{{\sl VLA}}
+\def\VLT{{\sl Very Large Telescope (VLT)}}
+\def\VLt{{\sl VLT}}
+\def\VLBI{{\sl Very Long Baseline Interferometry (VLBI)}}
+\def\VLBi{{\sl VLBI}}
+\def\WFC{{\sl Wide-Field Camera (WFC)}}
+\def\W{{\sl WFC}}
+\def\WFI{{\sl Wide Field Instruments (WFI)}}
+\def\WFi{{\sl WFI}}
+%\def\WFPC{{\sl Wide-Field Planetary Camera (WFPC)}}
+%\def\WFPc{{\sl WFPC}}
+\def\WFPC2{{\sl Wide-Field Planetary Camera 2 (WFPC2)}}
+\def\WFPc2{{\sl WFPC2}}
+\def\XMM{{\sl XMM-Newton (XMM)}}
+\def\X{{\sl XMM}}
+\def\YALO{{\sl Yale-AURA-Lisbon-Ohio (YALO)}}
+\def\YAL{{\sl YALO}}
+\def\YAK{{\sl Yakutsk Extensive Air Shower Array (Yakutsk)}}
+\def\YAk{{\sl Yakutsk}}
+%
+%%Acronyms
+\def\AGN{active galactic nuclei (AGNs)}
+\def\AGn{AGNs}
+\def\BSG{blue supergiant (BSG)}
+\def\BSg{BSG}
+\def\CSI{circumstellar interaction (CSI)}
+\def\CSi{CSI}
+\def\CSM{circumstellar medium (CSM)}
+\def\CSm{CSM}
+\def\EPM{expanding photosphere method (EPM)}
+\def\EPm{EPM}
+\def\EUV{extreme ultraviolet (EUV)}
+\def\EUv{EUV}
+\def\FRED{fast-rise exponential-decay (FRED)}
+\def\Fred{FRED}
+\def\IC{Inverse Compton (IC)}
+\def\Ic{IC}
+\def\IGM{intergalactic medium (IGM)}
+\def\IGm{IGM}
+\def\ISM{interstellar medium (ISM)}
+\def\ISm{ISM}
+\def\ISP{interstellar polarization (ISP)}
+\def\ISp{ISP}
+\def\ISS{interstellar scintillation (ISS)}
+\def\ISs{ISS}
+\def\LTE{local thermodynamic equilibrium (LTE)}
+\def\LT{LTE}
+\def\MHD{magneto-hydrodynamic (MHD)}
+\def\MHd{MHD}
+\def\NIR{near infrared (NIR)}
+\def\NIr{NIR}
+\def\NLTE{non-local thermodynamic equilibrium (NLTE)}
+\def\NLT{NLTE}
+\def\NRP{non-relativistic phase (NRP)}
+\def\NRp{NRP}
+\def\OIR{optical/infrared (OIR)}
+\def\OIr{OIR}
+\def\RSG{red supergiant (RSG)}
+\def\RSg{RSG}
+\def\SNR{supernova remnant (SNR)}
+\def\SNr{SNR}
+\def\SBP{surface brightness profile (SBP)}
+\def\SBp{SBP}
+\def\SSA{synchrotron self absorption (SSA)}
+\def\SSa{SSA}
+\def\WR{Wolf-Rayet (W-R)}
+\def\Wr{W-R}
+\def\UHECR{ultra-high energy cosmic-ray (UHECR)}
+\def\UHE{UHECR}
+\def\ZAMS{zero age main sequence (ZAMS)}
+\def\ZAMs{ZAMS}
+%
+%%Journals
+%\def \aal #1 #2 {{Astron. Astrophys. Lett.\/} {\bf #1}, #2~}
+\def \aap #1 #2 {{Astron. Astrophys.\/} {\bf #1}, #2~}
+\def \aar #1 #2 {{Astron. Astrophys. Rev.\/} {\bf #1}, #2~}
+\def \aas #1 #2 {{Astron. Astrophys. Suppl. Ser.\/} {\bf #1}, #2~}
+\def \aj #1 #2 {{Astron. J.\/} {\bf #1}, #2~}
+\def \al #1 #2 {{Astron. Lett.\/} {\bf #1}, #2~}
+\def \an #1 #2 {{Astron. Nach.\/} {\bf #1}, #2~}
+%\def \astph #1 #2 {{astro-ph\/} {\bf #1}}
+\def \annap #1 #2 {{Annals Ap.\/} {\bf #1}, #2~}
+\def \aph #1 {{astro-ph\/} {#1}~}
+\def \ar #1 #2 {{Astron. Rep.\/} {\bf #1}, #2~}
+\def \araap #1 #2 {{Ann. Rev. Astron. Astrophys.\/} {\bf #1}, #2~}
+\def \asiagoc #1 #2 {{Asiago Contr.\/} {\bf #1}, #2~}
+\def \apj #1 #2 {{Astrophys. J.\/} {\bf #1}, #2~}
+\def \apjl #1 #2 {{Astrophys. J. Lett.\/} {\bf #1}, #2~}
+\def \apjs #1 #2 {{Astrophys. J. Suppl.\/} {\bf #1}, #2~}
+\def \apjsub #1 {{Astrophys. J.\/} {#1}~}
+\def \apph #1 #2 {{Astropart. Phys.\/} {\bf #1}, #2~}
+\def \apss #1 #2 {{Astrophys. Space Sci.\/} {\bf #1}, #2~}
+\def \aspc #1 #2 {{ASP Conf.~Proc.\/} {\bf #1}, #2~}
+\def \aspl #1 {{ASP Leaflet\/} {#1}~}
+\def \asr #1 #2 {{Adv. Space Res.\/} {\bf #1}, #2~}
+\def \astrl #1 #2 {{Astron. Lett.\/} {\bf #1}, #2~}
+\def \azh #1 #2 {{Astron. Zhurnal\/} {\bf #1}, #2~}
+\def \baas #1 #2 {{Bull. Am. Astron. Soc.\/} {\bf #1}, #2~}
+\def \ban #1 #2 {{Bull. Astron. Inst. Neth.\/} {\bf #1}, #2~}
+\def \basi #1 #2 {{Bull. Astron. Soc. India\/} {\bf #1}, #2~}
+\def \ca #1 #2 {{Chinese Astron.\/} {\bf #1}, #2~}
+\def \coap #1 #2 {{Contrib. Oss. Astrofis. Padova in Asiago\/} {\bf #1}, #2~}
+\def \cap #1 #2 {{Comm. Astrophys.\/} {\bf #1}, #2~}
+\def \emsg #1 {{ESO Messenger\/} {#1}~}
+\def \gcn #1 {{GCN\/} {#1}~}
+\def \hast #1 #2 {{Highlights of Astronomy\/} {\bf #1}, #2~}
+\def \iauc #1 {{IAUC\/} {#1}~}
+\def \iaus #1 #2 {{IAU Symp. 110: VLBI \& Compact Radio Sources\/} {\bf #1}, #2~}
+\def \inprep {{in preparation\/}~}
+%\def \inpres {{in press\/}~}
+\def \jcam #1 #2 {{J. Comp. Appl. Math.\/} {\bf #1}, #2~}
+\def \jet #1 #2 {{JETP Lett.\/} {\bf #1}, #2~}
+\def \jha #1 #2 {{J. Hist. Astron.\/} {\bf #1}, #2~}
+\def \jrasc #1 #2 {{J. R. Astron. Soc. Canada\/} {\bf #1}, #2~}
+\def \mem #1 #2 {{Mem. R. Astron. Soc.\/} {\bf #1}, #2~}
+\def \mess #1 #2 {{The Messenger\/} {\bf #1}, #2~}
+\def \mnras #1 #2 {{Mon. Not. R. Astron. Soc.\/} {\bf #1}, #2~}
+\def \mplb #1 #2 {{Mod. Phys. Lett. B\/} {\bf #1}, #2~}
+\def \nat #1 #2 {{Nature\/} {\bf #1}, #2~}
+\def \newa #1 #2 {{New Astron.\/} {\bf #1}, #2~}
+\def \nuca #1 #2 {{Nucl. Phys. A\/} {\bf #1}, #2~}
+\def \nucb #1 #2 {{Nucl. Phys. B\/} {\bf #1}, #2~}
+\def \npps #1 #2 {{Nucl. Phys. Proc. Suppl.\/} {\bf #1}, #2~}
+\def \nyasa #1 #2 {{NY Acad. Sci. Ann.\/} {\bf #1}, #2~}
+\def \obsy #1 #2 {{The Observatory\/} {\bf #1}, #2~}
+\def \phfl #1 #2 {{Phys. Fluids\/} {\bf #1}, #2~}
+\def \phytd #1 #2 {{Phys. Today\/} {\bf #1}, #2~}
+\def \prl #1 #2 {{Phys. Rev. Lett.\/} {\bf #1}, #2~}
+\def \prp #1 #2 {{Phys. Rep.\/} {\bf #1}, #2~}
+\def \phyr #1 #2 {{Phys. Rev.\/} {\bf #1}, #2~}
+\def \phyrd #1 #2 {{Phys. Rev. D\/} {\bf #1}, #2~}
+\def \prasa #1 #2 {{Proc. Astron. Soc. Australia\/} {\bf #1}, #2~}
+\def \pasa #1 #2 {{Pub. Astron. Soc. Australia\/} {\bf #1}, #2~}
+\def \pasj #1 #2 {{Pub. Astron. Soc. Japan\/} {\bf #1}, #2~}
+\def \pasp #1 #2 {{Pub. Astron. Soc. Pacific\/} {\bf #1}, #2~}
+\def \qjras #1 #2 {{Q. J. R. Astron. Soc.\/} {\bf #1}, #2~}
+\def \rma #1 #2 {{Rev. Mod. Astron.\/} {\bf #1}, #2~}
+\def \rpp #1 #2 {{Rep. Prog. Phys.\/} {\bf #1}, #2~}
+\def \rpph #1 #2 {{Rev. Plasma Phys.\/} {\bf #1}, #2~}
+\def \sait #1 #2 {{Mem.\ Soc.\ Astron.\ It.\/} {\bf #1}, #2~}
+\def \sast #1 #2 {{Sov. Astron.\/} {\bf #1}, #2~}
+\def \sal #1 #2 {{Sov. Astron. Lett.\/} {\bf #1}, #2~}
+\def \sat #1 #2 {{Sky \& Tel.\/} {\bf #1}, #2~}
+\def \sci #1 #2 {{Science\/} {\bf #1}, #2~}
+\def \spie #1 #2 {{SPIE\/} {\bf #1}, #2~}
+\def \shns #1 #2 {{Stud. Hist. Nat. Sci.\/} {\bf #1}, #2~}
+%\def \TX17 #1 #2 {{Seventeenth TX Symp. Rel. Astrophys. Cosmol.\/} {\bf #1}, #2~}
+\def \va #1 #2 {{Vist. Astron.\/} {\bf #1}, #2~}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%OPTIONAL%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\usepackage{amstex}   % useful for coding complex math
+%\mathindent\parindent % needed in case "Amstex" is used
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%AUTHOR_STYLES_AND_DEFINITIONS%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%Please reduce your own definitions and macros to an absolute
+%minimum since otherwise the editor will find it rather
+%strenuous to compile all individual contributions to a
+%single book file
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+%
+\title*{Classification of Supernovae}
+%
+%
+\toctitle{Classification of Supernovae}
+%
+%
+\titlerunning{Classification of Supernovae}
+% allows abbreviation of title, if the full title is too long
+% to fit in the running head
+%
+\author{Massimo Turatto}
+%
+\authorrunning{Turatto}
+%
+\institute{Osservatorio Astronomico di Padova, vicolo dell'Osservatorio 5, I-35122, Padova, Italy}
+
+\maketitle              % typesets the title of the contribution
+
+\begin{abstract}
+The current classification scheme for supernovae is presented.
+The main observational features of the supernova types are described and
+the physical implications briefly addressed.
+Differences between the homogeneous thermonuclear type Ia and 
+similarities among the heterogeneous 
+core collapse type Ib, Ic and II are highlighted.
+Transforming type IIb, narrow line type IIn, supernovae associated with 
+GRBs and few peculiar objects are also discussed.
+
+\end{abstract}
+
+\section{Introduction} 
+
+An adequate and satisfactory taxonomy for a class of objects should fulfill
+certain elementary characteristics such as mutual exclusion,
+exhaustiveness, non-ambiguity, repeatability and usefulness. The taxonomy
+of supernovae (SNe) has been progressively developing since 1941 when
+Minkowskii \cite{mink} first recognized that at least two main types of SNe
+exist. Since then several new types of SNe have been introduced, some have
+been dismissed, and others have held their ground. After an early ``Linnaeus stage''
+during which the classification was based on the recognition of the
+observational characteristics, the concept of SN type has been refined to
+include ``genetic'' information. Nevertheless the present day classification
+scheme is still not satisfactory. In particular, it is ambiguous and non-exhaustive (many objects are still classified as ``peculiar'') and the
+nomenclature of the taxonomic groups, determined by historical reasons, is
+confusing. However, since classification is a process which mankind
+naturally and instinctively carries out in order to sort out and understand
+vast arrays, the available SN classification scheme remains extremely
+important and useful.
+
+Extensive reviews on the SN taxonomy can be found in \cite{fil97,harwhe,wheben00}.  Here we give a brief update on the subject. More
+details can be found in other chapters in this volume.
+
+\section{Main Supernova Types}
+The classification of SNe is generally performed on the optical spectra but,
+to some extent, also on their light curves. Since SNe are brighter near their maximum light, for obvious reasons the classification is based
+on the early spectra, which consist of a thermal continuum and P-Cygni
+profiles of lines formed by resonant scattering. This means that the  SN
+types are assigned on the basis of the chemical and physical properties of the
+outermost layers of the exploding stars. Only in recent years have late time
+observations  contributed to differentiating various subtypes.
+
+\begin{figure}[t] 
+\rotatebox{-0}{\includegraphics[width=.99\textwidth]{Turattofig1.eps}}
+\caption{The current classification scheme of supernovae. 
+Type Ia SNe are associated with the thermonuclear 
+explosion of accreting white dwarfs. Other SN types are associated with 
+the core collapse of massive stars. Some type Ib/c and IIn SNe
+with explosion energies $E > 10^{52}$ erg are often called
+hypernovae.}
+\label{taxo} 
+\end{figure}
+
+The first two main classes of SNe were identified \cite{mink} on the basis
+of the presence or absence of hydrogen lines in their spectra: SNe of type I (SNI)
+did not show H lines, while those with the obvious presence of H lines were
+called type II (SNII). Type I SNe were also characterized by a deep
+absorption at  6150 \AA\/ which was not present in the spectra of some
+objects, therefore considered peculiar \cite{bert64,bert65}. In 1965, Zwicky \cite{zwicky} introduced a 
+schema of five classes but in recent years the scarcely populated types III,
+IV and V have been generally included among type II SNe.
+
+In the mid-1980s, evidence began to accumulate that the
+peculiar SNI formed a class physically distinct from the others.
+The objects of the new class, 
+characterized by the presence of HeI \cite{gask86,hark87}, were called type
+Ib (SNIb), and ``classical'' SNI were renamed as type~Ia (SNIa).
+The new class further branched
+into another variety, SNIc, based on the absence 
+of He~I lines. Whether these are physically distinct types of objects
+has been long debated \cite{harwhe,whehar}.
+In several contexts they are referred to as SNIb/c.
+
+\begin{figure}[t] 
+\rotatebox{-0}{\includegraphics[width=1.05\textwidth]{Turattofig2.eps}}
+\caption{The spectra of the main SN types at maximum, three weeks, and one year
+after maximum. The representative spectra are those of SN1996X for type Ia 
+\cite{sal01}, of SN1994I (left and center) \cite{cloc96} and SN1997B 
+(right) for type Ic, of SN1999dn (left and center) and SN1990I (right) for type
+Ib, and of SN1987A \cite{phil} for type II. At late times (especially in the
+case of the type Ic SN1997B) the contamination from the host galaxy is evident as an
+underlying continuum plus unresolved emission lines. In all figures of this paper
+the spectra have been transformed to the parent galaxy rest frame.}
+\label{sp} 
+\end{figure}
+
+\section{Type Ia Supernovae} 
+
+Type Ia SNe have become very popular in the last decade because of their
+role in determining the geometry of the Universe with their
+high luminosity and relatively small luminosity dispersion at maximum.
+An extensive review of the properties of SNIa has recently appeared
+\cite{leib00}.
+ 
+SNIa are discovered in all types of galaxies, also in ellipticals 
+\cite{barb99}, and are not associated with the arms of spirals as
+strongly as other SN types \cite{mcmill,vdyk99}. The
+spectra are characterized by lines of intermediate mass
+elements such as calcium, oxygen, silicon and sulfur during the peak phase
+and by the absence of H at any time (see, \eg Fig.~\ref{sp}). With age the
+contribution of the Fe lines increases and 
+several months past maximum the spectra are
+dominated by [Fe~II] and [Fe~III] lines. The overall homogeneous spectroscopic
+and photometric behavior has led to a general consensus that they are
+associated with the thermonuclear explosion of a white dwarf \cite{bran95}.
+
+Nevertheless, during the past decade early suggestions of significant differences
+among SNIa \cite{barb73,psk67} have been confirmed by new, high
+signal-to-noise data. The crucial year was 1991, when the bright,
+slowly declining SN1991T \cite{lira98,ruiz92}, and the faint, intrinsically
+red and fast declining SN1991bg \cite{fili91bg,leib93,tur91bg}
+were discovered. Other under- and over-luminous objects have been found since then \cite{how01}.
+
+The analysis of homogeneous sets of optical data led to the
+discovery of a correlation between the peak luminosity and the shape of the
+early light curve  with brighter objects having a slower rate of decline
+than dimmer ones \cite{perl97,phil93,phil99,riess98}.
+This correlation has been employed in restoring SNIa as useful distance
+indicators up to cosmological distances. A correlation between the 
+photometric and the spectroscopic properties was also found \cite{nugent}.
+
+It is known that the peak luminosity of SNIa is directly linked to the
+amount of radioactive $^{56}$Ni produced in the explosion \cite{arn82,arn85}.
+Hence SNIa, having different magnitudes at maximum, are probably the result
+of the synthesis of different amounts of radioactive $^{56}$Ni. Moreover,
+there are indications of large variances (up to a factor 2) in the
+total mass of the ejecta \cite{capp97}.
+
+Observations at other wavelengths have provided very useful
+information. In particular,
+infrared and I-band light curves have shown that the light curves of SNIa
+are characterized by a secondary peak 20-30 days after the B
+maximum \cite{elias,lira98,meikle,sunt96}. Remarkable
+exceptions are the faint objects like SN1991bg.
+
+The afore mentioned diversity of SNIa persists up to very late epochs. The light
+curves of faint objects are steeper than those of other SNIa, probably
+because of a progressive transparency to positrons from radioactive decay
+\cite{capp97,milne}. 
+Faint SNIa also show slower expansion velocity of the emitting gas
+both at early \cite{fil89,vdbbra} and late epochs \cite{mazz98}.
+
+The calibration of the absolute magnitudes of a number of type Ia SNe by
+Cepheids has provided the zero point for determining the Hubble
+Constant (H$_0$). Average values based on limited samples and different recipes
+range from M$_V=-19.34$ to M$_V=-19.64$  with small dispersions
+\cite{gibson,jha99,saha,sunt99}. The recent
+determination of the Cepheid distance to the host galaxy of SN1991T seems
+to confirm that it is brighter (M$_V=-19.85\pm0.29$) than the 
+spectroscopically normal supernovae \cite{saha01}. 
+
+SN1991T was also the first SNIa to show photometric and spectroscopic
+evidence of a light echo from circumstellar dust \cite{schmecho}. So far the only
+other SNIa to show the same phenomenon was the slowly declining,
+spectroscopically
+normal SN1998bu \cite{capp01}. In addition to the light echo, these two SNe
+suffered strong reddening, quite unusual among known, standard SNIa, suggesting
+that slow decliners may be associated to younger population objects. The
+fact that, on average, SNIa in late type galaxies have slower decline rates
+(hence are more luminous) than SNIa in early type galaxies 
+had been already
+suggested  \cite{captur01,fil89,ham00,vdbpaz}.
+
+One current issue important for the application of SNIa to cosmology is whether
+they evolve with redshift. Indeed, the lower metallicity of the progenitors at
+higher redshift might result in systematic differences in brightness.
+
+\section{Type Ib and Ic Supernovae}
+
+Type Ib and Ic appear only in spiral type galaxies
+\cite{barb99,porfil} and have been associated with a parent population
+of massive stars, perhaps more massive than SNII progenitors 
+\cite{vdyk99}. SNIb/c exhibit relatively strong radio emission with steep
+spectral indices and fast turn-on/turn-off \cite{weil01}, which is thought to arise
+from the SN shock interaction with a dense circumstellar medium \cite{chev82a,chev82b}. They are, therefore, usually thought to be associated with the core collapse of
+massive stars which have been stripped of their outer H (and 
+possibly He) envelope. 
+
+The introduction of this class of SNe is recent. 
+As mentioned above, they were classified with other SNI until the mid-1980s, when late time observations of SNe 1983N, 1984L and 1985F
+highlighted the physical differences from SNIa \cite{chug86,filsar85,gask86,hark87,whelev85}. The characterizing features
+are the absence of H and Si~II lines and the presence of He~I. The excited
+levels of He producing such lines are thought to be populated by fast
+electrons accelerated by $\gamma$-rays from the decay of $^{56}$Ni and
+$^{56} $Co \cite{hark87,lucy91}.  It was soon recognized that some
+objects did not show strong He lines \cite{whee87} and the class of 
+helium poor type Ic was proposed \cite{harwhe,whehar}.
+
+In order to investigate the physical differences between these two classes,
+the signatures of He were searched carefully. The He~I $\lambda$10830 line in Type Ic was first found in the spectra of  SN1994I 
+\cite{fil95} with velocity as high as 17,000 \kms\/ \cite{cloc96}. It was noted that
+even as little as 0.1 M$_\odot$ of helium at such high expansion velocities
+implies an energy of about $3 \times 10^{51}$ erg in the outer shell alone.
+Unless very high explosion energies are involved, the amount of He has to, therefore, be much smaller \cite{cloc96}. Other SNIc have shown He lines at similar (SNe~1987M and 1988L) and slower (SN1990B \cite{cloc01}) velocities. Thus the
+presence of some amount of He seems to be common to several SNIc
+progenitors.
+
+Helium has been unambiguously identified also in the spectra of the recent
+type Ic SN1999cq \cite{mat00}. These lines have expansion velocities much
+lower than other lines, indicating that the ejecta interacts with a
+dense shell of almost pure He originating from a stellar wind or mass transfer to a
+companion. These findings support the idea that SNIc differ from SNIb
+by the He abundance rather than by the amount of mixing of $^{56}$Ni
+in the helium envelope.
+
+\begin{figure} 
+\rotatebox{-90}{\includegraphics[width=.75\textwidth]{Turattofig3.eps}}
+\caption{Comparison among the spectra of SNe reported as type Ib/c in the Asiago
+SN Catalogue \cite{barb99} (left: at maximum light; right: 3 weeks
+later). In addition to the spectra of SN1994I (Ic) and 1999dn (Ib) shown
+in Fig.~\ref{sp},  the spectra of SN1996aq (Ic), 2000H (Ib) 
+\cite{bran01} and 1993J (IIb) \cite{barb95} are displayed. With the exception of SN1993J, the
+spectra at maximum are rather similar. For reference the position of He~I
+$\lambda$5876 (blueshifted by 10,500 \kms) is marked with a dashed vertical line.
+The dashed lines on the right indicate the positions of He~I
+$\lambda$$\lambda$ 5876, 6678 and 7065 (blueshifted by 16,900 \kms\/ for 1994I,
+6,000 \kms\/ for SN1993J and 9,000 \kms\/ for other objects). H$\alpha$ (solid
+line, blueshifted by 11,000 \kms) is also shown. While He~I lines in SN1994I are
+detectable only through a detailed analysis, they are prominent in the spectra of
+SN1996aq, which should be reclassified as a SNIb.}
+\label{spIb} 
+\end{figure}
+
+Absorption features attributed  to H$\alpha$ were first identified in
+the spectra of the type Ib SNe~1983N and 1984L \cite{whe94}. Recent analysis
+of the spectra of 11 objects has suggested that detached H is
+generally present in SNIb \cite{bran01}. The optical depths of H and He are not
+very high, so that modest differences in the He~I line optical depths might
+transform type Ib into type Ic objects.
+
+In addition to the different strengths of He lines, it has been suggested 
+\cite{mat00} that
+permitted oxygen lines are relatively stronger in type Ic than in Ib and the
+nebular emission lines broader. In general, type Ib appear more
+homogeneous than type Ic.
+
+The light curves of SNIb/c have been divided in two groups depending
+on the luminosity decline rate \cite{clowhe}. However, the suggestion
+that type Ic include both fast and slow decliners while Ib seem to prefer slow
+declines has been challenged by the existence of SNIb
+with fast light curves, \eg SNe~1990I and 1991D.
+
+With this variety, the classification of new objects based on a single
+spectrum is difficult, and to some extent subjective, so that more
+detailed analyses of the objects often reveal discrepancies from early
+classifications. This is illustrated in Fig.~\ref{spIb} which presnets the
+optical spectra of a number of objects reported as type Ib/c in the Asiago
+SN Catalog \cite{barb99}.
+
+\subsection{Type IIb} 
+
+A few objects have been found to have early time spectra similar to
+type II (i.e. with prominent H lines) and late time spectra similar to type Ib/c
+SNe. For this reason they have been called  type IIb. The first SNIIb was SN1987M \cite{fil88}, but the best studied example, and one of the best studied SNe
+ever, was SN1993J in M81. The analysis of seven years of observations of this
+object has been recently published \cite{mat00c,mat00b}, and will
+be discussed in more detail in other chapters of this volume.
+More examples of transition objects are SN1996cb \cite{qiu} and
+probably SN1997dd \cite{mat01}.
+
+Fig.~\ref{spIb} shows that while the early spectrum of SN1993J was almost
+featureless with a blue continuum and broad H and He~I $\lambda$5876 lines
+typical of SNII, already three weeks later it displayed progressively stronger 
+He~I $\lambda\lambda$ 5876, 6678 and 7065 lines characteristic of SNIb.
+
+The light curve of SN1993J was unusual with a narrow peak followed by a secondary
+maximum, recalling the behavior of SN1987A if the
+time axis were reduced by a factor of four. After another rapid luminosity decline around 50 days past the
+explosion, the light curve settled into an almost exponential tail with a
+decline rate faster than normal SNII and similar to that of SNIa,
+indicative of a small mass for the ejecta.
+
+Indeed, the photometry of the progenitor of SN1993J taken before the explosion is
+inconsistent with the spectral energy distribution of a single star, but
+requires the composition of a K0Ia spectrum with a hot component
+\cite{ald94}.  The radio and X-ray emission of SN1993J \cite{bart00,vand94,zimm94} have been attributed to
+circumstellar interaction \cite{fran96}. Another indication comes from the
+boxy shape of the emission lines of late time optical spectra \cite{mat00c,pat95}. Circumstellar gas in proximity
+to the exploding star was also revealed through the detection of narrow coronal lines 
+persisting for a few days after the explosion \cite{ben94}.
+
+These SNe transforming from type II to Ib/c constitute the previously missing link
+between  envelope retaining and envelope stripped SNe.
+
+\section{Type II Supernovae} \label{snii}
+
+Type II SNe are characterized by the obvious presence of H in their spectra.
+They avoid early type galaxies \cite{barb99}, are strongly associated with
+regions of recent star formation \cite{maza,vdyk99} and are commonly  associated
+with the core collapse of massive stars \cite{woowea}.
+
+SNII display a wide
+variety of properties both in their light curves \cite{pat93,pat94}
+and in their spectra \cite{fil97}. Four subclasses of SNII are commonly mentioned
+in the literature: IIP, IIL, and IIn in addition to the above mentioned
+IIb. However, a number of peculiar objects do not fit into any of these categories.
+
+SNIIP (Plateau) and SNIIL (Linear) constitute the bulk of all SNII, and  are
+often referred as normal SNII.  The subclassification is made according to the
+shape of the optical light curves \cite{barb79}. The luminosity of SNIIP stops
+declining shortly after maximum forming a plateau 2-3 months 
+long during which a recombination wave moves through the massive hydrogen 
+envelope releasing its internal
+energy. SNIIL, on the other hand, show a linear,
+uninterrupted luminosity decline, probably because of a lower mass 
+envelope. Indeed the two classes are not separated and there are a number of
+intermediate cases with short plateaus, \eg SN1992H \cite{cloc92h}. A
+quantitative criterion for the classification of the light curves has been
+proposed on the basis of the average decline rate of the first 100 days  
+\cite{pat94}. Starting 150 days past maximum the luminosity of both types settles
+into an exponential decline, consistent with complete (or constant) trapping of
+the energy release of the radioactive decay of $^{56}$Co into $^{56}$Fe.
+
+No major spectral differences exist between SNIIP and SNIIL, 
+although there are recurrent claims that
+SNIIL do not show the blueshifted absorption of the P-Cygni profile
+evident in normal SNIIP. Indeed, a statistical analysis 
+has shown that the presence or absence of the
+P-Cygni absorption is correlated with the absolute brightness at maximum 
+\cite{pat94}.
+
+The progenitors of SNIIL are believed to have H envelopes of the order of
+1-2 M$_\odot$, much smaller than those of SNIIP (typically 10 M$_\odot$)
+probably due to mass loss during the progenitor evolution. A general
+scenario has been proposed in which common envelope evolution in massive
+binary systems with varying mass ratios and separations of the components
+can lead to various degrees of stripping of the envelope 
+\cite{nomo95}.
+According to this scenario the sequence of types IIP-IIL-IIb-Ib-Ic in
+Fig.~\ref{taxo} is ordered according to a decreasing mass of the envelope.
+
+SNIIL are often radio sources \cite{weil01} and  show UV excess
+attributed to Compton scattering of photospheric radiation by high speed
+electrons in shock-heated \CSM\ material \cite{fran82,fran84}. A number of SNIIL, \eg SNe~1994aj and 1996L \cite{ben94aj,ben96l}, have shown lines with double P-Cygni profiles (sometimes dubbed
+SNIId, ``d'' for double) indicating the presence of strong wind episodes
+shortly before the explosion. These and other SNIIL show a flattening in
+the light curves at late stages, a broadening of the spectral lines, and 
+H$\alpha$ fluxes greater than those expected from purely radioactive models
+\cite{capp95,fese93,leib91,uomo86}. These features
+have been interpreted as signatures of the onset of interaction between
+the ejecta and the circumstellar material.
+
+The epochal SN1987A in the \LMC, the first SN to be observed
+by naked eye in the last four centuries, was a ``not very peculiar'' type II SN
+with a plateau. Extensive observations at all wavelengths have explored
+the nature of this object in detail (see, \eg \cite{arn89} and references therein). 
+The detection of neutrinos from SN1987A has
+been a spectacular confirmation of the theory of core collapse \cite{bionta87,hira87}. The contribution of this object to our understanding of
+supernovae is addressed by McCray in another chapter in this volume.
+
+Because of its closeness, SN1987A was the first SN for which it has been
+possible to unambiguously identify the progenitor, the B3~I star Sk-69 202. More recent, high
+spatial resolution prediscovery images of nearby galaxies are providing new
+insights into the nature of the precursor stars of other core collapse SNe.
+In addition to the case of SN1993J in M81 mentioned above, tight constraints
+on the mass of the progenitors of SNe~1999em and 1999gi have been published
+($M({\rm 1999gi}) < 9^{+3}_{-2}$ \Msun\ and $M({\rm 1999em}) < 12\pm1$ \Msun\ \cite{sm01b,sm01a}). 
+
+SN1987A was typical in both the explosion energy ($\sim10^{51}$
+erg) and the amount of ejected radioactive material  (M$(^{56}{\rm Ni}) = 0.07$ M$_\odot$). Recent observations of other SNe seem to indicate a 
+considerable dispersion
+around such values. High explosion energies are required to explain the
+high luminosities and kinetic energies of hypernovae (see, \eg $\S$\ref{grb})
+and a large mass of radioactive $^{56}$Ni (0.3 \Msun)
+has been measured for SN1992am \cite{schm94}. At the other extreme the
+faint SN1997D had a considerably smaller explosion energy ($\sim {\rm few} \times 10^{50}$ erg) and  returned to the ISM a mass of radioactive material
+as small as $M(^{56}{\rm Ni}) = 0.002$ \Msun\ \cite{tur97d}. The discovery
+of similar objects (\eg SN1999eu) indicates that faint, under energetic
+SNII may represent a
+non-negligible fraction of all core collapse SNe. These
+objects are the best candidates for the detection of signatures of 
+black hole formation and for providing support to the 
+black hole-forming SN scenario \cite{balb00,ben97d}.
+
+\subsection{Type IIn} \label{iin}
+
+A number of peculiar SNII have been grouped into the class of SNIIn (``n''
+denoting narrow emission lines \cite{schl90}). The spectra of these objects have
+a slow evolution and are dominated by strong Balmer emission lines without the
+characteristic broad absorptions. The early time
+continua are very blue, He~I emission is often present and, in some cases,
+narrow Balmer and Na~I absorptions are visible
+corresponding to expansion velocities of about 1,000 \kms
+\cite{pas01},
+reminiscent of SNIId (see $\S$\ref{snii}). Unresolved forbidden lines of
+[OI], [OIII], and of highly ionized elements such as [FeVII], [FeX], and [AX] are
+sometimes present.
+
+One of the best cases is SN1988Z, which has been observed in the optical, radio
+and X-rays for over ten years \cite{aret}. Balmer lines, in particular 
+H$\alpha$, show a well defined multiple component structure with broad (FWHM
+$\sim 15,000$ \kms), intermediate (2,200 \kms) and narrow 
+($<700$ \kms) components with different time evolution \cite{tur88z}. 
+SN1995N was a remarkably similar object, detected in radio and X-rays \cite{fox,weil01}.
+
+It is commonly believed that what we observe in these objects is the result of interaction between the ejecta and a dense \CSm, which transforms the
+mechanical energy of the ejecta  into radiation \cite{chugdan,terl92}. The interaction of the fast ejecta with the slowly expanding
+\CSm\ generates a forward shock in the \CSm\ and a reverse shock in the ejecta.
+The shocked material emits energetic radiation whose characteristics
+strongly depend on the density of both the \CSm\ and the ejecta, and on the
+properties of the shock \cite{chevfr94}. Thus the  great
+diversity of observed SNIIn can provide clues to the different
+history of the mass-loss in the late evolution of progenitors.
+
+A systematic search for radio emission from SNIIn has produced contradictory
+results \cite{vdyk96b}. This might be due to the high degree of
+heterogeneity and to a bias in the classification of the
+targets. In fact, a solid classification criterion for these SNe is
+still missing, and often objects classified as SNIIn turn out to be normal
+when they undergo closer scrutiny (\eg SN1989C \cite{tur93}).
+
+A remarkable SNIIn is the recent SN1998S. Contrary to most other
+SNIIn, the spectrum evolved rapidly and seems to be the result of the interaction
+between the supernova and a two-component progenitor wind \cite{fass01}. 
+Polarimetric studies indicate significant asphericity for its 
+continuum-scattering environment \cite{leo}. 
+The early spectra are well modeled by
+lines arising primarily in the circumstellar region while later spectra are
+dominated by the supernova ejecta \cite{lenz01}. 
+
+\begin{figure}[t] 
+\rotatebox{-90}{\includegraphics[width=.62\textwidth]{Turattofig4.eps}}
+\caption{Spectra of SN1990aj, a SNIb/c with exceptionally
+strong Fe lines at late epochs, and 
+SN2000er, a bright, fast declining SN with evidence of narrow He~I lines 
+in the spectra at maximum.}
+\label{fig_pec} 
+\end{figure}
+
+\section{SNe and GRBs} \label{grb}
+
+Other chapters in this volume discuss the association of SN1998bw with GRB980425 and the possibility that at least some GRBs originate from SN
+explosions.
+
+In addition to its stringent spatial and temporal association to GRB980425  
+\cite{galama,iwam}, SN1998bw was peculiar in many respects. The spectrum at
+early phases was unprecedented and led to different classifications 
+(Ib \cite{sad98bw} or peculiar Ic \cite{fil98bw,patpiem}). 
+SN1998bw was as bright as an SNIa and displayed expansion velocities as high as $3 \times 10^4$ \kms, suggesting that it was the result of an extremely energetic explosion 
+($>10^{52}$ erg), even if different degrees of asymmetry and beaming allow for a
+broad range of values \cite{hofl,iwam,woos98bw}. Its very powerful
+radio emission has been interpreted as due to the presence of a mildly relativistic
+blast wave interacting with a clumpy, structured \CSm\ deriving from a complex
+mass-loss history (see the chapter by Weiler \etal\ in this volume and \cite{weil98bw}).
+The complete dataset of optical and IR observations
+spanning over one year after the explosion has recently appeared \cite{pat98bw}.
+The analysis of the late time spectra \cite{mazz98bw} seems to confirm that the
+explosion was asymmetric as suggested by polarimetry \cite{hofl}.
+The presence of underlying SNe similar to SN1998bw has been invoked
+to explain the anomalous rebrightening in light curves of other GRB afterglows 
+at high redshift \cite{bloom,reichart}.
+
+Other known SNe, SN1997ef \cite{garn97ef} and SN1998ey \cite{garn98ey}, bear
+some spectroscopic resemblance to SN1998bw. In particular, SN1997ef was
+possibly associated with GRB971115 \cite{wanwhe} and, although it was fainter
+than SN1998bw, its kinetic energy was close to that of
+SN1998bw \cite{mazz97ef}.
+The case of the bright SNIc 1992ar \cite{cloc92ar}, 
+which occurred at about two $\sigma$ from the position of 
+GRB920616 \cite{woos98bw}, is also very interesting.
+
+Additional SNe possibly associated with GRBs are SN1997cy, (GRB970514
+ \cite{germ99,woos98bw}), observationally classified as SNIIn and possibly
+the brightest SN ever observed \cite{tur97cy}, and its twin SN1999E 
+\cite{capp99} (GRB980910 \cite{thor99}). As in the case of the type IIn
+SN1988Z, they show evidence for strong ejecta-\CSm\ interaction. Explosion
+energies as high as $3 \times 10^{52}$ erg are required to reproduce
+the light curves \cite{tur97cy}.
+ 
+To denote these particularly energetic objects, the 
+term ``hypernova'' \cite{iwam} has been used, although its meaning is not well defined or universally accepted.
+
+
+\section{Peculiar Supernovae} \label{pec}
+
+Several objects do not fit the schema described above. In many cases they
+are probably core collapse SNe exploding in unusual configurations and/or
+conditions, even if the presence of other explosion mechanisms cannot be 
+ruled out.
+
+For instance, SN1993R \cite{fil97b} (and possibly SN1990aj, see, \eg Fig.~\ref{fig_pec}), showed hybrid spectral features of type Ia and Ib/c at late 
+epochs. This has been interpreted as the explosion of a SNIb/c with overproduction of
+$^{56}$Ni or with the slow deflagration of a white dwarf.\\ The recent SN2000er was also
+classified as peculiar \cite{clotur00,maury}. The scanty 
+observations available show a broad maximum at M$_V=-19$ followed by a rapid decline of 5
+mag in 50 days. The spectrum shows (see, \eg Fig.~\ref{fig_pec}) a strong continuum with
+a drop at wavelengths shorter than 4000 \AA, possibly due to the presence of
+metals. Narrow lines  of He~I with P-Cygni profiles are visible, indicating the
+presence of gas with expansion velocity $\sim900$ \kms\/ as well as
+several other lines possibly due to FeII, FeIII and SiIII  \cite{bratho01}. It might be a core collapse SN which lost its He envelope shortly before the
+explosion.
+
+A well studied peculiar object is SN1961V, Zwicky's Type V, which was probably
+not a genuine SN because the exploding star survived the giant eruption 
+\cite{fil95b}. Similar objects might be SNe~1954J, 1999bw, and the faint SN1997bs for
+which an extremely luminous supergiant precursor has been identified
+\cite{vdyk99}.
+
+\section{Conclusions} 
+The taxonomy of supernovae is a subject which is still evolving. The experience of the last years has
+shown that the diversity of SNe increases with our ability to detect, study,  and understand them. Even though distant SNe are disclosing new frontiers in observational
+cosmology, much is still to be learned from nearby objects. Indeed, when we have the
+chance to apply new observational techniques or to obtain high signal-to-noise observations of
+nearby objects, new features and phenomena are revealed. Major progress 
+in  understanding supernovae can be expected if
+coordinated efforts involving several teams with wide ranging expertise 
+and access to different observational facilities are established.
+But SN occurrences are unpredictable:
+in order to really understand them, we would need their cooperation.
+
+\subsection*{Acknowledgments}
+This work is partially based on data collected at the \ESO\ observatory on La Silla in Chile.
+
+\begin{thebibliography}{100.}
+\addcontentsline{toc}{section}{References}
+
+\bibitem{ald94} G.~Aldering, R.M.~Humphreys, M.~Richmond: \aj \textbf{107} 662 (1994)
+ 
+%\bibitem{anap01}  G.C.~Anupama, T.~Sivarani, G.Pandey: \aap \textbf{367} 506 (2001) 
+ 
+\bibitem{aret} I.~Aretxaga, S.~Benetti, R.J.~Terlevich, A.C.~Fabian,
+E.~Cappellaro, M.~Turatto, M.~Della Valle: \mnras \textbf{309} 343 (1999)
+
+\bibitem{arn82} W.D.~Arnett:  \apj \textbf{253} 785 (1982)
+
+\bibitem{arn89} W.D.~Arnett, J.N.~Bahcall, R.P.~Kirshner, S.E.~Woosley:
+        \araap \textbf{27} 629 (1989)
+
+\bibitem{arn85} W.D.~Arnett, D.~Branch, J.C.~Wheeler: \nat \textbf{314} 
+              337 (1985)
+
+\bibitem{balb00} S.~Balberg, L.~Zampieri, S.L.~Shapiro:
+        \apj \textbf{541} 860 (2000)
+
+\bibitem{barb95} R.~Barbon, S.~Benetti, E.~Cappellaro, F.~Patat,
+        M.~Turatto, T.~Iijima: \aas \textbf{110} 513 (1995)
+
+\bibitem{barb99} R.~Barbon, V.~Buond\`i, E.~Cappellaro, M.~Turatto: \aas \textbf{139} 531 (1999)
+
+\bibitem{barb73} R.~Barbon, F.~Ciatti, L.~Rosino: \aap \textbf{25} 241 (1973)
+
+\bibitem{barb79} R.~Barbon, F.~Ciatti, L.~Rosino: \aap \textbf{72} 287 (1979)
+
+\bibitem{bart00} N.~Bartel \etal: \sci \textbf{287} 112 (2000)
+
+\bibitem{ben94aj} S.~Benetti, E.~Cappellaro, I.J.~Danziger, M.~Turatto, F.~Patat, M.~Della Valle: \mnras \textbf{294} 448 (1998)
+
+\bibitem{ben94} S.~Benetti, F.~Patat, M.~Turatto, G.~Contarini, R.~Gratton,
+        E.~Cappellaro: \aap \textbf{285} L13 (1994)
+
+%\bibitem{ben96} S.~Benetti,M.~Turatto, T.~Augusteijn, L.~Reduzzi,
+%       A.~Clocchiatti: \iauc 6454 (1996)
+
+\bibitem{ben96l} S.~Benetti, M.~Turatto, , P.A.~Mazzali: \mnras \textbf{305} 811 (1999)
+
+\bibitem{ben97d} S.~Benetti \etal: \mnras \textbf{322} 361 (2001)
+
+%\bibitem{bart94} O.S.~Bartunov, D.Yu.~Tsvetkov, I.V.~Filimonova: \pasp \textbf{106} 1276 (1994)
+        
+\bibitem{bert64} F.~Bertola: \annap \textbf{27} 319 (1964) 
+
+\bibitem{bert65} F.~Bertola, A.~Mammano, M.~Perinotto: \coap \textbf{174} 51 (1965) 
+             
+\bibitem{bionta87} R.M.~Bionta \etal: \prl \textbf{58} 1494 (1987) 
+
+%\bibitem{bran88} D.~Branch, W.~Drucker, D.J.~Jeffery: \apjl \textbf{330} L117 (1988) 
+
+\bibitem{bloom} J.S.~Bloom \etal: \nat \textbf{401} 453 (1999) 
+
+\bibitem{bran95} D.~Branch, M.~Livio, L.R.~Yungelson, F.R.~Boffi, E.~Baron: 
+            \pasp \textbf{107} 1019 (1995) 
+
+\bibitem{bratho01} D.~Branch, R.~Thomas: private communication (2001)
+
+\bibitem{bran01} D.~Branch \etal: \apj 566 1005 (2002)
+
+\bibitem{capp95} E.~Cappellaro, I.J.~Danziger, M.~Turatto: \mnras \textbf{277} 106 (1995)
+
+\bibitem{capp97}  E.~Cappellaro, P.~A.~Mazzali, S.~Benetti, I.~J.~Danziger, M.~Turatto, M.~Della Valle, F.~Patat: \aap \textbf{328} 203 (1997)
+
+\bibitem{captur01} E.~Cappellaro, M.~Turatto:  In: \emph{The Influence of Binaries on Stellar Population Studies}, ed.~by D.~Vanbeveren (Kluwer Academic Publishers, Dordrect 2001) p.~199
+
+\bibitem{capp99}  E.~Cappellaro, M.~Turatto, P.~A.~Mazzali: 
+         \iauc 7091 (1999)
+         
+\bibitem{capp01}  E.~Cappellaro \etal: \apjl \textbf{549} L215 (2001)
+
+\bibitem{chev82a} R.A.~Chevalier: \apj \textbf{259} 302 (1982)
+
+\bibitem{chev82b} R.A.~Chevalier: \apjl \textbf{259} L85 (1982)
+
+\bibitem{chevfr94} R.A.~Chevalier, C.~Fransson: \apj \textbf{420} 268 (1994)
+
+%\bibitem{chevfr01} R.A.~Chevalier, C.~Fransson: this book (2001)
+
+\bibitem{chug86} N.N.~Chugai: \sast \textbf{12} L192 (1986)
+
+\bibitem{chugdan} N.N.~Chugai, I.J.~Danziger: \mnras \textbf{268} 173 (1994)
+
+\bibitem{clotur00} A.~Clocchiatti, M.~Turatto: \iauc 7528 (2000)
+
+\bibitem{clowhe} A.~Clocchiatti, J.C.~Wheeler: \apj \textbf{491} 375 (1997)
+
+\bibitem{cloc96} A.~Clocchiatti, J.C.~Wheeler, M.S.~Brotherton, A.L.~Cochran, 
+       D.~Wills, E.S.~Barker, M.~Turatto: \apj \textbf{462} 462 (1996)
+
+\bibitem{cloc92h} A.~Clocchiatti \etal: \aj \textbf{111} 1286 (1996)
+
+\bibitem{cloc92ar} A.~Clocchiatti \etal: \apj \textbf{536} 62 (2000)
+
+\bibitem{cloc01} A.~Clocchiatti \etal: \apj \textbf{553} 886 (2001)
+
+\bibitem{elias} J.H.~Elias, J.A.~Frogel, J.A.~Hackwell, S.E.~Persson: 
+             \apjl \textbf{251} L13 (1981)
+
+%\bibitem{fass00} A.~Fassia: \mnras \textbf{318} 1093 (2000)
+
+\bibitem{fass01} A.~Fassia \etal: \mnras \textbf{325} 907 (2001)
+
+\bibitem{fese93} R.A.~Fesen: \apjl \textbf{413} L109 (1993)
+
+\bibitem{fil88} A.V.~Filippenko: \aj \textbf{96} 194 (1988)
+
+\bibitem{fil89} A.V.~Filippenko: \pasp \textbf{101} 588 (1989)
+
+%\bibitem{fil92} A.V.~Filippenko: \apjl \textbf{384} L37 (1992)
+
+\bibitem{fil97} A.V.~Filippenko: \araap \textbf{35} 309 (1997)
+
+\bibitem{fil97b} A.V.~Filippenko:  In: \emph{Thermonuclear Supernovae}, ed.~by          P.~Ruiz-Lapuente, R.~Canal, J.~Isern (Kluwer Academic Publishers, Dordrect 1997) p.~795
+
+\bibitem{fil98bw} A.V.~Filippenko: \iauc 6969 (1998)
+
+\bibitem{filsar85} A.V.~Filippenko, W.L.W.~Sargent: \nat \textbf{316} 407 (1985)
+
+%\bibitem{fil93} A.V.~Filippenko, T.~Matheson, L.C.~Ho: \apjl \textbf{415} L103 (1993)
+ 
+\bibitem{fil95b} A.V.~Filippenko, A.J.~Barth, G.C.~Bower, L.C.~Ho,          G.S.~Stringfellow, R.W.~Goodrich, A.~Porter: \aj \textbf{110} 2261 (1995)
+         
+\bibitem{fil95} A.V.~Filippenko \etal: \apjl \textbf{450} L11 (1995)
+         
+\bibitem{fili91bg} A.~V.~Filippenko \etal: \aj \textbf{104} 1543 (1992)
+
+\bibitem{fox} D.W.~Fox: \mnras \textbf{319} 1154 (2000) 
+
+\bibitem{fran82} C.~Fransson: \aap \textbf{111} 140 (1982)
+         
+\bibitem{fran84} C.~Fransson: \aap \textbf{133} 264 (1984)
+
+\bibitem{fran96} C.~Fransson, P.~Lundqvist, R.A.~Chevalier: \apj \textbf{461} 993 (1996)
+
+%\bibitem{good89} R.W.~Goodrich, G.S.~Stringfellow, G.D., Penrod, A.V.~Filippenko: \apj \textbf{342} 908 (1989)
+
+\bibitem{galama} T.~J.~Galama \etal: \nat \textbf{395} 670 (1998)
+
+\bibitem{garn98ey} P.~Garnavich, S.~Jha, R.P.~Kirshner, P.~Berlind: 
+          \iauc 7066 (1998)
+
+\bibitem{garn97ef} P.~Garnavich, S.~Jha, R.P.~Kirshner, P.~Challis, 
+         D.~Balam, W.~Brown, C.~Briceno: \iauc 6786 (1997)
+
+\bibitem{gask86} C.M.~Gaskell, E.~Cappellaro, H.L.~Dinerstein, D.~Garnett,
+         R.P.~Harkness, J.C.~Wheeler: \apjl \textbf{306} L77 (1986)
+
+%\bibitem{gera00} C.L.~Gerardy, R.A.~Fesen, P.~Höflich, J.C.~Wheeler: \aj \textbf{119} 2968 (2000)
+
+\bibitem{germ99} L.M.~Germany, D.J.~Reiss, B.P.~Schmidt, C.W.~Stubbs,
+       E.M.~Sadler: \apj \textbf{533} 320 (2000)
+
+\bibitem{gibson} B.K.~Gibson \etal: \apj \textbf{529} 723 (2000)
+
+%\bibitem{jef91} D.J.~Jeffery, D.~Branch, A.V.~Filippenko, K.~Nomoto: \apjl \textbf{377} L89 (1991)
+
+\bibitem{ham00} M.~Hamuy, S.C.~Trager, P.A.~Pinto, M.M.~Phillips, R.A.~Schommer, V.~Ivanov, N.B.~Suntzeff: \aj \textbf{120} 1479 (2000)
+ 
+\bibitem{harwhe} R.P.~Harkness, J.C.~Wheeler: In: \emph{Supernovae}, ed.~by A.G.~Petshek (Springer, Berlin 1990) p.~1
+
+\bibitem{hark87} R.P.~Harkness \etal: \apj \textbf{317} 355 (1987)
+
+\bibitem{hira87} K.~Hirata \etal: \prl \textbf{58} 1490 (1987) 
+
+\bibitem{hofl} P.~H\"oflich, J.C.~Wheeler, L.~Wang: \apj \textbf{521} 179 (1999) 
+
+\bibitem{how01} D.A.~Howell: \apjl \textbf{554} L193 (2001) 
+
+\bibitem{iwam} K.~Iwamoto \etal: \nat \textbf{395} 672 (1998)
+
+\bibitem{jha99} S.~Jha \etal: \apjs \textbf{125} 73 (1999)
+
+\bibitem{leib00} B.~Leibundgut: \aar \textbf{10} 179 (2000)
+
+\bibitem{leib91} B.~Leibundgut \etal: \apj \textbf{372} 531 (1991)
+
+\bibitem{leib93} B.~Leibundgut \etal: \aj \textbf{105} 301 (1993)
+
+\bibitem{lenz01} E.J.~Lentz \etal: \apj \textbf{507} 406 (2001)
+
+\bibitem{leo} D.C.; Leonard, A.V.~Filippenko, A.J.~Barth, T.~Matheson:
+       \apj \textbf{536} 239 (2000) 
+
+\bibitem{lira98} P.~Lira \etal: \aj \textbf{116} 1006 (1998) 
+
+\bibitem{lucy91} L.B.~Lucy: \apj \textbf{383} 308 (1991) 
+
+\bibitem{mat00} T.~Matheson, A.V.~Filippenko, R.~Chornock, D.C.~Leonard, W.~Li: \aj \textbf{119} 2303 (2000)
+
+\bibitem{mat00c} T.~Matheson, A.V.~Filippenko, L.C.~Ho, A.J.~Barth,  D.C.~Leonard: \aj \textbf{120} 1499 (2000)
+
+\bibitem{mat01} T.~Matheson, A.V.~Filippenko, W.~Li, D.C.~Leonard, J.C.~Shields: \aj \textbf{121} 1648 (2001)
+
+\bibitem{mat00b} T.~Matheson \etal: \aj \textbf{120} 1487 (2000)
+
+\bibitem{maury} A.~Maury, I.~Hook, R.~Gorki, F.~Selman, M.~Dennefeld: \iauc 7528 (2001)
+
+\bibitem{maza} J.~Maza, S.~van den Bergh: \apj \textbf{204} 519 (1976)
+
+\bibitem{mazz98}  P.A.~Mazzali, E.~Cappellaro, I.J.~Danziger,  S.~Benetti, M.~Turatto: \apjl \textbf{499} L49 (1998)
+
+\bibitem{mazz97ef} P.A.~Mazzali, K.~Iwamoto, K.~Nomoto: \apj \textbf{545} 407 (2000) 
+
+\bibitem{mazz98bw} P.A.~Mazzali, K.~Nomoto, F.~Patat, K.~Maeda: \apj 
+            \textbf{559} 1047 (2001) 
+
+\bibitem{mcmill} R.J.~McMillan, R.~Ciardullo: \apj \textbf{473} 707 (1996)
+  
+\bibitem{meikle} W.P.S.~Meikle: \mnras \textbf{314} 782 (2000)
+  
+\bibitem{milne} P.A.~Milne, L.S.~The, M.D.~Leising: \apjs \textbf{124} 
+           503 (1999) 
+
+\bibitem{mink} R.~Minkowski: \mnras \textbf{53} 224 (1941) 
+
+%\bibitem{nomo93} K.~Nomoto, T.~Suzuki, T.~Shigeyama, S.~Kumagai, H.~Yamaoka, H.~Saio: \nat \textbf{364} 507 (1993)
+
+\bibitem{nomo95} K.~Nomoto, K.~Iwamoto, T.~Suzuki: \prp \textbf{256} 173 (1995)
+
+\bibitem{nugent} P.~Nugent, M.M.~Phillips, E.~Baron, D.~Branch, P.~Hauschildt: \apjl \textbf{455} L147 (1995)
+ 
+%\bibitem{pacz} B.~Paczy\'nski: \emph{Supernovae and Gamma Ray Bursts;
+%  The Largest Explosions Since the Big Bang}.~ed.~by M.~Livio, N.~Panagia
+%  and K.~Sahu (Cambridge University Press, Cambridge 2001) pp.1
+
+%\bibitem{pas00} A.~Pastorello, G.~Altavilla, E.~Cappellaro, and M.~Turatto, S.~Benetti: \iauc 7367 (2000)
+
+\bibitem{pas01} A.~Pastorello \etal: \mnras \textbf{333} 27 (2002)
+
+\bibitem{pat93} F.~Patat, R.~Barbon, E.~Cappellaro, M.~Turatto: \aas \textbf{98} 443 (1993)
+
+\bibitem{pat94} F.~Patat, R.~Barbon, E.~Cappellaro, M.~Turatto: \aap \textbf{282} 731 (1994)
+
+%\bibitem{pat96} F.~Patat, S.~Benetti, E.~Cappellaro, I.J.~Danziger, M.~Della Valle, P.A.~Mazzali, M.~Turatto: \mnras \textbf{278} 111 (1996)
+
+\bibitem{pat95} F.~Patat, N.~Chugai, P.A.~Mazzali: \aap \textbf{299} 715 (1995)
+
+\bibitem{patpiem} F.~Patat, A.~Piemonte: \iauc 6918 (1998) 
+
+\bibitem{pat98bw} F.~Patat \etal: \apj \textbf{555} 900 (2001)
+
+\bibitem{perl97} S.~Perlmutter \etal: \apj \textbf{483} 565 (1997)
+
+\bibitem{phil93} M.M.~Phillips: \apjl \textbf{413} L105 (1993) 
+
+\bibitem{phil} M.M.~Phillips, S.R.~Heatcote, M.~Hamuy, M.~Navarrete: \aj \textbf{95} 1087 (1988) 
+
+\bibitem{phil99} M.M.~Phillips, P.~Lira, N.B.~Suntzeff, R.A.~Schommer, M.~Hamuy, J.~Maza: \aj \textbf{118} 1766 (1999) 
+
+%\bibitem{pod93} P.~Podsiadlowski, J.J.L.~Hsu, P.C.~Joss, R.R.~Ross: \nat, \textbf{364} 509 (1993) 
+
+\bibitem{porfil} A.C.~Porter, A.V.~Filippenko: \aj \textbf{93} 1372 (1987) 
+
+\bibitem{psk67} Y.P.~Pskovskii: \azh \textbf{44} 82 (1967) 
+             
+\bibitem{reichart} D.E.~Reichart: \apjl \textbf{521} L111 (1999) 
+
+\bibitem{riess98} A.G.~Riess \etal: \aj \textbf{116} 1009 (1998) 
+
+\bibitem{ruiz92} P.~Ruiz-Lapuente, E.~Cappellaro, M.~Turatto, C.~Gouiffes,
+        I.J.~Danziger, M.~della Valle, L.B.~Lucy: \apjl \textbf{387} L33 (1992) 
+
+\bibitem{sad98bw} E.M.~Sadler, R.A.~Stathakis, B.J.~Boyle, R.D.~Ekers: 
+        \iauc 6901 (1998) 
+
+\bibitem{saha} A.~Saha, A.~Sandage, G.A.~Tammann, L.~Labhardt, F.D.~Macchetto,
+        N.~Panagia: \apj \textbf{522} 802 (1999)
+
+\bibitem{saha01} A.~Saha \etal: \apj \textbf{551} 973 (2001)
+    
+\bibitem{sal01} M.~Salvo, E.~Cappellaro, P.A.~Mazzali, S.~Benetti, 
+        I.J.~Danziger, F.~Patat, M.~Turatto: \mnras \textbf{321} 254 (2001) 
+
+\bibitem{schl90} E.M.~Schlegel: \mnras \textbf{224} 269 (1990) 
+
+%\bibitem{schl96} E,M, Schlegel: \aj \textbf{111} 1660 (1996)
+
+\bibitem{schmecho} B.~Schmidt, R.P.~Kirshner, B.~Leibundgut, L.~Wells, A.C.~Porter, P.~Ruiz-Lapuente, A.V.~Filippenko: \apjl \textbf{434} L19 (1994) 
+
+\bibitem{schm94} B.~Schmidt \etal: \aj \textbf{107} 1444 (1994) 
+
+\bibitem{sm01b} S.J.~Smartt, G.F.~Gilmore, A.~Christopher, C.A.~Tout, S.T.~Hodgkin: \apj \textbf{565} 1089 (2002)
+
+\bibitem{sm01a} S.J.~Smartt, G.F.~Gilmore, N.~Trentham, C.A.~Tout, C.M.~Frayn: \apjl \textbf{556} L29 (2001)
+
+%\bibitem{spy01} J.~Spyromilio, B.~Leibundgut, R.~Gilmozzi: \aap \textbf{376} 188 (2001)
+
+\bibitem{sunt96} N.B.~Suntzeff: In: \emph{Supernova and Supernova Remnants}, 
+ed.~by R.~McCray, Z.~Wang (Cambridge University Press, Cambridge 1996) p. 41
+
+\bibitem{sunt99} N.B.~Suntzeff \etal: \aj \textbf{117} 1175 (1999)
+
+\bibitem{terl92} R.J.~Terlevich, G.~Tenorio-Tagle, J.~Franco, J.~Melnick: 
+        \mnras \textbf{255} 713 (1992)
+
+\bibitem{thor99} S.E.~Thorsett, D.W.~Hogg: \gcn \textbf{197} (1999)
+
+\bibitem{tur91bg} M.~Turatto, S.~Benetti, E.~Cappellaro, I.J.~Danziger, M.~Della Valle, C.~Gouiffes, P.A.~Mazzali, F.~Patat: \mnras \textbf{283} 1 (1996)
+
+\bibitem{tur93} M.~Turatto, E.~Cappellaro, I.J.~Danziger, S.~Benetti: \mnras \textbf{265} 471 (1993)
+
+\bibitem{tur88z} M.~Turatto, E.~Cappellaro, I.J.~Danziger, S.~Benetti, C.~Gouiffes, M.~Della Valle: \mnras \textbf{262} 128 (1993)
+
+\bibitem{tur97d} M.~Turatto \etal: \apjl \textbf{498} L129 (1998)
+
+\bibitem{tur97cy} M.~Turatto \etal: \apjl \textbf{534} L57 (2000)
+
+%\bibitem{utr94} V.~Utrobin: \aap \textbf{281} L89 (1994)
+
+\bibitem{uomo86} A.~Uomoto, R.P.~Kirshner: \apj \textbf{308} 685 (1986)
+
+\bibitem{vdbbra} S.~van den Bergh, D.~Branch: \aj \textbf{105} 2231 (1993)
+
+\bibitem{vdbpaz} S.~van den Bergh, J.~Pazder: \apj \textbf{390} 34 (1992)
+
+%\bibitem{vdyk92} S.D.~van Dyk: \aj \textbf{103} 1788 (1992)
+
+\bibitem{vdyk96} S.D.~Van Dyk, M.~Hamuy, A.V.~Filippenko: \aj \textbf{111} 2017 (1996)
+
+\bibitem{vdyk99} S.D.~Van Dyk, C.Y.~Peng, A.J.~Barth, A.V.~Filippenko: \aj \textbf{118} 2331 (1999)
+
+\bibitem{vand94} S.D.~Van Dyk, K.W.~Weiler, R.A.~Sramek, M.P.~Rupen, N.~Panagia: \apjl \textbf{432} L115 (1994)
+
+\bibitem{vdyk96b} S.D.~Van Dyk, K.W.~Weiler, R.A.~Sramek, E.M.~Schlegel, A.V.~Filippenko, N.~Panagia, B.~Leibundgut: \aj \textbf{111} 1271 (1996)
+         
+\bibitem{wanwhe} L.~Wang, J.C.~Wheeler: \apjl \textbf{504} L87 (1998)
+
+\bibitem{weil01} K.W.~Weiler: http://rsd-www.nrl.navy.mil/7214/weiler/kwdata/RSNtable.txt
+
+\bibitem{weil98bw} K.W.~Weiler, N.~Panagia, M.J.~Montes: \apj \textbf{562} 670 (2001)
+
+%\bibitem{whefil} J.C.~Wheeler, A.V.~Filippenko: \emph{Supernova and Supernova Remnants}.~ed.~by R.~McCray, Zhenru Wang (Cambridge University Press, Cambridge 1996) pp.~241
+
+\bibitem{wheben00} J.C.~Wheeler, S.~Benetti: In: \emph{Allen's Astrophysical Quantities}, ed.~by A.N.~Cox (Springer, New York 2000) p.~451
+
+\bibitem{whehar} J.C.~Wheeler, R.P.~Harkness: \rpp \textbf{53} 1467 (1990)
+
+\bibitem{whee87} J.C.~Wheeler, R.P.~Harkness, E.S.~Barker, A.L.~Cochran, 
+    D.~Wills: \apjl \textbf{313} L69 (1987)
+
+\bibitem{whe94} J.C.~Wheeler, R.P.~Harkness, A.~Clocchiatti, S.~Benetti, 
+    M.S.~Brotherton, D.L.~DePoy, J.~Elias: \apjl  \textbf{436} L135 (1994)
+
+\bibitem{whelev85} J.C.~Wheeler, R.~Levreault: \apjl \textbf{294} L17 (1985)
+
+\bibitem{woos98bw} S.E.~Woosley, R.G.~Eastman, B.P.~Schmidt: \apj  \textbf{516} 788 (1999)
+
+%\bibitem{woos87} S.E.~Woosley, P.A.~Pinto, P.G.~Martin, T.A.~Weaver: \apj  \textbf{318} 664 (1987)
+
+%\bibitem{woo94} S.E.~Woosley, R.G.~Eastman, T.A.~Weaver, P.A.~Pinto: \apj  \textbf{429} 300 (1994)
+
+\bibitem{woowea} S.E.~Woosley, T.A.~Weaver: \araap \textbf{24} 205 (1986)
+
+\bibitem{qiu} Q.~Yulei, W.~Li, Q.~Qiyuan, H.~Jingyao: \aj \textbf{117} 736 (1999)  
+
+\bibitem{zimm94} H.U.~Zimmerman \etal: \nat \textbf{367} 621 (1994)
+
+\bibitem{zwicky} F.~Zwicky: In: \emph{Stars and Stellar Systems}, ed.~by L.H.~Aller, D.B.~McLaughin (University of Chicago Press, Chicago 1965) p.~367
+
+\end{thebibliography}
+%
+\end{document}

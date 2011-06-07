@@ -54,4 +54,10 @@
 \contentsline {subsection}{\numberline {2.6.1}A Background interloper?}{37}{subsection.2.6.1}
 \contentsline {subsection}{\numberline {2.6.2}Tycho-G\ as the Donor Star to the Tycho SN}{39}{subsection.2.6.2}
 \contentsline {section}{\numberline {2.7}Outlook and Future Observations}{41}{section.2.7}
-\contentsline {chapter}{Appendices}{51}{section*.25}
+\contentsline {chapter}{\numberline {3}Linear interpolation in N-Dimensions}{43}{chapter.3}
+\contentsline {section}{\numberline {3.1}Delauney triangulation}{44}{section.3.1}
+\contentsline {section}{\numberline {3.2}Convex Hull}{44}{section.3.2}
+\contentsline {section}{\numberline {3.3}Barycentric coordinates system}{45}{section.3.3}
+\contentsline {section}{\numberline {3.4}Triangle Finding and Interpolation}{46}{section.3.4}
+\contentsline {section}{\numberline {3.5}Conclusion}{47}{section.3.5}
+\contentsline {chapter}{Appendices}{57}{section*.28}
