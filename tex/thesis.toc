@@ -65,18 +65,18 @@
 \contentsline {paragraph}{Tycho-B:}{49}{figure.caption.26}
 \contentsline {subsection}{\numberline {3.3.4}Stellar parameters}{49}{subsection.3.3.4}
 \contentsline {paragraph}{Tycho-B:}{50}{figure.caption.27}
-\contentsline {subsection}{\numberline {3.3.5}Distance}{51}{subsection.3.3.5}
+\contentsline {subsection}{\numberline {3.3.5}Distance}{52}{subsection.3.3.5}
 \contentsline {section}{\numberline {3.4}Conclusion}{54}{section.3.4}
 \contentsline {section}{\numberline {3.5}Acknowledgments}{55}{section.3.5}
 \contentsline {chapter}{\numberline {4}SN1006}{57}{chapter.4}
 \contentsline {chapter}{\numberline {5}Automatic fitting of optical Type Ia Supernova spectra - the DALEK project}{59}{chapter.5}
 \contentsline {section}{\numberline {5.1}The ML MONTE CARLO-Code}{60}{section.5.1}
-\contentsline {section}{\numberline {5.2}Properties of Type Ia supernova spectra}{60}{section.5.2}
+\contentsline {section}{\numberline {5.2}Manually fitting a Type Ia supernova}{60}{section.5.2}
 \contentsline {chapter}{\numberline {6}Conclusion and Future Work}{63}{chapter.6}
 \contentsline {chapter}{\numberline {7}Linear interpolation in N-Dimensions}{65}{chapter.7}
 \contentsline {section}{\numberline {7.1}Delauney triangulation}{66}{section.7.1}
-\contentsline {section}{\numberline {7.2}Convex Hull}{66}{section.7.2}
-\contentsline {section}{\numberline {7.3}Barycentric coordinates system}{67}{section.7.3}
-\contentsline {section}{\numberline {7.4}Triangle Finding and Interpolation}{68}{section.7.4}
-\contentsline {section}{\numberline {7.5}Conclusion}{69}{section.7.5}
-\contentsline {chapter}{Appendices}{79}{section*.35}
+\contentsline {section}{\numberline {7.2}Convex Hull}{68}{section.7.2}
+\contentsline {section}{\numberline {7.3}Barycentric coordinates system}{69}{section.7.3}
+\contentsline {section}{\numberline {7.4}Triangle Finding and Interpolation}{70}{section.7.4}
+\contentsline {section}{\numberline {7.5}Conclusion}{70}{section.7.5}
+\contentsline {chapter}{Appendices}{81}{section*.38}

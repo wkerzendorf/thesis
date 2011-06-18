@@ -34,9 +34,11 @@ In the first instance the photon is emitted with a random frequency and a random
 
 
 
-\section{Properties of Type Ia supernova spectra}
+\section{Manually fitting a Type Ia supernova}
 
 When fitting manually there are several features that help guide the direction of the fit. We will attempt to explain by using a spectrum of SN2002bo (cite?????) 10 days before maximum. In this section we will only talk about fits with no abundance stratification. Stephan Hachinger has kindly provided his manually obtained best fitting parameters ( for the supernova at this stage (see Figure \ref{fig:sn2002bo-10_bf}).
+Directly measurable are the redshift of the supernova (and implied distance) and the time of the spectrum relative to maximum. We assume calculate the time since explosion assuming a rise time of 19.5 days.
+The other parameters are initialized using empirical data. 
 
 \begin{figure}[htbp] %  figure placement: here, top, bottom, or page
    \centering
@@ -45,15 +47,42 @@ When fitting manually there are several features that help guide the direction o
    \label{fig:sn2002bo-10_bf}
 \end{figure}
 
-The chosen fundamental parameters are $\loglbol=xx$, $\vph=xxx$. We have listed the non-zero abundances in Table{tab:sn2002bo_perf_param}. 
+The chosen fundamental parameters are $\loglbol=xx$, $\vph=xxx$. We have listed the non-zero abundances in Table \ref{tab:sn2002bo_perf_param}. 
+
+
 
 The P-Cygni profiles of many features are easily visible. The Calcium line in the blue can be seen to be to blueshifted in relation to the model. This property is not unusual and is thought to come from high velocity component at the outer edge of the ejecta. The next major known discrepancy that can be seen is the excess of flux redwards of  $\approx 6200 \AA$.  This is a region that usually does not fit well as the underlying black body spectrum overestimates the flux in this region. When fitting manually often one tries to fit the depth the lines instead of the continuum.
 
-A large offset in \lum\ is easily visible as a large offset of the continuum. Thus it is easy to constrain the parameter space in \lum\ initially. \lum\ also has influence on the temperature of the model through:
+There are three main parameters that have the most influence on the overall fit: Luminosity, photospheric velocity and abundance in iron group elements.
+
+A large offset in \lum\ to the best fit paramater is easily visible as a large offset of the continuum (see Figure \ref{fig:sn2002bo_lum_offset}. Thus it is easy to constrain the parameter space in \lum\ initially. \lum\ also has influence on the temperature of the model through:
 \[
 L_{\rm bol} = 4\pi\sigma\, R^2\,T^4 = 4\pi\sigma\,\vph\,\texp.
-\label{eq:Lum_temp_relation}
+\label{eq:lum_temp_relation}
 \]
+
+Velocity in astronomy is often measured using the doppler shift. In this case however it is hard to measure the photospheric velocity as lines are created at different depths and thus at different velocities. This smears out the line profiles which makes fitting velocities nearly impossible using this technique. 
+The main impact of photospheric velocity is establishing the temperature given a luminosity. A model with a too high photospheric velocity will have expanded more than the real spectrum at that time and will be cooler. This results in a spectrum that is too luminous in the red and not luminous enough in the blue (see Figure \ref{fig:sn2002bo_vph_offset}). 
+A secondary effect is that the ion population will be different to the actual supernova and the line spectrum differs.
+\begin{figure}[htbp] %  figure placement: here, top, bottom, or page
+   \centering
+%   \includegraphics[width=2in]{replace} 
+   \caption{example caption}
+   \label{fig:sn2002bo_vph_offset}
+\end{figure}
+
+The iron group element have a similar influence on the overall flux distribution as the photospheric velocity. 
+As we assume no stable Cobalt and the input parameters for Nickel, Cobalt and Iron are $\Ni{56}_0$ and $\Fe{56}_0$ and calculate the abundances using radioactive decay. Ti and Cr have no easily identifiable lines in the observed spectra, but provide line blanketing in the blue. We often lock their ratios and only use one abundance as an input parameter. 
+
+These elements cause photons to be absorbed in the UV and reemit in the red. A too high abundance will suppress the flux in the blue too much and will cause the spectrum to be over-luminous in the red (see Figure \ref{fig:sn2002_ige_offset}). Although physically different from the photospheric velocity, phenomenologically these are similar. 
+The degeneracy is broken by identifiable Fe-Lines in the red part of the spectrum as well as the ionization balance determined by the temperature (influenced by photospheric velocity). 
+This near degeneracy causes a very complex search space. 
+
+There are six other abundances that are taken into account when fitting: Carbon, Oxygen, Magnesium, Silicon, Sulfur and Calcium. Among these Oxygen plays a special role. It does not have lines except the Oxygen triplet at 7778 \AA. In our fitting routine it acts as a buffer element and is assigned the remaining fraction that is left after all elements have been given abundances. 
+
+The first element that is usually adjusted from its initial value is Calcium. The Calcium line is relatively easy to identify and 
+
+
 
 
 

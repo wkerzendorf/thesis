@@ -1,0 +1,44 @@
+\documentclass[11pt]{amsart}
+\usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   % ... or a4paper or a5paper or ... 
+%\geometry{landscape}                % Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{epstopdf}
+\usepackage{ctable}
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+
+\title{Brief Article}
+\author{The Author}
+%\date{}                                           % Activate to display a given date or no date
+
+\begin{document}
+\maketitle
+%\section{}
+%\subsection{}
+
+
+\ctable[
+    cap = short caption
+    caption = long caption
+    label = label
+    pos = ht
+    ]{ccc}{}{\FL
+&abundance & element
+\ML
+&O & 0.548604\NN
+&Mg & 0.1\NN
+&Si & 0.25\NN
+&S & 0.045\NN
+&Ca & 0.010001\NN
+&Ti & 0.00014\NN
+&Cr & 0.0007\NN
+&Ni0 & 0.014935\NN
+&Fe0 & 0.007443
+\LL}
+
+
+
+
+\end{document}  

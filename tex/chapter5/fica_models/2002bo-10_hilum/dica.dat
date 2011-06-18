@@ -1,0 +1,22 @@
+
+     9    4                            | NP5 	 ITT
+
+   20   11000   501  0.21               | JS    MB    KB
+
+   9.250   11700.0   10000.0            | Log L(Bol)/Ls  Vph(km/s)  Tb(K)
+
+    10.40   31.44    0.0042              | t (dys)   m-M    redshift
+
+    0.03    0.35                        | E(B-V)Gal 	E(B-V)Host
+
+   110463147   -3.70                    | KR    Log tau(limit)
+
+  25.0       5                          | CHL(eV)   NC (no. of cascades)
+
+   0.2500   1.2000   1500               | Wavelength grid - mu 
+
+   2500.00   10000.00   8.940            | Obs interval in A   Log L(wv1,wv2)
+
+   1000.00   6500.00                    | Em interval at lwr bdry  - KC(3)=0
+
+   1   1   1   1   1                    | Options  -  see FICA.NOTES

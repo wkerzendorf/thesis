@@ -1,0 +1,451 @@
+% !TEX root =../thesis.tex
+\chapter{Introduction}
+\label{chap:intro}
+
+\lettrine[lines=4]{F}{or} millenia mankind has watched and studied the nightsky. Apart from planets and comets it appeared an immuatble canvas on which the stars rested. It comes as no surprise that for ancient civilizations supernovae (which were very rare events, occuring only every few centuries ) were interpreted as important Omens as they broke the paradigm of the unchanging nightskies. As these events are so rare their origin remained a mystery until the middle of the last century \citet{1934PNAS...20..254B} suggested that "the phenomenon of a super-nova represents the transition of an ordinary star into a body of considerably smaller mass". For the last 85 years the "supernova-branch" in astronomy has been developing. There have been many advances, but there are still very unknowns about supernovae. This work addresses two subfields of supernovae: The unsolved progenitor problem for Type Ia Supernovae as well as quantifying the nucleosynthetic yield of Type Ia supernovae from low-resolution spectra.
+
+
+\section{Ancient Supernovae}
+\label{sec:ancientsn}
+
+One of the earliest recorded supernovae is SN185. It first appeared in December of 185 and was visible (however fading) till the August of 187. The main record is the \textit{Houhanshu} \citep{2006ChJAA...6..635Z} which had a described it to be close to $\alpha$ \textit{cen}. Follow-up in modern times have revealed a supernova remnant in a distance of roughly 1\;kpc near the $\alpha$ \textit{cen} \citep{2006ChJAA...6..635Z}. SN185 is often named as the oldest written record of a supernova, this is however sometimes contested as it is still not completely clear if the so called "guest star" was a comet or a supernovae. 
+
+The oldest undisputed record of a supernova is SN1006. It was observed worldwide by asian, arabic and european astronomers. 
+mention 1885 in andromeda\cite{1885AN....112..360H}
+
+
+\section{Modern supernova observations and surveys}
+\label{sec:}
+The most famous and often quoted paper is \citet{1934PNAS...20..254B}. It termed the term supernova and established the difference between common novae and supernovae. \citet{1934PNAS...20..254B} suggested that these luminous events are caused by the death of stars. 
+
+In order to understand the phenomenon of the supernova better Zwicky began a supernova search with the 18-inch Schmidt telescope. He found several supernovae cite?? which in turn inspired Minkowski to classify these supernovae by their spectra \citet{1941PASP...53..224M}. 
+He categorized the 14 known objects into two categories. Those without hydrogen he called 'Type I', those with hydrogen he called 'Type II' (see section \ref{sec:sn_classification} for a more detailed description).
+
+With the advent of affordable computing in the 1960s the first computer controlled telescopes were build. The 24-inch telecope was built by the Northwestern University and was deployed in Corralitos Observatory in New Mexico. This search resulted 14 supernovae. 
+
+The 1990's can be described as the decade of the supernova surveys. The Leuschner Observatory Supernova Survey began in 1992 followed shortly by the Berkeley Automatic Imaging Telescope (BAIT). These searches resulted in 15 supernovae by 1994 \citep{1994AAS...185.7905V}. One of the most well known discoveries is SN 1994D. This supernovae was observed with the Hubble Space Telescope and resulted in an image that is widely used today (see Figure \ref{fig:sn1994d}).
+
+These successful programmes were succeeded by the Lick Observatory Supernova Search (LOSS) using the Katzman Automatic Imaging Telescope (KAIT). By the year 2000 it had found 96 supernovae \citep{2001ASPC..246..121F}.
+
+
+\section{Supernova classification}
+\quote{Gallia est omnis divisa in partes tres.}
+
+\label{sec:sn_classification}
+The classification of supernovae started in the 1941 when Minkowski realized that there seem to be two main types \citep{1941PASP...53..224M}. Minkowski relied on optical low-resolution spectra near the maximum to identify the two main subtypes (see Figure \ref{fig:sn_spectra_turatto} for an overview of spectra of different types). Those containing a hydrogen line (6563 \AA) he called Type II supernovae and those showing no hydrogen he called Type I supernovae.  
+
+\begin{figure}[htbp] %  figure placement: here, top, bottom, or page
+   \centering
+   \includegraphics[width=\textwidth]{chapter_intro/plots/sn_classification.pdf} 
+   \caption{}
+   \label{fig:sn_classification}
+\end{figure}
+
+This basic classification has remained to this day, however the two main classes branched into several subtypes.
+During the 1980s the community discovered that most \sneia\ showed a broad Si II line at 6130 \AA, but that there was a distinct subclass of objects that lacked this feature. These Silicon-less objects were then subclassed further into objects that showed helium -- now known as Type Ib --  and those that did not were called Type Ic \citep{1987ApJ...317..355H, 1986ApJ...306L..77G}. The classical Type I supernova was renamed to Type Ia (see Figure \ref{fig:sn_classification}). 
+
+\begin{figure}[htbp] %  figure placement: here, top, bottom, or page
+   \centering
+   \includegraphics[width=\textwidth]{chapter_intro/plots/sn_class_spectra.pdf} 
+   \caption{example caption}
+   \label{fig:sn_class_spectra}
+\end{figure}
+
+This classification only uses static spectral features. In recent years, however, there has been a push towards also using the lightcurve and spectral evolution as classification parameters. \citet{2005ApJ...623.1011B} provide an overview of this subclassing of \sneia\ and suggest that there are two distinct subclasses of \sneia. As a parameter for this further partitioning they use the velocity measured from the Si II feature at 6355 \AA. Those with a relatively fast decline in this radial velocity they call \hvg\ (high velocity gradient) those with a slow decline rate are named \lvg\ (low velocity gradient). 
+Figure \ref{fig:sn_class_lvg_hvg} shows the velocity gradient of 26 supernovae taken from  \citet{2005ApJ...623.1011B}
+
+\begin{figure}[htbp] %  figure placement: here, top, bottom, or page
+   \centering
+   \includegraphics[width=\textwidth]{chapter_intro/plots/velocity_gradient.pdf} 
+   \caption{example caption}
+   \label{fig:sn_class_lvg_hvg}
+\end{figure}
+
+Futhermore there seems to be also a split in the intrinsic luminosity of \sneia. The canonical objects for these distinct brightness classes are the overluminous 1991T \citet{1992AJ....103.1632P} and the faint 1991bg .
+Faint supernovae are fast decliners both in velocity as well as luminosity \citet{2005ApJ...623.1011B}. The bright supernovae seem to occur in both the \hvg\ and \lvg\ group. I will discuss the physical implications of these two subtypes in section \ref{sec:snia_physics}.
+
+In summary, although there are several different subclasses the \snia as a class itself is relatively homogenous when compared to the different \sneii. ??? rates????
+
+\begin{figure}[htbp] %  figure placement: here, top, bottom, or page
+   \centering
+   \includegraphics[width=\textwidth]{chapter_intro/plots/snii_lc_comparison.pdf} 
+   \caption{example caption}
+   \label{fig:snii_lc_comparison}
+\end{figure}
+\sneii span large ranges in observables like luminosity, explosion energies, etc. We can divide the main class into three main subclasses Type II Plateau \citet[\sniip][]{1979A&A....72..287B} which have a relatively flat light curve after an initial maximum (see Figure \ref{fig:sniil_sniip}), in contrast the Type II Linear \cite[\sniil][]{1990MNRAS.244..269S} has a rapid linear decline after the maximum. The third subclass is the narrow-lined \snii (\sniin) which is characterized by narrow emission lines, which are thought to come from interaction with the \csm. Unlike the \sneia there are numerous intermediate objects among these three basic classes. 
+
+???? 
+
+For a more comprehensive review of the classification of supernovae the reader should consult \citet{2003LNP...598...21T, 2007AIPC..937..187T}.
+
+\section{Type II/Ibc Supernova}
+\subsection{Observation}
+
+\subsection{Theory}
+All \snii are believed to be powered by the collapse of the electron-degenerate iron core of massive stars. For the iron core to form there had to be several prior stages of evolution.
+
+\paragraph{Evolution of Massive Stars:}  To understand the state of the star shortly before supernova evolution it is imperative to follow its evolution. For the topic of \snii we will concentrate on the nuclear physics issues of massive star evolution in this section. In the scope of this work we will follow a single massive star as a progenitor. There has been ample of suggestions that \snii progenitors are binary, but their evolution is much more complex and is outside the scope of this work?? citation needed??.  In this context massive stars are stars bigger than 8 \msun. This is the minimum mass for a star that is believed to explode in a \snii. Like all stars massive stars spend most of their lives on the main-sequence burning hydrogen. This happens via the carbon-nitrogen-oxygen cycle and its various side-channels (e.g $^{12}C(p,\gamma)\rightarrow^{13}N(e^+\nu)\rightarrow^{13}C(p,\gamma)\rightarrow^{14}N(p,\gamma)^{15}O(e^+\nu)\rightarrow^{15}N(p,\alpha)\rightarrow^{12}C$). For a 20 \msun star this phase lasts for 8.13 \myr (see \citet{2002RvMP...74.1015W}).
+
+As the star evolves it begins to ignite Helium which burns via the triple-$\alpha$ process to Carbon ($3\alpha\rightarrow^{12}C$) and then to Oxygen ($^{12}C(\alpha,\gamma)\rightarrow^{16}O$). Table 1 in \citet{2002RvMP...74.1015W}) lists 1.17 \myr\ for this phase. 
+
+Due to neutrino losses the stellar evolution is qualitatively different after helium burning. A neutrino-mediated Kelvin-Helmholtz contraction of the carbon-oxygen core describes the advanced stages of nuclear burning in massive stars well (\citet{2002RvMP...74.1015W}). This is contraction is occasionally delayed when the burning of new fuel sources counter-acts the neutrino losses. The star in the end is composited of a series of shells that burn the above fuel and deposit the ashes on the shell below (see Figure \ref{fig:fusion_shells}). There are four distinct burning stages. Their principal fuels are carbon, neon, oxygen, magnesium and silicon.
+
+\begin{figure}[htbp] %  figure placement: here, top, bottom, or page
+   \centering
+   \includegraphics[width=\textwidth]{chapter_intro/plots/fusion_shells.pdf} 
+   \caption{example caption}
+   \label{fig:fusion_shells}
+\end{figure}
+
+
+In the carbon burning stage two $^{12}$C nuclei are fused to an excited state of Magnesium which then decays slowly to $^{23}$Na (see \ref{eqn:c_burning}).
+\begin{eqnarray}
+^{12}C+^{12}C\rightarrow^{24}Mg&\rightarrow&^{23}Mg+n \nonumber \\
+	&\rightarrow&^{20}Ne + \alpha \nonumber \\
+	&\rightarrow&^{23}Na +p \nonumber \\
+	\label{eqn:c_burning}
+\end{eqnarray}
+
+Although oxygen has a lower Coulomb barrier, the next nucleus to burn after Carbon is Neon. This layer is composed of of  $^{16}$O, $^{20}$Ne and $^{24}$Mg and burns Neon with high-energy photons from the tail of the Planck distribution ($\rm ^{20}Ne(\gamma,\alpha)^{16}O$). 
+
+Going down one shell, one has now a composition of mainly $^{16}$O, $^{24}$Mg and $^{28}$Si. The bulk nucleosynthetic reaction is shown in \ref{eqn:c_burnin}. 
+
+\begin{eqnarray}
+^{16}C+^{16}O\rightarrow^{28}Si&\rightarrow&^{31}S+n \nonumber \\
+	&\rightarrow&^{31}P + p \nonumber \\
+	&\rightarrow&^{30}P + d \nonumber \\
+	&\rightarrow&^{28}Si + \alpha \nonumber \\
+	\label{eqn:c_burning}
+\end{eqnarray}
+
+The last shell is of burning $^{28}$Si to $^{56}$Ni is very complex. The obvious reaction $^{28}\textrm{Si}+^{28}\textrm{Si}\rightarrow^{56}\textrm{Ni}$ does not take place, but is replaced by a very complex network of isotopes to burn to $^{56}\textrm{Ni}$. In simulations this is computationally intensive and numerically unstable (e.g .  \citet{1978ApJ...225.1021W} who carry a 128-isotope network). 
+Following silicon burning the composition consists of mainly iron-group nuclei. 
+At the end of silicon burning we are reaching nuclear statistical equilibrium. 
+
+\paragraph{Core collapse} Before the collapse the core, consisting of iron peak elements. Neutrino losses during carbon and oxygen burning decreased the central entropy sufficiently so that the core becomes electron degenerate. Such a degenerate core, which is higher than the Chandrasekhar mass (adjusted for Y$_e$, entropy, boundary pressure and other parameters will collapse. 
+
+There are two main instabilities that facilitate the collapse. AS the density rises the Fermi-Energy becomes high enough for electrons to capture onto iron-group nuclei. This capture process removes electrons that were providing degeneracy pressure and reduces the structural adiabatic index. 
+The second instability is the rise to temperatures where the nuclear statistical equilibrium favours free $\alpha$-particles. The collapse eventually leads to nuclear densities, the hard-core potential acts as a stiff spring during the compressive phase. It stores up energy and eventually releases this energy. The core bounces.  
+\citet{1985PhRvL..55..126B,1987PhRvL..59..736B} believed the core bounce to provide the energy for the ensuing supernova explosion. More recent simulations however show that the bounce shock is not sufficient for a \snii explosion. The bounce shock looses energy by photodisintegrating the nuclei it encounters (loosing roughly $10^{51}$\,\erg\ per 0.1\,\msun). Different neutrino flavours  that the resulting neutrino winds likely play a big role. 
+
+The energy for a successful explosion is now thought to come from neutrino energy deposition. This reinvigorates the shock and leads eventually to an explosion which ejects the envelope of the massive star. A newly born neutron star is left behind.
+
+The precise explosion mechanism is unknown. Using progenitor models with different parameters like rotation and mass lead to different outcomes. \citet{2002RvMP...74.1015W}provide a very comprehensive review of the theory of evolution and core collapse. In particular they lay out a more extensive description of the scenarios after core-bounce.
+
+\paragraph{Pair instability}
+One explosion scenario worth mentioning is that of the pair-instability supernova. This course of events only affects stars with a helium core of more than 40\,\msun. After core helium burning the star starts to contract at an accelerated rate. The energy releases during this process is used to produce electron-positron pairs rather than raising the temperature. If significant densities are reached, oxygen fusion eventually halts the implosion and the collapse bounces to an explosion. For very high stellar masses it is believed that oxygen fusion does not provide enough energy to halt the collapse and the star becomes a black hole.
+
+\paragraph{Type II Supernovae}
+The observables of these stellar cataclysm are the light curve, spectra and for one case even the neutrino wind. The supernovae goes through three distinct phases whcih can be observed. 
+
+The shock-breakout is the first visible signal from the supernova.  \cite{1992ApJ...393..742E} calculated a duration for the  shock breakout of SN1987A to 180\,s three minutes, its  luminosity of $5\times10^{44}$\erg\,s$^{-1}$. 
+Thus far it has been observed only once in 2008D \citep{2008Natur.453..469S}. They report a duration of 400\,s with a luminosity of $6.1\times10^{43}$\erg\,s$^{-1}$.
+
+The plateau seen in many \snii (see figure \ref{fig:snii_lc_comparison}) is produced by the recombination of hydrogen when hydrogen-rich zones cool to less than 5500\,K. The radiation comes effectively from a blackbody, whose luminosity is determined  by the radius of the photosphere.
+Supernovae of Type IIL do not show this behaviour and are thus thought to have no or a very small hydrogen envelope.
+
+After the recombination of hydrogen the light-curve drops off linearly and we see radioactivity providing the main energy source. \Ni decays to \cofiftysix with a half-life of 6.1\,d and then further to \fefiftysix with a half-life of 77\,d. Most of the energy of the \Ni decay is used to accelerated the expansion of the core. The tail of the light-curve after the plateau is mainly powered by the decay of \cofiftysix. Some light be also produced by shock interaction with the \csm.
+
+\paragraph{Type Ib/c supernovae}
+If the star lost all of it's hydrogen envelope prior to core-collapse there is no plateau visible in the light-curve. Instead the light-curve is powered by radio-active decay after shock breakout. In addition, the hydrogen lines are not visible in the spectrum. This leads to the supernova being classified as Type I. If both hydrogen and helium envelopes are lost then the supernova is classified as Type Ic. 
+This loss of envelope is presumed to be caused by stellar winds or binary interactions (citation needed). 
+
+\subsection{Gamma Ray Burst}
+
+\subsection{Type II supernovae as cosmological probes}
+\sniip have been suggested as cosmological probes by \citet{1974ApJ...193...27K}. The importance for cosmological distance probes is that the intrinsic luminosity is known well. Then a simple comparison of apparent magnitude with absolute magnitude results in a distance. At the plateau-phase of the supernova, caused by the hydrogen-recombination,  the temperature is well known(T=5000\,K). In addition it is assumed that the supernova is in free expansion, thus a measurement of the velocity and an assumption of the initial radius results in a known radius. Assuming the supernova to be a blackbody during plateau-phase one can then calculate a luminosity using the radius and the temperature. \sniip as distance candles, however, are observationally expensive and not as accurate as \snia as standard candels (15\% error for \snii  \citep{2006ApJ...645..841N} vs 7\% error for \snia).
+
+
+
+
+\vspace{3cm}
+nucelosynthesis
+first stars
+hypernovae
+GRB connection
+massive stars
+expanding photosphere -> distance measurements
+binary evoltion
+
+
+
+
+\section{Type Ia Supernova}
+Although known for a long time, \sneia\ have been prominently featured in astronomy in the last two decades. Their use as standard candles made the measurement of the accelerating universe possible \citep{1998AJ....116.1009R, 1999ApJ...517..565P}
+
+\subsection{Observation}
+
+\paragraph{Type Ia Supernova rates} 
+The observed supernova frequency carries important information about the underlying progenitor population. The two main suggested progenitors are the single-degenerate system, in which a white dwarf accretes from an non-degenerate companion . The second suggested possibility is the merger of two white dwarfs which results in a \snia-explosion (For a more detailed explanation see Section \ref{sec:ia_progenitors}). 
+
+\citet{1938ApJ....88..529Z} was the first work that tried to measure the supernova rate. By monitoring a large number of fields monthly, they arrived at a supernova rate by merely dividing the number of supernova detection by the number of monitoring time and galaxies. This crude method resulted in a rate of one supernova per six centuries. 
+
+Over time many improvements were made to this first method. The rate was divided by galaxy morphological class as well as different supernova types. In addition, rates were then defined the supernova rate as number of events per century per $10^{10}$\,\lsun\ \citep[e.g.][]{1991ARA&A..29..363V,1994ApJS...92..487T}. In recent years, however, rate measurements is in relation to star formation rather than photometry (\sn\ per century per $10^{10}$\,\msun).  Therefore the community \citep[e.g.][]{2005A&A...433..807M} have switched to the use infrared photometry for the galaxy as it is thought to better represent star-formation rate then B-Band photometry \citep{2003A&A...410...83H}. 
+\begin{figure}[htbp] %  figure placement: here, top, bottom, or page
+   \centering
+   \includegraphics[width=\textwidth]{chapter_intro/plots/snrates_mannucci05.pdf} 
+   \caption{example caption}
+   \label{fig:snrates_mannucci05}
+\end{figure}
+
+Figure \ref{fig:snrates_mannucci05} clearly shows that there is a strong connection between morphology and supernova rates. 
+Both progenitor scenarios (single-degenerate and double-degenerate) suggest an "evolved" binary system. It is therefore puzzling that most supernovae occur in late-type spirals with a relative young stellar population. 
+In addition, there is evidence that underluminous \sneia\ (e.g. SN 1991bg) are twice as common in late-type galaxies than in early-type galaxies \citep{2001ApJ...554L.193H}. 
+Furthermore it appears that radio-loud early-type galaxies have an enhanced rate of \sneia over radio-quiet galaxies \citep{2003ApJ...587L..71D}. 
+
+All of these factors suggest that \sneia\ can originate from two distinct progenitor scenarios and/or different explosion mechanisms \citep{1994ApJ...423L..31D,  1995ApJ...447L..69R}.
+
+\paragraph{Light curves} Light curves are one of the most important observables. The late-time phase gave an important clue to the energy source of the light curve (radioactive decay of \Ni). In addition, light curves have been successfully used to calibrate \sneia as standard candles.
+
+
+\begin{figure}[htbp] %  figure placement: here, top, bottom, or page
+   \centering
+   \includegraphics[width=\textwidth]{chapter_intro/plots/lightcurve_2002bo.pdf} 
+   \caption{example caption}
+   \label{fig:lightcurve_2002bo}
+\end{figure}
+
+The light curve can be divided in four different phases (see Figure \ref{fig:lightcurve_2002bo}). In the first phase the \sneia  rises to the maximum brightness. Although only a small fraction of \sneia have been observed in that phase. By approximating the very early phase of a \sneia with an expanding fireball it is possible to calculate that the rise is 19.5 days \citep{1999AJ....118.2675R}. The luminosity of the fireball is 
+\[L\propto v^2 (t+t_\textrm{r})^2 T\,,\]
+where v is the photospheric velocity, T is the temperature of the fireball, t is the time relative to the maximum and $t_\textrm{r}$ is the rise time.
+
+The rise is very steep and the brightness increases by a factor of $\approx 1.5$ per day until 10 days before maximum. 
+
+The \snia reaches the maximum first in the \nir roughly 5 days before the maximum in the B-Band \citep{2000MNRAS.314..782M}. 
+During the pre-maximum phase the color stays fairly constant at B-V=0.1, but changes non-monotonically to B-V=1.1 30 days after maximum. 
+
+The \snia\ starts to fade but  a second maximum is observed in the \nir \citep{2008ApJ...689..377W} ??multiple citations.  \citep{2006ApJ...649..939K} has succesfully explained this by fluorescence of iron-peak elements in the \nir. See section \ref{sec:snia_lightcurve_theory}.
+
+At roughly 600 days after maximum the light curve begins ???? 1991t had a foreground dust??? 
+
+
+Arguably the most important use of light curves is their application in normalizing \sneia\ to standard candles (see Figure \ref{fig:lsnia}). \citet[][]{1993ApJ...413L.105P} plotted the magnitude at maximum in different filters against the decline of the B-Band magnitude after 15 days (\dmb).  They found a strong linear relation with a very high correlation coefficient ($>$ 0.9). Dust extinction in the host is one of the major systematic problems and remains so to this day. 
+
+\cite{1995ApJ...438L..17R} refined the method by using a linear estimation algorithm. This method would deliver a distance modulus by finding the offset between a template and the supernova lightcurve. They calibrated this method against a set of \sneia\ with known distances. 
+Light curve fitting tools are to this day in active development \cite[e.g.][]{2007ApJ...659..122J, 2007A&A...466...11G}.
+
+In summary, ...... see figure x
+
+
+
+\paragraph{Spectra} \sneia\ spectra span many different applications, but foremost they help us to understand the physical processes in the thermonuclear explosion. 
+Shortly after the explosion the ejecta is in homologous expansion. It can be divided into two regimes, one being optically thick, the other optically thin. The boundary layer between those gives rise to a  photosphere. The observed spectra are characterized by an underlying continuum - emitted from the photosphere -- and absorption features from the ejecta material above the photosphere. 
+As time passes the photosphere recedes into the remnant and deeper layers of the exploded white dwarf become spectroscopically visible. 
+This time-variability in the spectra is used to conduct tomography on \sneia. One chapter of this works is devoted to this method (see chapter \ref{chap:dalek}). 
+
+Similar to light-curves the spectra have different phases. We will use the "normal'-\snia SN 2003du to demonstrate the spectral evolution \citep{2011MNRAS.410.1725T}. 
+\paragraph{Pre-Maximum Phase}
+In the pre-maximum phase the spectrum shows very high velocities (up to 18 000 \kms). There is a relatively well defined pseudo-continuum with strong \pcygni-profiles of \ime s and iron-group elements (see Figure \ref{fig:sn2003du_m10.9}). These iron-group elements are primordial as the burning in the outer layers (visible at these early times) is incomplete and does not produce these elements. 
+\begin{figure}[htbp] %  figure placement: here, top, bottom, or page
+   \centering
+   \includegraphics[width=\textwidth]{chapter_intro/plots/sn2003du_t-10.pdf} 
+   \caption{example caption}
+   \label{fig:sn2003du_t-10}
+\end{figure}
+
+The \ion{Ca}{2} line is very prominent in the blue and often shows extremely high velocities at early times (in SN 2003du $v ~ 25000$\,\kms). There have been multiple suggestion for the cause of this unusual velocity, including interaction with Calcium in the \ism\ or high-velocity ejecta blobs \citep{1999ApJ...525..881H,2004ApJ...607..391G,2004ApJ...601.1019T,2005ApJ...623L..37M,2006ApJ...636..400Q,2006ApJ...645..470T,2007A&A...471..527G}.
+There is a strong \ion{Mg}{2} feature at 4200\,\AA\ which is contaminated by several iron lines. Silicon and Sulphur both have strong features 5640\,\AA (\ion{S}{2}) and at 6355\,\AA (\ion{Si}{2}). The strong Silicon feature distinguishes \sneia against other supernovae in the Type I-group. 
+
+It is believed that in these early phases one should be able to see Carbon and Oxygen from the unburned outer layers. There is the \ion{C}{2}-feature at 6578\,\AA but it is normally very weak (if visible at all). The Oxygen triple feature at 7774\,\AA\ is seldom very strong. ??? ask stephan ??
+
+\paragraph{Maximum Phase} As the supernova rises to the peak luminosity a large fraction of iron group elements (especially \Ni) is suppressing flux in the UV and reemitting it in the optical (see Figure \ref{fig:sn2003du_t0}). The silicon lines become narrower (??only in 03du??) as the photosphere reaches material deeper in the remnant. The ratio of the Silicon lines \ion{Si}{2} 5972\,\AA and \ion{Si}{2} 6355\,\AA is a good indicator for temperature \citep{1995ApJ...455L.147N}. 
+
+\begin{figure}[htbp] %  figure placement: here, top, bottom, or page
+   \centering
+   \includegraphics[width=\textwidth]{chapter_intro/plots/sn2003du_t0.pdf} 
+   \caption{example caption}
+   \label{fig:sn2003du_t0}
+\end{figure}
+
+\paragraph{Post-Maximum phase}
+The contribution from iron-group elements is still rising, while the photospheric velocity has decreased to less than 10000\,\kms (see Figure \ref{fig:sn2003du_t+17}). The strong Calcium feature at 4000\,\AA\ is disappearing. 
+
+\begin{figure}[htbp] %  figure placement: here, top, bottom, or page
+   \centering
+   \includegraphics[width=\textwidth]{chapter_intro/plots/sn2003du_t+17.pdf} 
+   \caption{example caption}
+   \label{fig:sn2003du_t+17}
+\end{figure}
+
+
+\paragraph{Nebular-Phase}
+As the supernova fades, the photosphere disappears. At this stage the spectrum is now characterized by strong emission lines which are produced by the elements from the very core of the explosion (see Figure \ref{fig:sn2003du_nebular}). The velocity has fallen under 5000\,\kms (??check??). 
+
+\begin{figure}[htbp] %  figure placement: here, top, bottom, or page
+   \centering
+   \includegraphics[width=\textwidth]{chapter_intro/plots/sn2003du_nebular.pdf} 
+   \caption{example caption}
+   \label{fig:sn2003du_nebular}
+\end{figure}
+
+
+\paragraph{X-Ray \& Radio observations}
+X-Ray observations of Type Ia supernovae have only resulted in upper limits (cite
+
+A search for radio emission from \sneia\ \citep{2006ApJ...646..369P} has not resulted in any detections and are not suggested by theory.
+
+
+\subsection{Theory}
+In this section we will discuss the theory of \sneia. We will, however, focus mainly on the explosion mechanism and not the theoretical implications of different progenitor scenarios. As this work is focussing considerably on \snia-progenitors we will dedicate a section on the different progenitor models (see \ref{sec:snia_progenitor}).
+
+\paragraph{White Dwarfs}
+White dwarfs are thought to be the progenitor stars of Type Ia supernovae. These objects are among the few that do not have hydrogen, which would explain the lack of hydrogen in \snia-spectra. It is a general believe in the community that these objects accrete matter (for the possible scenarios see section \ref{sec:snia_progenitor}) until they get close to the Chandrasekhar-mass \citep{1931ApJ....74...81C}. It is a delicate balance between the ignition point that results in the thermonuclear run-away and the Chandrasekhar threshold which leads to a collapse of the star to a neutron star.
+ 
+There are three main classes of white dwarfs: Helium, Carbon/Oxygen (henceforth \cowd) and Oxygen/Neon/Magnesium (henceforth \onemgwd) white dwarfs. Helium white dwarfs would start burning their Helium to Carbon and Oxygen well before it gets near the Chandrasekhar mass.. In addition, these objects can also be ruled out as progenitors for \sneia as copious amounts of \ige\ produced in \sneia\, which are not consistent with the burning of a Helium white dwarf. 
+
+The ultimate fate of a \onemgwd\ is thought to be the collapse into a neutron star. Once the \onemgwd\ is heavy enough electron capture begins in the core ($\Ne(e^-,\nu)\F[20](e^-,\nu)\Ox[20]$). Heating by the resulting $\gamma$-rays starts explosive Oxygen burning. However, the electron-capture is much faster than the Oxygen burning and promotes the collapse to a neutron star \citep{1991ApJ...367L..19N, 2005A&A...435..231G}. 
+
+The favoured progenitor for a \snia\  are \cowd s. Most of these objects are born, however, with a mass around 0.6 \msun \citep{2007MNRAS.375.1315K}. It is thought that they accrete mass until they are getting close to the Chandrasekhar mass and then explode as a \snia.
+
+\paragraph{Pre-supernova evolution}
+The white dwarf gradually accretes more and more material. At some instant mild carbon burning ensues
+\begin{align}
+\nonumber
+\Carb(\Carb,p) &\rightarrow \Na \\  \nonumber
+\Carb(\Carb,\alpha) &\rightarrow \Ne \\ 
+\Carb(\Carb,n) &\rightarrow \Mg[23]
+\end{align},
+but is mediated by photon and neutrino loses \citep{2005NuPhA.758..463L, 2007nps..book.....I}. As the cooling processes become less effective convection starts in the core. The energy output in the core increases. At this stage the thermal structure is largely controlled by Urca pairs. These reaction pairs consist of alternating electron captures and $\beta^-$\,-decays involving the same pair of parent and daughter nuclei. Two prominent examples which are important in pre-supernova evolution are \Ne[21]/\F[21]:
+\begin{align}
+\nonumber
+\Ne[21](e^-, \nu) &\rightarrow \F[21] \\
+\F[21](\beta^- \nu) &\rightarrow \Ne[21]
+\end{align}
+These processes can lead to either cooling or heating. \cite{2005NuPhA.758..463L} have modelled this process in a convective core. 
+
+Ultimatley, the pre-supernova evolution is hard to model theoretically as it is likely to be nonlocal, time-dependent, three dimensional and stretches over very long timescale. The exact conditions at the time of explosion are therefore unknown. All explosion models have to assume simple initial conditions. 
+
+\paragraph{Ignition}
+The \urca processes will dominate core evolution for the last thousand years until explosion. As the temperature rises to $T\approx7 \times 10^8$\,K \citep{2000ARA&A..38..191H} the convection time ($\tau_c$) increases and becomes comparable to the burning time ($\tau_b$). Consequently the convective plumes burn as they circulate. Once the temperature reaches $T\approx 10^9$\,K $\tau_b$ becomes very small compared to $\tau_c$ and Carbon and Oxygen essentially burn in place. 
+This is the moment of ignition. As the convective plumes burn while they rise it is likely that the initial flame seed does not start in the center of the core. \cite{2005A&A...431..635R} have used multiple flame seeds in their three dimensional full star models.  
+
+\paragraph{Thermonuclear Explosion}
+From this point, initially there were two main options. The first option was the complete detonation (supersonic flame front) of the \cowd\ \citep{1969Ap&SS...5..180A}. It was quickly, discovered, however that this method burns to \nse and thus produces no \ime. These \ime are observed in \snia.
+
+For a long time it was then suspected that the star instead of detonating would deflagrate (subsonic flame wave, mediated by thermal conduction). The fuel in front of the deflagration gets rarified by the energy from the flame. Hot light burning bubbles rise into the cold dense fuel and create Rayleigh-Taylor instabilities (see Figure \ref{fig:snia_ddt_roepke2007} at t=0.72\,s). 
+Once the deflagration wave has run through the star, the resulting production of \Ni[56] is not enough to explain the light curve of normal \snia. The deflagration produces roughly 0.3\,\msun of \Ni[56], to power the light curve of normal \sneia\ one needs 0.6???\,\msun.
+
+The currently favored scenario is the one of delayed detonation. The star initially burns like in the deflagration scenario, then inhomogeneities in the deflagration front produce hotspots. In these hotspots the temperature gradients are so high that detonation waves form. The ensuing detonation front can only burn the cold unburnt-fuel and does not penetrate the ashes of the deflagration. Figure \ref{fig:snia_ddt_roepke2007} shows clearly how the detonation wave wraps around the cold ashes over the course of the detonation.
+
+
+\begin{figure}[htbp] %  figure placement: here, top, bottom, or page
+   \centering
+   \includegraphics[width=\textwidth]{chapter_intro/plots/roepke2007.pdf}
+   \caption{example caption}
+   \label{fig:snia_ddt_roepke2007}
+\end{figure}
+
+An open question is if and how these transitions from deflagration to detonation occur in \sneia. This scenario reproduces the light curves and spectra reasonably well \citep{2009Natur.460..869K}. 
+
+
+\paragraph{sub-Chandrasekhar-mass detonations}
+The main theme of this explosion mechanism is that a surface detonation drives a shock-wave into the core. In the core this shockwave triggers an ignition by compression. \citet{2010A&A...514A..53F} have explored this scenario theoretically. As an initial model they use a \cowd accreting from a helium rich companion building a thin helium shell around its CO interior \citep[described in][]{2007ApJ...662L..95B}. This helium shell is ignited (maybe due to accretion) and sends out a shockwave. As the helium flame spreads on the shell around the star it sends a shockwave into the core. Once 
+the shockwaves converge off-center they create a the right environment for the launch of a detonation wave (see Figure \ref{fig:subch_fink2010}.) 
+The resulting detonation consumes the star. \citet{2010ApJ...714L..52S} have simulated the off-center detonation of a sub-Chandrasekhar-mass \cowd and the resulting light-curve and spectra reproduce observed ones fairly well. 
+This scenario reproduces the intrinisic luminosity variability in the class of \snia\ as each exploding white dwarf can have a different mass. An additional advantage of this model is that it is not in conflict with population synthesis predictions \citep{2009ApJ...699.2026R}.
+
+\begin{figure}[htbp] %  figure placement: here, top, bottom, or page
+   \centering
+   \includegraphics[width=\textwidth]{chapter_intro/plots/subchandra_fink2010.pdf} 
+   \caption{example caption}
+   \label{fig:subch_fink2010}
+\end{figure}
+
+\paragraph{\WD-\WD\ mergers}
+\cowd\ mergers for a long time were thought to lead to a gravitational collapse \citep[same mechanism as the \onemgwd][]{1985A&A...150L..21S}. \citet{2010Natur.463...61P} has, however, successfully simulated the explosion of two merging \cowd s. The initial model was two equal mass 0.8\,\msun\ \cowd s. The merging process created a hotspot from which a detonation wave eminates. 
+The resulting light-curves and spectra are very faint but are similar to sub-luminous \snia (e.g. SN 1991bg). 
+
+\section{Type Ia Supernovae as cosmological distance probes}
+
+suggested as early as....
+
+\section{Progenitors of Type Ia Supernovae}
+\label{sec:snia_progenitor}
+
+\citet{1973ApJ...186.1007W} first introduced the modern binary evolution paradigm for \snia-progenitors. In their model a \cowd\ accreted from a red giant. A degenerate \cowd\ accreting from a non-degenerate companion is now known as the single degenerate scenario. 
+
+\cite{1985ApJ...297..531N} were one of the first to suggest that the merging of two \cowd s could also produce \sneia. This scenario is now commonly referred to as the double degenerate scenario. 
+Embarrassingly forty years after first progenitor suggestion the progenitors of \snia\ are still not known. Without knowing the precise channel (or channels) for \snia it is hard to make precise statements about yields, rates and explosion energies. One of this thesis main goals is finding the remaining companions in ancient \snia-remnants (see Chapter \ref{chap:sn1572_starg} and Chapter \ref{chap:sn1572_hires}). 
+
+
+\subsection{Single Degenerate Scenario}
+In the single degenerate scenario assumes a binary system with one evolved white dwarf and one non-degenerate companion. In most cases this non-degenerate companion is thought to be main-sequence to red giant phase. There are scenario that involve "exotic" companions such as helium stars. The companion (or donor) star is believed to have filled its Roche-Lobe and lose mass via Roche-Lobe-Overflow (\rlof). Different scenarios see accretion from the wind of the companion rather than from \rlof\ \citep{2011apn5.confE.295M}.
+
+\paragraph{Evolution}
+
+see mennekens ....
+
+
+\paragraph{Accretion}
+The main problem of the \sd-scenario is the accretion process.  As most white dwarfs are born with masses around 1.6\,\msun they need to accrete mass to reach the critical 1.38\,\msun. The process needs to be efficient as well as burn most accreted hydrogen to explain its lack in the spectrum.
+ If the mass-accretion rate is too low it causes nova explosions which eject are thought to eject more mass than they had accreted prior \citep{Nomoto:1982p451}. There are however systems (e.g. RS Oph, U Sco) that have white dwarf masses close to 1.4\,\msun\ which have recurrent nova outbursts. It is very likely that these systems weren't born with a white dwarf that massive, but that these white dwarfs accreted all the material. This suggest that despite nova outbursts efficient accretion is possible.
+ 
+ 
+ A degenerate layer of helium can form at moderate accretion rates. This layer may flash and could give rise to sub-Chandrasekhar-mass explosions.
+ 
+ A class of binaries called Supersoft X-Ray sources (\sss) probably accrete hydrogen at a high rate. At this rate Hydrogen and Helium burn hydrostatically, if retained, make these objects very strong contenders for \snia\ progenitors. \cite{2010Natur.463..924G} however have not found enough  X-ray flux from elliptical galaxies if all \snia-progenitors were these \sss\ (assuming the X-Ray flux calculated for these objects is correct). 
+ 
+At extremely high accretion rates the white dwarf would be engulfed in an extended red giant envelope. Debris of this envelope is not seen in \snia-explosions. 
+
+Another subclass of \sd-progenitors are AM CVn stars. These type of cataclysmic variable accretes from a helium star. This scenario would very conveniently explain the lack of hydrogen in \snia-explosions. \citet[see section \ref{sec:snia_theory}][]{2010A&A...514A..53F} have found a way that such systems can explode in a \snia.
+
+
+\subsubsection{Donor Stars}
+The \sd-scenario requires a secondary companion (also known as donor) star. If this companion survives the explosion it would be a calling card for the \sd-scenario. 
+
+\citet{2000ApJS..128..615M} have simulated the impact of \snia-ejecta on main-sequence, sub-giant and red-giant companion. In the case of the main-sequence companion the supernova ejecta heats a small fraction (1-2\%) of the envelope which is lost post-explosion. The stellar core cools and expands. It subsequently pulses while going back to hydrostatic-equilibrium. \citet{2008A&A...489..943P} have repeated the simulations for the main-sequence companion and find similar results to \citet{2000ApJS..128..615M}. Post-explosion the star could be very luminous (500 -- 5000 \lsun)  due to its asymmetrical temperature distribution. It is expected to cool down between 1400 -- 11000 yrs and follow the main-sequence track. 
+
+For the sub-giant companion the simulations show very similar results to the main-sequence companion. In summary, the subgiant looses only a small fraction of the envelope (10 -- 15\%) and will be very luminous shortly after the explosion. After thermal equilibrium is established the companion will return to a post-main-sequence track. 
+
+The case of the red-giant, however, is very different. \citet{2000ApJS..128..615M} suggest that it will loose most of its loosely bound envelope. Post-explosion the remaining core rises contracts and the temperature rises to more than $3 \times 10^4$\,K. The object may appear as an under luminous main-sequence O or B star. 
+
+
+\cite{2009A&A...493.1081J} have suggested low-mass single white dwarfs to be the remaining cores of red-giant donor stars. This would result in a convenient explanation for the existence of these objects. 
+
+One feature of surviving companions may be an unusually large rotational velocity post-explosion \citep[][chapter \ref{ch:sn1572_starg} of this work]{2009ApJ...701.1665K}. Due to tidal coupling during the \rlof-phase one calculate the expected rotational velocity from the escape velocity of the donor (see Figure \ref{fig:theorot}). Late-type stars usually don't display such high rotational velocities. Thus this feature is a very useful discriminant when looking for donor stars. 
+
+ Most simulations suggest that the donor-star would survive the explosion one way or another. There have been several attempts to find these objects in ancient supernova remnants. \citet{1980ApJ...241.1039S} found a OB subdwarf star located 2.5 \arcmin from the center of the remnant of SN1006 and suggested this as the donor star. Subsequent analysis by XXX have however revealed however strong red and blue shifted iron lines. The velocities of these lines are on order of 5000\,\kms which is the same as the velocity of the freely expanding remnant of SN1006.
+ 
+\citet{2004Natur.431.1069R} have suggested a star called \starg\ by their nomenclature as the progenitor of SN1572. \citep[][chapter \ref{ch:sn1572_starg} of this work and \ref{ch:sn1572_hires}]{2009ApJ...701.1665K, xxx} have followed this up and did not find \starg\ to be very unusual to the other stars in the field. 
+
+citekerz11b have observed 80 stars in the center of SN1006 and have not found an obvious donor star.....
+?????
+ 
+
+
+
+
+\subsection{Double Degenerate Scenario}
+\citet{1984ApJ...277..355W} was one of the first to suggest merging white dwarfs as progenitors for \snia. The one big advantage of the \dd-scenario is that it naturally explains the lack of hydrogen in \snia-spectra. The accretion problem encountered in the \sd-scenario is also eleviated with \dd, as long as the sum of masses of both \cowd's is above \mchan. The work in this thesis has failed to find the companion which may result from the \sd-scenario. This would be a further encouragement for the \dd-scenario. 
+
+The problem, however, is that most \snia\ are relatively homogeneous. It is hard to reconcile this fact with the merger of two white dwarfs with different initial masses, composition, angular momenta and different impact parameters. 
+
+\cite{2010Natur.463...61P} have simulated the merger of two equal-mass white dwarfs (0.8\,\msun). Their simulations suggest that the outcomes of these mergers would be subluminous. As the star cools after the contraction phase it may become a single Helium white dwarf.
+
+\cite{2009A&A...493.1081J} proposes that 
+In summary, mergers of white dwarfs can definitley explain some of \snia. It is however questionable if these events are responsible for the main body of \sneia. 
+
+\subsection{Population Synthesis}
+
+Population synthesis have been an important step in exploring the different progenitor scenarios. This science is still in its infancy, but results from new all-sky surveys will make this a very precise tool. 
+\citet{2009ApJ...699.2026R, 2010A&A...515A..89M} have explored the \snia-rate using different progenitor scenarios (\sd, \dd and \amcvn). Both suggest that the \sd-scenario on its own can not explain the observed supernova rate. The \dd-rate seems to be much closer to the observed frequency. Possibly a mix of all channels is required to explain the observed rate. 
+
+
+
+\section{Thesis motivation}
+One of the most pivotal moments in astronomy in recent years was the discovery of the acclerating expanding universe by \citet{1998AJ....116.1009R} and \citet{1999ApJ...517..565P}. This discovery catapulted \sneia\ into the limelight of the astronomical community. There has been many advances in recent years in the understanding of these cataclysmic events (explosion models, rates, etc.). One critical piece of the puzzle, however, has so far eluded discovery: The progenitors of \sneia\ remain a mystery to this day. This work's main aim was to find evidence for one \snia-progenitor scenario. The \sd-scenario proposes a white dwarf accreting from a non-degenerate donor star. To the best of our knowledge this donor star is thought to survive the explosion and would be visible thereafter. We have tried to find this companion in two of three easily accessible ancient supernova remnants (SN1572 and SN1006). 
+In chapter \ref{ch:sn1572_starg} we have obtained spectra of \starg\ which had been suggested as the donor star of SN1572 \citep{2004Natur.431.1069R}. Although we confirmed some of the suggested parameters we could not reproduce the unusually high radial velocity which led to the claim. 
+
+We revisited SN1572 in chapter \ref{ch:sn1572_hires} with new observations of \starg and five other stars in the neighbourhood of SN1572. This resulted in \starg\ to be not a very viable donor star (it is hard to completely rule stars out). We discovered a curious A-Star located serendiptiously right in the center of SN1572. Despite its bizarre parameters we could not reconcile this star (\starb) with any feasable progenitor model. We, however, found a scenario which explains \starb's features but does not involve it in SN1572. 
+
+SN1006 provides a perfect opportunity to search for progenitor stars. It is the closest known remnant of a \snia (2\,kpc). We have obtained 80 spectra of stars close to the center of the remnant and present them in chapter \ref{ch:sn1006}. Again we did not find any obvious donor stars. 
+
+We have obtained spectra of stars around SN1604 but these are not presented in this work.
+
+Progenitor hunts provide us with information of the scenarios pre-explosion. Spectra on the other hand help to unravel the happenings during and post-explosion. mazzali et al. ??? have developed a code that can produce synthetic \snia-spectra from fundamental input parameters. Fitting an observed \snia\ is for the moment a manual task. This requires many days, if not weeks, of tweaking. The deluge of spectroscopically well-sampled \sneia\ from surveys is already hitting us. Manual analysis of all these spectra is impossible. The information about the explosion hidden in the spectra is, however, crucial to our understanding of these events. In chapter \ref{ch:dalek} we present our work towards automating this fitting process. We have tried a variety of algorithms to explore the vast and extremely complex search space. Working together with members of the computer science community we are exploring the use of genetic algorithms to solve this problem. 
+This work is not finished yet, but we present preliminary methods in \snia-fitting. Once finished we can apply this method not only in fitting \snia, but fitting other supernovae and other areas of astronomy. 
+
+In summary, this work explores two areas of supernova physics. The hunt for progenitors has not yielded obvious candidates, but may suggest a rethinking of the "normal" \sd-scenario. The automation of the supernova fitting is in its infancy stage. We have however shown that it is possible to explore the space in an automated fashion. This will hopefully yield parameters for many thousand supernovae and the next few years. 
+The close collaboration with computer science community has shown how important cross-disciplinanry research is in this era of science. 
+
+

@@ -29,8 +29,15 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces example caption\relax }}{61}{figure.caption.30}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces example caption\relax }}{62}{figure.caption.31}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces example caption\relax }}{66}{figure.caption.31}
-\contentsline {figure}{\numberline {7.2}{\ignorespaces example caption\relax }}{67}{figure.caption.32}
-\contentsline {figure}{\numberline {7.3}{\ignorespaces example caption\relax }}{68}{figure.caption.33}
+\contentsline {figure}{\numberline {7.1}{\ignorespaces The delauney triangulation of 20 points is shown above\relax }}{66}{figure.caption.32}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces The left figure shows an "\textit {illegal}" triangulation of the 4 points. Both circles include all the points. With a so called edge flip one can arrive at a "\textit {legal}" triangulation\relax }}{67}{figure.caption.33}
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Stereogram \citep {Vogt11} of the projection of the convex hull in three dimensions to form the delauney triangulation in two dimensions\relax }}{67}{figure.caption.34}
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Building of a convex hull. \relax }}{68}{figure.caption.35}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Twenty points for which we are trying to find the convex hull}}}{68}{subfigure.7.4.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {We find the points with the lowest and highest x-value and connect them with a line}}}{68}{subfigure.7.4.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Continuing with the points on the left (same process happens recursively on the right) we find the point furthest away from the line. We then draw two more lines and build a triangle. The points inside of the triangle are not part of the convex hull and are discarded. We will repeat the current step with the two new lines of the triangle. }}}{68}{subfigure.7.4.3}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {We have found points of the convex hull once we can't build a new triangle anymore.}}}{68}{subfigure.7.4.4}
+\contentsline {figure}{\numberline {7.5}{\ignorespaces The triangle and its barycenter marked by the intersection of lines. \relax }}{69}{figure.caption.36}
