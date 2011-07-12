@@ -1,0 +1,287 @@
+%% RSAA THESIS 'TEMPLATE' BY JOSHUA RICH <joshua.rich@gmail.com>
+%% README:
+% This template is designed to be used with pdflatex rather than plain
+% latex.  It was developed under a TeXLive 2007 TeX distribution on
+% Linux.  
+
+% for requirements of typesetting and formatting see:
+% http://info.anu.edu.au/Policies/_REG/Guidelines/PhD_Exam_Theses.asp
+% (in emacs, type M-x browse-url with the cursor on 
+% the link above)
+
+%%NOTES ABOUT THE DOCUMENT CLASS
+% Yes, I'm using a report style.  Any 'thesis style' you might
+% find or someone will give you is based on the standard report
+% class, but is probably well outdated compared to whatever TeX
+% you have installed.  Besides, why use that style file if you 
+% have no idea what it actually does?  You will probably just redefine
+% all of its customisations anyway...
+\documentclass[11pt,openright]{report} 
+
+% define some constants that can be used in various places to easily
+% specify title, subjects, author etc.
+\newcommand{\thesistitle}{Type Ia Supernovae:
+	Explosions and Progenitors}
+\newcommand{\fullname}{Wolfgang Eitel Kerzendorf}
+\newcommand{\shortname}{W. E. Kerzendorf}
+\newcommand{\thesissubjects}{supernova:progenitors ????add some more?????}
+
+%%NOTES ABOUT BABEL PACKAGE:
+% It requires two components; the 
+% \usepackage line above and the language put in the \documentclass.
+% 'british' is used because that is the english style required for an
+% ANU thesis.  This will ensure LaTeX uses british hyphenation and
+% other language constructs when generating the text.  Putting the
+% babel usepackage at the very top also ensures other packages called
+% through \usepackage can take advantage of babel if they are set up
+% for such.  
+% We can also do tricky things in our ~/.emacs file if we
+% are an emacs user now as well.  Grab the flyspell-babel and
+% ispell-multi  emacs packages from:
+% http://www.dur.ac.uk/p.j.heslin/Software/Emacs/
+% And put it somewhere Emacs can find it (probably under ~/.emacs.d).
+% Then add the following lines to your .emacs:
+%   (dolist (hook '(LaTeX-mode-hook))
+%   (add-hook hook (lambda () (flyspell-mode 1))))
+%   (add-hook 'tex-mode-hook (function (lambda () (setq ispell-parser 'tex))))
+%   (autoload 'flyspell-babel-setup "flyspell-babel")
+%   (add-hook 'latex-mode-hook 'flyspell-babel-setup)
+% After this, you should have Emacs auto-suggesting word corrections
+% AND doing it in british-english automagically.  You can do a similar trick
+% for papers by simply changing 'british' above to 'american', and
+% flyspell will check your paper in american-english.
+\usepackage[british]{babel}
+
+%\usepackage{hyperref}
+
+% ---------------------------------------------------------------------
+% page size and margins
+% ---------------------------------------------------------------------
+%%NOTES ABOUT GEOMETRY PACKAGE:
+% Below is using the geometry package as it is just cool.  This allows
+% you to directly specify the margin requirements as outlined by ANU
+% directly.  Here the inner border is 4cm and the outer is 2cm.  Top
+% and bottom are also 2cm.  This is much easier than trying to work
+% out page and margin dimensions by hand.  This is how you should use
+% LaTeX...
+\usepackage{geometry}
+\geometry{a4paper,twoside}
+\geometry{includehead,includefoot}
+\geometry{hmargin={4cm,2cm}}
+\geometry{vmargin={2cm,2cm}}
+
+% ---------------------------------------------------------------------
+% miscellaneous packages used
+% ---------------------------------------------------------------------
+\usepackage[hiresbb]{graphicx}
+\DeclareGraphicsExtensions{.pdf}
+%\DeclareGraphicsExtensions{.eps}
+\usepackage[twoside]{rotating}
+
+%%NOTES ABOUT FONTS PACKAGES:
+% The basic requirements for fonts in an ANU thesis demand clear
+% readability and that is about all.  So if you choose a nice,
+% standard serif font you won't have any problems.
+% I several font families in my thesis below:
+%  pxfonts: math typesetting
+%  tgpagella: for the normal text font (serif)
+%  tgheros: for the sans serif font
+%  tgcursor: for the typewriter style font
+% TeX Gyre Pagella, Heros and Cursor are part of the TeX Gyre family
+% of fonts, which can be obtained from:
+%   http://www.gust.org.pl/projects/e-foundry/tex-gyre/
+% Not all of the TeX Gyre, and possibly not the latest glyphs are
+% available in standard TeX distributions.  
+%
+% The 'mathpazo' package provides an almost identical, albeit not
+% actively developed font family to TeX Gyre Pagella and is included
+% in standard TeX distributions.  This package
+% also provides a full range of math glyphs.  You'd need to find
+% alternative sans serif and typewriter fonts to use with this package.
+%
+% You can see a whole heap of LaTeX fonts, most of which are also in a
+% standard TeX distribution at: 
+%  http://www.tug.dk/FontCatalogue/
+% This web-page shows what each font looks like and what you need to
+% do to include the font in your document.  Note it lists fonts that
+% may not be installed by your default TeX installation...
+%
+% Another list of fonts, recommended by `typophiles' can be found at:
+%  http://typophile.com/node/18207
+% Although the above list includes some really nice fonts, their
+% availability in TeX distributions varies.  You may have to install
+% them manually...
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{ucs}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath,amssymb}
+\usepackage{pxfonts}
+\usepackage{tgheros,tgpagella}
+\renewcommand*\ttdefault{qcr}
+\linespread{1.05} % tgpagella/mathpazo need a bigger line spacing
+\usepackage{microtype}
+% bibliography uses natbib, this will be a requirement
+\usepackage[round]{natbib}
+% Super-nice looking tables, better than deluxetable
+\usepackage{longtable,booktabs,multirow,ctable}
+
+%%NOTES ABOUT CAPTION AND SUBFIG PACKAGES
+% I'm using the caption package to style my captions.
+% You need to read the documentation for this package (on CTAN) as it
+% has simple explanations of the options and examples of what it looks
+% like.
+%
+% The subfig package allows the ability to control in detail
+% positioning of sub-plots in a complex figure as well as add labels
+% to them, which can then be referenced in the text without the need
+% for changing the actual number as your sub-figures change.
+% The subfig package inherits options from the caption package, so
+% declare them together.
+%
+\usepackage[]{caption,subfig}
+\captionsetup{format=hang,%
+  indention=-1.5cm,%
+  labelsep=quad,%
+  labelfont={footnotesize,bf},%
+  textfont={footnotesize}}
+% The hyperref package is a must while editing.  It provides urls
+% inside your document; you can then click to go to certain pages,
+% figures or bibliography entries.
+\usepackage[unicode,pageanchor,colorlinks,plainpages=false]{hyperref}
+% \hypersetup{pdftitle=\thesistitle\ - \shortname,%
+%   pdfauthor=\fullname,%
+%   pdfsubject={\thesissubjects},%
+%   citecolor=DodgerBlue3,%
+%   linkcolor=Ivory4,%
+%   anchorcolor=CadetBlue4}
+%for printing, make all colours black...
+\hypersetup{pdftitle=\thesistitle\ - \shortname,%
+pdfauthor=\fullname,%
+pdfsubject={\thesissubjects},%
+%citecolor=green,%
+%filecolor=blue,%
+%linkcolor=blue,%
+%urlcolor=blue%
+}
+% Drop capitals at the start of chapters
+\usepackage{lettrine}
+% Allow defining of colours. Useful for:
+% - defining the colours of links, citations etc.
+% together with hyperref (i.e. in hyperrefsetup)
+% - get alternating row colours or shades in tables
+\usepackage[hyperref,x11names]{xcolor}
+% Stops figures and tables 'floating' past the section in which they
+% are declared.
+\usepackage[section]{placeins}
+\usepackage[toc,page,title,titletoc]{appendix}
+%%NOTES ABOUT NAG
+% this is a very good package to use.  If you want to write good LaTeX
+% code and want to make sure you aren't using outdated methods (like
+% your supervisor does), then use this package.  It will complain when
+% you use outdated or wrong LaTeX commands.
+\usepackage[l2tabu, orthodox]{nag}
+\usepackage{ifthen}
+
+% ---------------------------------------------------------------------
+% styles for header, footer, pages, bibliography
+% ---------------------------------------------------------------------
+%
+
+% chapter heading style
+% this is the 'Conny' style from the fncychap package, modified to
+% remove the two bold lines before the 'Chapter X' title.
+% For usage of this package, see:
+%  http://tug.ctan.org/cgi-bin/ctanPackageInformation.py?id=fncychap
+%
+\usepackage{fncychap}
+\makeatletter
+\ChNameUpperCase
+\ChTitleUpperCase  
+\ChNameVar{\centering\Huge\usefont{OT1}{qbk}{m}{n}\selectfont}
+\ChNumVar{\Huge}
+\ChTitleVar{\centering\Huge\usefont{OT1}{qbk}{m}{n}\selectfont}
+\ChRuleWidth{2pt}
+\renewcommand{\DOCH}{%
+  \CNV\FmN{\@chapapp}\space \CNoV\thechapter
+  \par\nobreak
+  \vskip -0.5\baselineskip
+}
+\renewcommand{\DOTI}[1]{%
+  \mghrulefill{\RW}\par\nobreak
+  \CTV\FmTi{#1}\par\nobreak
+  \vskip 60\p@
+}
+\renewcommand{\DOTIS}[1]{%
+  \mghrulefill{\RW}\par\nobreak
+  \CTV\FmTi{#1}\par\nobreak
+  \vskip 60\p@
+}
+
+%
+%%% page styles:
+%
+\usepackage{fancyhdr}
+\fancyhead{}
+\fancyfoot{}
+%% make the odd pages have the section name on the top right
+%\fancyhead[RO]{\usefont{OT1}{qbk}{m}{n}\selectfont \rightmark}
+%% make the even pages have the chapter name on the top left
+%\fancyhead[LE]{\usefont{OT1}{qbk}{m}{n}\selectfont \leftmark}
+%
+% fancy (main content) page header/footer styles
+\fancyfoot[LE]{\usefont{OT1}{qbk}{m}{n}\selectfont \thepage}
+\fancyfoot[RO]{\usefont{OT1}{qbk}{m}{n}\selectfont \thepage}
+\renewcommand{\footrulewidth}{0.5pt}
+\renewcommand{\footruleskip}{0mm}
+% plain page header/footer styles (i.e. chapter pages)
+\fancypagestyle{plain}{
+\fancyhf{}
+\fancyfoot[LE]{\usefont{OT1}{qbk}{m}{n}\selectfont \thepage}
+\fancyfoot[RO]{\usefont{OT1}{qbk}{m}{n}\selectfont \thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+}
+
+%
+% this next section (till \makeatother) makes sure that blank pages
+% are actually completely blank, cause they're not usually
+\makeatletter
+\def\cleardoublepage{\clearpage\if@twoside \ifodd\c@page\else
+	\hbox{}
+	\vspace*{\fill}
+	\thispagestyle{empty}
+	\newpage
+	\if@twocolumn\hbox{}\newpage\fi\fi\fi}
+\makeatother
+
+%
+%%% section header styles:
+%
+\usepackage[calcwidth]{titlesec}
+\titlelabel{\thetitle.\quad}
+
+
+%\includeonly{macros,chapter1}
+%\includeonly{macros,chapter2}
+%\includeonly{macros,chapter3}
+%\includeonly{macros,chapter4}
+
+% uncomment if you would like an index (make sure you actually define
+% index terms in your document as well...
+%\makeindex
+
+% this contains various command definitions and other misc. options
+\include{macros}
+
+\begin{document}
+
+\include{chapter_dalek}
+
+%\include{chapter5/chapter5}
+
+%
+\bibliographystyle{astroads}
+\bibliography{thesis}
+
+\end{document}
