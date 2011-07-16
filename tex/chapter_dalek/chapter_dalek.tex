@@ -135,19 +135,64 @@ A secondary effect is that the ion population will be different to the actual su
    \caption{example caption}
    \label{fig:sn2002bo_vph_offset}
 \end{figure}
-
+The initial abundances for each fit are determined by integrating the abundances above the photosphere in the W7 model \citep{1984ApJ...286..644N}.
 The iron group element have a similar influence on the overall flux distribution as the photospheric velocity. 
-As we assume no stable Cobalt and the input parameters for Nickel, Cobalt and Iron are $\Ni{56}_0$ and $\Fe{56}_0$ and calculate the abundances using radioactive decay. Ti and Cr have no easily identifiable single lines in the observed spectra, but provide line blanketing in the blue. We often lock their ratios and only use one abundance as an input parameter. 
+As we assume no stable Cobalt and the input parameters for Nickel, Cobalt and Iron are $\Ni_0$ and $\Fe_0$ and calculate the abundances using radioactive decay. Ti and Cr have no easily identifiable single lines in the observed spectra, but provide line blanketing in the blue. We often lock their ratios and only use one abundance as an input parameter. 
 
-These elements cause photons to be absorbed in the UV and reemit in the red. A too high abundance will suppress the flux in the blue too much and will cause the spectrum to be over-luminous in the red (see Figure \ref{fig:sn2002_ige_offset}). Although physically different from the photospheric velocity, phenomenologically these are similar. 
+These elements cause photons to be absorbed in the UV and be reemited in the red. A too high abundance will suppress the flux in the blue too much and will cause the spectrum to be over-luminous in the red (see Figure \ref{fig:sn2002_ige_offset}). Although physically different from the photospheric velocity, phenomenologically these are similar. 
 The degeneracy is broken by identifiable Fe-Lines in the red part of the spectrum as well as the ionization balance determined by the temperature (influenced by photospheric velocity). 
 This near degeneracy causes a very complex search space. 
 
 There are six other abundances that are taken into account when fitting: Carbon, Oxygen, Magnesium, Silicon, Sulfur and Calcium. Among these Oxygen plays a special role. It does not have lines except the Oxygen triplet at 7778 \AA. In our fitting routine it acts as a buffer element and is assigned the remaining fraction that is left after all elements have been given abundances. 
 
-The first element that is usually adjusted from its initial value is Calcium. The Calcium line is relatively easy to identify and 
+The first element that is usually adjusted from its initial value is Calcium. The Calcium line is relatively easy to identify. Calcium also does not depend an awful lot on the right choice of temperature. One caveat however is that Calcium saturates at a certain point so if the observed line is close to that point one can only extract a lower limit for Calcium.
 
+The next to be adjusted are Silicon and then Sulfur. Both of these elements are linked through nuclear synthesis and we don't expect there to be more Sulfur than Silicon. We also expect no less Sulfur than a third of Silicon. Silicon also provides an important measure for temperature through the ionization balance of doubly ionized Silicon to triple ionized Silicon (see Figure \ref{fig:sn2002bo_lineident}).
+
+
+Magnesium has one strong feature near 4300 \AA, which constrains the Magnesium abundance. 
+
+Doubly ionized Carbon has a line at $\approx 6300\,\AA$ which is often not present or very weak. 
+
+Fitting the spectra involves first adjusting luminosity and then \ige s as well as photospheric velocity. This is followed by adjusting the other elemental abundances from the initial W7 values \citep{1984ApJ...286..644N}. After the elemental abundances are adjusted we readjust the luminosity, photospheric velocity and \ige again. This loop is continued until convergence is reached. 
+
+One important factor to check is the value of the dilution factor $w$ at the photosphere. Theoretically we would expect this to be close to 0.5 if the fit is sensible. 
+
+After having fit one spectrum we can continue to fit the other photpsheric spectra of the same supernova. We expect most parameters to increase or decrease monotonically (luminosity being the obvious exception). 
+
+In summary, the fitting of a supernova is a complex procedure and requires a lot of practice. Our initial tests were using very simple methods like Newton-Raphson and other gradient methods. We quickly discovered the search space is too complex and evaluation time takes too long (each spectrum roughly one minute on a modern computer) to use these simple methods. 
+
+ 
 \section{Genetic Algorithms}
+
+Finding optimal solutions in complex search spaces is one of the main fields in numerical mathematics.  They have wide ranging applications in engineering, bio sciences and physical sciences. There have been several advances in the last decads to optimization. 
+Among them is the  remarkable feat of ``solving'' the long-standing problem of the traveling salesman with simulated annealing \citep{Kirkpatrick13051983}.
+Another major accomplishment was the development of evolutionary algorithms and subsequently genetic algorithms. The idea of an algorithm which imitates the principal of natural evolution was first introduced by Ingo Rechenberg \citep{Rechenberg1973}. These evolutionary algorithms have since become a sizeable subfield of numerical optimization. Genetic algorithms a subclass of evolutionary algorithms were then further developed by John Holland and David Goldberg \citep{citeulike:125978}.
+
+When conquering the search space optimization algorithms have two (sometimes conflicting) goals: exploiting good leads while still exploring the search space sufficiently. Simple algorithms like Hillclimbing (randomly selecting a point in the neighbourhood and switch if it is ``better'' than the current one) will exploit good leads but will neglect to explore the search space. This often leads to be stuck at extrema. Whereas random searches are excellent at exploring the search space but will fail to quickly converge on an optimal solution. Genetic algorithms do strike the balance between exploration and exploiting the current best solution.
+
+Genetic algorithms are a heuristic search technique to find optimal solutions in n-dimensional search spaces. We will consider a function $f(\vec{x})$ with the multi-dimensional solution $\vec{y}$. In terms of genetic algorithms we call $\vec{x}$ genotypes and the solution vector $\vec{y}$ phenotype (similar to biology where the $\vec{x}$ describes the DNA sequence but the solution is can not be thought of as a vector). In addition we define a fitness function $g(\vec{y})=s$ where s is a scalar. It is our goal to choose the input parameters $\vec{x}$  to maximize $s$. 
+Following the notation of \citep{Michalewicz:1994:GAD:184675} we introduce the population $P(t)$ with the individuals $\{p_{1}^{t}, \dots, p_{n}^{t}\}$, where $t$ denotes the iteration. Each individual $(p_{i}^t)$ is a data structure consisting of a vector $\vec{x}_i$ and its corresponding fitness scalar $s$.  When we speak of evaluating $p_{i}^{t}$ we mean that we use $g(f(\vec{x}_i))=s$ to determine the fitness. A new population $P(t+1)$ is formed by choosing,  in the \textit{select step}, the more fit individuals. Some or all of the new population undergo transformations (recombine step). There are unary transformations, which create new individuals by small changes in single individuals called mutations. Higher order transformations called crossovers combine the traits of multiple individuals to form a next generation individual. 
+After the new population has been created in the recombine step, it is evaluated and the \textit{select step} begins anew. 
+
+This procedure is repeated until the best individual has reached a certain threshold fitness (see Algorithm \ref{alg:evol_program}). 
+
+\begin{algorithm}
+\label{alg:evol_program}
+\caption{Structure of a genetic algorithm}
+\begin{algorithmic}
+\STATE $t \gets 0$\\
+initialize $P(t)$\\
+evaluate $P(t)$
+\WHILE{(\textbf{not} termination condition)}
+\STATE $t \gets t+1$\\
+select $P(t)$ from $P(t-1)$\\
+recombine $P(t)$\\
+evaluate $P(t)$
+\ENDWHILE
+\end{algorithmic}
+\end{algorithm}
+
 
 
 

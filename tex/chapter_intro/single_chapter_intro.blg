@@ -2,7 +2,7 @@ This is BibTeX, Version 0.99d (TeX Live 2010)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: single_chapter_intro.aux
 A level-1 auxiliary file: chapter_intro.aux
-White space in argument---line 91 of file chapter_intro.aux
+White space in argument---line 112 of file chapter_intro.aux
  : \citation{1978ApJ...223L.109K,1974ApJ...187..333C
  :                                                   }
 I'm skipping whatever remains of this command
@@ -14,45 +14,45 @@ Warning--can't use both author and editor fields in 1602QB41.B73.......
 Warning--empty publisher in 1602QB41.B73.......
 Warning--can't use both author and editor fields in 2007nps..book.....I
 Warning--empty publisher in kepler1606
-You've used 93 entries,
+You've used 115 entries,
             3025 wiz_defined-function locations,
-            1247 strings with 25587 characters,
-and the built_in function-call counts, 52483 in all, are:
-= -- 4069
-> -- 4361
-< -- 41
-+ -- 1601
-- -- 1508
-* -- 4823
-:= -- 9869
-add.period$ -- 93
-call.type$ -- 93
-change.case$ -- 873
-chr.to.int$ -- 93
-cite$ -- 97
-duplicate$ -- 1868
-empty$ -- 2808
-format.name$ -- 1793
-if$ -- 9983
+            1386 strings with 33942 characters,
+and the built_in function-call counts, 72991 in all, are:
+= -- 5442
+> -- 6743
+< -- 52
++ -- 2486
+- -- 2371
+* -- 7024
+:= -- 13758
+add.period$ -- 115
+call.type$ -- 115
+change.case$ -- 1248
+chr.to.int$ -- 115
+cite$ -- 119
+duplicate$ -- 2368
+empty$ -- 3547
+format.name$ -- 2716
+if$ -- 13714
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 88
-newline$ -- 382
-num.names$ -- 377
-pop$ -- 1035
+missing$ -- 104
+newline$ -- 470
+num.names$ -- 467
+pop$ -- 1460
 preamble$ -- 1
-purify$ -- 873
+purify$ -- 1248
 quote$ -- 0
-skip$ -- 1530
+skip$ -- 1943
 stack$ -- 0
-substring$ -- 2032
-swap$ -- 42
-text.length$ -- 4
+substring$ -- 2592
+swap$ -- 104
+text.length$ -- 10
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 828
+type$ -- 1026
 warning$ -- 4
-while$ -- 376
+while$ -- 472
 width$ -- 0
-write$ -- 936
+write$ -- 1155
 (There was 1 error message)

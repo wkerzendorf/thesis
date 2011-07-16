@@ -2,7 +2,7 @@ from pyfica import fileio
 execfile('/Users/wkerzend/Documents/science/thesis/thesis/tex/thesis_plot_defaults.py')
 
 
-#llist = fileio.sbibfile('bf2002bo-10_sbib.dat').read_data()['llist']
+llist = fileio.sbibfile('bf2002bo-10_sbib.dat').read_data()['llist']
 
 testlines = llist[np.logical_and(llist['shift'] > 3500, llist['eqw'] > 50)]
 
@@ -33,4 +33,4 @@ xlim(2500, 9000)
 xlabel('Wavelength [\AA]')
 ylabel(intensity_label)
 legend()
-savefig('bf2002bo-10.pdf')
+savefig('bf2002bo-10_lineid.pdf')
