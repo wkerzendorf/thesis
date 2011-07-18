@@ -17,7 +17,7 @@
 % have no idea what it actually does?  You will probably just redefine
 % all of its customisations anyway...
 \documentclass[11pt,openright]{report} 
-
+\setcounter{secnumdepth}{3}
 % define some constants that can be used in various places to easily
 % specify title, subjects, author etc.
 \newcommand{\thesistitle}{Type Ia Supernovae:
@@ -174,7 +174,7 @@ pdfsubject={\thesissubjects},%
 % Stops figures and tables 'floating' past the section in which they
 % are declared.
 \usepackage[section]{placeins}
-\usepackage[toc,page,title,titletoc]{appendix}
+\usepackage[toc,page,title,title]{appendix}
 %%NOTES ABOUT NAG
 % this is a very good package to use.  If you want to write good LaTeX
 % code and want to make sure you aren't using outdated methods (like
@@ -269,13 +269,13 @@ pdfsubject={\thesissubjects},%
 
 % uncomment if you would like an index (make sure you actually define
 % index terms in your document as well...
-%\makeindex
+\makeindex
 
 % this contains various command definitions and other misc. options
 \include{macros}
 
 \begin{document}
-
+\tableofcontents \newpager
 \include{chapter_intro}
 
 %\include{chapter5/chapter5}

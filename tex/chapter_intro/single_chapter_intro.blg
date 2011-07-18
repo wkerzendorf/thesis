@@ -2,57 +2,52 @@ This is BibTeX, Version 0.99d (TeX Live 2010)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: single_chapter_intro.aux
 A level-1 auxiliary file: chapter_intro.aux
-White space in argument---line 112 of file chapter_intro.aux
- : \citation{1978ApJ...223L.109K,1974ApJ...187..333C
- :                                                   }
-I'm skipping whatever remains of this command
 The style file: astroads.bst
 Database file #1: thesis.bib
-Warning--I didn't find a database entry for "xxx"
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--can't use both author and editor fields in 1602QB41.B73.......
 Warning--empty publisher in 1602QB41.B73.......
 Warning--can't use both author and editor fields in 2007nps..book.....I
 Warning--empty publisher in kepler1606
-You've used 115 entries,
+You've used 155 entries,
             3025 wiz_defined-function locations,
-            1386 strings with 33942 characters,
-and the built_in function-call counts, 72991 in all, are:
-= -- 5442
-> -- 6743
-< -- 52
-+ -- 2486
-- -- 2371
-* -- 7024
-:= -- 13758
-add.period$ -- 115
-call.type$ -- 115
-change.case$ -- 1248
-chr.to.int$ -- 115
-cite$ -- 119
-duplicate$ -- 2368
-empty$ -- 3547
-format.name$ -- 2716
-if$ -- 13714
+            1613 strings with 45011 characters,
+and the built_in function-call counts, 99416 in all, are:
+= -- 7354
+> -- 9393
+< -- 62
++ -- 3467
+- -- 3310
+* -- 9659
+:= -- 18843
+add.period$ -- 155
+call.type$ -- 155
+change.case$ -- 1721
+chr.to.int$ -- 155
+cite$ -- 159
+duplicate$ -- 3150
+empty$ -- 4699
+format.name$ -- 3767
+if$ -- 18574
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 104
-newline$ -- 470
-num.names$ -- 467
-pop$ -- 1460
+missing$ -- 144
+newline$ -- 630
+num.names$ -- 627
+pop$ -- 1998
 preamble$ -- 1
-purify$ -- 1248
+purify$ -- 1721
 quote$ -- 0
-skip$ -- 1943
+skip$ -- 2559
 stack$ -- 0
-substring$ -- 2592
+substring$ -- 3427
 swap$ -- 104
 text.length$ -- 10
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1026
+type$ -- 1386
 warning$ -- 4
-while$ -- 472
+while$ -- 628
 width$ -- 0
-write$ -- 1155
-(There was 1 error message)
+write$ -- 1552
+(There were 4 warnings)

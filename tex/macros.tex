@@ -66,23 +66,29 @@
 \newcommand{\nififtysix}{$^{56}\textrm{Ni}$}
 \newcommand{\cofiftysix}{$^{56}\textrm{Co}$}
 \newcommand{\fefiftysix}{$^{56}\textrm{Fe}$}%
-\newcommand\ion[2]{#1$\;${\small\rmfamily\@Roman{#2}}\relax}%
+ \makeatletter \newcommand{\ion}[2]{#1\@Roman{#2}} \makeatother
 
 % --- telescopes
 
 \newcommand{\hst}{HST}
 
 %supernova specific
+\newcommand{\sn}[2]{SN #1#2}
 \newcommand{\sneia}{SNe Ia}
-\newcommand{\sn}{SN}
+
 \newcommand{\snia}{SN Ia}
 \newcommand{\sneii}{SNe II}
 \newcommand{\snii}{SN II}
+\newcommand{\sniib}{SN IIb}
+\newcommand{\snib}{SN Ib/c}
+\newcommand{\snic}{SN Ib/c}
 \newcommand{\snibc}{SN Ib/c}
+\newcommand{\sneibc}{SNe Ib/c}
 \newcommand{\sniip}{SN IIP}
 \newcommand{\sniil}{SN IIL}
 \newcommand{\sniin}{SN IIn}
-
+\newcommand{\dtd}{DTD}
+\newcommand{\snr}{SNR}
 \newcommand{\hvg}{HVG}
 \newcommand{\lvg}{LVG}
 
@@ -123,6 +129,7 @@
 
 
 %general astrophysics
+\newcommand{\agb}{AGB}
 \newcommand{\csm}{CSM}
 \newcommand{\ism}{ISM}
 \newcommand{\ige}{IGE}
@@ -141,6 +148,9 @@
 \newcommand{\loglbol}{\ensuremath{\log{L/L_\odot}}}
 %dalek chapter
 
+%general astronomy
+\newcommand{\lmc}{LMC}
+\newcommand{\smc}{SMC}
 \newcommand{\synow}{SYNOW}
 \newcommand{\mlc}{ML MONTE CARLO}
 
