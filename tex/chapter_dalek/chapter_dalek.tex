@@ -84,7 +84,7 @@ In the next step there are three possible outcomes. We calculate the length of t
 If both paths are longer than the path to exit the current zone, then the photon exits the current zone and a new Monte Carlo process begins. 
 If however $s_e$ is the shortest then Thompson scattering occurs and the photon is assigned a new direction and a new $\tau_{\rm event}$ is drawn and the process begins anew.
 
-In the case of line scattering the excited atom can de-excite through many lines. \mlc randomly chooses a downward transition for the whole packet (taking the appropriate weights into account). The number of photons in the packet is adjusted to ensure that the energy is conserved in the comoving frame. 
+In the case of line scattering the excited atom can de-excite through many lines. \mlc\ randomly chooses a downward transition for the whole packet (taking the appropriate weights into account). The number of photons in the packet is adjusted to ensure that the energy is conserved in the comoving frame. 
 
 There are two possibilities for the final fate of the photon. Either it is reabsorbed into the photosphere or is emitted from the supernova. 
 
@@ -167,15 +167,20 @@ In summary, the fitting of a supernova is a complex procedure and requires a lot
 
 Finding optimal solutions in complex search spaces is one of the main fields in numerical mathematics.  They have wide ranging applications in engineering, bio sciences and physical sciences. There have been several advances in the last decads to optimization. 
 Among them is the  remarkable feat of ``solving'' the long-standing problem of the traveling salesman with simulated annealing \citep{Kirkpatrick13051983}.
-Another major accomplishment was the development of evolutionary algorithms and subsequently genetic algorithms. The idea of an algorithm which imitates the principal of natural evolution was first introduced by Ingo Rechenberg \citep{Rechenberg1973}. These evolutionary algorithms have since become a sizeable subfield of numerical optimization. Genetic algorithms a subclass of evolutionary algorithms were then further developed by John Holland and David Goldberg \citep{citeulike:125978}.
+Another major accomplishment was the development of evolutionary algorithms and subsequently genetic algorithms. The idea of an algorithm which imitates the principal of natural evolution was first introduced by ??? give story of rechenberg optimizing wind tunnel ??? Ingo Rechenberg \citep{Rechenberg1973}. These evolutionary algorithms have since become a sizeable subfield of numerical optimization. Genetic algorithms a subclass of evolutionary algorithms were then further developed by John Holland and David Goldberg \citep{citeulike:125978}.
 
 When conquering the search space optimization algorithms have two (sometimes conflicting) goals: exploiting good leads while still exploring the search space sufficiently. Simple algorithms like Hillclimbing (randomly selecting a point in the neighbourhood and switch if it is ``better'' than the current one) will exploit good leads but will neglect to explore the search space. This often leads to be stuck at extrema. Whereas random searches are excellent at exploring the search space but will fail to quickly converge on an optimal solution. Genetic algorithms do strike the balance between exploration and exploiting the current best solution.
-
+ """"
+ maybe include:
+ Dependent variables present special problems for optimization algorithms because varying one variable also changes the value of the other variable. For example, size and weight of the car are dependent. Increasing the size of the car will most likely increase the weight as well (unless some other factor, such as type of material, is also changed). Independent variables, like Fourier series coefficients, do not interact with each other. If 10 coefficients are not enough to represent a function, then more can be added without having to recalculate the original 10.In the GA literature, variable interaction is called epistasis (a biological term for gene interaction). When there is little to no epistasis, minimum seeking algorithms perform best. GAs shine when the epistasis is medium to high, and pure random search algorithms are champions when epistasis is very high (Figure 2.5). cite haupt \& haupt (book on harddrive)
+ """""""
 Genetic algorithms are a heuristic search technique to find optimal solutions in n-dimensional search spaces. We will consider a function $f(\vec{x})$ with the multi-dimensional solution $\vec{y}$. In terms of genetic algorithms we call $\vec{x}$ genotypes and the solution vector $\vec{y}$ phenotype (similar to biology where the $\vec{x}$ describes the DNA sequence but the solution is can not be thought of as a vector). In addition we define a fitness function $g(\vec{y})=s$ where s is a scalar. It is our goal to choose the input parameters $\vec{x}$  to maximize $s$. 
-Following the notation of \citep{Michalewicz:1994:GAD:184675} we introduce the population $P(t)$ with the individuals $\{p_{1}^{t}, \dots, p_{n}^{t}\}$, where $t$ denotes the iteration. Each individual $(p_{i}^t)$ is a data structure consisting of a vector $\vec{x}_i$ and its corresponding fitness scalar $s$.  When we speak of evaluating $p_{i}^{t}$ we mean that we use $g(f(\vec{x}_i))=s$ to determine the fitness. A new population $P(t+1)$ is formed by choosing,  in the \textit{select step}, the more fit individuals. Some or all of the new population undergo transformations (recombine step). There are unary transformations, which create new individuals by small changes in single individuals called mutations. Higher order transformations called crossovers combine the traits of multiple individuals to form a next generation individual. 
+Following the notation of \citep{Michalewicz:1994:GAD:184675} we introduce the population $P(t)$ with the individuals (sometimes referred to as genomes) $\{p_{1}^{t}, \dots, p_{n}^{t}\}$, where $t$ denotes the iteration. Each individual $(p_{i}^t)$ is a data structure consisting of a vector $\vec{x}_i$ and its corresponding fitness scalar $s_i$.  When we speak of evaluating $p_{i}^{t}$ we mean that we use $g(f(\vec{x}_i))=s_i$ to determine the fitness. A new population $P(t+1)$ is formed by choosing,  in the \textit{select step}, the more fit individuals. Some or all of the new population undergo transformations (recombine step). These transformations are called genetic operators. There are unary transformations, which create new individuals by small changes in single individuals called mutations. Higher order transformations called crossovers combine the traits of multiple individuals to form a next generation individual. 
 After the new population has been created in the recombine step, it is evaluated and the \textit{select step} begins anew. 
 
 This procedure is repeated until the best individual has reached a certain threshold fitness (see Algorithm \ref{alg:evol_program}). 
+
+
 
 \begin{algorithm}
 \label{alg:evol_program}
@@ -193,12 +198,102 @@ evaluate $P(t)$
 \end{algorithmic}
 \end{algorithm}
 
+To be solvable by a \ga the problem needs to meet the following requirements:
+\begin{itemize}
+\item a genetic representation of the search space (e.g. a vector)
+\item a function that can calculate a fitness for a genetic representation
+\item transformations that create a new population out of selected members of the old population
+\item a method of creating an initial population
+\end{itemize}
+
+
+If these are fulfilled one can start constructing a \ga for the chosen problem. When constructing a new \ga for a problem there are multiple steps. First one needs to find a suitable genetic representation for each solution in the search space. 
+
+\paragraph{Genetic Representation:}
+There are two main ways to represent a genome: binary-encoding and value encoding (sometimes called gray encoding). Binary encoding was the form of encoding  used in early genetic algorithms. It offers significant advantages when trying to optimize very simple problems. 
+
+In one-dimensional problems, for example, value encoding would only offer one gene, whereas binary encoding offers a number of genes depending on the requested precision of the value. 
+There are however many problems with binary encoding. The so called \textit{hamming cliff} describes the problem that a simple bit-flip at one high encoding bit (occurring in some \ga\ operations) can dramatically change the encoded value \citet[e.g.][]{Chakraborty2003253}. This can improve covering of search space but also can hinder the code from converging quickly. When using binary encoding for many input variables the genomes can get incredibly large. \ga s have been shown to perform poorly for very large genomes. quicker convergence michalewicz page 82 chpter 5.5 
+
+Value encoding often is a natural way to encode the parameters of a problem. In contrast to binary encoding the genetic operators are often much more problem specific. It seems that for the moment value encoding is the preferred method in many cases \citep[e.g.][]{Janikow1991Comparison,Wright91geneticalgorithms}.
+
+Finally, an important encoding to mention (which does not apply to our example problem) is that of permutation encoding. In the famous case of the travelling salesman problem (henceforth \tsp) one tries to find the shortest route between n cities. In this case each city can only be visited once and the route must end in the starting city. There are many algorithms that can solve this problem. Brute force attempts scale with $O(n!)$ which make them unfeasible. A genetic algorithm can solve this problem by encoding the order (permutation encoding) in which the cities are visited in each genome. There are special genetic operators for permutation encoding. 
+
+In the case of a simple vectorized function or the \tsp\ once can now directly calculate the fitness value. In the case of our astrophysics example we need to first transform the genome (genotype) to a synthetic spectrum (phenotype) before being able to calculate the fitness.
+
+\paragraph{Fitness Function}
+Calculating the fitness of an individual is very dependent on the problem under consideration. In the case of our spectrum fitting problem we can simply calculate the root-mean-square for each individual. Finding a good fitness function in any optimization algorithm is one of the most complex tasks. It might not always be possible to find one fitness value that describes the problem but some problems might need many. This is generally referred to as multi-objective optimization and is an active field in \ga-research \citep{citeulike:1300532}. Fitness scaling applies a simple transformation to the fitness of all members of the population (e.g. a linear transform). Many selection processes are not able to accept negative and positive values for fitness so fitness scaling alleviates such a problem. In addition, it happens sometimes in early generation that a few individuals already have very high fitness. These "superindividuals" then dominate the selection process and subsequently reduce the genetic breadth  drastically. This can in later generations significantly hamper the progress of finding an optimal solution (such a problem was encountered in this work and is described in Section \ref{sec:geneticdalek}). 
+
+In summary, fitness functions and scaling are a very crucial part of a successful algorithm. For a description of different scaling methods please refer to \citet{Kreinovich93geneticalgorithms} ??? select some introduction referebces from this paper???.
+
+\paragraph{Initial Population}
+The most basic method of selecting the initial population is to draw individuals uniformly and randomly from the entire search space. It depends then on the population size in relation to the search space size how well this search space is sampled. For a small population size and a large search space the \ga\ could very well find a local optimum rather than the global one. We have in our work chosen a population time which is roughly 15 times bigger than the number of genes. Choosing the initial population using prior knowledge will also improve the performance of the \ga. Rather than drawing uniformly random we would draw randomly from a probability distribution covering the search space. 
+
+\paragraph{Selection process}
+uniform stochastic sampling !
+There are many different approaches for selecting individuals from the current population to create the next population. Before selecting individuals we can make coarse selection on the entire population. One selection that is often performed is that of \textit{elitism} in which a fraction of the fittest individuals is selected to advance to the next generation without being altered. On the other hand one can discard a fraction of the least fit individuals. These discarded members won't be used in the recombination step. The remaining population is called the mating population
+
+After we have performed a coarse selection on the population we start with the recombination step. The first action in the recombination step is the selection of two or more individuals from the mating population and add them to a mating pool. In all our next examples we will assume a mating-pool with only two slots (similar to two parents in biological reproduction). Once the mating pool is filled a new individual is created by combining the genetic information of all members of the mating pool. 
+
+There is a multitude of options for selecting members from the mating population and adding them to a mating pool \citep[for an overview see]{Goldberg91acomparative}. We will describe only a few of them. The most widely used of the selection algorithms is \textit{roulette wheel selection} (see Figure \ref{fig:roulettewheel}). \textit{Roulette wheel selection} is in the class of \textit{fitness proportional selection}. In addition to \textit{fitness proportional selection} there is \textit{rank selection}. In rank selection the fitness only influences the rank of the individuals (see Figure \ref{fig:rankselection}). The previous described fitness scaling and rank selection have similar effects. In \textit{tournament selection} we randomly select two individuals and compare those. The fitter of those two individuals is selected and added to the mating pool. 
+
+There are multiple steps for creating a new population from the current mating population. First we select two individuals (or more) using our selection process (e.g. \textit{roulette wheel selection}) and place them in a mating pool. The reader should notice that the same individual can be in the mating pool twice! We create one or multiple new individuals (children) from this mating pool and place them in the new population. The current mating pool is disbanded and a new one is formed. These steps are repeated until the new population has the same number as the old population (minus the number of individuals that automatically advanced to the new population through \textit{elitism}). 
+There are two main processes to create a new individual from a mating pool: crossover and mutation.
+
+\paragraph{Crossover and mutation}
+We assume a mating pool with two individuals. The simplest form of a crossover is the single-point crossover (see Figure \ref{fig:crossover}). A random integer $r \in [1,N-1]$, where N describes the number of genes per genome is selected. The new individual is created out of the first $r$ genes from the first parent and the last $N-r$ genes from the second parent. Now it is trivial to create a second child (using the same random number $r$) from the mating pool by just switching first and second parent. 
+Two-point crossover is very similar to single-point crossover. Two random numbers are selected and the crossover occurs at these places (see Figure \ref{fig:crossover}). (N-1)-point crossover is also called uniform crossover. In that case each gene is selected randomly with equal chance from the parents.
+Arithmetic crossovers use a function to calculate the new gene from each of the parent genes. For a value encoding this function could be the mean. For a binary encoding the function could be the \texit{and} operator. ???should I include example???
+One can mix arithmetic and binary crossovers. For example we select the $r$ genes from the first parent and create the last $N-r$ genes by taking the mean of first and second parents genes. 
+After the new child or children have been created through crossovers it is subjected to the mutation operator. There is a chance for each individual gene (often chosen to be less than 5\%) that it is altered. For bit encoding this altering is a simple inversions. There are many options for value encoding. For example one can add or multiply with a random number. 
+Once this step is complete the children are added to the new population.
+
+\subsection{A simple example}
+We will illustrate the use of a \ga\ on a simple astrophysical problem. The task at hand is to fit an observed spectrum with a synthetic spectrum. The input parameters for this synthetic spectrum are\teff, \logg, \feh, $\alpha$-enhancement, \vrad and \vrot. The simplest genetic representation of this is simply a vector $\vec{x} = (\teff, \logg, \feh, \alpha, \vrad, \vrot)$. 
+The first step is drawing an initial population. We will limit our 
+After 
+convergence 
+premature convergence
+
+\subsection{onvergence}
+
+easy implementation; impressive parallel solution.
+close to optimal use differnt method......
+\subsection{GA theory schemata theory}
 
 
 
 \section{Genetic Algorithms to fit Type Ia Supernovae: The Dalek Code}
+\label{sec:geneticdalek}
+describe initial tries with newton raphson. 
+
+Initial population. show vph graph. select from w7 integrate outwards. create children randomly; complex needs to work out and obey rules otherwise dead: describe process look at python code. ....
+
+reference back to  parallelity and describe launching to multiple (non homogenious computers) simple fifo. 
+
+fitness function describe chi**2 and then describe w-parameter and ir excess mention figure.
+
+selection process rws; crossover uniform, mutation non-uniform different mutations for different parameters. child survival rate small at beginning.
+
+describe principal evolution; show 2002bo different channels; population plot histtogram.
+Fitting works sometime find good solution. discuss time and computer demand. discuss what has been tried
+
+problems?
+
+suggest that on the right way, now working with experts of genetic algorithms. describe differential evolution. 
+
+ask james about machine learning techniques....
+
+\section{Conclusion}
 
 
+
+GA powerful tools, initially very good but require fine tuning for each problem.
+
+A conventional, but not entirely accurate, interpretation of the NFL results is that "a general-purpose universal optimization strategy is theoretically impossible, and the only way one strategy can outperform another is if it is specialized to the specific problem under consideration"
+http://ti.arc.nasa.gov/m/profile/dhw/papers/78.pdf
+
+Continue on investigation with experts on GA. try some different approaches. Fast exploration of search space through grid and GA. 
 
 
 

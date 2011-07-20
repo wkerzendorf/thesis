@@ -1,0 +1,108 @@
+This is BibTeX, Version 0.99d (TeX Live 2010)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: thesis.aux
+A level-1 auxiliary file: dedication.aux
+A level-1 auxiliary file: disclaimer.aux
+A level-1 auxiliary file: acknowledgments.aux
+A level-1 auxiliary file: abstract.aux
+A level-1 auxiliary file: chapter_intro/chapter_intro.aux
+A level-1 auxiliary file: chapter_sn1572_starg/chapter_sn1572_starg.aux
+A level-1 auxiliary file: chapter_sn1572_hires/chapter_sn1572_hires.aux
+A level-1 auxiliary file: chapter_sn1006/chapter_sn1006.aux
+A level-1 auxiliary file: chapter_ndinterp/chapter_ndinterp.aux
+A level-1 auxiliary file: chapter_dalek/chapter_dalek.aux
+The style file: astroads.bst
+A level-1 auxiliary file: appendices.aux
+Reallocated field_info (elt_size=4) to 11400 items from 5000.
+Database file #1: thesis.bib
+Warning--string name "august" is undefined
+--line 2256 of file thesis.bib
+Warning--I didn't find a database entry for "2001PASP..113.1420V"
+Warning--I didn't find a database entry for "1996A&AS..117..393B"
+Warning--I didn't find a database entry for "2010A&A...512A..54C"
+Warning--I didn't find a database entry for "1967ITAE...15...70W"
+Warning--I didn't find a database entry for "2008A&A...486..951G"
+Warning--I didn't find a database entry for "1984sfat.book.....K"
+Warning--I didn't find a database entry for "2000vnia.book.....H"
+Warning--I didn't find a database entry for "Kreinovich93geneticalgorithms"
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated str_pool (elt_size=1) to 130000 items from 65000.
+Warning--empty institution in 2006acs..rept....1A
+Warning--can't use both author and editor fields in 1602QB41.B73.......
+Warning--empty publisher in 1602QB41.B73.......
+1 is an integer literal, not a string, for entry 2001ASPC..232..311C
+while executing---line 1627 of file astroads.bst
+1 is an integer literal, not a string, for entry 2001ASPC..232..311C
+while executing---line 1627 of file astroads.bst
+ptr=2, stack=
+in 
+2001
+---the literal stack isn't empty for entry 2001ASPC..232..311C
+while executing---line 1627 of file astroads.bst
+1 is an integer literal, not a string, for entry 1996ASPC..101...80G
+while executing---line 1627 of file astroads.bst
+ptr=1, stack=
+1996
+---the literal stack isn't empty for entry 1996ASPC..101...80G
+while executing---line 1627 of file astroads.bst
+Warning--empty journal in Han:2008p726
+1 is an integer literal, not a string, for entry 1997thsu.conf..111I
+while executing---line 1627 of file astroads.bst
+1 is an integer literal, not a string, for entry 1997thsu.conf..111I
+while executing---line 1627 of file astroads.bst
+ptr=2, stack=
+in 
+1997
+---the literal stack isn't empty for entry 1997thsu.conf..111I
+while executing---line 1627 of file astroads.bst
+Warning--can't use both author and editor fields in 2007nps..book.....I
+1 is an integer literal, not a string, for entry Janikow1991Comparison
+while executing---line 1627 of file astroads.bst
+ptr=1, stack=
+1991
+---the literal stack isn't empty for entry Janikow1991Comparison
+while executing---line 1627 of file astroads.bst
+Warning--empty publisher in kepler1606
+Warning--empty journal in 2003astro.ph..3660P
+You've used 248 entries,
+            3025 wiz_defined-function locations,
+            2213 strings with 64740 characters,
+and the built_in function-call counts, 146287 in all, are:
+= -- 11150
+> -- 12737
+< -- 116
++ -- 4700
+- -- 4438
+* -- 13704
+:= -- 27558
+add.period$ -- 248
+call.type$ -- 248
+change.case$ -- 2466
+chr.to.int$ -- 251
+cite$ -- 255
+duplicate$ -- 5045
+empty$ -- 7559
+format.name$ -- 5165
+if$ -- 27668
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 225
+newline$ -- 1002
+num.names$ -- 1008
+pop$ -- 2887
+preamble$ -- 1
+purify$ -- 2460
+quote$ -- 0
+skip$ -- 4122
+stack$ -- 0
+substring$ -- 5358
+swap$ -- 188
+text.length$ -- 17
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 2208
+warning$ -- 7
+while$ -- 1005
+width$ -- 0
+write$ -- 2489
+(There were 10 error messages)
