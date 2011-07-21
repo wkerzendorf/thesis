@@ -167,6 +167,8 @@ In summary, the fitting of a supernova is a complex procedure and requires a lot
 
 Finding optimal solutions in complex search spaces is one of the main fields in numerical mathematics.  They have wide ranging applications in engineering, bio sciences and physical sciences. There have been several advances in the last decads to optimization. 
 Among them is the  remarkable feat of ``solving'' the long-standing problem of the traveling salesman with simulated annealing \citep{Kirkpatrick13051983}.
+
+\cite{Holland:1962:OLT:321127.321128}
 Another major accomplishment was the development of evolutionary algorithms and subsequently genetic algorithms. The idea of an algorithm which imitates the principal of natural evolution was first introduced by ??? give story of rechenberg optimizing wind tunnel ??? Ingo Rechenberg \citep{Rechenberg1973}. These evolutionary algorithms have since become a sizeable subfield of numerical optimization. Genetic algorithms a subclass of evolutionary algorithms were then further developed by John Holland and David Goldberg \citep{citeulike:125978}.
 
 When conquering the search space optimization algorithms have two (sometimes conflicting) goals: exploiting good leads while still exploring the search space sufficiently. Simple algorithms like Hillclimbing (randomly selecting a point in the neighbourhood and switch if it is ``better'' than the current one) will exploit good leads but will neglect to explore the search space. This often leads to be stuck at extrema. Whereas random searches are excellent at exploring the search space but will fail to quickly converge on an optimal solution. Genetic algorithms do strike the balance between exploration and exploiting the current best solution.
@@ -217,7 +219,14 @@ There are however many problems with binary encoding. The so called \textit{hamm
 
 Value encoding often is a natural way to encode the parameters of a problem. In contrast to binary encoding the genetic operators are often much more problem specific. It seems that for the moment value encoding is the preferred method in many cases \citep[e.g.][]{Janikow1991Comparison,Wright91geneticalgorithms}.
 
-Finally, an important encoding to mention (which does not apply to our example problem) is that of permutation encoding. In the famous case of the travelling salesman problem (henceforth \tsp) one tries to find the shortest route between n cities. In this case each city can only be visited once and the route must end in the starting city. There are many algorithms that can solve this problem. Brute force attempts scale with $O(n!)$ which make them unfeasible. A genetic algorithm can solve this problem by encoding the order (permutation encoding) in which the cities are visited in each genome. There are special genetic operators for permutation encoding. 
+Finally, an important encoding to mention (which does not apply to our example problem) is that of permutation encoding. In the famous case of the travelling salesman problem (henceforth \tsp) one tries to find the shortest route between n cities. In this case each city can only be visited once and the route must end in the starting city. There are many algorithms that can solve this problem. Brute force attempts scale with $O(n!)$ which make them unfeasible. A genetic algorithm can solve this problem by encoding the order (permutation encoding) in which the cities are visited in each genome. There are special genetic operators for permutation encoding. For the \tsp\ there are better algorithms like dynamic programming which can solve the problem with a complexity of $O(n^2 2^n)$ (see Figure \ref{fig:xkcd_tsp}).
+
+\begin{figure}[htbp] %  figure placement: here, top, bottom, or page
+   \centering
+   \includegraphics[width=0.7\textwidth]{chapter_dalek/plots/travelling_salesman_problem.png} 
+   \caption{The death of the \tsp\ with the advent of online sales. (reproduced with kind permission by xkcd.com)}
+   \label{fig:xkcd_tsp}
+\end{figure}
 
 In the case of a simple vectorized function or the \tsp\ once can now directly calculate the fitness value. In the case of our astrophysics example we need to first transform the genome (genotype) to a synthetic spectrum (phenotype) before being able to calculate the fitness.
 
@@ -230,7 +239,6 @@ In summary, fitness functions and scaling are a very crucial part of a successfu
 The most basic method of selecting the initial population is to draw individuals uniformly and randomly from the entire search space. It depends then on the population size in relation to the search space size how well this search space is sampled. For a small population size and a large search space the \ga\ could very well find a local optimum rather than the global one. We have in our work chosen a population time which is roughly 15 times bigger than the number of genes. Choosing the initial population using prior knowledge will also improve the performance of the \ga. Rather than drawing uniformly random we would draw randomly from a probability distribution covering the search space. 
 
 \paragraph{Selection process}
-uniform stochastic sampling !
 There are many different approaches for selecting individuals from the current population to create the next population. Before selecting individuals we can make coarse selection on the entire population. One selection that is often performed is that of \textit{elitism} in which a fraction of the fittest individuals is selected to advance to the next generation without being altered. On the other hand one can discard a fraction of the least fit individuals. These discarded members won't be used in the recombination step. The remaining population is called the mating population
 
 After we have performed a coarse selection on the population we start with the recombination step. The first action in the recombination step is the selection of two or more individuals from the mating population and add them to a mating pool. In all our next examples we will assume a mating-pool with only two slots (similar to two parents in biological reproduction). Once the mating pool is filled a new individual is created by combining the genetic information of all members of the mating pool. 
@@ -239,29 +247,38 @@ There is a multitude of options for selecting members from the mating population
 
 There are multiple steps for creating a new population from the current mating population. First we select two individuals (or more) using our selection process (e.g. \textit{roulette wheel selection}) and place them in a mating pool. The reader should notice that the same individual can be in the mating pool twice! We create one or multiple new individuals (children) from this mating pool and place them in the new population. The current mating pool is disbanded and a new one is formed. These steps are repeated until the new population has the same number as the old population (minus the number of individuals that automatically advanced to the new population through \textit{elitism}). 
 There are two main processes to create a new individual from a mating pool: crossover and mutation.
+\begin{figure}[htbp] %  figure placement: here, top, bottom, or page
+   \centering
+   \includegraphics[width=0.7\textwidth]{chapter_dalek/plots/rws_cropped.pdf} 
+   \caption{example caption}
+   \label{fig:example}
+\end{figure}
 
 \paragraph{Crossover and mutation}
 We assume a mating pool with two individuals. The simplest form of a crossover is the single-point crossover (see Figure \ref{fig:crossover}). A random integer $r \in [1,N-1]$, where N describes the number of genes per genome is selected. The new individual is created out of the first $r$ genes from the first parent and the last $N-r$ genes from the second parent. Now it is trivial to create a second child (using the same random number $r$) from the mating pool by just switching first and second parent. 
 Two-point crossover is very similar to single-point crossover. Two random numbers are selected and the crossover occurs at these places (see Figure \ref{fig:crossover}). (N-1)-point crossover is also called uniform crossover. In that case each gene is selected randomly with equal chance from the parents.
-Arithmetic crossovers use a function to calculate the new gene from each of the parent genes. For a value encoding this function could be the mean. For a binary encoding the function could be the \texit{and} operator. ???should I include example???
+Arithmetic crossovers use a function to calculate the new gene from each of the parent genes. For a value encoding this function could be the mean. For a binary encoding the function could be the \textit{and} operator. ???should I include example???
 One can mix arithmetic and binary crossovers. For example we select the $r$ genes from the first parent and create the last $N-r$ genes by taking the mean of first and second parents genes. 
 After the new child or children have been created through crossovers it is subjected to the mutation operator. There is a chance for each individual gene (often chosen to be less than 5\%) that it is altered. For bit encoding this altering is a simple inversions. There are many options for value encoding. For example one can add or multiply with a random number. 
 Once this step is complete the children are added to the new population.
 
 \subsection{A simple example}
-We will illustrate the use of a \ga\ on a simple astrophysical problem. The task at hand is to fit an observed spectrum with a synthetic spectrum. The input parameters for this synthetic spectrum are\teff, \logg, \feh, $\alpha$-enhancement, \vrad and \vrot. The simplest genetic representation of this is simply a vector $\vec{x} = (\teff, \logg, \feh, \alpha, \vrad, \vrot)$. 
-The first step is drawing an initial population. We will limit our 
-After 
-convergence 
-premature convergence
+We will illustrate the use of a \ga\ on a simple astrophysical problem. The task at hand is to fit an observed spectrum with a synthetic spectrum. The input parameters for this synthetic spectrum are\teff, \logg, \feh, $\alpha$-enhancement, \vrad and \vrot. The simplest genetic representation of this is simply a vector $\vec{x} = (\teff, \logg, \feh, \alpha, \vrad, \vrot)$. $\vec{x}$ is the \textit{genotype} of the individual. The resulting synthetic spectrum is called the \textit{phenotype}. 
 
-\subsection{onvergence}
+For this relatively small number of genes a population size of 75 should suffice. The first step is drawing an initial population. We will draw uniformly randomly from the search space: $\teff \in [2000, 9000]$, $\logg \in [0, 5]$, $\feh \in [-5,1]$, $\alpha \in [0,0.4]$, $\vrad \in [-100, 100]$ and $\vrot \in [0,200]$. We compute the synthetic spectrum for each individual. The fitness of each individual is the inverse of the root-mean-square of the residuals between the observed and the synthetic spectrum. 
+In the select step we will first advance 10 \% of the fittest individuals to the next population unaltered (\textit{elitism}). For the next population to be complete we need $75 - 8 = 67$ individuals which are created through mating. We select 2 individuals through \textit{roulette wheel selection} and place them in the mating pool. A single crossover point is randomly selected and the child is created. Before being placed in the new population the mutation operator is applied but has a very small chance to mutate any of the child's genes (in this case we choose 2\%).
+This mating step (see Figure \ref{fig:example_mating}) is repeated 67 times. The new population now consists of the 8 fittest individuals of the old population and 67 new individuals created by mating. We will then start again to compute the synthetic spectrum and the resulting fitness for each individual of the new population. This loop is continued until one individual or a whole population has reached a preset convergence criterium.
 
-easy implementation; impressive parallel solution.
-close to optimal use differnt method......
+\subsection{Convergence in Genetic Algorithms}
+A key problem with all optimization algorithms is the premature convergence on a local optimum. The more complex the search space and the more interlinked the parameters are the more likely it is that traditional search routines will fail. \ga s are inherently better at bypassing local optima but are in no way immune to this problem. Premature convergence, as finding a local optimum is called in \ga-terms, is a well known problem 
+A problem that is intrinsic to the \ga s is that for in traditional implementation they will never fully converge. The algorithm will get close to the optimum but due to continued mutation of the individuals the \ga\ will in most cases not reach it. To alleviate this problem some authors suggest switching to a different algorithm when close to the optimum solution, whereas others suggest changing the mutation rate over time \citep[see][and references therein]{citeulike:344183}.
+A definite advantage of \ga s is their parallel nature. This makes it easy to explore large search spaces in the era of increasingly parallel computing. 
+
+Although there are many advantages to using \ga s, one of the unsolved problems is determining a mathematical description for their convergence. The predominate schemata theory explains only a subset of the intrinsic complexity of \ga s.
+
 \subsection{GA theory schemata theory}
 
-
+The schemata-theory first described by \cite{holland1975} is one of the accepted theoretical interpretations of \ga s. There is some criticism and it is known that this theory only explains part of the complexity that are inherent to \ga s \citep[see ][ and references therein]{Whitley94agenetic}. 
 
 \section{Genetic Algorithms to fit Type Ia Supernovae: The Dalek Code}
 \label{sec:geneticdalek}

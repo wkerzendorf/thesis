@@ -8,33 +8,33 @@
 \contentsline {subsection}{\numberline {1.3.3}Light curves}{12}{subsection.1.3.3}
 \contentsline {subsection}{\numberline {1.3.4}Spectra}{13}{subsection.1.3.4}
 \contentsline {subsubsection}{\numberline {1.3.4.1}SNe Ia spectra}{13}{subsubsection.1.3.4.1}
-\contentsline {paragraph}{Pre-Maximum Phase}{13}{subsubsection.1.3.4.1}
+\contentsline {paragraph}{Pre-Maximum Phase}{14}{subsubsection.1.3.4.1}
 \contentsline {paragraph}{Maximum Phase}{14}{figure.caption.10}
-\contentsline {paragraph}{Post-Maximum phase}{14}{figure.caption.10}
-\contentsline {paragraph}{Nebular-Phase}{14}{figure.caption.12}
+\contentsline {paragraph}{Post-Maximum phase}{15}{figure.caption.10}
+\contentsline {paragraph}{Nebular-Phase}{15}{figure.caption.12}
 \contentsline {subsubsection}{\numberline {1.3.4.2}SNe II Spectra}{15}{subsubsection.1.3.4.2}
-\contentsline {subsection}{\numberline {1.3.5}X-Ray \& Radio observations}{15}{subsection.1.3.5}
+\contentsline {subsection}{\numberline {1.3.5}X-Ray \& Radio observations}{16}{subsection.1.3.5}
 \contentsline {subsection}{\numberline {1.3.6}Supernova Cosmology}{16}{subsection.1.3.6}
-\contentsline {paragraph}{SN II\ Cosmology}{16}{subsection.1.3.6}
-\contentsline {paragraph}{SN Ia\ Cosmology}{16}{subsection.1.3.6}
-\contentsline {section}{\numberline {1.4}Post-explosion observations of Supernovae}{17}{section.1.4}
-\contentsline {section}{\numberline {1.5}Core-Collapse Supernova Theory}{19}{section.1.5}
-\contentsline {subsection}{\numberline {1.5.1}Evolution of Massive Stars}{19}{subsection.1.5.1}
-\contentsline {subsection}{\numberline {1.5.2}Core collapse}{20}{subsection.1.5.2}
-\contentsline {subsection}{\numberline {1.5.3}Pair instability}{21}{subsection.1.5.3}
-\contentsline {subsection}{\numberline {1.5.4}Type II Supernovae}{21}{subsection.1.5.4}
-\contentsline {subsection}{\numberline {1.5.5}Type Ib/c supernovae}{21}{subsection.1.5.5}
-\contentsline {section}{\numberline {1.6}Thermonuclear Supernova Theory}{22}{section.1.6}
-\contentsline {subsection}{\numberline {1.6.1}White Dwarfs}{22}{subsection.1.6.1}
-\contentsline {subsection}{\numberline {1.6.2}Pre-supernova evolution}{22}{subsection.1.6.2}
-\contentsline {paragraph}{Ignition}{23}{equation.1.6.4}
-\contentsline {paragraph}{Thermonuclear Explosion}{23}{equation.1.6.4}
-\contentsline {paragraph}{sub-Chandrasekhar-mass detonations}{23}{figure.caption.15}
-\contentsline {paragraph}{WD-WD\ mergers}{24}{figure.caption.16}
-\contentsline {section}{\numberline {1.7}Progenitors of Type Ia Supernovae}{25}{section.1.7}
-\contentsline {subsection}{\numberline {1.7.1}Single Degenerate Scenario}{25}{subsection.1.7.1}
-\contentsline {subsubsection}{\numberline {1.7.1.1}Accretion}{26}{subsubsection.1.7.1.1}
-\contentsline {subsubsection}{\numberline {1.7.1.2}Donor Stars}{26}{subsubsection.1.7.1.2}
-\contentsline {subsection}{\numberline {1.7.2}Double Degenerate Scenario}{27}{subsection.1.7.2}
-\contentsline {subsection}{\numberline {1.7.3}Constrains for different progenitor scenarios}{27}{subsection.1.7.3}
-\contentsline {section}{\numberline {1.8}Thesis motivation}{29}{section.1.8}
+\contentsline {paragraph}{SN II\ Cosmology}{17}{subsection.1.3.6}
+\contentsline {paragraph}{SN Ia\ Cosmology}{17}{subsection.1.3.6}
+\contentsline {section}{\numberline {1.4}Post-explosion observations of Supernovae}{18}{section.1.4}
+\contentsline {section}{\numberline {1.5}Core-Collapse Supernova Theory}{20}{section.1.5}
+\contentsline {subsection}{\numberline {1.5.1}Evolution of Massive Stars}{20}{subsection.1.5.1}
+\contentsline {subsection}{\numberline {1.5.2}Core collapse}{21}{subsection.1.5.2}
+\contentsline {subsection}{\numberline {1.5.3}Pair instability}{22}{subsection.1.5.3}
+\contentsline {subsection}{\numberline {1.5.4}Type II Supernovae}{22}{subsection.1.5.4}
+\contentsline {subsection}{\numberline {1.5.5}Type Ib/c supernovae}{22}{subsection.1.5.5}
+\contentsline {section}{\numberline {1.6}Thermonuclear Supernova Theory}{23}{section.1.6}
+\contentsline {subsection}{\numberline {1.6.1}White Dwarfs}{23}{subsection.1.6.1}
+\contentsline {subsection}{\numberline {1.6.2}Pre-supernova evolution}{23}{subsection.1.6.2}
+\contentsline {paragraph}{Ignition}{24}{equation.1.6.4}
+\contentsline {paragraph}{Thermonuclear Explosion}{24}{equation.1.6.4}
+\contentsline {paragraph}{sub-Chandrasekhar-mass detonations}{24}{figure.caption.15}
+\contentsline {paragraph}{WD-WD\ mergers}{25}{figure.caption.16}
+\contentsline {section}{\numberline {1.7}Progenitors of Type Ia Supernovae}{26}{section.1.7}
+\contentsline {subsection}{\numberline {1.7.1}Single Degenerate Scenario}{26}{subsection.1.7.1}
+\contentsline {subsubsection}{\numberline {1.7.1.1}Accretion}{27}{subsubsection.1.7.1.1}
+\contentsline {subsubsection}{\numberline {1.7.1.2}Donor Stars}{27}{subsubsection.1.7.1.2}
+\contentsline {subsection}{\numberline {1.7.2}Double Degenerate Scenario}{28}{subsection.1.7.2}
+\contentsline {subsection}{\numberline {1.7.3}Constrains for different progenitor scenarios}{28}{subsection.1.7.3}
+\contentsline {section}{\numberline {1.8}Thesis motivation}{31}{section.1.8}
