@@ -13,12 +13,14 @@ The main code (henceforth \mlc) used in this work is an evolved code of  \cite{1
 
 Codes such as PHOENIX\cite{1999JCoAM.109...41H}, SEDONA \cite{2006ApJ...651..366K} and ARTIS \cite{2009MNRAS.398.1809K} are powerful 3D radiative transfer codes. They are the most "physical" codes available but take hours on supercomputers to produce spectra. These codes, however, are not feasible for fitting observed spectra as they take too long for each iteration. 
 
-The main aim of this work is to automatically fit the torrent of observed spectra expected from the current and next generation of supernova searches. We opted to use the \mlc-code as it provides a good compromise between speed and "realism".
+The main aim of this work is to automatically fit the torrent of observed spectra expected from the current and next generation of supernova searches. We opted to use the \mlc-code as it provides a good compromise between speed and physical "realism". 
+
+takes days, quick way to fit  many spectra as well as exploring errors 
 
 In section \ref{sec:mlc_intro}we will introduce a the inner-workings of the \mlc-code.  We will discuss the properties of the search space in \ref{sec:searchspace} and will introduce our optimisation strategies in \ref{sec:optimisation_strategies}. Finally we will conclude and give an outlook over future work for this unfinished project in section \ref{sec:dalek_conclusion}.
 
 \section{The \mlc-Code}
-
+\label{sec:mlc_code}
 The supernova can be divided in two different phases: the photospheric phase and the nebular phase. The \mlc-code only models the photospheric phase.
 In this photospheric phase the supernova is treated like a sharp photosphere emitting a black-body spectrum with a fast moving layer of ejecta above that. 
 
@@ -100,7 +102,7 @@ A more detailed description of the code can be found in  \cite{1993A&A...279..44
 
 
 \section{Manually fitting a Type Ia supernova}
-
+\label{sec:manual_sneia}
 When fitting manually there are several features that help guide the direction of the fit. We will attempt to explain by using a spectrum of SN2002bo (cite?????) 10 days before maximum. In this section we will only talk about fits with no abundance stratification. Stephan Hachinger has kindly provided his manually obtained best fitting parameters ( for the supernova at this stage (see Figure \ref{fig:sn2002bo-10_bf}).
 Directly measurable are the redshift of the supernova (and implied distance) and the time of the spectrum relative to maximum. We assume calculate the time since explosion assuming a rise time of 19.5 days.
 The other parameters are initialized using empirical data. 
@@ -164,6 +166,7 @@ In summary, the fitting of a supernova is a complex procedure and requires a lot
 
  
 \section{Genetic Algorithms}
+\label{sec:intro_ga}
 
 Finding optimal solutions in complex search spaces is one of the main fields in numerical mathematics.  They have wide ranging applications in engineering, bio sciences and physical sciences. There have been several advances in the last decads to optimization. 
 Among them is the  remarkable feat of ``solving'' the long-standing problem of the traveling salesman with simulated annealing \citep{Kirkpatrick13051983}.
@@ -174,7 +177,8 @@ Another major accomplishment was the development of evolutionary algorithms and 
 When conquering the search space optimization algorithms have two (sometimes conflicting) goals: exploiting good leads while still exploring the search space sufficiently. Simple algorithms like Hillclimbing (randomly selecting a point in the neighbourhood and switch if it is ``better'' than the current one) will exploit good leads but will neglect to explore the search space. This often leads to be stuck at extrema. Whereas random searches are excellent at exploring the search space but will fail to quickly converge on an optimal solution. Genetic algorithms do strike the balance between exploration and exploiting the current best solution.
  """"
  maybe include:
- Dependent variables present special problems for optimization algorithms because varying one variable also changes the value of the other variable. For example, size and weight of the car are dependent. Increasing the size of the car will most likely increase the weight as well (unless some other factor, such as type of material, is also changed). Independent variables, like Fourier series coefficients, do not interact with each other. If 10 coefficients are not enough to represent a function, then more can be added without having to recalculate the original 10.In the GA literature, variable interaction is called epistasis (a biological term for gene interaction). When there is little to no epistasis, minimum seeking algorithms perform best. GAs shine when the epistasis is medium to high, and pure random search algorithms are champions when epistasis is very high (Figure 2.5). cite haupt \& haupt (book on harddrive)
+ Dependent variables present special problems for optimization algorithms because varying one variable also changes the value of the other variable. For example, size and weight of the car are dependent. Increasing the size of the car will most likely increase the weight as well (unless some other factor, such as type of material, is also changed). Independent variables, like Fourier series coefficients, do not interact with each other. If 10 coefficients are not enough to represent a function, then more can be added without having to recalculate the original 10.
+In the GA literature, variable interaction is called epistasis (a biological term for gene interaction). When there is little to no epistasis, minimum seeking algorithms perform best. GAs shine when the epistasis is medium to high, and pure random search algorithms are champions when epistasis is very high (Figure 2.5). cite haupt \& haupt (book on harddrive)
  """""""
 Genetic algorithms are a heuristic search technique to find optimal solutions in n-dimensional search spaces. We will consider a function $f(\vec{x})$ with the multi-dimensional solution $\vec{y}$. In terms of genetic algorithms we call $\vec{x}$ genotypes and the solution vector $\vec{y}$ phenotype (similar to biology where the $\vec{x}$ describes the DNA sequence but the solution is can not be thought of as a vector). In addition we define a fitness function $g(\vec{y})=s$ where s is a scalar. It is our goal to choose the input parameters $\vec{x}$  to maximize $s$. 
 Following the notation of \citep{Michalewicz:1994:GAD:184675} we introduce the population $P(t)$ with the individuals (sometimes referred to as genomes) $\{p_{1}^{t}, \dots, p_{n}^{t}\}$, where $t$ denotes the iteration. Each individual $(p_{i}^t)$ is a data structure consisting of a vector $\vec{x}_i$ and its corresponding fitness scalar $s_i$.  When we speak of evaluating $p_{i}^{t}$ we mean that we use $g(f(\vec{x}_i))=s_i$ to determine the fitness. A new population $P(t+1)$ is formed by choosing,  in the \textit{select step}, the more fit individuals. Some or all of the new population undergo transformations (recombine step). These transformations are called genetic operators. There are unary transformations, which create new individuals by small changes in single individuals called mutations. Higher order transformations called crossovers combine the traits of multiple individuals to form a next generation individual. 
@@ -278,21 +282,63 @@ Although there are many advantages to using \ga s, one of the unsolved problems 
 
 \subsection{GA theory schemata theory}
 
-The schemata-theory first described by \cite{holland1975} is one of the accepted theoretical interpretations of \ga s. There is some criticism and it is known that this theory only explains part of the complexity that are inherent to \ga s \citep[see ][ and references therein]{Whitley94agenetic}. 
+The schemata-theory first described by \cite{holland1975} is one of the accepted theoretical interpretations of \ga s. There is some criticism and it is known that this theory only explains part of the complexity that are inherent to \ga s \citep[see ][ and references therein]{Whitley94agenetic}. We will describe the basic concepts of schemata using an example in binary encoding \citep[notation adapted from ][]{citeulike:125978}. A schema or similarity template is formed by adding an extra letter to the binary alphabet denoted by $*$. Using the ternary alphabet ${0, 1, *}$ we can now describe pattern matching schemata were the $*$ letter can be thought of as \textit{don't care}-symbol. The schemata ${0, 1, 0, *}$ matches both the string ${0, 1, 0, 0}$ and ${0, 1, 0, 1}$. The order of a schema is defined as how many places are not filled by the $*$-symbol. Schematas provide a powerful way to describe similarities in a set of genomes. 
+So a whole population samples different a range of different schematas . Essentially low-order and above-average schemata, called building blocks, receive exponentially increasing trials in subsequent generations of a genetic algorithm. \citet{Michalewicz:1994:GAD:184675} describe the workings of a \ga\ in the following way: ``A genetic algorithm seeks near=optimal performance through the juxtaposition of low-order, high-performance schemata, called building blocks''.
+This schemata-theory is the standard explanation for \ga s, there are however some examples that violate this \citep[see chapter 3 of][for some examples]{Michalewicz:1994:GAD:184675}.
+
 
 \section{Genetic Algorithms to fit Type Ia Supernovae: The Dalek Code}
 \label{sec:geneticdalek}
-describe initial tries with newton raphson. 
+\subsection{Introduction}
+As described in Section \ref{sec:manual_sneia} the search-space for fitting \sneia\ is very complex and vast. The parameters that need to be fit are luminosity, photospheric velocity (\vph), Carbon, Magnesium ,Silicon, Sulfur, Calcium, Chromium, initial Ni ($\textrm{Ni}_0$) and primordial iron ($\textrm{Fe}_0$). The day since explosion as well as the luminosity distance (for scaling purposes) are given. In addition, the evaluation for each spectrum takes roughly one minute on a modern computer. This makes it hard to quickly try out different optimization strategies. We initially tried a Newton-Raphson approach with multiple phases. In the first phase the algorithm would adjust luminosity and normally came close to the optimum. In a second phase we tried to let the algorithm re-adjust luminosity, then photospheric velocity and last \ige s. This was modelled after the manual approach that is taken by \citet{hachinger_dipl2007} and \citep{hachinger_phd2011}. It took relatively long and would not really converge. The search space for such methods is far to complicated. In addition we were limited to one processor as the code is not parallel. \ga s seem the perfect choice for this problem. They are easy to implement, can be easily parallelised and are relatively prone to local minima. 
+For most of our optimization tests we worked with the supernova \sn{2002}{bo} \citep{2004MNRAS.348..261B}. This supernova is believed to be a ``Branch''-normal and is spectroscopically well sampled. For most of our tests we worked on the \texp=10.4 days spectrum, but did not make any other special assumptions about the spectrum. We have used some other spectra and will mention this where applicable.
 
-Initial population. show vph graph. select from w7 integrate outwards. create children randomly; complex needs to work out and obey rules otherwise dead: describe process look at python code. ....
+\subsection{The Dalek Code}
 
-reference back to  parallelity and describe launching to multiple (non homogenious computers) simple fifo. 
+After the failed attempts of the multi-phase Newton-Raphson fitter we launched straight into \ga s. As described in Section \ref{sec:ga_intro} one needs to first create an initial population. One can easily draw uniform randomly for luminosity and \vph. This method does not work for the elemental abundances as the sum of the abundances needs to add up to 1. In addition, for many normal supernovae the W7-abundances  \citep{1984ApJ...286..644N} give a good starting point. A population that is distributed around the optimum values does converge quicker than a uniformly random one. To calculate these abundances we need to know the photospheric velocity. Using data from \citet{2005ApJ...623.1011B} we have estimated an empirical relationship between the time since explosion and the photospheric velocity (see Figure \ref{fig:texp_vph}). This will serve as a rough first guess.
 
-fitness function describe chi**2 and then describe w-parameter and ir excess mention figure.
+\begin{figure}[htbp] %  figure placement: here, top, bottom, or page
+   \centering
+   \includegraphics[width=0.7\textwidth]{chapter_dalek/plots/plot_texp_vph.pdf} 
+   \caption{example caption}
+   \label{fig:Intrinsic }
+\end{figure} 
 
-selection process rws; crossover uniform, mutation non-uniform different mutations for different parameters. child survival rate small at beginning.
+Once we know a \vph-estimate we can determine at what depth the photosphere is located in the W7-model. We use this point and integrate outwards to find our initial abundances.
 
-describe principal evolution; show 2002bo different channels; population plot histtogram.
+When creating our initial population we draw uniformly random for a preselected luminosity range (for the moment determined manually), a \vph-range 4000\,\kms above and below the \vph-estimate and asymmetric log-normal centered on the abundance estimate from W7. Creating the abundance values brings some problems with it. There are several bounds when it comes to the initial abundance ratios. We have a minimum bound for each abundance (established as the smallest abundance an element can have by \mlc) at $10^{-7}$ and a maximum bound which is determined by the requirements that all abundances need to add up to 1. If we would draw the abundances every time in the same order it would mean that the last abundances to be drawn have a very low chance of obtaining a high value. Thus we randomize the order of drawing the abundances.  Before we let an individual into the initial population we also check some abundance ratios by employing generous limits that we think are allowed by explosive nucleosynthesis of a \cowd. 
+
+\begin{itemize}
+\item C $<$ 12.5\,\%
+\item Si $>$ 1\,\%
+\item Ca $<$ 5\,\%
+\item Ti + Cr $<$ 1\,\%
+\item $\textrm{Ni}_0$ $<$ 80\,\%
+\item C $<$ O
+\item 1 $<$ Si/S-ratio $<$ 10
+\item Fe$_0$/Ni$_0$-ratio $<$ 10
+\item Cr/Ni$_0$-ratio $<$ 10
+\end{itemize}
+
+If the newly created individual does not conform with these rules it is discarded and a new one drawn. This process is repeated until we reach our population size which we chose to be 150.
+
+Once the initial population is created it is distributed among the compute nodes by the \dalek. As we need to explore a large parameter space we use a distributed computing approach. The scheduler part of \dalek\ distributes parameter sets to spectrum synthesizers working on different machines across the network. The difficulty is (and the reason that we didn't use a standard implementation like MPI) that we need the \dalek\ to reach processors on many different architectures and operating systems. This enables us to harness a large fraction of the institutes computational power. For the order of execution we have chosen a very simple scheduling algorithm that maintains a FiFo batch-queue for the parameter sets and distributes them among the pool of workers.
+
+The resulting spectra are then subjected to a fitness function. The determination of the fitness function is one of the most crucial  choices for the \ga\ to work. The correct fitness function is still a field of active research in the \dalek. As an initial approach we calculated the mean-square of the residuals remaining from subtracting the observed spectrum and the spectrum of the current individual. This approach has two main issues: For almost all observed spectra in the early phase the fitted spectrum has a large continuum excess beyond 6500 \AA (see Figure \ref{fig:sn2002bo-10_bf}). We still regard the line depth and line shape to be correct. As described previously this is a known issue of the \mlc. This large difference in the infrared means that the \dalek\ will try to optimize this large offset and pay less regard to a good fit in the rest of the spectrum. To alleviate this we have tried multiple approaches. At first we tried to de-weight the fit in the problematic region. An artificially introduced weighting factor might parametrize the problem again and we might have to change it for each spectrum. This would defeat the point of an automatic fit. As a second approach we tried to fit and subtract the continuum in the problematic region before creating our fitness figure. 
+In addition, the \mlc\ supllies us with an estimate of the dilution factor W at the photosphere. This factor is expected to be close to 0.5 (see description in \ref{sec:mlc_code}). \citet{hachinger_dipl2007} and \citep{hachinger_phd2011} have found that in all cases a good fit will have a value of the dilution factor between 0.4 and 0.6. We have incorporated this into the fitness calculation and deweight spectra with a value outside this range to a great extent.
+We should mention that we have tried in addition to calculating the root-mean-square of the spectra a number of different methods. Most notably we tried use neural-networks to perform a goodness of fit. We however abandoned this effort as the training set to calibrate neural networks requires a large number of well fitted spectra which are not available. 
+
+Once the fitness is calculated for each individual ?????SCALING ????we proceed to the selection step. In the current version of the \dalek\ we only employ \textit{elitism} (10\% of fittest individual advance immediatley to next generation), but have experimented with cuts to the mating population. The mating pool we have chosen has only two slots. For now we select the individuals for the mating pool using the standard \textit{roulette wheel selection}. We use a crossover probability of 90\%, this means that in 10\% of the cases we do not perform crossover but the child is a copy of the first parent. If crossover occurs, we perform a uniform crossover as we felt that we do not want the ordering of the parameters to matter. We have also experimented with arithmetic crossovers by taking the mean of parents. This meant that often useful traits would entirely disappear and we switched back to uniform crossovers. We will experiment in the near future with different crossover techniques like single-point crossovers. The new individual, created by crossover, is subjected to possible mutations before being placed into the new population. The \dalek\ employs different mutation strategies for the different parameters. The abundances are just multiplied by a uniform random number (we have tried gaussian random numbers) with a relatively high chance of currently 7\%. As luminosity and photospheric velocity are physically different we add a uniform random number, in addition to having different mutation probabilities. After the mutation step we see if the buffer element has a negative abundance. A negative abundance implies that the other elements add up to more than 1. If oxygen has positive abundance the code goes on to check the abundance ratios. If the child passes both these tests it is placed in the new population, if not it is discarded. This process is repeated until the new population (including the members of the old population that advanced through elitism) reaches 150.
+
+This process of selection, recombination and mutation is repeated over many generations. We have experimented with up to a 1000 populations in one run. Our scheduler can achieve a throughput of one generation per minute, in optimal conditions where all CPUs are free. 
+
+Our principal spectrum for the testing was \sn{2002}{bo} 10.4 days post explosion (see Figure \ref{fig: 
+
+
+
+
+
+describe principal evolution; show 2002bo different channels; population plot histogram.
 Fitting works sometime find good solution. discuss time and computer demand. discuss what has been tried
 
 problems?
