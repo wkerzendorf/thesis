@@ -5,4 +5,4 @@
 *.DS_Store
 template/*
 *synctex*
-chapter_dalek/plots/ga_try49/*
+tex/chapter_dalek/plots/ga_try49/*
