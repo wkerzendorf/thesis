@@ -88,9 +88,15 @@
 \contentsline {section}{\numberline {6.2}Manually fitting a Type Ia supernova}{80}{section.6.2}
 \contentsline {section}{\numberline {6.3}Genetic Algorithms}{83}{section.6.3}
 \contentsline {paragraph}{Genetic Representation:}{85}{ALC@unique.4}
-\contentsline {paragraph}{Fitness Function}{85}{ALC@unique.4}
-\contentsline {paragraph}{Initial Population}{86}{ALC@unique.4}
-\contentsline {paragraph}{Selection process}{86}{ALC@unique.4}
-\contentsline {section}{\numberline {6.4}Genetic Algorithms to fit Type Ia Supernovae: The Dalek Code}{86}{section.6.4}
-\contentsline {section}{\numberline {6.5}Conclusion}{86}{section.6.5}
-\contentsline {chapter}{Appendices}{101}{section*.49}
+\contentsline {paragraph}{Fitness Function}{85}{figure.caption.48}
+\contentsline {paragraph}{Initial Population}{86}{figure.caption.48}
+\contentsline {paragraph}{Selection process}{86}{figure.caption.48}
+\contentsline {paragraph}{Crossover and mutation}{87}{figure.caption.49}
+\contentsline {subsection}{\numberline {6.3.1}A simple example}{88}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Convergence in Genetic Algorithms}{88}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.3}GA theory schemata theory}{89}{subsection.6.3.3}
+\contentsline {section}{\numberline {6.4}Genetic Algorithms to fit Type Ia Supernovae: The Dalek Code}{89}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}Introduction}{89}{subsection.6.4.1}
+\contentsline {subsection}{\numberline {6.4.2}The Dalek Code}{90}{subsection.6.4.2}
+\contentsline {section}{\numberline {6.5}Conclusion}{94}{section.6.5}
+\contentsline {chapter}{Appendices}{109}{section*.54}

@@ -9,6 +9,7 @@ origspec = oned.onedspec.from_ascii('origspec_2002bo_-10.dat')
 if plotBF:
     clf()
     origspec = oned.onedspec.from_ascii('origspec_2002bo_-10.dat')
+    origspec = origspec.shift_velocity(z=0.0042)
     bestfit = oned.onedspec.from_ascii('bf2002bo-10/spct.dat', usecols=(0,2))
     
     plot(origspec.wave, origspec.flux, 'k-', label='observed spectrum')
@@ -43,12 +44,13 @@ if plotVphDelta:
     hivph = oned.onedspec.from_ascii('2002bo-10_hivph/spct.dat', usecols=(0,2))
     
     plot(origspec.wave, origspec.flux, 'k-')
-    plot(lovph.wave, lovph.flux, 'b-', label='$\Delta\log{L/L_\odot}=-0.1$')
-    plot(hivph.wave, hivph.flux, 'r-', label='$\Delta\log{L/L_\odot}=+0.1$')
-    
+    plot(lovph.wave, lovph.flux, 'b-', label=r'$v_\textrm{\small ph} - 4000\,km\,s^{-1}$')
+    plot(hivph.wave, hivph.flux, 'r-', label=r'$v_\textrm{\small ph} + 5000\,km\,s^{-1}$')
+    legend()
     xlim(2500, 9000)
     xlabel('Wavelength [\AA]')
     ylabel(intensity_label)
+    legend()
     savefig('../plots/bf2002bo-10_vph.pdf')
     
 if plotNiDelta:
@@ -58,7 +60,7 @@ if plotNiDelta:
     
     plot(origspec.wave, origspec.flux, 'k-')
     plot(loni.wave, loni.flux, 'b-', label='$Fe=Ni=10\%$')
-    plot(hini.wave, hini.flux, 'r-', label='$Fe=Ni=10^{-6}\%$')
+    plot(hini.wave, hini.flux, 'r-', label='$Fe=Ni=10^{-5}\%$')
     
     xlim(2500, 9000)
     xlabel('Wavelength [\AA]')
