@@ -14,7 +14,7 @@ sm_star_coord = (ephem.hours('15:02:53.15')/ephem.degree, ephem.degrees('-41:59:
 xlim(418.25256783519171, 976.38449164673648)
 ylim(1.3028136019328969, 565.40172799399215)
 dss.show_markers(ra,dec,s=20,zorder=20,linewidths=3)
-dss.show_markers([sm_star_coord[0]], [sm_star_coord[1]], color='blue')
+dss.show_markers([sm_star_coord[0]], [sm_star_coord[1]], color='black')
 title('SN1006 DSS Image with VLA Overlay (Overlay is cutoff)',fontsize=20)
 ax=gca()
 ax.set_xlabel("RA (J2000)",fontsize=20)

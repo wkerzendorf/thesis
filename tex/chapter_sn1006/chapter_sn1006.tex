@@ -4,53 +4,52 @@
 
 
 \section{Introduction}
-Type Ia Supernovae (henceforth SN Ia) are important and powerful tools in modern astronomy. They have a major impact, through nucleosynthesis, on planet formation, stellar astrophysics and the chemical evolution of the Universe. Due to their relative homogeneity they also serve as powerful cosmological probes. It is therefore unfortunate that the progenitors of these explosions and the explosion physics are still poorly understood.
 
-The community agrees that the \snia-phenomenon is results from the explosion of a massive CO white dwarf ( $\approx 1.38\,\msun$). There are two schools of thought, however, how white dwarfs born with 0.6\,\msun on average become this massive. In the single degenerate case (iben et al) the white dwarf accretes from a main-sequence to red-giant companion star until it approaches 1.38\,\msun and detonates/deflagrates in a themernoculear explosion. The companion star is believed to survive the cataclysm and should remain visible post-explosion (ref pakmor, marietta). 
-In the double-degenerate scenario (webbink 1985), the needed mass is thought to come from the merger of two white dwarfs. This scenario does not produce a stellar remnant. 
+\citet{1980ApJ...241.1039S} identified an unusual O-Star (now called Schweizer-Middleditch Star, henceforth \smstar) near the centre of SN1006. After successful identifications of neutron stars in both the Vela Remnant and the Crab Remnant this was thought to be the third identification of a stellar remnant in ancient supernovae. Subsequent UV spectroscopy follow-up of the \smstar by \citet{1983ApJ...269L...5W} , showed strong \ion{Fe}{2}  with a profile broadened by a few thousand \kms. In addition, \citet{1983ApJ...269L...5W} identified redshifted \ion{Si}{2}, \ion{Si}{3} and \ion{Si}{4} lines. Their conclusion was that these absorption lines stem from an expanding iron core surrounded by a Silicon shell (similar what theoretical models suggest for a \sneia). This places the \smstar behind the remnant and it is thought to be unrelated to SN1006. 
 
-In recent years a third scenario appeared in which a white dwarf around 1\,\msun detonates. This scenario requires a prior deflagration of helium shell material, which either ignites the core directly or sends shock waves that compress the core and subsequently ignite it. fink + sim have explored this scenario in theory. 
+\sn{1006} is the closest of the young \snia remnants. It's distance has been determined to 2.2\,\kpc\ by using optical proper motion methods and radial velocity measurements from the remnant expansion \cite{2003ApJ...585..324W}. The remnant of \sn{1006}{} has been very well studied in many aspects. Absorption lines of the remnant plasma can be seen in background UV sources. This has enabled \citet{2005ApJ...624..189W} to sketch the inner structure of the ejecta. A few tenth of a solar mass of iron suggests that this event was a \snia. The lack of a compact stellar remnant, similar to those found in \snii remnants, also suggests a thermonuclear event. 
 
-Finding a left-over donor star in an ancient remnant will prove the first single-degenerate scenario exists. The only viable candidates for such a search are SN1572 (Tycho's supernova), SN1006 and SN1604 (Kepler's supernova). \citet{1980ApJ...241.1039S} identified an unusual O-Star near the centre of SN1006 and suggest it as the stellar remnant to SN1006. Subsequent follow-up by \cite{1983ApJ...269L...5W}, however, showed both blue and red-shifted absorption lines from the remnant in the spectrum of the star. This suggests that the Schweizer-Middleditch Star (henceforth \smstar) is located behind the remnant and thus unrelated to SN1006. 
+\sn{1006}{} provides the perfect site for a donor star search. High extinction values that introduce additional challenges to stellar analysis (as seen in the \sn{1572}{} remnant) are not present. The extinction, estimated for the background \smstar, is relatively low  at E(B-V) = 0.1 \citep{1993ApJ...416..247W,2003ApJ...585..324W}. These serendipitous conditions for the \sn{1006}{} remnant led us to launch a photometric and spectroscopic campaign to search for the donor star. The photometric observations were taken at Siding Spring Observatory with the 2.3m Telescope imager. The spectroscopic search area was determined by the center of the \snr{1006}{} and a radius (see Figure \ref{fig:overview_sn1006}). For the center we have opted to adapt a center determined by the mean of the \xray\ and radio center presented in \citet{2003ApJ...585..324W}. As a radius we have opted to use 75\arcsec, which translates into 2000\,\kms at the distance of \sn{1006}{}. We do believe that this generously chosen radius takes uncertainties of the center as well as the donor star scenarios into account. The spectroscopic observations were undertaken with the FLAMES multi-object spectrograph.
 
-More recently Ruiz-Lapuente et al 2004 have scrutinized the remnant of SN1572 and found a star (\starg by their nomenclature) with an unusally high-velocity.
+\begin{figure}[htbp] %  figure placement: here, top, bottom, or page
+   \centering
+   \includegraphics[width=0.8\textwidth]{chapter_sn1006/plots/sn1006_overlay_withsm.pdf} 
+   \caption{example caption}
+   \label{fig:overview_sn1006}
+\end{figure}
 
-Follow up by Kerzendorf et al 2009, 2011 could not confirm this high velocity. They suggested high-rotation as an additional probable feature of a donor star. Due to the large kinematics distribution in the galaxy, stellar rotation has the advantage of being more distinct. 
-Kerzendorf et al 2011 scrutinized six further starts in SN1572, but found no obvious candidate. The extension of the search to SN1006 seemed obvious.
-
-We present photometry as well as high-resolution spectroscopy of the stars in SN1006 (for an overview see Figure \ref{fig:overview}. In Section \ref{sec:obs_and_red} we outline the observations as well as data reduction of the imaging and spectroscopy. Section \ref{sec:analysis} is split into five subsections describing the photometric analysis, radial velocity measurements, stellar rotation measurements, stellar parameter extraction and distance estimation.
-
-We conclude this paper in \ref{sec:conclusion} and outline implications of our findings for the single-degenerate scenario.
+We present photometry as well as high-resolution spectroscopy of the stars in SN1006 (for an overview see Figure \ref{fig:overview}. In Section \ref{sec:obs_and_red} we outline the observations as well as data reduction of the photometric and spectroscopic data. Section \ref{sec:analysis} is split into five subsections. We first describe the photometric analysis and radial velocity measurements. The complete analysis of the data has not been done and we mainly present our analysis technique. We do, however have some initial results which we will outline in Section blah. We conclude this chapter in Section \ref{sec:conclusion} and discuss the possible implications of our initial find. In addition, we will describe future work including the final analysis of the data 
 
 
 \section{Observations and Data Reduction}
 
-For our spectroscopic survey we selected 79 stars in a 75 \arcsec radius (this corresponds to 1960\,\kms at a distance of 2.2\,\kpc) around the centre of SN1006 ($\alpha = \rasc{15}{02}{22}{1};\delta = \decl{-42}{05}{49}$). To reach luminosities as faint as 0.3 \lsun (wrong I only took R filter into account ????? )we observed targets with a maximum magnitude of R=18. This reaches most donor star candidates within the classical single degenerate scenario. 
-The VLT instrument FLAMES provides high resolution (R=25,000) and a large field of view (25\arcmin) for a considerable number of stars per setup (130???). We chose the wavelength region from 5139\,\AA\ to 5356\,\AA\ as it provided us with the gravity senisitve MgB Triplet as well as many Fe-Lines to accurately measure metallicity. Fibre buttons can be placed no less than 11\arcsec\ apart. Thus to observe all our program stars we had to split the stars over three different setups. The first two setups where then observed five times with 2775 s each. We deliberately chose bright stars for the last setup so that it only had to be observed three times with 2775 s each.  
+For our spectroscopic survey we selected 79 stars in a 75 \arcsec radius (this corresponds to 780\,\kms at a distance of 2.2\,\kpc) around the centre of SN1006 ($\alpha = \rasc{15}{02}{22}{1};\delta = \decl{-42}{05}{49}$). We observed targets to a maximum magnitude of R=18, this translates to a limiting luminosity of $L=L_{\textrm{R}_\odot}$. The surviving donor scenarios described in \citet{2000ApJS..128..615M} and \citet{2008A&A...489..943P} should be easily visible. 
+The VLT instrument FLAMES provides high resolution (R=25,000) and a large field of view (25\arcmin) for a considerable number of stars per setup (130 targets). We chose the wavelength region from 5139\,\AA\ to 5356\,\AA\ which contains the gravity sensitive MgB Triplet as well as many Fe-Lines to accurately measure metallicity. Fibre buttons can be placed no less than 11\arcsec\ apart. Thus to observe all of the program stars in the crowded central field, we split the stars over three different setups. The first two setups were observed five times with 2775 s each. We deliberately chose bright stars for the last setup so that it only had to be observed three times with 2775 s each. As only the central 75\arcsec were crowded we placed spare fibres on three bright stars (R$\approx 10$; 2mass J15032744-4204463, J15031746-4204165, J15033195-4202356) located close to the edge of the 25\arcmin field for calibration purposes. Additional spare fibres were placed on sky positions. These were determined to be far from \twomass\ sources and were subsequently manually inspected using DSS images (citedss). 
 
-As only the centre was crowded with fibres we had spare fibres that were placed on three bright stars (R$\approx 10$; 2mass J15032744-4204463, J15031746-4204165, J15033195-4202356) for calibration purposes. We also placed fibres on sky positions where 2mass (cite2mass) did not list any objects. These sky-positions were manually inspected using DSS images (citedss). 
-
-We requested standard daytime calibration as well as simultaneous arc exposures with four fibres per observation block 
-The observations were carried out in June of 2009 ???. In total there were 13 observation blocks with an exposure time of 2775 s each. Table \ref{tab:obs} provides the Observing ID, modified julian date, mean seeing, mean airmass, setup name and heliocentric correction for all observations. 
-Due to broken fibres not all stars where observed for the expected length of time. \candstar{31} was not observed at all in this sample (see table x for number of observations).
+We requested standard daytime calibration as well as simultaneous arc exposures with four fibres for each observation block. There are 13 observation blocks with an exposure time of 2775 s each. Table \ref{tab:observations} provides the Observing ID, modified julian date, mean seeing, mean airmass, setup name and heliocentric correction for all observations. 
+Due to broken fibres not all stars where observed for the expected length of time. \candstar{31} was not observed at all in this sample (see Figure \ref{fig:zoomed_overview_sn1006} for the observation of the center of SN1006. This).
 
 We applied a cosmic ray removal tool on the raw 2D frames \citep{2001PASP..113.1420V}. 
-The data was then reduced with the ESO-CPL pipline (version 5.2.0) and using the Giraffe instrument recipes (version 2.8.9). The only change that was made to the default parameters was the usage of the Horne extraction algorithm instead of the "Optimal"-extraction algorithm. This yielded 366 individual spectra of the candidate stars and an additional 39 spectra of the Calibration stars. 
-In addition,  the Giraffe pipeline yields error frames which were used in the fitting process described in section xx. 
-%\input{tables/obs_table}
+The data was then reduced with the ESO-CPL pipeline (version 5.2.0), using the GIRAFFE instrument recipes (version 2.8.9). The only change that was made to the default parameters was the usage of the Horne extraction algorithm instead of the "Optimal"-extraction algorithm. This yielded 366 individual spectra of the candidate stars and an additional 39 spectra of the Calibration stars. 
+In addition,  the Giraffe pipeline yields error frames which were used in the fitting process described in Section \ref{sec:sn1006_stelparam}. 
+\input{tables/obs_table}
 
 Our photometry was deduced from images taken with the image at the 2.3m Telescope at the Siding Spring Observatory. All data was taken on the night of the 11th of May. We exposed for 1860 s in U-Band, 1490 s in B-Band, 788s in V-Band and 1860 s in I-Band. For calibration purposes we took images of the PG1633 and PG1047 standard star regions in the same filters. The seeing ranged between 1 and 2 \arcsec. 
 
-The data was reduced in the standard way using IRAF \footnote{Iraf is a crappy piece of software and should have been abandoned years ago}.
+The data was reduced in the standard way using PyRAF \footnote{PyRAF is a product of the Space Telescope Science Institute, which is operated by AURA for NASA.}.
 
-Finally an astrometric solution was fitted using the 2MASS point source catalogue \citep{2006AJ....131.1163S}. 
+Finally an astrometric solution was fitted using astrometry from the \twomass\ point source catalogue \citep{2006AJ....131.1163S}. 
 
 
 \section{Analysis}
-\subsection{Photometry}
-We used SExtractor \citep{1996A&AS..117..393B} to measure the magnitudes of the objects in the frames. We used the Stetson \footnote{This research used the facilities of the Canadian Astronomy Data Centre operated by the National Research Council of Canada with the support of the Canadian Space Agency} magnitudes of our standard fields PG1633 and PG1047 to calibrate our magnitudes to a standard Bessel Filter system. 
 
-The measured  magnitudes were supplemented with near infrared magnitudes from the 2MASS point source catalogue.
+A uniform analysis of this set of data is technically challenging due to the large variation in spectral quality (see Figure \ref{fig:sn1006_comparespec}). We have explored multiple channels and believe that, although challenging, it is possible. We measure the radial velocity using the standard technique of cross-correlation \citep{1979AJ.....84.1511T}. 
+It is crucial in our set to measure rotation, as this is one of key features of potential donor stars. In addition, a giant star with high rotation can be incorrectly identified as a main-sequence star without rotation. We are currently trialling multiple techniques for measuring stellar rotation. For identifying the fundamental stellar parameters we use a standard grid based approach. 
+
+\subsection{Photometry}
+We used SExtractor \citep{1996A&AS..117..393B} to measure the magnitudes of the objects in the frames. We used the Stetson magnitudes \footnote{This research used the facilities of the Canadian Astronomy Data Centre operated by the National Research Council of Canada with the support of the Canadian Space Agency}  of our standard fields PG1633 and PG1047 to calibrate our magnitudes to a standard Bessel Filter system. 
+
+The measured  magnitudes were supplemented with near infrared magnitudes from the \twomass\ point source catalogue.
 To check the photometric measurements we plotted the obtained B-V colours against the V-K colours and compared this to theoretical colours from \citep{2010A&A...512A..54C} in Figure \ref{fig:colour_check}.  \candstar1006{60} presents a strong outlier in this case. Inspecting our as well as 2MASS imagery we believe there to be a second source which would explain this behaviour. 
 
 To compute temperatures from photometric colours we used the polynomials given in  \citep{2010A&A...512A..54C} and assumed an \feh=0 for all stars in the first instance. The temperature polynomial coefficients incorporating the metallicity are particularly small for the V-J colour. If V-K was not available (as 2MASS did only provide upper limits for some of our program stars) we tried to use V-J colours. 
@@ -93,7 +92,7 @@ The rotation measured by John laird ??? using a different method is displayed in
 
 
 \subsection{Stellar Parameters}
-
+\label{sec:sn1006_stelparam}
 As an initial approach we used: 
 
 Describe LAIRD method

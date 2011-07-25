@@ -72,10 +72,10 @@
 \contentsline {section}{\numberline {4.3}Analysis}{67}{section.4.3}
 \contentsline {subsection}{\numberline {4.3.1}Photometry}{67}{subsection.4.3.1}
 \contentsline {subsection}{\numberline {4.3.2}Proper motion}{67}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {4.3.3}Radial Velocity}{68}{subsection.4.3.3}
+\contentsline {subsection}{\numberline {4.3.3}Radial Velocity}{67}{subsection.4.3.3}
 \contentsline {subsection}{\numberline {4.3.4}Rotational Velocity}{68}{subsection.4.3.4}
 \contentsline {subsection}{\numberline {4.3.5}Stellar Parameters}{69}{subsection.4.3.5}
-\contentsline {subsection}{\numberline {4.3.6}Distance Measurements}{70}{subsection.4.3.6}
+\contentsline {subsection}{\numberline {4.3.6}Distance Measurements}{69}{subsection.4.3.6}
 \contentsline {section}{\numberline {4.4}Conclusions}{70}{section.4.4}
 \contentsline {chapter}{\numberline {5}Linear interpolation in N Dimensions}{71}{chapter.5}
 \contentsline {section}{\numberline {5.1}Delauney triangulation}{72}{section.5.1}
@@ -83,20 +83,16 @@
 \contentsline {section}{\numberline {5.3}Barycentric coordinates system}{75}{section.5.3}
 \contentsline {section}{\numberline {5.4}Triangle Finding and Interpolation}{75}{section.5.4}
 \contentsline {section}{\numberline {5.5}Conclusion}{76}{section.5.5}
-\contentsline {chapter}{\numberline {6}Automatic fitting of optical Type Ia Supernova spectra - the DALEK project}{77}{chapter.6}
+\contentsline {chapter}{\numberline {6}Automatic fitting of optical Type Ia Supernova spectra - the Dalek code}{77}{chapter.6}
 \contentsline {section}{\numberline {6.1}The ML MONTE CARLO-Code}{78}{section.6.1}
-\contentsline {section}{\numberline {6.2}Manually fitting a Type Ia supernova}{80}{section.6.2}
-\contentsline {section}{\numberline {6.3}Genetic Algorithms}{83}{section.6.3}
-\contentsline {paragraph}{Genetic Representation:}{85}{ALC@unique.4}
-\contentsline {paragraph}{Fitness Function}{85}{figure.caption.48}
-\contentsline {paragraph}{Initial Population}{86}{figure.caption.48}
-\contentsline {paragraph}{Selection process}{86}{figure.caption.48}
-\contentsline {paragraph}{Crossover and mutation}{87}{figure.caption.49}
-\contentsline {subsection}{\numberline {6.3.1}A simple example}{88}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}Convergence in Genetic Algorithms}{88}{subsection.6.3.2}
-\contentsline {subsection}{\numberline {6.3.3}GA theory schemata theory}{89}{subsection.6.3.3}
-\contentsline {section}{\numberline {6.4}Genetic Algorithms to fit Type Ia Supernovae: The Dalek Code}{89}{section.6.4}
-\contentsline {subsection}{\numberline {6.4.1}Introduction}{89}{subsection.6.4.1}
-\contentsline {subsection}{\numberline {6.4.2}The Dalek Code}{90}{subsection.6.4.2}
-\contentsline {section}{\numberline {6.5}Conclusion}{94}{section.6.5}
-\contentsline {chapter}{Appendices}{109}{section*.54}
+\contentsline {subsection}{\numberline {6.1.1}Radiative Transfer}{78}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Monte Carlo radiative transfer}{80}{subsection.6.1.2}
+\contentsline {section}{\numberline {6.2}Manually fitting a Type Ia supernova}{81}{section.6.2}
+\contentsline {section}{\numberline {6.3}Genetic Algorithms}{86}{section.6.3}
+\contentsline {paragraph}{Genetic Representation:}{88}{ALC@unique.4}
+\contentsline {subsection}{\numberline {6.3.1}A simple example}{91}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Convergence in Genetic Algorithms}{92}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.3}GA theory schemata theory}{93}{subsection.6.3.3}
+\contentsline {section}{\numberline {6.4}Genetic Algorithms to fit Type Ia Supernovae: The Dalek Code}{93}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}The Dalek Code}{94}{subsection.6.4.1}
+\contentsline {section}{\numberline {6.5}Conclusion}{99}{section.6.5}
