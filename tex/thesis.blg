@@ -1,7 +1,6 @@
 This is BibTeX, Version 0.99d (TeX Live 2010)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: thesis.aux
-A level-1 auxiliary file: dedication.aux
 A level-1 auxiliary file: disclaimer.aux
 A level-1 auxiliary file: acknowledgments.aux
 A level-1 auxiliary file: abstract.aux
@@ -9,13 +8,14 @@ A level-1 auxiliary file: chapter_intro/chapter_intro.aux
 A level-1 auxiliary file: chapter_sn1572_starg/chapter_sn1572_starg.aux
 A level-1 auxiliary file: chapter_sn1572_hires/chapter_sn1572_hires.aux
 A level-1 auxiliary file: chapter_sn1006/chapter_sn1006.aux
-A level-1 auxiliary file: chapter_ndinterp/chapter_ndinterp.aux
 A level-1 auxiliary file: chapter_dalek/chapter_dalek.aux
+A level-1 auxiliary file: chapter_conclusion/chapter_conclusion.aux
 The style file: astroads.bst
-Reallocated field_info (elt_size=4) to 11750 items from 5000.
+A level-1 auxiliary file: chapter_ndinterp/chapter_ndinterp.aux
+Reallocated field_info (elt_size=4) to 12150 items from 5000.
 Database file #1: thesis.bib
 Warning--string name "august" is undefined
---line 162 of file thesis.bib
+--line 227 of file thesis.bib
 Reallocated str_pool (elt_size=1) to 130000 items from 65000.
 Warning--I didn't find a database entry for "2001PASP..113.1420V"
 Warning--I didn't find a database entry for "1996A&AS..117..393B"
@@ -25,83 +25,54 @@ Warning--I didn't find a database entry for "2008A&A...486..951G"
 Warning--I didn't find a database entry for "2000vnia.book.....H"
 Warning--I didn't find a database entry for "Kreinovich93geneticalgorithms"
 Warning--I didn't find a database entry for "Goldberg91acomparative"
+Warning--I didn't find a database entry for "2008ApJ...689..231V"
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--empty institution in 2006acs..rept....1A
 Warning--can't use both author and editor fields in 1602QB41.B73.......
 Warning--empty publisher in 1602QB41.B73.......
-1 is an integer literal, not a string, for entry 2001ASPC..232..311C
-while executing---line 1627 of file astroads.bst
-1 is an integer literal, not a string, for entry 2001ASPC..232..311C
-while executing---line 1627 of file astroads.bst
-ptr=2, stack=
-in 
-2001
----the literal stack isn't empty for entry 2001ASPC..232..311C
-while executing---line 1627 of file astroads.bst
-1 is an integer literal, not a string, for entry 1996ASPC..101...80G
-while executing---line 1627 of file astroads.bst
-ptr=1, stack=
-1996
----the literal stack isn't empty for entry 1996ASPC..101...80G
-while executing---line 1627 of file astroads.bst
 Warning--empty journal in Han:2008p726
-1 is an integer literal, not a string, for entry 1997thsu.conf..111I
-while executing---line 1627 of file astroads.bst
-1 is an integer literal, not a string, for entry 1997thsu.conf..111I
-while executing---line 1627 of file astroads.bst
-ptr=2, stack=
-in 
-1997
----the literal stack isn't empty for entry 1997thsu.conf..111I
-while executing---line 1627 of file astroads.bst
 Warning--can't use both author and editor fields in 2007nps..book.....I
-1 is an integer literal, not a string, for entry Janikow1991Comparison
-while executing---line 1627 of file astroads.bst
-ptr=1, stack=
-1991
----the literal stack isn't empty for entry Janikow1991Comparison
-while executing---line 1627 of file astroads.bst
 Warning--empty publisher in kepler1606
 Warning--empty journal in 2003astro.ph..3660P
-You've used 262 entries,
-            3025 wiz_defined-function locations,
-            2289 strings with 67458 characters,
-and the built_in function-call counts, 152706 in all, are:
-= -- 11668
-> -- 13185
-< -- 124
-+ -- 4869
-- -- 4591
-* -- 14245
-:= -- 28795
-add.period$ -- 262
-call.type$ -- 262
-change.case$ -- 2573
-chr.to.int$ -- 265
-cite$ -- 269
-duplicate$ -- 5302
-empty$ -- 7948
-format.name$ -- 5346
-if$ -- 28889
+You've used 266 entries,
+            3098 wiz_defined-function locations,
+            2559 strings with 80489 characters,
+and the built_in function-call counts, 131349 in all, are:
+= -- 10065
+> -- 9344
+< -- 126
++ -- 3152
+- -- 2870
+* -- 12133
+:= -- 23861
+add.period$ -- 266
+call.type$ -- 266
+change.case$ -- 1764
+chr.to.int$ -- 269
+cite$ -- 273
+duplicate$ -- 5611
+empty$ -- 8593
+format.name$ -- 3679
+if$ -- 25919
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 236
-newline$ -- 1058
-num.names$ -- 1064
-pop$ -- 3003
+missing$ -- 239
+newline$ -- 1340
+num.names$ -- 1081
+pop$ -- 1910
 preamble$ -- 1
-purify$ -- 2567
+purify$ -- 1758
 quote$ -- 0
-skip$ -- 4331
+skip$ -- 4355
 stack$ -- 0
-substring$ -- 5618
-swap$ -- 187
-text.length$ -- 16
+substring$ -- 5709
+swap$ -- 195
+text.length$ -- 17
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 2334
+type$ -- 2370
 warning$ -- 7
-while$ -- 1058
+while$ -- 988
 width$ -- 0
-write$ -- 2631
-(There were 10 error messages)
+write$ -- 3186
+(There were 17 warnings)

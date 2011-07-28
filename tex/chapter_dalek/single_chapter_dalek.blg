@@ -3,57 +3,48 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: single_chapter_dalek.aux
 A level-1 auxiliary file: chapter_dalek.aux
 The style file: astroads.bst
+I found no \citation commands---while reading file single_chapter_dalek.aux
 Database file #1: thesis.bib
-Warning--string name "august" is undefined
---line 60 of file thesis.bib
-Warning--I didn't find a database entry for "Kreinovich93geneticalgorithms"
-Warning--I didn't find a database entry for "Goldberg91acomparative"
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-1 is an integer literal, not a string, for entry Janikow1991Comparison
-while executing---line 1627 of file astroads.bst
-ptr=1, stack=
-1991
----the literal stack isn't empty for entry Janikow1991Comparison
-while executing---line 1627 of file astroads.bst
-You've used 25 entries,
+You've used 0 entries,
             3025 wiz_defined-function locations,
-            806 strings with 9690 characters,
-and the built_in function-call counts, 11265 in all, are:
-= -- 944
-> -- 661
-< -- 19
-+ -- 247
-- -- 218
-* -- 906
-:= -- 2086
-add.period$ -- 25
-call.type$ -- 25
-change.case$ -- 175
-chr.to.int$ -- 28
-cite$ -- 25
-duplicate$ -- 490
-empty$ -- 783
-format.name$ -- 282
-if$ -- 2215
+            623 strings with 4410 characters,
+and the built_in function-call counts, 35 in all, are:
+= -- 0
+> -- 0
+< -- 0
++ -- 0
+- -- 0
+* -- 2
+:= -- 8
+add.period$ -- 0
+call.type$ -- 0
+change.case$ -- 0
+chr.to.int$ -- 0
+cite$ -- 0
+duplicate$ -- 0
+empty$ -- 1
+format.name$ -- 0
+if$ -- 1
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 19
-newline$ -- 110
-num.names$ -- 101
-pop$ -- 203
+missing$ -- 0
+newline$ -- 10
+num.names$ -- 0
+pop$ -- 0
 preamble$ -- 1
-purify$ -- 172
+purify$ -- 0
 quote$ -- 0
-skip$ -- 421
+skip$ -- 1
 stack$ -- 0
-substring$ -- 507
-swap$ -- 18
+substring$ -- 0
+swap$ -- 0
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 216
+type$ -- 0
 warning$ -- 0
-while$ -- 99
+while$ -- 0
 width$ -- 0
-write$ -- 267
-(There were 2 error messages)
+write$ -- 9
+(There was 1 error message)

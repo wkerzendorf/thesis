@@ -81,35 +81,97 @@
 
 %supernova specific
 \newcommand{\sn}[2]{SN #1#2}
-\newcommand{\sneia}{SNe Ia}
+%\newglossaryentry{sn}{name=SN, description={supernova}}
+\newglossaryentry{snia}{name=SN Ia,description={Type Ia supernova},first={Type Ia supernova (henceforth SN Ia)}, firstplural={Type Ia supernovae (henceforth SNe Ia)}, plural=SNe Ia}
+\newcommand{\sneia}{\glspl{snia}}
+\newcommand{\snia}{\gls{snia}}
 
-\newcommand{\snia}{SN Ia}
-\newcommand{\sneii}{SNe II}
-\newcommand{\snii}{SN II}
-\newcommand{\sniib}{SN IIb}
-\newcommand{\snib}{SN Ib/c}
-\newcommand{\snic}{SN Ib/c}
-\newcommand{\snibc}{SN Ib/c}
-\newcommand{\sneibc}{SNe Ib/c}
-\newcommand{\sniip}{SN IIP}
-\newcommand{\sniil}{SN IIL}
-\newcommand{\sniin}{SN IIn}
-\newcommand{\dtd}{DTD}
-\newcommand{\snr}{SNR}
-\newcommand{\hvg}{HVG}
-\newcommand{\lvg}{LVG}
+
+\newglossaryentry{snib}{name=SN Ib,description={Type Ib supernova},first={Type Ib supernova (henceforth SN Ib)}, firstplural={Type Ib supernovae (henceforth SNe Ib)}, plural=SNe Ib}
+\newcommand{\sneib}{\glspl{snib}}
+\newcommand{\snib}{\gls{snib}}
+
+\newglossaryentry{snic}{name=SN Ic,description={Type Ic supernova},first={Type Ic supernova (henceforth SN Ic)}, firstplural={Type Ic supernovae (henceforth SNe Ic)}, plural=SNe Ic}
+\newcommand{\sneic}{\glspl{snic}}
+\newcommand{\snic}{\gls{snic}}
+
+\newglossaryentry{snibc}{name=SN Ib/c,description={Type Ib/c supernova},first={Type Ib/c supernova (henceforth SN Ib/c)}, firstplural={Type Ib/c supernovae (henceforth SNe Ib/c)}, plural=SNe Ib/c}
+\newcommand{\sneibc}{\glspl{snibc}}
+\newcommand{\snibc}{\gls{snibc}}
+
+
+\newglossaryentry{snii}{name=SN II,description={Type II supernova},first={Type II supernova (henceforth SN II)}, firstplural={Type II supernovae (henceforth SNe II)}, plural=SNe II}
+\newcommand{\sneii}{\glspl{snii}}
+\newcommand{\snii}{\gls{snii}}
+
+\newglossaryentry{sniib}{name=SN IIb,description={Type IIb supernova},first={Type IIb supernova (henceforth SN IIb)}, firstplural={Type IIb supernovae (henceforth SNe IIb)}, plural=SNe IIb}
+\newcommand{\sneiib}{\glspl{sniib}}
+\newcommand{\sniib}{\gls{sniib}}
+
+%iip
+\newglossaryentry{sniip}{name=SN IIP,description={Type IIP supernova},first={Type IIP supernova (henceforth SN IIP)}, firstplural={Type IIP supernovae (henceforth SNe IIP)}, plural=SNe IIP}
+\newcommand{\sneiip}{\glspl{sniip}}
+\newcommand{\sniip}{\gls{sniip}}
+
+%iil
+\newglossaryentry{sniil}{name=SN IIL,description={Type IIL supernova},first={Type IIL supernova (henceforth SN IIL)}, firstplural={Type IIL supernovae (henceforth SNe IIL)}, plural=SNe IIL}
+\newcommand{\sneiil}{\glspl{sniil}}
+\newcommand{\sniil}{\gls{sniil}}
+
+%iin
+\newglossaryentry{sniin}{name=SN IIn,description={Type IIn supernova},first={Type IIn supernova (henceforth SN IIn)}, firstplural={Type IIn supernovae (henceforth SNe IIn)}, plural=SNe IIn}
+\newcommand{\sneiin}{\glspl{sniil}}
+\newcommand{\sniin}{\gls{sniil}}
+
+
+\newglossaryentry{dtd}{name=DTD,description={delay time distribution},first={delay time distribution (henceforth DTD)}, firstplural={delay time distributions (henceforth DTDs)}, plural=DTDs}
+\newcommand{\dtd}{\gls{dtd}}
+
+\newglossaryentry{hvg}{name=HVG,description={high velocity group},first={high velocity group (henceforth HVG)}, firstplural={high velocity groups (henceforth HVGs)}, plural=HVGs}
+\newcommand{\hvg}{\gls{hvg}}
+
+\newglossaryentry{lvg}{name=LVG,description={low velocity group},first={low velocity group (henceforth LVG)}, firstplural={low velocity groups (henceforth LVGs)}, plural=LVGs}
+\newcommand{\lvg}{\gls{lvg}}
+
+
+\newglossaryentry{snr}{name=SNR,description={supernova remnant},first={supernova remnant (henceforth SNR)}, firstplural={supernova remnants (henceforth SNRs)}}
+\newcommand{\snr}{\gls{snr}}
 
 %white dwarfs
 
-\newcommand{\onemgwd}{ONe-WD}
-\newcommand{\cowd}{CO-WD}
-\newcommand{\WD}{WD}
+\newglossaryentry{onemgwd}{name=ONe-WD,description={Oxygen/Neon White Dwarf}}
+
+\newglossaryentry{cowd}{name=CO-WD, description={Carbon/Oxygen White Dwarf}}
+
+
+%\newglossaryentry{wd}{name=WD,description={White Dwarf}}
+
+
+\newglossaryentry{sds}{name=SD-Scenario,description={single degenerate scenario (single white dwarf accreting from non-degenerate companion)}}
+\newglossaryentry{sss}{name=SSS,description={supersoft X-Ray source}}
+
+\newglossaryentry{dds}{name=DD-Scenario, description={double degenerate scenario (merging of two white dwarfs)}}
+
+
+\newglossaryentry{amcvn}{name=AM CVn, description={AM Canum Venaticorum star (white dwarf accreting hydrogen poor matter from a companion star; see \cite{2005ASPC..330...27N})}}
+
+
+\newglossaryentry{rlof}{name=RLOF,description={Roche Lobe Overflow}}
+
+\newglossaryentry{mchan}{name=$M_\textrm{Chan}$,description={Chandrasekhar mass ($1.38\,M_\odot$; see \citet{1931ApJ....74...81C})}, sort=mchan}
+
+
+
+
+%\newcommand{\onemgwd}{ONe-WD}
+%\newcommand{\cowd}{CO-WD}
+%\newcommand{\WD}{WD}
 \newcommand{\sd}{SD}
 \newcommand{\dd}{DD}
-\newcommand{\amcvn}{AM CVn}
-\newcommand{\sss}{SSS}
-\newcommand{\rlof}{RLOF}
-\newcommand{\mchan}{$M_\textrm{Chan}$}
+%\newcommand{\amcvn}{AM CVn}
+%\newcommand{\sss}{SSS}
+%\newcommand{\rlof}{RLOF}
+%\newcommand{\mchan}{$M_\textrm{Chan}$}
 
 %SN1572 specific 
 \newcommand{\stara}{Tycho-A}
@@ -137,37 +199,63 @@
 \newcommand{\citesfit}{\citep{2001A&A...376..497J}}
 
 %general astrophysics
-\newcommand{\agb}{AGB}
-\newcommand{\csm}{CSM}
-\newcommand{\csi}{CSI}
-\newcommand{\ism}{ISM}
-\newcommand{\ige}{IGE}
-\newcommand{\nse}{NSE}
-\newcommand{\ime}{IME}
-\newcommand{\xray}{X-Ray}
+\newglossaryentry{agb}{name=AGB,description={asymptotic giant branch}}
+\newglossaryentry{csm}{name=CSM,description={circum-stellar medium}}
+\newglossaryentry{csi}{name=CSI,description={circum-stellar interaction}}
+\newglossaryentry{ism}{name=ISM,description={inter-stellar medium}}
+\newglossaryentry{ige}{name=IGE,description={iron group element}}
+\newglossaryentry{ime}{name=IME,description={intermediate mass element}}
+\newglossaryentry{nse}{name=NSE,description={nuclear statistical equilibrium}}
+\newglossaryentry{grb}{name=GRB,description={gamma ray burst}}
+\newglossaryentry{pcygni}{name=P Cygni,description={a hypergiant luminous blue variable with strong winds. often referred to as a description for line profiles}}
+\newglossaryentry{teff}{name=\ensuremath{T_\textrm{eff}},description={effective temperature - Temperature of a blackbody emitting the same total energy.}, sort=teff}
+\newglossaryentry{logg}{name=\ensuremath{\log{g}},description={surface gravity}}
+\newglossaryentry{feh}{name=[Fe/H],description={iron abundance relative to the sun}}
+\newglossaryentry{texp}{name=\ensuremath{t_{\rm exp}},description={time since explosion (measured in days)}}
+\newglossaryentry{lmc}{name=LMC,description={Large Magellanic Cloud}}
+\newglossaryentry{smc}{name=SMC,description={Small Magellanic Cloud}}
+\newglossaryentry{wd}{name=WD description={extremely dense stellar remnant}, first={white dwarf}}
+
+%\newcommand{\lmc}{LMC}
+%\newcommand{\smc}{SMC}
+
+
+%\newcommand{\agb}{AGB}
+%\newcommand{\csm}{CSM}
+%\newcommand{\csi}{CSI}
+%\newcommand{\ism}{ISM}
+%\newcommand{\ige}{IGE}
+%\newcommand{\nse}{NSE}
+%\newcommand{\ime}{IME}
+\newcommand{\xray}{X-ray}
 \newcommand{\gammaray}{gamma-ray}
-\newcommand{\grb}{GRB}
-\newcommand{\pcygni}{P Cygni}
+%\newcommand{\grb}{GRB}
+%\newcommand{\pcygni}{P Cygni}
 \newcommand{\urca}{Urca}
-\newcommand{\teff}{\ensuremath{T_{\rm eff}}}
-\newcommand{\logg}{\ensuremath{\log{g}}}
-\newcommand{\feh}{[Fe/H]}
+%\newcommand{\teff}{\ensuremath{T_{\rm eff}}}
+%\newcommand{\logg}{\ensuremath{\log{g}}}
+%\newcommand{\feh}{[Fe/H]}
 \newcommand{\lum}{\ensuremath{L}}
-\newcommand{\texp}{\ensuremath{t_{\rm exp}}}
+%\newcommand{\texp}{\ensuremath{t_{\rm exp}}}
 \newcommand{\loglbol}{\ensuremath{\log{L/L_\odot}}}
 
 %dalek chapter
-\newcommand{\ga}{GA}
-\newcommand{\tsp}{TSP}
-\newcommand{\dalek}{Dalek Code}
-%general astronomy
-\newcommand{\lmc}{LMC}
-\newcommand{\smc}{SMC}
-\newcommand{\synow}{SYNOW}
-\newcommand{\mlc}{ML MONTE CARLO}
+\newglossaryentry{ga}{name=GA,description={genetic algorithm}}
+\newglossaryentry{tsp}{name=TSP,description={Travelling Salesman Problem}}
+%\newglossaryentry{synow}{name=SYNOW,description={Small Magellanic Cloud}}
+\newglossaryentry{dalek}{name=\textsc{Dalek} code,description={Automatic SN Ia spectrum fitting code}, sort=dalek}
+\newglossaryentry{mlc}{name=MLMC,description={Mazzali \& Lucy SN Ia spectrum synthesis code}}
+\newglossaryentry{vph}{name=\ensuremath{v_{\rm ph}},description={photospheric velocity of a supernova}, sort=vph}
+\newglossaryentry{lbol}{name=\ensuremath{L_{\rm bol}},description={bolometric luminosity}, sort=lbol}
 
-\newcommand{\vph}{\ensuremath{v_{\rm ph}}}
-\newcommand{\lbol}{\ensuremath{L_{\rm bol}}}
+%\newcommand{\ga}{GA}
+%\newcommand{\tsp}{TSP}
+%\newcommand{\dalek}{Dalek Code}
+\newcommand{\synow}{SYNOW}
+%\newcommand{\vph}{\ensuremath{v_{\rm ph}}}
+%\newcommand{\lbol}{\ensuremath{L_{\rm bol}}}
+
+
 %maths
 \newcommand{\deltri}{Delauney Triangulation}
 % footnote symbols
