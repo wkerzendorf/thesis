@@ -12,22 +12,19 @@ A level-1 auxiliary file: chapter_sn1006/chapter_sn1006.aux
 A level-1 auxiliary file: chapter_ndinterp/chapter_ndinterp.aux
 A level-1 auxiliary file: chapter_dalek/chapter_dalek.aux
 The style file: astroads.bst
-A level-1 auxiliary file: appendices.aux
-Reallocated field_info (elt_size=4) to 11600 items from 5000.
+Reallocated field_info (elt_size=4) to 11750 items from 5000.
 Database file #1: thesis.bib
 Warning--string name "august" is undefined
---line 18 of file thesis.bib
+--line 162 of file thesis.bib
+Reallocated str_pool (elt_size=1) to 130000 items from 65000.
 Warning--I didn't find a database entry for "2001PASP..113.1420V"
 Warning--I didn't find a database entry for "1996A&AS..117..393B"
 Warning--I didn't find a database entry for "2010A&A...512A..54C"
-Warning--I didn't find a database entry for "1967ITAE...15...70W"
-Warning--I didn't find a database entry for "2008A&A...486..951G"
 Warning--I didn't find a database entry for "1984sfat.book.....K"
+Warning--I didn't find a database entry for "2008A&A...486..951G"
 Warning--I didn't find a database entry for "2000vnia.book.....H"
 Warning--I didn't find a database entry for "Kreinovich93geneticalgorithms"
 Warning--I didn't find a database entry for "Goldberg91acomparative"
-Warning--I didn't find a database entry for "hachinger_phd2011"
-Reallocated str_pool (elt_size=1) to 130000 items from 65000.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--empty institution in 2006acs..rept....1A
 Warning--can't use both author and editor fields in 1602QB41.B73.......
@@ -66,45 +63,45 @@ ptr=1, stack=
 while executing---line 1627 of file astroads.bst
 Warning--empty publisher in kepler1606
 Warning--empty journal in 2003astro.ph..3660P
-You've used 254 entries,
+You've used 262 entries,
             3025 wiz_defined-function locations,
-            2251 strings with 65881 characters,
-and the built_in function-call counts, 149057 in all, are:
-= -- 11363
-> -- 12935
-< -- 121
-+ -- 4777
-- -- 4507
-* -- 13943
-:= -- 28096
-add.period$ -- 254
-call.type$ -- 254
-change.case$ -- 2513
-chr.to.int$ -- 257
-cite$ -- 261
-duplicate$ -- 5152
-empty$ -- 7735
-format.name$ -- 5242
-if$ -- 28192
+            2289 strings with 67458 characters,
+and the built_in function-call counts, 152706 in all, are:
+= -- 11668
+> -- 13185
+< -- 124
++ -- 4869
+- -- 4591
+* -- 14245
+:= -- 28795
+add.period$ -- 262
+call.type$ -- 262
+change.case$ -- 2573
+chr.to.int$ -- 265
+cite$ -- 269
+duplicate$ -- 5302
+empty$ -- 7948
+format.name$ -- 5346
+if$ -- 28889
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 230
-newline$ -- 1026
-num.names$ -- 1032
-pop$ -- 2936
+missing$ -- 236
+newline$ -- 1058
+num.names$ -- 1064
+pop$ -- 3003
 preamble$ -- 1
-purify$ -- 2507
+purify$ -- 2567
 quote$ -- 0
-skip$ -- 4212
+skip$ -- 4331
 stack$ -- 0
-substring$ -- 5460
-swap$ -- 188
-text.length$ -- 17
+substring$ -- 5618
+swap$ -- 187
+text.length$ -- 16
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 2259
+type$ -- 2334
 warning$ -- 7
-while$ -- 1027
+while$ -- 1058
 width$ -- 0
-write$ -- 2551
+write$ -- 2631
 (There were 10 error messages)
