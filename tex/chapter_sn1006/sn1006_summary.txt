@@ -1,0 +1,30 @@
+intro
+after not finding anything in sn1572. survey other remnants. compare to see if common feature exists.
+
+sn1006 best possible candidate. closest. relatively young. very spherical. well studied. perfect opportunity to follow up 
+why Type Ia?
+sm star found in the middle of SN1006. interesting - a few other remnant that have been survied show stellar remnants. follow up shows it's a dudd. 
+
+introduction to sections
+
+observations
+Photometric observations of the inner region (describe section) (in 2004). in 4 filters. 
+data reductions including photometry.
+subsequent choice of candidates based on a limiting magnitude of x around a center c with radius r. 
+problematic candidate…..
+limiting magnitude is Lr at 2.2 kpc was chosen because of marietta et al 2000.
+radius r was chosen because of < 1200 km/s.
+high resolution spectroscopy of mgb triplet. good for getting teff, logg, feh. 
+observations taken 2009. data reductions with ESO pipleine…..
+
+photometric analysis….
+calculating temperatures using photometry… 
+
+spectroscopic analysis
+radial velocity
+rotational velocity
+first comparison of synthetic spectra against the observed ones.
+spectral grid
+
+conclusion
+no rotating star found to L_R x

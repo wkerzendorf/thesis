@@ -1,5 +1,5 @@
 ;; xindy style file created by the glossaries package
-;; for document 'thesis' on 2011-8-1
+;; for document 'single_chapter_sn1006' on 2011-7-30
 
 ; required styles
 
@@ -152,4 +152,24 @@
  :close "}" 
  :attr "hypersc")
 (markup-locref :open "~n\setentrycounter{page}\hyperemph{" 
- :close
+ :close "}" 
+ :attr "hyperemph")
+
+; define letter group list format
+
+(markup-letter-group-list :sep "\glsgroupskip~n")
+
+; letter group headings
+
+(markup-letter-group :open-head "\glsgroupheading{"
+   :close-head "}")
+
+; additional letter groups
+
+(define-letter-group "glsnumbers"
+   :prefixes ("0" "1" "2" "3" "4" "5" "6" "7" "8" "9")
+   :before "A")
+
+; additional sort rules
+
+

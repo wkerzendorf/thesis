@@ -1,0 +1,55 @@
+This is BibTeX, Version 0.99d (TeX Live 2010)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: single_chapter_intro.aux
+A level-1 auxiliary file: chapter_intro.aux
+The style file: astroads.bst
+Database file #1: thesis.bib
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Warning--can't use both author and editor fields in 1602QB41.B73.......
+Warning--empty publisher in 1602QB41.B73.......
+Warning--can't use both author and editor fields in 1977QB841.C58......
+Warning--empty publisher in 1977QB841.C58......
+Warning--can't use both author and editor fields in 2007nps..book.....I
+Warning--empty publisher in kepler1606
+You've used 181 entries,
+            3098 wiz_defined-function locations,
+            1943 strings with 59495 characters,
+and the built_in function-call counts, 92967 in all, are:
+= -- 6924
+> -- 7120
+< -- 71
++ -- 2398
+- -- 2214
+* -- 8909
+:= -- 17017
+add.period$ -- 181
+call.type$ -- 181
+change.case$ -- 1236
+chr.to.int$ -- 180
+cite$ -- 187
+duplicate$ -- 3795
+empty$ -- 5793
+format.name$ -- 2795
+if$ -- 18170
+int.to.chr$ -- 2
+int.to.str$ -- 1
+missing$ -- 171
+newline$ -- 915
+num.names$ -- 734
+pop$ -- 1347
+preamble$ -- 1
+purify$ -- 1236
+quote$ -- 0
+skip$ -- 2910
+stack$ -- 0
+substring$ -- 3921
+swap$ -- 97
+text.length$ -- 10
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 1617
+warning$ -- 6
+while$ -- 660
+width$ -- 0
+write$ -- 2168
+(There were 6 warnings)
