@@ -77,7 +77,7 @@
 \DeclareGraphicsExtensions{.pdf}
 %\DeclareGraphicsExtensions{.eps}
 \usepackage[twoside]{rotating}
-
+\usepackage{xstring}
 %%NOTES ABOUT FONTS PACKAGES:
 % The basic requirements for fonts in an ANU thesis demand clear
 % readability and that is about all.  So if you choose a nice,
@@ -111,6 +111,7 @@
 % Although the above list includes some really nice fonts, their
 % availability in TeX distributions varies.  You may have to install
 % them manually...
+\usepackage{xfrac}
 \usepackage[T1]{fontenc}
 \usepackage{textcomp}
 \usepackage{ucs}
@@ -146,6 +147,7 @@
   labelsep=quad,%
   labelfont={footnotesize,bf},%
   textfont={footnotesize}}
+\usepackage{captcont}
 % The hyperref package is a must while editing.  It provides urls
 % inside your document; you can then click to go to certain pages,
 % figures or bibliography entries.
@@ -174,7 +176,7 @@ pdfsubject={\thesissubjects},%
 % - defining the colours of links, citations etc.
 % together with hyperref (i.e. in hyperrefsetup)
 % - get alternating row colours or shades in tables
-\usepackage[hyperref,x11names]{xcolor}
+\usepackage[hyperref,x11names,table]{xcolor}
 % Stops figures and tables 'floating' past the section in which they
 % are declared.
 \usepackage[section]{placeins}

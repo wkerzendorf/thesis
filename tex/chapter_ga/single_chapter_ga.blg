@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99d (TeX Live 2011)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: single_chapter_ga.aux
+A level-1 auxiliary file: chapter_ga.aux
+The style file: astroads.bst
+Database file #1: thesis.bib
+Warning--I didn't find a database entry for "Goldberg91acomparative"
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+You've used 13 entries,
+            3098 wiz_defined-function locations,
+            733 strings with 7015 characters,
+and the built_in function-call counts, 5361 in all, are:
+= -- 457
+> -- 212
+< -- 14
++ -- 73
+- -- 56
+* -- 377
+:= -- 928
+add.period$ -- 13
+call.type$ -- 13
+change.case$ -- 73
+chr.to.int$ -- 16
+cite$ -- 13
+duplicate$ -- 277
+empty$ -- 483
+format.name$ -- 84
+if$ -- 1125
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 11
+newline$ -- 75
+num.names$ -- 53
+pop$ -- 78
+preamble$ -- 1
+purify$ -- 70
+quote$ -- 0
+skip$ -- 237
+stack$ -- 0
+substring$ -- 273
+swap$ -- 19
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 105
+warning$ -- 0
+while$ -- 54
+width$ -- 0
+write$ -- 168
+(There was 1 warning)

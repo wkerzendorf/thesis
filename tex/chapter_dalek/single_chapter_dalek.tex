@@ -20,13 +20,13 @@
 
 % define some constants that can be used in various places to easily
 % specify title, subjects, author etc.
-\newcommand{\thesistitle}{Type Ia Supernovae:
+\newcommand{\thesistitle}{Type Ia Supernovae:66666666666666
 	Explosions and Progenitors}
 \newcommand{\fullname}{Wolfgang Eitel Kerzendorf}
 \newcommand{\shortname}{W. E. Kerzendorf}
 \newcommand{\thesissubjects}{supernova:progenitors ????add some more?????}
 
-%%NOTES ABOUT BABEL PACKAGE:
+%%NOTES ABOUT BABEL PACKAGE:55
 % It requires two components; the 
 % \usepackage line above and the language put in the \documentclass.
 % 'british' is used because that is the english style required for an
@@ -51,7 +51,7 @@
 % for papers by simply changing 'british' above to 'american', and
 % flyspell will check your paper in american-english.
 \usepackage[british]{babel}
-
+\usepackage{xstring}
 %\usepackage{hyperref}
 
 % ---------------------------------------------------------------------
@@ -168,6 +168,11 @@ pdfsubject={\thesissubjects},%
 %linkcolor=blue,%
 %urlcolor=blue%
 }
+
+
+\usepackage[acronym,xindy, toc, hyperfirst=false, style=altlist]{glossaries}
+\makeglossaries
+
 % Drop capitals at the start of chapters
 \usepackage{lettrine}
 % Allow defining of colours. Useful for:
