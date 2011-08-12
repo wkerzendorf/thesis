@@ -122,7 +122,7 @@
 \linespread{1.05} % tgpagella/mathpazo need a bigger line spacing
 \usepackage{microtype}
 % bibliography uses natbib, this will be a requirement
-\usepackage[round]{natbib}
+\usepackage[round, nonamebreak]{natbib}
 % Super-nice looking tables, better than deluxetable
 \usepackage{ctable, longtable}
 
@@ -160,6 +160,8 @@
 \hypersetup{pdftitle=\thesistitle\ - \shortname,%
 pdfauthor=\fullname,%
 pdfsubject={\thesissubjects},%
+colorlinks=false,%
+%hidelinks
 %citecolor=green,%
 %filecolor=blue,%
 %linkcolor=blue,%
@@ -400,6 +402,6 @@ pdfsubject={\thesissubjects},%
 %\appendixpage
 \include{chapter_ndinterp/chapter_ndinterp}
 \include{chapter_ga/chapter_ga}
-
+\include{chapter_sn1006/chapter_sn1006_appendix}
 
 \end{document}
