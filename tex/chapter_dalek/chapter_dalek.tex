@@ -4,7 +4,7 @@
 \section{Introduction}
 \label{sec:dalek_intro}
 
-\lettrine{T}he last chapters (Chapters \ref{chap:sn1572_starg, chap:sn1572_hires, chap:sn1006_flames}) were dedicated to the hunt for donor stars and did not use the measurements from the \sneia\ themselves. In this chapter we will describe the extraction of nucleosynthetic yields and energies from optical spectra as well as the automation of this process.
+The last chapters (Chapters \ref{chap:sn1572_starg, chap:sn1572_hires, chap:sn1006_flames}) were dedicated to the hunt for donor stars and did not use the measurements from the \sneia\ themselves. In this chapter we will describe the extraction of nucleosynthetic yields and energies from optical spectra as well as the automation of this process.
 
 The main sources of information in spectra are the shape/strength of the spectral features and their evolution with time. There have been a few attempts to extract the details of the stellar explosions from one or both of these sources. All of them employ the technique of fitting the observations using synthetic spectra. A critical part of this process is the radiative transfer algorithm used to generate the synthetic spectra, which has been implemented in several different codes.
 
@@ -111,25 +111,25 @@ We extract physical quantities from the \snia\ spectra by adjusting the paramete
 \begin{figure}[htbp] %  figure placement: here, top, bottom, or page
    \centering
    \includegraphics[width=0.7\textwidth]{chapter_dalek/plots/bf2002bo-10.pdf} 
-   \caption{Spectrum of \sn{2002}{bo} \citep{2004MNRAS.348..261B} with \glsentryname{mlc}-fit by \citet{hachinger_dipl2007}. The excess in redwards of 6500\,\AA\ is a common problematic features of these fits.}
+   \caption[Spectrum on SN 2002bo with MLMC fit]{Spectrum of \sn{2002}{bo} \citep{2004MNRAS.348..261B} with \glsentryname{mlc} fit by \citet{hachinger_dipl2007}. The excess in redwards of 6500\,\AA\ is a common problematic features of these fits.}
    \label{fig:sn2002bo-10_bf}
 \end{figure}
 
-The first step in any fitting procedure is to initialize the parameters. The luminosity distance, redshift and time since explosion \gls{texp} are initialized from data available on the supernova and are not fitted with the \gls{mlc} code. The initial choice of luminosity and photospheric velocity is based empirically on photometry and \gls{texp}. When manually fitting the spectrum we only consider contributions from the elements listed in Table \ref{tab:2002bo_bestfit_abundances}. When initializing these for a manually fitting procedure we use empirical data (this procedure is described in detail in Section \ref{sec:dalek}). In the fitting process several elements are treated specially. The abundance of \Ni\, for example, is given as the abundance of initial nickel synthesized in the explosion. Since \Ni\ is unstable this unified mass of \Ni\ will decay first to \Co\ which then decays to \Fe. This decay is accounted for (i.e. the abundances of \Ni, \Co\ and \Fe\ are calculated from the initial \Ni\ mass and \gls{texp}). In all further discussions, cobalt will always refer to radioactive \Co, the daughter of \Ni (we do not consider any stable isotopes of cobalt that may have been synthesized in the explosion). The \Fe\ abundance is determined by adding the \Fe\ obtained from the \Ni\ decay to the iron and pre-exisiting \Fe\ (Fe$_0$). In addition we lock the ratio of titanium and chromium as we do believe this to be degenerate in the fit. 
+The first step in any fitting procedure is to initialize the parameters. The luminosity distance, redshift and time since explosion \gls{texp} are initialized from data available on the supernova and are not fitted with the \gls{mlc} code. The initial choice of luminosity and photospheric velocity is based empirically on photometry and \gls{texp}. When manually fitting the spectrum we only consider contributions from the elements listed in Table \ref{tab:2002bo_bestfit_abundances}. When initializing these for a manually fitting procedure we use empirical data (this procedure is described in detail in Section \ref{sec:dalek}). In the fitting process several elements are treated specially. The abundance of \Ni\, for example, is given as the abundance of initial nickel synthesized in the explosion. Since \Ni\ is unstable this unified mass of \Ni\ will decay first to \Co\ which then decays to \Fe. This decay is accounted for (i.e. the abundances of \Ni, \Co\ and \Fe\ are calculated from the initial \Ni\ mass and \gls{texp}). In all further discussions, cobalt will always refer to radioactive \Co, the daughter of \Ni\ (we do not consider any stable isotopes of cobalt that may have been synthesized in the explosion). The \Fe\ abundance is determined by adding the \Fe\ obtained from the \Ni\ decay to the iron and pre-exisiting \Fe\ (Fe$_0$). In addition we lock the ratio of titanium and chromium as we do believe this to be degenerate in the fit. 
 
 explosive nucleosynthesis reference \citep[e.g.][]{1999ApJS..125..439I}
 
-\begin{figure}[htbp] %  figure placement: here, top, bottom, or page
+\begin{figure}[tb] %  figure placement: here, top, bottom, or page
    \centering
    \includegraphics[width=0.7\textwidth]{chapter_dalek/plots/bf2002bo-10_lum.pdf} 
-   \caption{We have perturbed the luminosity around the best fit value. The most noticeable effect is the continuum offset. There is also a slight change in the overall slope of the spectrum.} 
+   \caption[Effect of luminosity on MLMC fit]{We have perturbed the luminosity around the best fit value. The most noticeable effect is the continuum offset. There is also a slight change in the overall slope of the spectrum.} 
    \label{fig:sn2002bo_lum_offset}
 \end{figure}
 
 Next we will describe the unique impact each parameter has on the spectrum and how that is used to arrive at a best fit. There are three main parameters that have the most influence on the overall spectrum fit: Luminosity, photospheric velocity and abundance in \gls{ige}.
 A large offset in \lum, relative to the best fit parameter, is easily visible as a large offset of the continuum (see Figure \ref{fig:sn2002bo_lum_offset}). Thus it is easy to constrain the parameter space in \lum. \lum\ also has influence on the temperature of the model through:
 \[
-L_{\rm bol} = 4\pi\sigma\, R^2\,\gls{teff}^4 = 4\pi\sigma(\gls{vph}\gls{texp})^2 \gls{teff}^4,
+L_{\rm bol} = 4\pi\sigma\, R^2\,\teff^4 = 4\pi\sigma(\gls{vph}\gls{texp})^2 \teff^4,
 \label{eq:lum_temp_relation}
 \]
 where \gls{teff} can be calculated by the model parameters \lum\ and \gls{vph}. 
@@ -140,7 +140,7 @@ Velocity in astronomy is often measured using the Doppler shift of atomic lines.
 \begin{figure}[tb] %  figure placement: here, top, bottom, or page
    \centering
    \includegraphics[width=0.7\textwidth]{chapter_dalek/plots/bf2002bo-10_vph.pdf} 
-   \caption{The photospheric velocity has been perturbed around the bestfit. If the velocity is too small, the spectrum is too blue and vice versa.}
+   \caption[Effect of photospheric velocity on MLMC fit]{The photospheric velocity has been perturbed around the bestfit. If the velocity is too small, the spectrum is too blue and vice versa.}
    \label{fig:sn2002bo_vph_offset}
 \end{figure}
 
@@ -151,7 +151,7 @@ We assume, as discussed previously, no stable cobalt. All \gls{ige} elements rep
 \begin{figure}[tb] %  figure placement: here, top, bottom, or page
    \centering
    \includegraphics[width=0.7\textwidth]{chapter_dalek/plots/bf2002bo-10_ige.pdf} 
-   \caption{When changing the \glsentryname{ige} (in this case we have only changed $\textrm{Fe}_0$ and $\textrm{Ni}_0$) the flux is altered in the blue and red part. Too much \glsentryname{ige}s and there's not enough flux in the blue and too much flux in the red and vice versa.}
+   \caption[Effect of iron group elements on MLMC fit]{When changing the \glsentryname{ige} (in this case we have only changed $\textrm{Fe}_0$ and $\textrm{Ni}_0$) the flux is altered in the blue and red part. Too much \glsentryname{ige}s and there's not enough flux in the blue and too much flux in the red and vice versa.}
    \label{fig:sn2002bo_ige_offset}
 \end{figure}
 
@@ -159,10 +159,10 @@ There are six other abundances that are taken into account when fitting: carbon,
 
 Silicon and sulphur are usually the next elements to be fine-tuned. Both of these elements are linked through nuclear synthesis and we do not expect there to be more sulphur than silicon. We also expect no less sulphur than a third of silicon. Silicon also provides an important measure for temperature through the ionization balance, which is seen as the ratio between \ion{Si}{2} at 6150\,\AA\ versus the fit of \ion{Si}{2} at 5700\,\AA\ (see Figure \ref{fig:sn2002bo_vph_offset}). This effect was first mentioned in \cite{1995ApJ...455L.147N} and is explained in detail in \citep{2008MNRAS.389.1087H}. The strong \ion{Mg}{2} feature near 4300\,\AA\ helps constrains the magnesium abundance. The weak \ion{C}{2} feature at $\approx 6300\,\AA$ is the only line to provide constraints for the carbon abundance. In most \sneia\ spectra this line is weak or not visible and mainly provides an upper limit for the amount of carbon.
 
-\begin{figure}[htbp] %  figure placement: here, top, bottom, or page
+\begin{figure}[tb] %  figure placement: here, top, bottom, or page
    \centering
    \includegraphics[width=0.7\textwidth]{chapter_dalek/plots/bf2002bo-10_lineid.pdf} 
-   \caption{The best-fit model for \sn{2002}{bo} We have identified some of the strongest lines that are scrutinized when fitting a \glsentryname{snia} spectrum.}
+   \caption[Best-Fit of SN 2002bo with MLMC including line identification]{The best-fit model for \sn{2002}{bo} We have identified some of the strongest lines that are scrutinized when fitting a \glsentryname{snia} spectrum.}
    \label{fig:sn2002bo_lineident}
 \end{figure}
 
@@ -220,7 +220,12 @@ To visualize this process we have created a flowchart in Figure \ref{fig:ga_over
 
 In summary, we have chosen \glspl{ga} because they are known to be able to navigate in complex search spaces. In addition they are inherently parallelizable which makes it easy to speed up the optimization routine. For a more detailed overview we urge the reader again to consult Chapter \ref{chap:ga}.
 
-
+\begin{figure}[htbp] %  figure placement: here, top, bottom, or page
+   \centering
+   \includegraphics[width=0.7\textwidth]{chapter_dalek/plots/ga_overview.pdf} 
+   \caption{Flow chart overview over the process of a \glsentryname{ga}}
+   \label{fig:ga_overview}
+\end{figure}
 
 
 
@@ -234,26 +239,26 @@ The parameters that need to be fit are luminosity, photospheric velocity (\gls{v
 The first task was to wrap the \gls{mlc} code so that it is able to easily interface with any optimization routine and run in parallel in multiple instances. The initial version of this \emph{launcher} code was able to run on multiple processors on one machine. Next we extended the \emph{launcher} code to be able to distribute jobs on the network. As the institute has a heterogeneous computer structure (different processor types, different operating systems) we were forced to write a custom software to distribute it among the many nodes. An additional advantage to this cloud-like process structure is that we could use unused resources as well as avoid servers that are heavily demanded by other users. For the scheduling we used a simple first in, first out queue. Finally, the \emph{launcher} code has a simple \gls{api} that accepts arrays with parameter sets and returns the results in a simple array format. Invisibly to the user, it writes the parameter sets to the relevant disks in a format that the \gls{mlc} understands. Upon completion it reads the data files and cleans up any temporary files created by the \gls{mlc}. This abstraction of the \gls{mlc} allowed us to quickly explore the intricacies of the \glspl{ga} (and in the future possibly other optimization algorithms).
 
 
-As described in Section \ref{sec:dalek_brief_intro} the first step for any \gls{ga} is to create an initial population (first generation). One can easily draw uniform randomly for luminosity and \gls{vph} (within some bounds). However, this method does not work for the elemental abundances as the sum of the abundances needs to add up to one. As explained previously these abundances are abundances by mass with a pre-chosen \gls{w7} density structure. A population that is distributed around the optimum value converges much quicker than a uniformly sampled one. Thus we have chosen to use the \gls{w7} abundances as an input parameter as it seems to be a good starting point for many \snia. To calculate these abundances we need to know the photospheric velocity. Using data from \citet{2005ApJ...623.1011B} we have estimated an empirical relationship between the time since explosion and the photospheric velocity (see Figure \ref{fig:texp_vph}). This will serve as a rough first guess.
+As described in Section \ref{sec:ga_brief_intro} the first step for any \gls{ga} is to create an initial population (first generation). One can easily draw uniform randomly for luminosity and \gls{vph} (within some bounds). However, this method does not work for the elemental abundances as the sum of the abundances needs to add up to one. As explained previously these abundances are abundances by mass with a pre-chosen \gls{w7} density structure. A population that is distributed around the optimum value converges much quicker than a uniformly sampled one. Thus we have chosen to use the \gls{w7} abundances as an input parameter as it seems to be a good starting point for many \snia. To calculate these abundances we need to know the photospheric velocity. Using data from \citet{2005ApJ...623.1011B} we have estimated an empirical relationship between the time since explosion and the photospheric velocity (see Figure \ref{fig:texp_vph}). This will serve as a rough first guess.
 
 \begin{figure}[htbp] %  figure placement: here, top, bottom, or page
    \centering
    \includegraphics[width=0.7\textwidth]{chapter_dalek/plots/plot_texp_vph.pdf} 
-   \caption{Estimated initial guess for photospheric velocity against days after explosion \citep{2005ApJ...623.1011B}. }
-   \label{fig:Intrinsic }
+   \caption[Estimated initial guess for photospheric velocity against days after explosion]{Estimated initial guess for photospheric velocity against days after explosion \citep{2005ApJ...623.1011B}. }
+   \label{fig:texp_vph}
 \end{figure} 
 
 Once we know a \gls{vph}-estimate we can determine at what depth the photosphere is located in the \gls{w7}. We use this point and integrate outwards to find our initial abundance fractions.
 
 When creating our initial population, we draw randomly from a uniform distribution for a preselected luminosity range (for the moment determined manually) and a \gls{vph} range 4000\,\kms above and below the \gls{vph} estimate. The random sampling of the elements poses some problems.There are a lower and an upper bound when it comes to the initial abundance ratios. We have a lower bound for each abundance (established as the smallest abundance an element can have by \gls{mlc}) at $10^{-7}$ and a upper bound which is determined by the requirement that all abundances need to add up to one. Knowing the minimum and maximum bound we then use a log-normal asymmetric random distribution around the actual \gls{w7} value with the lower and upper bound being at three sigma. If we would draw the abundances every time in the same order it would mean that the last element to be drawn would always have a very low chance of obtaining a high abundance value. Thus we randomize the order of drawing the elemental abundances. This ensures that the initial population is sufficiently dispersed to avoid the \gls{ga}'s premature convergence on a local optimum, but close enough to the region of interesting parameter space, which avoids unnecessary delay in the convergence. 
 
-After creating an individual through the random drawing process, we also check abundance ratios allowed by explosive nucleosynthesis of a \gls{cowd} outlined in Table \ref{blah}. If the newly created individual does not conform with the abundance limits laid out in Table \ref{blah} it is discarded and a new one is drawn. Once the initial population (we chose 150 for our population size) is created it is distributed among the compute nodes by the \emph{launcher} module of the \gls{dalek}.
+After creating an individual through the random drawing process, we also check abundance ratios allowed by explosive nucleosynthesis of a \gls{cowd} outlined in Table \ref{tab:2002bo_bestfit_abundances}. If the newly created individual does not conform with the abundance limits laid out in Table \ref{tab:2002bo_bestfit_abundances} it is discarded and a new one is drawn. Once the initial population (we chose 150 for our population size) is created it is distributed among the compute nodes by the \emph{launcher} module of the \gls{dalek}.
 
 The resulting spectra are then subjected to a fitness function. The selection of the fitness function is one of the most crucial choices for any \gls{ga}. The correct fitness function is still a field of active research in the \gls{dalek}. As an initial approach we calculated the mean-square of the residuals remaining from subtracting the observed spectrum and the spectrum of the current individual. 
 
 This approach has two main issues. First for almost all observed spectra in the early phase the fitted spectrum has a large continuum excess beyond 6500\,\AA (see Figure \ref{fig:sn2002bo-10_bf}). However, we still regard the line depth and line shape to be correct. As described previously this is a known issue of the \gls{mlc} code. This large difference in the infrared means that the \gls{dalek} will try to optimize this large offset and pay less regard to a good fit in the rest of the spectrum. To alleviate this we have tried multiple approaches. At first we tried to de-weight the fit in the problematic region. This artificially introduced weighting factor introduces another parameter which might have to change it for the \gls{ga} to succeed on different spectra. This would defeat the point of an automatic fit. As a second approach we tried to fit and subtract the continuum in the problematic region before creating our fitness figure. 
 
-Secondly there are different parameters, including the dilution factor, that help guide the fit which are neglected when just using the traditional mean-square approach. For example, the dilution factor is expected to be close to 0.5 (see description in \ref{sec:mlc_code}). \citet{hachinger_dipl2007} and \citet{hachinger_phd2011} have found that in all cases a good fit will have a value of the dilution factor between 0.4 and 0.7. We have incorporated this into the fitness calculation and de-weight the fitness of spectra with a value outside this range to a great extent. Due to both these reasons, we now include a traditional goodness of fit measure in the blue, the more complex fitness calculation described above and an inclusion of the dilution factor $W$ in the final fitness.
+Secondly there are different parameters, including the dilution factor, that help guide the fit which are neglected when just using the traditional mean-square approach. For example, the dilution factor is expected to be close to 0.5 (see description in Section \ref{sec:mlc_intro}). \citet{hachinger_dipl2007} and \citet{hachinger_phd2011} have found that in all cases a good fit will have a value of the dilution factor between 0.4 and 0.7. We have incorporated this into the fitness calculation and de-weight the fitness of spectra with a value outside this range to a great extent. Due to both these reasons, we now include a traditional goodness of fit measure in the blue, the more complex fitness calculation described above and an inclusion of the dilution factor $W$ in the final fitness.
 
 We should mention that we have tried, in addition to calculating the root-mean-square of the spectral fit, a number of completely different methods. Most notably we tried to use neural networks to perform a goodness of fit analysis. We however abandoned this effort as the training set to calibrate neural networks requires a large number of well fitted spectra which are not available. 
 
@@ -275,32 +280,32 @@ Our principal spectrum for testing the \gls{ga} was \sn{2002}{bo} 10.4 days post
 
 In the presented case we let the \gls{ga} run for 188 generations. Figure \ref{fig:fitness_evolution} shows how the genetic algorithm over many generations improves the fitness of the \glspl{individual}. 
 
-\begin{figure}[htbp] %  figure placement: here, top, bottom, or page
+\begin{figure}[tb] %  figure placement: here, top, bottom, or page
    \centering
    \includegraphics[width=0.7\textwidth]{chapter_dalek/plots/plot_02bo_fit_evol.pdf} 
-     \caption{Evolution of fitness of in the generations. In later generations there is a clear divide between the members that have advanced through elitism and the bulk of the population. This suggests a too high mutationrate or the convergence of the algorithm. }
+     \caption[Evolution of fitness over the generations]{Evolution of fitness over the generations. In later generations there is a clear divide between the members that have advanced through elitism and the bulk of the population. This suggests a too high mutationrate or the convergence of the algorithm. }
    \label{fig:fitness_evolution}
 \end{figure}
 
 The step-pattern is very common in genetic algorithms: One individual has a favorable mutation and it takes several generations for the other \glspl{individual} to catch up. During the last generations one can clearly see that there is a gap between the bulk of the population and the top 10\%. This gap is caused by the contrast of relatively high mutation in the main individuals against the mutation free advancement of the top 10\% (\gls{elitism}).
 
 
-\begin{figure}[htbp] %  figure placement: here, top, bottom, or page
+\begin{figure}[tb] %  figure placement: here, top, bottom, or page
    \centering
    \includegraphics[width=0.49\textwidth]{chapter_dalek/plots/plot_02bo_lum_evol.pdf} 
    \includegraphics[width=0.49\textwidth]{chapter_dalek/plots/plot_02bo_vph_evol.pdf} 
-   \caption{The evolution of both luminosity and photospheric velocity shows that even at late phases of the algorithm there are still new combination that are being trialled. The very quick convergence in both cases however is a bit worrisome and will be analysed in future experiments.}
+   \caption[Evolution of both luminosity and photospheric velocity over generations]{The evolution of both luminosity and photospheric velocity shows that even at late phases of the algorithm there are still new combination that are being trialled. The very quick convergence in both cases however is a bit worrisome and will be analysed in future experiments.}
    \label{fig:lumvph_evolution}
 \end{figure}
 
 
 Figure \ref{fig:lumvph_evolution} gives a good overview of how the genetic algorithm wanders through the parameter space. In our example the algorithm converges relatively fast (after roughly 30 generations). Even though there is a `main'-population the algorithm still tries out different combinations. Currently we still have the problem that for certain initial random seeds the algorithm does not find the global optimum but converges prematurely on a local optimum. We believe the quick convergence seen in Figure \ref{fig:lumvph_evolution} might be evidence for this. This again is an area of active research and two experts in evolutionary optimization joined our team recently to address this problem. 
 
-\begin{figure}[htbp] %  figure placement: here, top, bottom, or page
+\begin{figure}[tb] %  figure placement: here, top, bottom, or page
    \centering
    \includegraphics[width=0.49\textwidth]{chapter_dalek/plots/plot_ga0_speccompare.pdf} 
    \includegraphics[width=0.49\textwidth]{chapter_dalek/plots/plot_ga185_speccompare.pdf} 
-   \caption{The best individual of the first generation (left) and the best individual after 185 generations (right). This initial result demonstrates that \glsentryplural{ga} are able to conquer this problem. A more stable convergence and thorough exploration of the parameter space is however necessary to use this technique on a set of supernova spectra.}
+   \caption[Results of optimizations with Genetic Algorithms]{The best individual of the first generation (left) and the best individual after 185 generations (right). This initial result demonstrates that \glsentryplural{ga} are able to conquer this problem. A more stable convergence and thorough exploration of the parameter space is however necessary to use this technique on a set of supernova spectra.}
    \label{fig:example}
 \end{figure}
 
@@ -311,7 +316,9 @@ Although there are still many outstanding problems we can show that the \glspl{g
 \label{sec:dalek_conclusion}
 
 
-We have completed two major steps for the automation of \sneia\ fitting. First we have written an easy \gls{api} that allows many synthetic spectra to be created simultaneously on an array of machines. Secondly we have demonstrated that \gls{ga} are powerful tools which can find solutions efficiently in the vast parameter space of \sneia\ spectra. We do acknowledge that our current implementation does not reliably work on all spectra and there remains lots of fine-tuning work to be done. This tweaking is very common in \gls{ga} implementations, but often requires experts in numerical optimization for speedy advancement. James Montgomery and Irene Moser are experts in evolutionary optimization (their research focuses on differential evolutionary algorithms) and are currently exploring with our help the search space. Once the \gls{dalek} is able to fit spectra reliably with the current code we plan to first use this on a large set of \sneia\ spectra and explore general abundance trends. In a second step we plan to extend the \gls{dalek} to use the stratified version of the \gls{mlc}.
+We have completed two major steps for the automation of \sneia\ fitting. First we have written an easy \gls{api} that allows many synthetic spectra to be created simultaneously on an array of machines. Secondly we have demonstrated that \gls{ga} are powerful tools which can find solutions efficiently in the vast parameter space of \sneia\ spectra. We do acknowledge that our current implementation does not reliably work on all spectra and there remains lots of fine-tuning work to be done. This tweaking is very common in \gls{ga} implementations, but often requires experts in numerical optimization for speedy advancement. James Montgomery and Irene Moser are experts in evolutionary optimization (their research focuses on differential evolutionary algorithms) and are currently exploring with our help the search space. 
+
+Once the \gls{dalek} is able to fit spectra reliably with the current code we plan to first use this on a large set of \sneia\ spectra and explore general abundance trends. Similar to \citet{2007Sci...315..825M} we plan to unravel the stratification and mass of the ejecta. Depending on the explosion mechanism (deflagration or detonation) we will find different elemental abundances. Either explosion mechanism will likely hint at the mass of the white dwarf just prior to explosion. This will be an important indicator for the still unsolved progenitor question addressed in the other chapters of this thesis. Finally, we will plan to extend the \gls{dalek} to use the stratified version of the \gls{mlc}, while much more complicated,  will help us to improve the models of the layered structure of \snia.
 
 On a different front we are also exploring ways to optimize the parameter space exploration speed. Even on current high-end machines the \gls{mlc} takes one minute per synthetic spectrum per CPU. One of the ideas is creating a parameter grid around all or some of our search area. We could then use fast and efficient interpolation techniques (one of these is described in Chapter \ref{chap:ndinterp}) and explore different settings for our genetic algorithm much more quickly.
 

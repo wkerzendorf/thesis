@@ -21,6 +21,12 @@
 \makeatother
 
 
+
+%defining different glossaries
+\newglossary{gastro}{astrogls}{astroglo}{General Astronomy}
+%\newglossary{gastro}{astrogls}{astroglo}{Telescopes and Surveys}
+\newglossary{ga}{gagls}{gaglo}{Genetic Algorithms}
+
 % i.e. -- e.g. -- etc. -- et. al.
 \newcommand{\eg}{{\em e.g.,}}
 \newcommand{\ie}{{\em i.e.,}}
@@ -38,55 +44,54 @@
 \newcommand{\mhi}{\hbox{$M_{\HIsub}$}}
 \newcommand{\lsun}{\hbox{$L_{\odot}$}}
 \newcommand{\mlsun}{(M/L)_{\odot}}
-\newcommand{\vexp}{\hbox{$V_{exp}$}}
-\newcommand{\vhel}{\hbox{$V_{hel}$}}
-\newcommand{\vrot}{\hbox{$v_{\textrm{rot}}$}}
-\newcommand{\vrad}{\hbox{$v_{\textrm{rad}}$}}
+\newcommand{\vexp}{\hbox{\ensuremath{v_\textrm{exp}}}}
+\newcommand{\vhel}{\hbox{\ensuremath{v_\textrm{hel}}}}
+\newcommand{\vrot}{\ensuremath{v_{\textrm{rot}}}}
+\newcommand{\vrad}{\hbox{\ensuremath{v_{\textrm{rad}}}}}
 \newcommand{\vdisp}{\hbox{$\sigma_{disp}$}}
 \newcommand{\Nhi}{\hbox{$N_{\HIsub}$}}
 \newcommand{\nhi}{\hbox{$n_{\HIsub}$}}
 \newcommand{\Mhi}{\hbox{$M_{\HIsub}$}}
 \newcommand{\ra}{$\alpha$}
-\newcommand{\rasc}[4]{\ensuremath{#1^h#2^m#3\overset{s}{.}#4}}
-\newcommand{\decl}[3]{\ensuremath{#1^{\circ}#2\arcmin#3\arcsec}}
+\newcommand{\rasc}[4]{\ensuremath{\alpha=#1^h#2^m#3\overset{s}{.}#4}}
+\newcommand{\decl}[3]{\ensuremath{\delta=#1^{\circ}#2\arcmin#3\arcsec}}
 \newcommand{\kpc}{kpc}
 \newcommand{\dec}{$\delta$}
 \newcommand{\degree}{\textdegree}
 \newcommand{\arcmin}{\hbox{$^\prime$}}
 \newcommand{\arcsec}{\hbox{$^{\prime\prime}$}}
-\newcommand{\kms}{\hbox{km s$^{-1}$}}
+\newcommand{\kms}{\ensuremath{\textrm{km}~\textrm{s}^{-1}}}
 \newcommand{\mjbeam}{\hbox{mJy beam$^{-1}$}}
 \newcommand{\jbeam}{\hbox{Jy beam$^{-1}$}}
 \newcommand{\mjbeamkms}{\hbox{mJy/beam km s$^{-1}$}}
 \newcommand{\jkms}{\hbox{Jy km s$^{-1}$}}
 \newcommand{\coldensity}{\hbox{cm$^{-2}$}}
 \newcommand{\voldensity}{\hbox{cm$^{-3}$}}
-\newcommand{\moog}{MOOG}
-\newcommand{\twomass}{2MASS}
+\newcommand{\moog}{\textsc{MOOG}}
 \newcommand{\EM}{electromagnetic}
 \newcommand{\xray}{X-ray}
 \newcommand{\gammaray}{gamma-ray}
 \newcommand{\snratio}{S/N ratio}
-
-
-% ---- units
-
-%\newcommand{\kms}{ km\,s$^{-1}$}
 \newcommand{\masyr}{mas\,yr$^{-1}$}
 \newcommand{\myr}{Myr}
 \newcommand{\erg}{erg}
+
 %\newcommand{\nir}{NIR}
+\newglossaryentry{angstrom}{name=\AA, description={unit of length $10^{-10}$\,m}, sort=angstrom}
 \newglossaryentry{nir}{name=NIR,description={near infrared},first = {near infrared (NIR)}}
+\newglossaryentry{psf}{name=PSF,description={Point Spread Function},first = {PSF}}
+\newglossaryentry{fwhm}{name=FWHM,description={Full Width Half Maximum},first = {FWHM}}
+\newglossaryentry{rms}{name=RMS,description={Root Mean Square},first = {RMS}}
 \newglossaryentry{uv}{name=UV,description={ultra violet},first = {ultra violet (UV)}}
-\newglossaryentry{halpha}{name=\ensuremath{\textrm{H}_\alpha}, description={First line of the Balmer series at 6563\AA.}}
-\newglossaryentry{mgb}{name={Mg \textsc{i} b}, description={Mg I lines  at 5167, 5173, 5184}}
-%Mg Ib ??5167, 5173, 5184
-\newglossaryentry{sobolevapprox}{name={Sobolev approximation}, description={Sobolev approximation}, first={Sobolev approximation \citep{1960mes..book.....S}}}
-\newglossaryentry{radeq}{name=radiative equilibrium, description={radiative equilibrium}}
-\newglossaryentry{nebularapprox}{name={nebular approximation}, description={nebular approximation}, first={nebular approximation \citep{1978stat.book.....M}}}
-\newglossaryentry{modnebularapprox}{name={modified nebular approximation}, description={modified nebular approximation}, first={modified nebular approximation}}
-\newglossaryentry{thompsonscat}{name={Thompson scattering}, description={Thompson scattering}}
-\newglossaryentry{lte}{name={LTE}, description={local thermodynamic equilibrium}, first={\textit{local thermodynamic equilibrium} (LTE)}}
+\newglossaryentry{halpha}{name=\ensuremath{\textrm{H}\alpha}, description={First line of the Balmer series at 6563\,\AA}, sort=halpha}
+\newglossaryentry{mgb}{name={Mg \textsc{i} b}, description={Triplet at 5167\,\AA, 5173\,\AA and 5184\,\AA}}
+\newglossaryentry{sobolevapprox}{name={Sobolev approximation}, description={Lines are approximation with an infinitley thin interaction region \citep[e.g. no broadening][]{1960mes..book.....S}}, first={Sobolev approximation }}
+\newglossaryentry{radeq}{name={radiative equilibrium}, description={The net flux of energy between matter and radiation field is zero}}
+\newglossaryentry{nebularapprox}{name={nebular approximation}, description={Assumes that the plasma condition are controlled by a central radiation source. The radiation field decreases with the distance to the source by geometrical dilution. See \citet{1978stat.book.....M} for details}}
+\newglossaryentry{modnebularapprox}{name={modified nebular approximation}, description={In contrast to \gls{nebularapprox} where only geometrical dilution is taken into account, the modified nebular approximation also takes dilution by other radiative processes into account }, first={modified nebular approximation}, parent=nebularapprox}
+\newglossaryentry{thompsonscat}{name={Thomson scattering}, description={Scattering of photons on low energy electrons}}
+\newglossaryentry{lte}{name={LTE}, description={Local Thermodynamic Equilibrium}, first={\textit{local thermodynamic equilibrium} (LTE)}}
+\newglossaryentry{lsr}{name={LSR}, description={Local Standard of Rest}, first={\textit{local standard of rest} (LSR)}}
 \newglossaryentry{mc}{name={MC}, description={Monte Carlo}, first={\textit{Monte Carlo} (MC)}}
 \newcommand{\dmb}[1][15]{\ensuremath{\Delta\,m_{#1}(B)}}
 
@@ -109,153 +114,178 @@
 \newcommand{\fefiftysix}{$^{56}\textrm{Fe}$}%
  \makeatletter \newcommand{\ion}[2]{#1 \textsc{\@roman{#2}}} \makeatother
 
+%software
+\newcommand{\iraffoot}{\footnote{IRAF: the Image Reduction and Analysis Facility is distributed by the National Optical Astronomy Observatory, which is operated by the Association of Universities for Research in Astronomy (AURA) under cooperative agreement with the National Science Foundation (NSF).}}
+\newglossaryentry{sfit}{name=SFIT, text=\textsc{sfit}, description={spectral fitting program for hot stars \citep{2001A&A...376..497J}}}
+\newglossaryentry{iraf}{name=IRAF, text=\textsc{iraf}, description={Image Reduction and Analysis Facility maintained by NOAO}, first={IRAF}}
+\newglossaryentry{scipy}{name=SciPy, text=\textsc{SciPy}, description={Scientific Python \cite{Jones:2001fk}}}
+\newglossaryentry{moog}{name=MOOG,text={\textsc{moog}}, description={spectral synthesis software \citep{1973ApJ...184..839S}}, first={\textsc{Moog} \citep{1973ApJ...184..839S}}}
+\newglossaryentry{atlas9}{name=ATLAS9,description={grid of stellar atmospheres \citep{2004astro.ph..5087C}}, first={ATLAS9 \citep{2004astro.ph..5087C}}}
+\newglossaryentry{idl}{name=IDL,text={\textsc{idl}}, description={Interactive Data Language}}
+\newglossaryentry{makee}{name=MAKEE,text=\textsc{makee}, description={MAuna Kea Echelle Extraction by Tom Barlow available at \url{http://spider.ipac.caltech.edu/staff/tab/makee/index.html}}}
+\newglossaryentry{minuit}{name=MINUIT,text={\textsc{minuit}}, description={collection of numerical optimization tools \citep{James:1975dr}}}
+\newglossaryentry{migrad}{name=MIGRAD,text={\textsc{migrad}}, description={numerical gradient optimization tools - part of \gls{minuit}}}
+
 % --- telescopes & surveys
-\newglossaryentry{scp}{name=SCP,description={Supernova Cosmology Project}, first={Supernova Cosmology Project (SCP)}}
-\newglossaryentry{hzsns}{name=HZSNS,description={High Z Supernova Search}, first={High Z Supernova Search (HZSNS)}}
-\newglossaryentry{vlt}{name=VLT,description={Very Large Telescope located in Chile}, first={Very Large Telescope (VLT)}}
-\newglossaryentry{essence}{name=ESSENCE,description={The Equation of State: SupErNovae trace Cosmic Expansion}, first={`The Equation of State: SupErNovae trace Cosmic Expansion' \citep[ESSENCE;][]{2002AAS...201.7809G}}}
-\newglossaryentry{ifu}{name=IFU,description={Integral Field Unit}, first={Integral Field Unit (IFU)}, firstplural={Integral Field Units (IFUs)}} 
+\newglossaryentry{2mass}{name=2MASS,description={Two Micron All Sky Survey \citep{2006AJ....131.1163S}}}
+\newcommand{\twomass}{\gls{2mass}}
+\newglossaryentry{scp}{name=SCP,description={Supernova Cosmology Project, led by Saul Perlmutter}, first={Supernova Cosmology Project (SCP)}}
+\newglossaryentry{hzsns}{name=HZSNS,description={High Z Supernova Search, led by Brian Schmidt}, first={High Z Supernova Search (HZSNS)}}
+\newglossaryentry{vlt}{name=VLT,description={Very Large Telescope located on Cerro Paranal (Chile)}, first={Very Large Telescope (VLT)}}
+\newglossaryentry{flames}{name=FLAMES,description={Multi-object, intermediate and high resolution spectrograph mounted on the  \gls{vlt}}}
+\newglossaryentry{hires}{name=HIRES, description={High Resolution Echelle Spectrometer mounted on the Keck Telescope}, first={High Resolution Echelle Spectrometer \citep[HIRES;][]{1994SPIE.2198..362V}}}
+\newglossaryentry{lris}{name=LRIS,description={Low Resolution Imaging Spectrometer mounted on the Keck Telescope}, first={Low-Resolution Imaging Spectrometer \citep[LRIS;][]{Oke95}}}
+
+ 
+\newglossaryentry{essence}{name=ESSENCE,description={The `Equation of State: SupErNovae trace Cosmic Expansion' project \citep[ESSENCE;][]{2002AAS...201.7809G}}, first={`The Equation of State: SupErNovae trace Cosmic Expansion' \citep[ESSENCE;][]{2002AAS...201.7809G}}}
+\newglossaryentry{ifu}{name=IFU,description={Optical instrument combining spectrographic and imaging capabilities, used to obtain spatially resolved spectra}, first={Integral Field Unit (IFU)}, firstplural={Integral Field Units (IFUs)}} 
+
+
+\newglossaryentry{int}{name=INT,description={Isaac Newton 2.5\,m Telescope}, first={Isaac Newton 2.5\,m Telescope (INT)}}
+\newglossaryentry{iau}{name=IAU,description={International Astronomical Union}, first={IAU}}
+\newglossaryentry{chandra}{name=Chandra,description={Chandra???}}
 \newglossaryentry{hst}{name=HST,description={Hubble Space Telescope}}
-\newglossaryentry{snls}{name=SNLS,description={Supernova Legacy Survey\citep{2003AAS...203.8209P}}, first={Supernova Legacy Survey \citep[SNLS;][]{2003AAS...203.8209P}}}
-\newglossaryentry{dass}{name=DASS, description={Digitized Astronomy Supernova Survey}, first={Digitized Astronomy Supernova Survey \citep[DASS;][]{1975PASP...87..565C}}}
-\newglossaryentry{bait}{name=BAIT, description={Berkley Automatic Imaging Telescope}, first={Berkley Automatic Imaging Telescope \citep[BAIT;][]{1993PASP..105.1164R}}}
-\newglossaryentry{kait}{name=KAIT, description={Katzman Automatic Imaging Telescope}, first={Katzman Automatic Imaging Telescope \citep[KAIT;][]{2001ASPC..246..121F}}}
-\newglossaryentry{loss}{name=LOSS, description={Lick Observatory Supernova Search}, first={Lick Observatory Supernova Search \citep[LOSS;][]{2000AIPC..522..103L}}}
-\newglossaryentry{ctss}{name=CTSS,description={Cal\'{a}n/Tololo supernova survey}, first={Cal\'{a}n/Tololo supernova survey \citep[CTSS;][]{1993AJ....106.2392H}}}
+\newglossaryentry{wfpc2}{name=WFPC2,description={Wide-Field Planetary Camera 2 mounted on the \gls{hst}}, first={Wide-Field Planetary Camera 2 (WFPC2)}}
+\newglossaryentry{acs}{name=ACS,description={Advanced Camera for Surveys mounted on the \gls{hst}}, first={Advanced Camera for Surveys (ACS)}}
+\newglossaryentry{snls}{name=SNLS,description={Supernova Legacy Survey \citep{2003AAS...203.8209P}}, first={Supernova Legacy Survey \citep[SNLS;][]{2003AAS...203.8209P}}}
+\newglossaryentry{dass}{name=DASS, description={Digitized Astronomy Supernova Survey \citep{1975PASP...87..565C}}, first={Digitized Astronomy Supernova Survey \citep[DASS;][]{1975PASP...87..565C}}}
+\newglossaryentry{bait}{name=BAIT, description={Berkley Automatic Imaging Telescope \citep{1993PASP..105.1164R}}, first={Berkley Automatic Imaging Telescope \citep[BAIT;][]{1993PASP..105.1164R}}}
+\newglossaryentry{kait}{name=KAIT, description={Katzman Automatic Imaging Telescope \citep{2001ASPC..246..121F}}, first={Katzman Automatic Imaging Telescope \citep[KAIT;][]{2001ASPC..246..121F}}}
+\newglossaryentry{loss}{name=LOSS, description={Lick Observatory Supernova Search  \citep{2000AIPC..522..103L}}, first={Lick Observatory Supernova Search \citep[LOSS;][]{2000AIPC..522..103L}}}
+\newglossaryentry{ctss}{name=CTSS,description={Cal\'{a}n/Tololo Supernova Survey \citep{1993AJ....106.2392H}}, first={Cal\'{a}n/Tololo supernova survey \citep[CTSS;][]{1993AJ....106.2392H}}}
 \newglossaryentry{ctio}{name= CTIO, description={Cerro Tololo Inter-American Observatory}, first={Cerro Tololo Inter-American Observatory (CTIO)}}
-\newglossaryentry{ptf}{name=PTF, description={Palomar Transient Factory}, first={Palomar Transient Factory \cite[PTF;][]{2009PASP..121.1334R}}}
-\newglossaryentry{batse}{name=BATSE, description={Burst and Transient Source Experiment}, first={Burst and Transient Source Experiment (BATSE)}}
-\newglossaryentry{bepposax}{name=BeppoSAX, description={named in honor of Giuseppe "Beppo" Occhialini}}
+\newglossaryentry{ptf}{name=PTF, description={Palomar Transient Factory \citep{2009PASP..121.1334R}}, first={Palomar Transient Factory \cite[PTF;][]{2009PASP..121.1334R}}}
+\newglossaryentry{batse}{name=BATSE, description={Burst and Transient Source Experiment mounted on the Compton Gamma Ray Observatory}, first={Burst and Transient Source Experiment (BATSE)}}
+\newglossaryentry{bepposax}{name=BeppoSAX, description={\xray\ satellite named in honor of Giuseppe "Beppo" Occhialini}}
+\newglossaryentry{rosat}{name=ROSAT, description={ROSAT???}, first={ROSAT}}
 \newglossaryentry{hete2}{name=HETE2, description={High Energy Transient Explorer}, first={High Energy Transient Explorer (HETE)}}
-\newglossaryentry{swift}{name=SWIFT, description={Swift }}
-\newglossaryentry{evla}{name=EVLA, description={Extended Very Large Array}, first={Extended Very Large Array (EVLA)}}
+\newglossaryentry{gnirs}{name=GNIRS, description={Gemini Near InfraRed Spectrograph mounted on the Gemini North Telescope}}
+\newglossaryentry{wifes}{name=WiFeS, description={Wide Field Spectrograph - \gls{ifu} mounted on the 2.3\,m telescope at Siding Spring Observatory}}
+\newglossaryentry{swift}{name=Swift, description={Swift Gamma-Ray Burst Mission}}
+\newglossaryentry{vla}{name=VLA, description={Very Large Array radio telescope located in North America}, first={Very Large Array (VLA)}}
+\newglossaryentry{evla}{name=EVLA, description={Extended Very Large Array radio telescope located in North America}, first={Extended Very Large Array (EVLA)}}
 \newglossaryentry{sdss}{name=SDSS, description={Sloan Digital Sky Survey}}
 \newglossaryentry{dss}{name=DSS, description={Digitized Sky Survey}}
-\newglossaryentry{skymapper}{name=SkyMapper, description={SkyMapper}, first={SkyMapper \citep{2007PASA...24....1K}}}
-\newglossaryentry{panstarrs}{name=PanSTARRS, description={Panoramic Survey Telescope \& Rapid Response System}, first={Panoramic Survey Telescope \& Rapid Response System \citep[PanSTARRS;][]{2004SPIE.5489...11K}}}
+\newglossaryentry{skymapper}{name=SkyMapper, description={SkyMapper telescope \citep{2007PASA...24....1K}}, first={SkyMapper \citep{2007PASA...24....1K}}}
+\newglossaryentry{panstarrs}{name=PanSTARRS, description={Panoramic Survey Telescope \& Rapid Response System \citep{2004SPIE.5489...11K}}, first={Panoramic Survey Telescope \& Rapid Response System \citep[PanSTARRS;][]{2004SPIE.5489...11K}}}
 \newglossaryentry{lsst}{name=LSST, description={Large Synoptic Survey Telescope}, first={Large Synoptic Survey Telescope \citep[LSST;][]{2006AAS...209.8604P}}}
-\newglossaryentry{gaia}{name=GAIA, description={Global Astrometric Interferometer for Astrophysics}, first={Global Astrometric Interferometer for Astrophysics \citep[GAIA;][]{2001A&A...369..339P}}}
+\newglossaryentry{gaia}{name=GAIA, description={Global Astrometric Interferometer for Astrophysics \citep{2001A&A...369..339P}}, first={Global Astrometric Interferometer for Astrophysics \citep[GAIA;][]{2001A&A...369..339P}}}
 \newglossaryentry{ligo}{name=LIGO, description={Laser Interferometer Gravitational Wave Observatory}, first={Laser Interferometer Gravitational Wave Observatory \citep[LIGO;][]{1992Sci...256..325A}}}
 \newglossaryentry{aligo}{name=Advanced LIGO, description={Advanced LIGO}, sort=ligo2}
-\newglossaryentry{lisa}{name=LISA, description={Laser Interferometer Space Antenna}, first={Laser Interferometer Space Antenna \citep[LISA;][]{1994ESAJ...18..219J}}}
-\newglossaryentry{ccd}{name=CCD,description={charged couple device}, first={charged couple device (CCD)}, firstplural={charged couple devices (CCDs)}}
-%\newglossaryentry{dass}{name=DASS, description={Digitized Astronomy Supernova Survey}}
-%supernova specific
+\newglossaryentry{lisa}{name=LISA, description={Laser Interferometer Space Antenna \citep{1994ESAJ...18..219J}}, first={Laser Interferometer Space Antenna \citep[LISA;][]{1994ESAJ...18..219J}}}
+\newglossaryentry{ccd}{name=CCD,description={Charged Coupled Device}, first={charged couple device (CCD)}, firstplural={charged couple devices (CCDs)}}
+
+
+%supernova object lookup
 \newcommand{\sn}[2]{\object{SN #1#2}}
+\newcommand{\snr}[1]{SNR #1}
 \newcommand{\grb}[1]{GRB #1}
-%\newglossaryentry{sn}{name=SN, description={supernova}}
+
+
 
 % different ias
-\newglossaryentry{snia}{name=SN Ia,description={Type Ia supernova},first={Type Ia supernova (henceforth SN Ia)}, firstplural={Type Ia supernovae (henceforth SNe Ia)}, plural=SNe Ia}
+\newglossaryentry{sn}{name=Supernova, text={SN}, plural={SNe}, description={exploding star}, nonumberlist=true}
+\newglossaryentry{snia}{name=Type~Ia (SN~Ia), text={SN~Ia}, description={Thermonuclear explosion of a white dwarf - spectra show no hydrogen but a strong silicon line},first={Type~Ia supernova (SN~Ia)}, firstplural={Type Ia supernovae (SNe~Ia)}, plural={SNe~Ia}, parent=sn, nonumberlist=true}
 \newcommand{\sneia}{\glspl{snia}}
 \newcommand{\snia}{\gls{snia}}
 
-\newglossaryentry{branchnormal}{name=\textit{branch-normal}, description=bnormal, first={\textit{branch-normal} SNe Ia \citep{1993AJ....106.2383B}}} 
-\newglossaryentry{91t}{name=91T-like, description=91T, first=91T-like} 
-\newglossaryentry{91bg}{name=91bg-like, description=91bg, first=91bg-like} 
-\newglossaryentry{snib}{name=SN Ib,description={Type Ib supernova},first={Type Ib supernova (henceforth SN Ib)}, firstplural={Type Ib supernovae (henceforth SNe Ib)}, plural=SNe Ib}
+\newglossaryentry{branchnormal}{name={branch-normal}, text=\textit{branch-normal}, description={Large homogeneous class of Type Ia Supernovae, defined in \citet{1993AJ....106.2383B}}, first={\textit{branch-normal} SNe Ia \citep{1993AJ....106.2383B}}, parent=snia} 
+\newglossaryentry{91t}{name={91T-like}, description={Luminous class of Type Ia supernovae similar to \sn{1991}{T} \citep{1992AJ....103.1632P}} , first={91T-like}, parent=snia} 
+\newglossaryentry{91bg}{name={91bg-like}, description={Faint class of Type Ia supernovae similar to \sn{1991}{bg} \citep{1992AJ....104.1543F}}, first={91bg-like}, parent=snia} 
+
+\newglossaryentry{snibc}{name=Type~Ib/c,description={Collapse of the core of a massive star -  spectrum shows no hydrogen and no silicon line},first={Type~Ib/c supernova (SN~Ib/c)}, firstplural={Type~Ib/c supernovae (SNe~Ib/c)}, plural={SNe~Ib/c}, parent=sn}
+
+\newglossaryentry{snib}{name=Type~Ib, text={SN~Ib}, description={Spectrum shows no hydrogen and no silicon, but helium line},first={Type Ib supernova (hSN Ib)}, firstplural={Type~Ib supernovae (SNe~Ib)}, plural={SNe~Ib}, parent=snibc}
 \newcommand{\sneib}{\glspl{snib}}
 \newcommand{\snib}{\gls{snib}}
 
-\newglossaryentry{snic}{name=SN Ic,description={Type Ic supernova},first={Type Ic supernova (henceforth SN Ic)}, firstplural={Type Ic supernovae (henceforth SNe Ic)}, plural=SNe Ic}
+\newglossaryentry{snic}{name=Type~Ic,description={Spectrum shows no hydrogen, no silicon and no helium line},first={Type~Ic supernova (SN~Ic)}, firstplural={Type~Ic supernovae (SNe~Ic)}, plural={SNe~Ic}, parent=snibc}
 \newcommand{\sneic}{\glspl{snic}}
 \newcommand{\snic}{\gls{snic}}
 
-\newglossaryentry{snibc}{name=SN Ib/c,description={Type Ib/c supernova},first={Type Ib/c supernova (henceforth SN Ib/c)}, firstplural={Type Ib/c supernovae (henceforth SNe Ib/c)}, plural=SNe Ib/c}
 
-\newglossaryentry{sniiibc}{name=SN II/Ib/c,description={Type II and Type Ib/c supernova}, plural=SNe II/Ib/c}
-
+%\newglossaryentry{sniiibc}{name=SN II/Ib/c,description={Type II and Type Ib/c supernova}, plural=SNe II/Ib/c}
+\newcommand{\sniiibc}{SN~II/Ib/c}
+\newcommand{\sneiiibc}{SNe~II/Ib/c}
 \newcommand{\sneibc}{\glspl{snibc}}
 \newcommand{\snibc}{\gls{snibc}}
 
 
-\newglossaryentry{snii}{name=SN II,description={Type II supernova},first={Type II supernova (henceforth SN II)}, firstplural={Type II supernovae (henceforth SNe II)}, plural=SNe II}
+\newglossaryentry{snii}{name=Type~II, text={SN~II}, description={Collapse of the core of a massive star - spectrum shows strong hydrogen line},first={Type~II supernova (SN~II)}, firstplural={Type~II supernovae (SNe~II)}, plural={SNe~II}, parent=sn}
 \newcommand{\sneii}{\glspl{snii}}
 \newcommand{\snii}{\gls{snii}}
 
-\newglossaryentry{sniib}{name=SN IIb,description={Type IIb supernova},first={Type IIb supernova (SN IIb)}, firstplural={Type IIb supernovae (SNe IIb)}, plural=SNe IIb}
+\newglossaryentry{sniib}{name=Type~IIb, text={SN~IIb}, description={Spectrum shows hydrogen and helium lines},first={Type~IIb supernova (SN~IIb)}, firstplural={Type~IIb supernovae (SNe~IIb)}, plural={SNe~IIb}, see=snib, parent=snii}
 \newcommand{\sneiib}{\glspl{sniib}}
 \newcommand{\sniib}{\gls{sniib}}
 
 %iip
-\newglossaryentry{sniip}{name=SN IIP,description={Type IIP supernova},first={Type IIP supernova (henceforth SN IIP)}, firstplural={Type II Plateau supernovae \citep[SNe IIP;][]{1979A&A....72..287B}}, plural=SNe IIP}
+\newglossaryentry{sniip}{name=Type~II~Plateau (Type IIP), text={SN~IIP}, description={Lightcurve shows plateau},first={Type~IIP supernova (SN~IIP)}, firstplural={Type~II Plateau supernovae \citep[SNe~IIP;][]{1979A&A....72..287B}}, plural={SNe~IIP}, parent=snii}
 \newcommand{\sneiip}{\glspl{sniip}}
 \newcommand{\sniip}{\gls{sniip}}
 
 %iil
-\newglossaryentry{sniil}{name=SN IIL,description={Type IIL supernova},first={Type IIL supernova (henceforth SN IIL)}, firstplural={Type II Linear supernovae \citep[SNe IIL;][]{1990MNRAS.244..269S})}, plural=SNe IIL}
+\newglossaryentry{sniil}{name=SN~II~Linear, text={SN~IIL}, description={Lightcurve shows no plateau, but linear decline},first={Type~IIL supernova (SN~IIL)}, firstplural={Type~II~Linear supernovae \citep[SNe~IIL;][]{1990MNRAS.244..269S})}, plural={SNe~IIL}, parent=snii}
 \newcommand{\sneiil}{\glspl{sniil}}
 \newcommand{\sniil}{\gls{sniil}}
 
 %iin
-\newglossaryentry{sniin}{name=SN IIn,description={Type IIn supernova},first={Type II narrow-lined supernova (SN IIn)}, firstplural={Type IIn supernovae (henceforth SNe IIn)}, plural=SNe IIn}
+\newglossaryentry{sniin}{name=Type II narrow-lined (Type IIn), description={Spectrum shows narrow lines},first={Type~II~narrow-lined supernova (SN IIn)}, firstplural={Type~IIn supernovae (SNe~IIn)}, plural={SNe~IIn}, parent=snii}
 \newcommand{\sneiin}{\glspl{sniin}}
 \newcommand{\sniin}{\gls{sniin}}
+
+\newglossaryentry{snr}{name=Remnant (SNR), text=SNR, description={Remnant left visible post-explosion}, first={supernova remnant (SNR)}, firstplural={supernova remnants (SNRs)}, parent=sn}
 
 
 
 %
 
-\newglossaryentry{dtd}{name=DTD,description={delay time distribution},first={delay time distribution (henceforth DTD)}, firstplural={delay time distributions (henceforth DTDs)}, plural=DTDs}
+\newglossaryentry{dtd}{name=DTD,description={delay time distribution - expected supernova rate over time after a brief outburst of starformation},first={delay time distribution (DTD)}, firstplural={delay time distributions (DTDs)}, plural=DTDs}
 \newcommand{\dtd}{\gls{dtd}}
 
-\newglossaryentry{hvg}{name=HVG,description={high velocity group},first={high velocity group (henceforth HVG)}, firstplural={high velocity groups (henceforth HVGs)}, plural=HVGs}
+\newglossaryentry{hvg}{name=HVG,description={high velocity group - Type Ia supernovae with a high photospheric velocity},first={high velocity group (HVG)}, firstplural={high velocity groups (HVGs)}, plural=HVGs, parent=snia}
 \newcommand{\hvg}{\gls{hvg}}
 
-\newglossaryentry{lvg}{name=LVG,description={low velocity group},first={low velocity group (henceforth LVG)}, firstplural={low velocity groups (henceforth LVGs)}, plural=LVGs}
+\newglossaryentry{lvg}{name=LVG,description={low velocity group - Type Ia supernovae with a low photospheric velocity},first={low velocity group (LVG)}, firstplural={low velocity groups (LVGs)}, plural=LVGs, parent=snia}
 \newcommand{\lvg}{\gls{lvg}}
 
 
-\newglossaryentry{snr}{name=SNR,description={supernova remnant},first={supernova remnant (henceforth SNR)}, firstplural={supernova remnants (henceforth SNRs)}}
-\newcommand{\snr}{\gls{snr}}
 
 %white dwarfs
+\newglossaryentry{wd}{name=White Dwarf (WD), text=WD, description={White Dwarf - extremely dense stellar remnant}, first={white dwarf (WD)}}
+\newglossaryentry{onemgwd}{name= Oxygen/Neon (ONe), text={ONe-WD},description={Oxygen/Neon White Dwarf}, parent=wd}
+\newglossaryentry{cowd}{name=Carbon/Oxygen (CO), text={CO-WD}, description={Carbon/Oxygen White Dwarf}, parent=wd}
 
-\newglossaryentry{onemgwd}{name=ONe-WD,description={Oxygen/Neon White Dwarf}}
-
-\newglossaryentry{cowd}{name=CO-WD, description={Carbon/Oxygen White Dwarf}}
 
 
-%\newglossaryentry{wd}{name=WD,description={White Dwarf}}
 
 
 \newglossaryentry{sds}{name=SD-Scenario,description={single degenerate scenario (single white dwarf accreting from non-degenerate companion)}, first={single degenerate scenario (SD-scenario)}}
-\newglossaryentry{sss}{name=SSS,description={supersoft X-ray source}, firstplural={supersoft X-ray sources (SSS)}}
+
 
 \newglossaryentry{dds}{name=DD-Scenario, description={double degenerate scenario (merging of two white dwarfs)}, first={double degenerate scenario (DD-scenario)}}
 
+\newglossaryentry{sss}{name=SSS,description={supersoft \xray\ source - believed to be emitted by nuclear fusion on a white dwarf's surface}, firstplural={supersoft X-ray sources (SSS)}}
 
 \newglossaryentry{amcvn}{name=AM CVn, description={AM Canum Venaticorum star (white dwarf accreting hydrogen poor matter from a companion star; see \cite{2005ASPC..330...27N})}}
 
 
-\newglossaryentry{rlof}{name=RLOF,description={Roche Lobe Overflow (see \citet{1971ARA&A...9..183P} for a more detailed description)}, first={Roche Lobe Overflow (RLOF)}}
+\newglossaryentry{rlof}{name=RLOF, description={Roche Lobe Overflow (see \citet{1971ARA&A...9..183P} for a more detailed description)}, first={Roche Lobe Overflow (RLOF)}}
 
-\newglossaryentry{mchan}{name=$M_\textrm{Chan}$,description={Chandrasekhar mass ($1.38\,M_\odot$; see \citet{1931ApJ....74...81C})}, first={Chandrasekhar mass \citep[$M_\textrm{Chan}=1.38\,M_\odot$;][]{1931ApJ....74...81C}} sort=mchan}
+\newglossaryentry{mchan}{name=Chandrasekhar Mass, symbol=$M_\textrm{Chan}$, description={Chandrasekhar mass ($1.38\,M_\odot$; see \citet{1931ApJ....74...81C})}, first={Chandrasekhar mass \citep[$M_\textrm{Chan}=1.38\,M_\odot$;][]{1931ApJ....74...81C}} sort=mchan}
 
-\newglossaryentry{w7}{name=W7 model,description={W7},first = {W7 model \citep{1984ApJ...286..644N}}}
+\newglossaryentry{w7}{name={W7 model},description={W7 model \citep{1984ApJ...286..644N}},first = {W7 model \citep{1984ApJ...286..644N}}}
 
 
-
-%\newcommand{\onemgwd}{ONe-WD}
-%\newcommand{\cowd}{CO-WD}
-%\newcommand{\WD}{WD}
-\newcommand{\sd}{SD}
-\newcommand{\dd}{DD}
-%\newcommand{\amcvn}{AM CVn}
-%\newcommand{\sss}{SSS}
-%\newcommand{\rlof}{RLOF}
-%\newcommand{\mchan}{$M_\textrm{Chan}$}
-
-%\newglossaryentry{scp}{name=SCP,description={Supernova Cosmology Project}}
 
 %SN1572 specific 
-\newcommand{\stara}{Tycho-A}
+\newcommand{\stara}{\object[{[RCM2004] Tycho A}]{Tycho-A}}
 \newcommand{\staraii}{Tycho-A2}
-\newcommand{\starb}{Tycho-B}
-\newcommand{\starc}{Tycho-C}
-\newcommand{\stard}{Tycho-D}
-\newcommand{\stare}{Tycho-E}
-\newcommand{\starg}{Tycho-G}
+\newcommand{\starb}{\object[{[RCM2004] Tycho B}]{Tycho-B}}
+\newcommand{\starc}{\object[{[RCM2004] Tycho C}]{Tycho-C}}
+\newcommand{\stard}{\object[{[RCM2004] Tycho D}]{Tycho-D}}
+\newcommand{\stare}{\object[{[RCM2004] Tycho E}]{Tycho-E}}
+\newcommand{\starg}{\object[{[RCM2004] Tycho G}]{Tycho-G}}
 
 %\def\m15{\ensuremath{\Delta\,M_{15}}}
 %\newcommand{\mym}[1][15]{\ensuremath{\Delta\,M_{#1}}}
@@ -277,61 +307,53 @@
 \newcommand{\citesfit}{\citep{2001A&A...376..497J}}
 
 %general astrophysics
-\newglossaryentry{agb}{name=AGB,description={asymptotic giant branch}}
-\newglossaryentry{csm}{name=CSM,description={circumstellar medium}, first={circumstellar medium (CSM)}}
-\newglossaryentry{csi}{name=CSI,description={circumstellar interaction}, first={circumstellar interaction (CSI)}}
-\newglossaryentry{ism}{name=ISM,description={interstellar medium}, first={interstellar medium (ISM)}}
-\newglossaryentry{ige}{name=IGE,description={iron group element}, first={iron group element (IGE)}, firstplural={iron group elements (IGEs)}}
-\newglossaryentry{epm}{name=EPM,description={Expanding Photosphere Method}, first={Expanding Photosphere Method (EPM)}}
+\newglossaryentry{ew}{name=Equivalent Width, text={EW}, description={width of a rectangle that has the same area as a spectral line when taken to zero flux}, first={equivalent width (EW)}, firstplural={equivalent widths (EWs)}}
+\newglossaryentry{agb}{name=AGB,description={Asymptotic Giant Branch}}
+\newglossaryentry{csm}{name=CSM,description={Circumstellar Medium}, first={circumstellar medium (CSM)}}
+\newglossaryentry{csi}{name=CSI,description={Circumstellar Interaction}, first={circumstellar interaction (CSI)}}
+\newglossaryentry{ism}{name=ISM,description={Interstellar Medium}, first={interstellar medium (ISM)}}
+\newglossaryentry{ige}{name=IGE,description={Iron Group Element}, first={iron group element (IGE)}, firstplural={iron group elements (IGEs)}}
+\newglossaryentry{epm}{name=EPM,description={Expanding Photosphere Method \citep{1974ApJ...193...27K}}, first={Expanding Photosphere Method (EPM)}}
 \newglossaryentry{aic}{name=AIC,description={Accretion Induced Collapse}, first={accretion induced collapse (AIC)}}
-\newglossaryentry{ime}{name=IME,description={intermediate mass element}, first={intermediate mass element (IME)}, firstplural={intermediate mass elements (IMEs)}}
+\newglossaryentry{ime}{name=IME,description={Intermediate Mass Element}, first={intermediate mass element (IME)}, firstplural={intermediate mass elements (IMEs)}}
 \newglossaryentry{h0}{name=\ensuremath{H_0},description={Hubbles constant}}
-\newglossaryentry{nse}{name=NSE,description={nuclear statistical equilibrium}, first={nuclear statistical equilibrium (NSE)}}
+\newglossaryentry{nse}{name=NSE,description={Nuclear Statistical Equilibrium}, first={nuclear statistical equilibrium (NSE)}}
 \newglossaryentry{cdm}{name=CDM,description={Cold Dark Matter}}
 \newglossaryentry{grb}{name=GRB,description={Gamma Ray Burst}, first={Gamma Ray Burst (GRB)}, firstplural={Gamma Ray Bursts (GRBs)}}
-\newglossaryentry{mlcs}{name=mlcs,description={Multicolor Light-Curve Shape}, first={Multicolor Light-Curve Shape method \citep[MLCS;][]{1996ApJ...473...88R}}}
-\newglossaryentry{rsoph}{name=RS Oph ,description={RS??}}
-\newglossaryentry{usco}{name=U Sco,description={U??}}
-\newglossaryentry{casa}{name=Cas A,description={Cassiopeia A}}
-\newglossaryentry{cepheid}{name=Cepheid,description={Cepheid}}
-\newglossaryentry{urca}{name=\textit{Urca}, description={process predominatly contributing to cooling. The \textit{Urca} process consists of alternating electron-capture and $\beta^{-}$ decay of two nuclei pairs.},sort=urca} 
-\newglossaryentry{alphacen}{name=Alpha Centauri,description={Alpha Centauri}}
-\newglossaryentry{pcygni}{name=P Cygni,description={a hypergiant luminous blue variable with strong winds. often referred to as a description for line profiles}}
-\newglossaryentry{teff}{name=\ensuremath{T_\textrm{eff}}, description={effective temperature - Temperature of a blackbody emitting the same total energy.}, sort=teff}
-\newglossaryentry{logg}{name=\ensuremath{\log{g}},description={surface gravity}}
-\newglossaryentry{feh}{name=[Fe/H],description={iron abundance relative to the sun}, sort=feh}
+\newglossaryentry{donor}{name=donor,description={Donor}}
+\newglossaryentry{mainsequence}{name=main sequence,description={main sequence star}}
+\newglossaryentry{redgiant}{name=red giant,description={red giant star}}
+\newglossaryentry{mlcs}{name=MLCS,description={Multicolor Light Curve Shape method \citep[MLCS;][]{1996ApJ...473...88R}}, first={Multicolor Light-Curve Shape method \citep[MLCS;][]{1996ApJ...473...88R}}}
+\newglossaryentry{rsoph}{name=\object[rs oph]{RS Ophiuci} ,description={white dwarf accreting from a red giant - assumed progenitor of the \gls{sds}}, sort=rsoph}
+\newglossaryentry{usco}{name=\object{U Scorpii},description={white dwarf accreting from a main sequence star - assumed progenitor of the \gls{sds}}, sort=usco}
+\newglossaryentry{rcw86}{name=\object[SNR G315.0-02.3]{RCW 86},description={supernova remnant sometimes associated with \sn{185}{}}, sort=rcw86}
+\newglossaryentry{casa}{name=\object{Cas A},description={Cassiopeia A supernova remnant - probably a \gls{snib} event}}
+\newglossaryentry{cepheid}{name=Cepheid,description={very luminous variable star with a strong luminosity period relationship}}
+\newglossaryentry{urca}{name=Urca, text=\textit{Urca}, description={process predominatly contributing to cooling in stars. The \textit{Urca} process consists of alternating electron-capture and $\beta^{-}$ decay of two nuclei pairs.},sort=urca} 
+\newglossaryentry{alphacen}{name=\object{Alpha Centauri},description={one of the brightest stars in the night sky and a close binary}}
+\newglossaryentry{pcygni}{name={P Cygni}, text=\object{P Cygni},description={a hypergiant luminous blue variable with strong winds. often referred to as a description for line profiles}}
+\glsdisablehyper{
+\newglossaryentry{teff}{name=effective temperature, symbol={\ensuremath{T_\textrm{eff}}}, description={effective temperature - Temperature of a blackbody emitting the same total energy}, sort=teff}}
+\glsenablehyper{
+\newglossaryentry{logg}{name=surface gravity, symbol=\ensuremath{\textrm{log}\,g}, description={surface gravity}, sort=logg}}
+\newglossaryentry{feh}{name=iron abundance, symbol=\textrm{[Fe/H]},description={iron abundance relative to the sun}, sort=feh}
+
+\glsenablehyper{
 \newglossaryentry{texp}{name=\ensuremath{t_{\rm exp}},description={time since explosion (measured in days)}}
-\newglossaryentry{lmc}{name=LMC,description={Large Magellanic Cloud}, first={Large Magellanic Cloud (LMC)}}
-\newglossaryentry{smc}{name=SMC,description={Small Magellanic Cloud}}
-\newglossaryentry{wd}{name=WD, description={extremely dense stellar remnant}, first={white dwarf (WD)}}
+\newglossaryentry{lmc}{name=\object{LMC},description={Large Magellanic Cloud}, first={Large Magellanic Cloud (LMC)}, sort=lmc}
+\newglossaryentry{smc}{name=\object{SMC},description={Small Magellanic Cloud}, sort=smc}
 \newglossaryentry{z}{name=\ensuremath{z},description={redshift}, sort=z}
-%\newcommand{\lmc}{LMC}
-%\newcommand{\smc}{SMC}
-
-
-%\newcommand{\agb}{AGB}
-%\newcommand{\csm}{CSM}
-%\newcommand{\csi}{CSI}
-%\newcommand{\ism}{ISM}
-%\newcommand{\ige}{IGE}
-%\newcommand{\nse}{NSE}
-%\newcommand{\ime}{IME}
-
-%\newcommand{\grb}{GRB}
-%\newcommand{\pcygni}{P Cygni}
-%\newcommand{\urca}{\gls{urca}}
-%\newcommand{\teff}{\ensuremath{T_{\rm eff}}}
-%\newcommand{\logg}{\ensuremath{\log{g}}}
-%\newcommand{\feh}{[Fe/H]}
+\newcommand{\teff}{\glssymbol{teff}}
+\newcommand{\logg}{\glssymbol{logg}}
+\newcommand{\feh}{\glssymbol{feh}}
 \newcommand{\lum}{\ensuremath{L}}
-%\newcommand{\texp}{\ensuremath{t_{\rm exp}}}
 \newcommand{\loglbol}{\ensuremath{\log{L/L_\odot}}}
 
 %dalek chapter
 \newglossaryentry{ga}{name=GA,description={genetic algorithm}}
 
 \newglossaryentry{individual}{name=individual,description={single representation of a parameter set}}
-\newglossaryentry{gene}{name=gene,description={Genetic Algorithm term for an individual parameter}}
+\newglossaryentry{gene}{name=gene, description={Genetic Algorithm term for an individual parameter}}
 \newglossaryentry{genome}{name=genome,description={describes the parameter set of an indivdual}}
 \newglossaryentry{fitness}{name=fitness,description={goodness of fit term in Genetic Algorithms}}
 \newglossaryentry{genotype}{name=genotype,description={vectorized representation of the parameters}}
@@ -341,7 +363,7 @@
 \newglossaryentry{child}{name=child, plural=children, description={member of the new generation created by parents (members of the old generation)}}
 \newglossaryentry{parent}{name=parent, description={member of the old generation creating a child (member of the next generation)}}
 \newglossaryentry{api}{name=API, description={application program interface}, first={application program interface (API)}}
-\newglossaryentry{nfl}{name=`No Free Lunch', description={`No Free Lunch' theorem described in \citet{DBLP:journals/tec/DolpertM97}}, first={`No Free Lunch' theorem \citep{DBLP:journals/tec/DolpertM97}}, sort=nofreelunch}
+\newglossaryentry{nfl}{name=No Free Lunch Theorem, text=`No Free Lunch', description={`No Free Lunch' theorem described in \citet{DBLP:journals/tec/DolpertM97}}, first={`No Free Lunch' theorem \citep{DBLP:journals/tec/DolpertM97}}, sort=nofreelunch}
 \newglossaryentry{superindividual}{name=\textit{superindividual},description={Individual with extremely high fitness, which has only one parameter close to optimal}, sort=superindividual}
 \newglossaryentry{elitism}{name=elitism,description={elitism}}
 \newglossaryentry{rws}{name=RWS,description={roulette wheel selection}, first={roulette wheel selection (RWS)}}
@@ -490,6 +512,7 @@
 \let\apjlett=\apjl
 \let\apjsupp=\apjs
 \let\applopt=\ao
+
 
 %%% Local Variables:
 %%% TeX-master: "thesis.tex"

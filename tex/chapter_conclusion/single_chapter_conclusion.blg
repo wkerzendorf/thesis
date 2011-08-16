@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99d (TeX Live 2011)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: single_chapter_conclusion.aux
+A level-1 auxiliary file: chapter_conclusion.aux
+The style file: astroads.bst
+Database file #1: thesis.bib
+Warning--I didn't find a database entry for "2008ApJ...689..231V"
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+You've used 15 entries,
+            3098 wiz_defined-function locations,
+            751 strings with 9421 characters,
+and the built_in function-call counts, 7649 in all, are:
+= -- 562
+> -- 607
+< -- 2
++ -- 205
+- -- 190
+* -- 753
+:= -- 1422
+add.period$ -- 15
+call.type$ -- 15
+change.case$ -- 106
+chr.to.int$ -- 15
+cite$ -- 15
+duplicate$ -- 305
+empty$ -- 455
+format.name$ -- 240
+if$ -- 1468
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 15
+newline$ -- 85
+num.names$ -- 60
+pop$ -- 116
+preamble$ -- 1
+purify$ -- 106
+quote$ -- 0
+skip$ -- 224
+stack$ -- 0
+substring$ -- 297
+swap$ -- 0
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 135
+warning$ -- 0
+while$ -- 47
+width$ -- 0
+write$ -- 186
+(There was 1 warning)

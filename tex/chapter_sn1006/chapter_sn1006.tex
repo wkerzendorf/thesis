@@ -1,4 +1,4 @@
-% !TEX root = single_chapter_sn1006.tex
+% !TEX root = ../thesis.tex
 \chapter{Progenitor search in SN 1006}
 \label{chap:sn1006}
 
@@ -27,7 +27,7 @@ For the spectroscopy survey we chose the \gls{vlt} instrument FLAMES, which prov
 \begin{figure}[htbp] %  figure placement: here, top, bottom, or page
    \centering
    \includegraphics[width=0.8\textwidth]{chapter_sn1006/plots/sn1006_overlay_withsm.pdf} 
-   \caption{Optical DSS image with radio contour overlay (VLA). The black circles in the center show the 79 program stars. Additionally we have marked the `spurious` donor the \smstar.}
+   \caption[Overview of candidates and remnantin SN 1006]{Optical DSS image with radio contour overlay (VLA). The black circles in the center show the 79 program stars. Additionally we have marked the `spurious` donor the \smstar.}
    \label{fig:overview_sn1006}
 \end{figure}
 In addition to our night time calibration, which included simultaneous arc exposures with four fibres for each observation block, we received standard daytime calibrations. In total, 13 observation blocks with an exposure time of 2775 s each were obtained. Table \ref{tab:observations} provides the Observing ID, modified julian date, mean seeing, mean airmass, setup name and heliocentric correction for all observations (all data is available under ESO Program ID: 083.D-0805(A)). Due to broken fibres not all stars where observed for the expected length of time. Broken fibres caused \candstar{31} not to be observed at all in this sample (see Figure \ref{fig:zoomed_overview_sn1006}). On the other hand \candstar{31} with $V=17.87$ is also not considered a candidate.
@@ -36,7 +36,7 @@ In addition to our night time calibration, which included simultaneous arc expos
 \begin{figure}[htbp] %  figure placement: here, top, bottom, or page
    \centering
    \includegraphics[width=0.8\textwidth]{chapter_sn1006/plots/overview_labeled_sn1006.pdf} 
-   \caption{V-Band image taken by the 2.3m Telescope. We have marked \candstar{31}, which was not observed due to broken fibres, with a blue circle. With the a brightness of V=17.87 \candstar{31} is much fainter than \lsun(V) at the distance of 2.2\,\kpc and would not be considered a donor star candidate.}
+   \caption[Close-up of the candidates in SN 1006] {V-Band image taken by the 2.3m Telescope. We have marked \candstar{31}, which was not observed due to broken fibres, with a blue circle. With the a brightness of V=17.87 \candstar{31} is much fainter than \lsun(V) at the distance of 2.2\,\kpc and would not be considered a donor star candidate.}
    \label{fig:overview_sn1006}
 \end{figure}
 
@@ -50,7 +50,7 @@ The measured magnitudes were supplemented with near infrared magnitudes from the
 \begin{figure}[htbp] %  figure placement: here, top, bottom, or page
    \centering
    \includegraphics[width=0.7\textwidth]{chapter_sn1006/plots/color_bv_vk.pdf} 
-   \caption{Considering the error bars and upper limits for some stars all of the objects lie pretty well on the stellar locus}
+   \caption[Colour-colour plot of all candidates in SN 1006 to check photometry]{Colour-colour plot of all candidates in SN 1006 to check photometry. Considering the error bars and upper limits for some stars all of the objects lie pretty well on the stellar locus}
    \label{fig:colour_check}
 \end{figure}
 
@@ -64,7 +64,7 @@ We have also computed temperatures from photometric colours by using the polynom
 \begin{figure}[tb] %  figure placement: here, top, bottom, or page
    \centering
    \includegraphics[width=0.7\textwidth]{chapter_sn1006/plots/sn1006_vrad_besancon.pdf} 
-   \caption{Comparison of all candidate stars with the distribution of stars taken from the the Besan\c{c}on kinematic model. The model input parameters were a search area of 1 square degree around the center of \sn{1006}{} and a magnitude limit of $10<\textrm{V}<17.5$}
+   \caption[Radial velocity of all candidates in SN 1006 compared with Besan\c{c}on Model]{Comparison of all candidate stars with the distribution of stars taken from the the Besan\c{c}on kinematic model. The model input parameters were a search area of 1 square degree around the center of \sn{1006}{} and a magnitude limit of $10<\textrm{V}<17.5$}
    \label{fig:sn1006_vrad_comp}
 \end{figure}
 
@@ -90,7 +90,7 @@ We realized that in Fourier space it becomes much easier to determine repetitive
      F(f_\textrm{spectrum} \otimes g_\textrm{rotation} \otimes h_\textrm{instrument}) =& F(f_\textrm{spectrum}) \times F(g_\textrm{rotation}) \times F(h_\textrm{instrument})\\
      \Rightarrow \frac{F(f_\textrm{observed})}{F(f_\textrm{synthetic})} \approx& F(f_\textrm{profile}),
 \end{align*}
-where $F$ denotes the Fourier transform. This yields the line profile which we can roughly separate into the instrument profile (using prior knowledge about the resolution of the instrument) and a rotational kernel . This technique is by no means a new idea. It has been described by a selection of authors \citep[e.g.][]{1977ApJ...211..198G}. This is the basic method that \textit{fxcor} relies on. \textit{fxcor} however only measures the peak of the profile to estimate the radial velocity. Our collaborator John Laird has used this technique to successfully extract the rotation for some of the stars were the quality of the spectra was adequate (see Table \ref{tab:sn1006_kinem}).
+where $F$ denotes the Fourier transform. This yields the line profile which we can roughly separate into the instrument profile (using prior knowledge about the resolution of the instrument) and a rotational kernel . This technique is by no means a new idea. It has been described by a selection of authors \citep[e.g.][]{1977ApJ...211..198G}. This is the basic method that \textsc{Fxcor} relies on. \textsc{Fxcor} however only measures the peak of the profile to estimate the radial velocity. Our collaborator John Laird has used this technique to successfully extract the rotation for some of the stars were the quality of the spectra was adequate (see Table \ref{tab:sn1006_kinem}).
 
 
 \subsection{Stellar Parameters}
@@ -106,12 +106,12 @@ The stellar parameters can be seen in Figure \ref{fig:sn1006_stelparam} and in t
 \input{chapter_sn1006/tables/stelparam_table.tex}
 
 \section{Conclusions}
-In this work we have scrutinized stars to a limit of $0.5\,\lsun(V)$ at the distance of the remnant. None of the stars scrutinized in our sample are consistent with the donor star model of \citet{2000ApJS..128..615M} and \citet{2008A&A...489..943P}. For the radial velocity measurements we have shown that the radial velocities of all stars is consistent with a distribution in the direction of \sn{1006}{}. Comparing the radial velocity measurements to donor models like \citep[see Figure \ref{fig:han2008_vrad}][]{2008ApJ...677L.109H} is difficult due to the intrinsically large velocity scatter in the direction of \sn{1006}{}. We however note, that we could see the large escape velocity of a main sequence star ($v\approx170\,\kms$). The radial velocity measurements were already ambiguous in \sn{1572}{} and thus we looked for an additional feature namely rotation to discriminate between donor and unrelated stars. None of the stars in our sample have a rotation above $v\sin{i}=16\,\kms$. We compare these results with the distribution of expected rotational velocities from \citet{2008ApJ...677L.109H} in Figure \ref{fig:han2008_vrot_compare}. Again, none of the stars are reconcilable with the donor star models. There is however the caveat of loosing rotation due to expansion (see in \ref{sec:sn1572_starg_rotation}). This is apriori unlikely (priv. comm. Chris Tout). Finally one could argue that tje measurements by \citet[see Figure \ref{fig:sn1006_uvprobe}]{2005ApJ...624..189W} cast doubt on a precise determination of the center. Their research suggests that the center of the iron core is offset from the geometric center determined by the shocked \gls{ism}. We however argue that this does not mean that the center of mass (where a donor star would reside) is necessarily offcenter. In fact, \cite{2010ApJ...708.1703M} suggest that the iron ejecta is offset from the center of mass, which suggests that the center of the iron core will be different than the center of mass. In summary, this caveat is probably not easily resolved and we will have to hope that our generous choice in radius around the geometric center incorporates any such errors. In addition, other groups are also currently surveying \sn{1006}{} with a larger but photometrically shallower field (priv. comm. Pilar Ruiz-Lapuente) have also not turned up a viable companion. In summary our research shows a consistent result to \sn{1572}{} - no identifiable donor star.
+In this work we have scrutinized stars to a limit of $0.5\,\lsun(V)$ at the distance of the remnant. None of the stars scrutinized in our sample are consistent with the donor star model of \citet{2000ApJS..128..615M} and \citet{2008A&A...489..943P}. For the radial velocity measurements we have shown that the radial velocities of all stars is consistent with a distribution in the direction of \sn{1006}{}. Comparing the radial velocity measurements to donor models like (see Figure \vref{fig:han2008_vrad}]) is difficult due to the intrinsically large velocity scatter in the direction of \sn{1006}{}. We however note, that we could see the large escape velocity of a main sequence star ($v\approx170\,\kms$). The radial velocity measurements were already ambiguous in \sn{1572}{} and thus we looked for an additional feature namely rotation to discriminate between donor and unrelated stars. None of the stars in our sample have a rotation above $v\sin{i}=16\,\kms$. We compare these results with the distribution of expected rotational velocities from \citet{2008ApJ...677L.109H} in Figure \ref{fig:han2008_vrot_compare}. Again, none of the stars are reconcilable with the donor star models. There is however the caveat of loosing rotation due to expansion (see Section \ref{sec:sn1572_starg_rot}). This is apriori unlikely (priv. comm. Chris Tout). Finally one could argue that tje measurements by \citet[see Figure \ref{fig:sn1006_uvprobe}]{2005ApJ...624..189W} cast doubt on a precise determination of the center. Their research suggests that the center of the iron core is offset from the geometric center determined by the shocked \gls{ism}. We however argue that this does not mean that the center of mass (where a donor star would reside) is necessarily offcenter. In fact, \cite{2010ApJ...708.1703M} suggest that the iron ejecta is offset from the center of mass, which suggests that the center of the iron core will be different than the center of mass. In summary, this caveat is probably not easily resolved and we will have to hope that our generous choice in radius around the geometric center incorporates any such errors. In addition, other groups are also currently surveying \sn{1006}{} with a larger but photometrically shallower field (priv. comm. Pilar Ruiz-Lapuente) have also not turned up a viable companion. In summary our research shows a consistent result to \sn{1572}{} - no identifiable donor star.
 
 \begin{figure}[tb] %  figure placement: here, top, bottom, or page
    \centering
    \includegraphics[width=0.7\textwidth]{chapter_sn1006/plots/compare_vrot.pdf} 
-   \caption{Comparison of the evolutionary state and rotational velocity of 55000 binary synthesis \glsentryname{sds} progenitors \citep[gray shades;data from][]{2008ApJ...677L.109H} with the measured rotation from this work. Due to the resolution of the spectrograph most of these stars only have an upper limit of the rotation speed of $\vrot=10\,\kms$}
+   \caption[Comparison of rotation and surface gravity of SN 1006 candidates]{Comparison of the evolutionary state and rotational velocity of 55000 binary synthesis \glsentryname{sds} progenitors \citep[gray shades;data from][]{2008ApJ...677L.109H} with the measured rotation from this work. Due to the resolution of the spectrograph most of these stars only have an upper limit of the rotation speed of $\vrot=10\,\kms$}
    \label{fig:han2008_vrot_compare}
 \end{figure}
 
@@ -119,7 +119,7 @@ In this work we have scrutinized stars to a limit of $0.5\,\lsun(V)$ at the dist
 \begin{figure}[htbp] %  figure placement: here, top, bottom, or page
    \centering
    \includegraphics[width=0.7\textwidth]{chapter_sn1006/plots/Winkler2005_probingsn1006_cropped.pdf} 
-   \caption{Background UV sources probing the remnant. Figure adapted from \citet{2005ApJ...624..189W}}
+   \caption[Background UV sources probing the remnant]{Background UV sources probing the remnant. Figure adapted from \citet{2005ApJ...624..189W}}
    \label{fig:sn1006_uvprobe}
 \end{figure}
 

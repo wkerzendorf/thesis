@@ -1,24 +1,24 @@
 \select@language {british}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {2.1}{\ignorespaces Proper motions of stars within $45^{\prime \prime }$ of the Tycho SNR center.\relax }}{43}{table.caption.27}
+\contentsline {table}{\numberline {2.1}{\ignorespaces Proper motions of stars within $45^{\prime \prime }$ of the Tycho SNR center.\relax }}{44}{table.caption.24}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Observations of Stars}}{53}{table.caption.30}
-\contentsline {table}{\numberline {3.2}{\ignorespaces Proper motion of Candidates}}{55}{table.caption.31}
-\contentsline {table}{\numberline {3.3}{\ignorespaces Radial velocities}}{56}{table.caption.33}
-\contentsline {table}{\numberline {3.4}{\ignorespaces Stellar Parameters}}{59}{table.caption.36}
-\contentsline {table}{\numberline {3.5}{\ignorespaces Tycho-B\ abundances}}{60}{table.caption.38}
-\contentsline {table}{\numberline {3.6}{\ignorespaces Distances, Ages and Masses of candidate stars}}{62}{table.caption.41}
-\contentsline {table}{\numberline {3.7}{\ignorespaces Measured equivalent widths from the Keck HIRES spectra}}{67}{table.caption.42}
+\contentsline {table}{\numberline {3.1}{\ignorespaces Observations of Stars}}{53}{table.caption.27}
+\contentsline {table}{\numberline {3.2}{\ignorespaces Proper motion of Candidates}}{55}{table.caption.28}
+\contentsline {table}{\numberline {3.3}{\ignorespaces Radial velocities}}{56}{table.caption.30}
+\contentsline {table}{\numberline {3.4}{\ignorespaces Stellar Parameters}}{59}{table.caption.33}
+\contentsline {table}{\numberline {3.5}{\ignorespaces Measured EWs from the Keck HIRES spectra}}{60}{table.caption.34}
+\contentsline {table}{\numberline {3.6}{\ignorespaces \object [{[RCM2004] Tycho B}]{Tycho-B}\ abundances}}{61}{table.caption.36}
+\contentsline {table}{\numberline {3.7}{\ignorespaces Distances, Ages and Masses of candidate stars}}{63}{table.caption.39}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Flames Observations of SN1006 program stars}}{72}{table.caption.44}
-\contentsline {table}{\numberline {4.2}{\ignorespaces SN 1006 candidates ($V<17.5$) stellar parameters}}{77}{table.caption.48}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Flames Observations of SN1006 program stars}}{70}{table.caption.41}
+\contentsline {table}{\numberline {4.2}{\ignorespaces SN 1006 candidates ($V<17.5$) stellar parameters}}{75}{table.caption.45}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Parameters for best fit}}{91}{table.caption.56}
-\addvspace {10\p@ }
-\addvspace {10\p@ }
+\contentsline {table}{\numberline {5.1}{\ignorespaces Parameters for best fit}}{89}{table.caption.53}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {C.1}{\ignorespaces \object {SN 1006\ }optical photometry (Candidates with $V<17.5$ marked with gray)}}{145}{table.3.1}
-\contentsline {table}{\numberline {C.2}{\ignorespaces SN 1006 infrared photometry (Candidates with $V<17.5$ marked in gray)}}{147}{table.3.2}
-\contentsline {table}{\numberline {C.3}{\ignorespaces SN 1006 candidate kinematics with statistical errors and number of measurements (candidates with $V<17.5$ marked in gray)}}{149}{table.3.3}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {C.1}{\ignorespaces \object {SN 1006\ }optical photometry (Candidates with $V<17.5$ marked with gray)}}{143}{table.1.C.1}
+\contentsline {table}{\numberline {C.2}{\ignorespaces SN 1006 infrared photometry (Candidates with $V<17.5$ marked in gray)}}{146}{table.1.C.2}
+\contentsline {table}{\numberline {C.3}{\ignorespaces SN 1006 candidate kinematics with statistical errors}}{148}{table.1.C.3}

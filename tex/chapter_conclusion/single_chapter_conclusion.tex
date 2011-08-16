@@ -123,6 +123,8 @@
 \usepackage{microtype}
 % bibliography uses natbib, this will be a requirement
 \usepackage[round]{natbib}
+\usepackage{varioref}
+
 % Super-nice looking tables, better than deluxetable
 \usepackage{longtable,booktabs,multirow,ctable}
 %\usepackage{deluxetable}
@@ -149,7 +151,7 @@
 % The hyperref package is a must while editing.  It provides urls
 % inside your document; you can then click to go to certain pages,
 % figures or bibliography entries.
-\usepackage[unicode,pageanchor,colorlinks,plainpages=false]{hyperref}
+\usepackage[unicode,pageanchor,colorlinks=false,plainpages=false]{hyperref}
 % \hypersetup{pdftitle=\thesistitle\ - \shortname,%
 %   pdfauthor=\fullname,%
 %   pdfsubject={\thesissubjects},%
@@ -165,6 +167,10 @@ pdfsubject={\thesissubjects},%
 %linkcolor=blue,%
 %urlcolor=blue%
 }
+
+\usepackage{glossaries}
+\makeglossaries
+\usepackage{xstring}
 % Drop capitals at the start of chapters
 \usepackage{lettrine}
 % Allow defining of colours. Useful for:
@@ -282,6 +288,7 @@ pdfsubject={\thesissubjects},%
 %\include{chapter5/chapter5}
 
 %
+\printglossaries
 \bibliographystyle{astroads}
 \bibliography{thesis}
 

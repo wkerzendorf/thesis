@@ -1,60 +1,60 @@
 \select@language {british}
 \contentsline {section}{Disclaimer}{i}{section*.1}
-\contentsline {section}{Abstract}{iii}{section*.2}
+\contentsline {section}{Abstract}{iv}{section*.2}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Ancient Supernovae}{1}{section.1.1}
-\contentsline {section}{\numberline {1.2}Modern Supernova Observations and Surveys}{4}{section.1.2}
-\contentsline {section}{\numberline {1.3}Observational Properties of Supernovae}{7}{section.1.3}
-\contentsline {subsection}{\numberline {1.3.1}Supernova classification}{7}{subsection.1.3.1}
+\contentsline {section}{\numberline {1.2}Modern Supernova Observations and Surveys}{5}{section.1.2}
+\contentsline {section}{\numberline {1.3}Observational Properties of Supernovae}{8}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}Supernova classification}{8}{subsection.1.3.1}
 \contentsline {subsection}{\numberline {1.3.2}Supernova rates}{11}{subsection.1.3.2}
 \contentsline {subsection}{\numberline {1.3.3}Light curves}{13}{subsection.1.3.3}
 \contentsline {subsection}{\numberline {1.3.4}Spectra}{14}{subsection.1.3.4}
-\contentsline {subsubsection}{SNe Ia spectra}{14}{section*.14}
-\contentsline {paragraph}{Pre-Maximum Phase}{15}{section*.14}
-\contentsline {paragraph}{Maximum Phase}{16}{figure.caption.15}
-\contentsline {paragraph}{Post-Maximum phase}{16}{figure.caption.15}
-\contentsline {paragraph}{Nebular-Phase}{16}{figure.caption.16}
-\contentsline {subsubsection}{SNe II Spectra}{17}{figure.caption.16}
+\contentsline {subsubsection}{SNe Ia spectra}{15}{subsection.1.3.4}
+\contentsline {paragraph}{Pre-Maximum Phase}{15}{subsection.1.3.4}
+\contentsline {paragraph}{Maximum Phase}{15}{figure.caption.14}
+\contentsline {paragraph}{Post-Maximum phase}{16}{figure.caption.14}
+\contentsline {paragraph}{Nebular-Phase}{16}{figure.caption.15}
+\contentsline {subsubsection}{SNe II Spectra}{16}{figure.caption.15}
 \contentsline {subsection}{\numberline {1.3.5}X-Ray \& Radio observations}{17}{subsection.1.3.5}
 \contentsline {subsection}{\numberline {1.3.6}Supernova Cosmology}{18}{subsection.1.3.6}
-\contentsline {paragraph}{SN II Cosmology}{18}{subsection.1.3.6}
-\contentsline {paragraph}{SN Ia Cosmology}{18}{subsection.1.3.6}
-\contentsline {subsection}{\numberline {1.3.7}Post-explosion observations of Supernovae}{19}{subsection.1.3.7}
+\contentsline {paragraph}{SN II Cosmology}{19}{subsection.1.3.6}
+\contentsline {paragraph}{SN Ia Cosmology}{19}{subsection.1.3.6}
+\contentsline {subsection}{\numberline {1.3.7}Post-explosion observations of Supernovae}{20}{subsection.1.3.7}
 \contentsline {section}{\numberline {1.4}Core-Collapse Supernova Theory}{21}{section.1.4}
 \contentsline {subsection}{\numberline {1.4.1}Evolution of Massive Stars}{21}{subsection.1.4.1}
 \contentsline {subsection}{\numberline {1.4.2}Core collapse}{22}{subsection.1.4.2}
-\contentsline {subsection}{\numberline {1.4.3}Pair instability}{23}{subsection.1.4.3}
+\contentsline {subsection}{\numberline {1.4.3}Pair Instability Supernova}{23}{subsection.1.4.3}
 \contentsline {subsection}{\numberline {1.4.4}Type II Supernovae}{23}{subsection.1.4.4}
-\contentsline {subsection}{\numberline {1.4.5}Type Ib/c supernovae}{24}{subsection.1.4.5}
+\contentsline {subsection}{\numberline {1.4.5}Type Ib/c Supernovae}{24}{subsection.1.4.5}
 \contentsline {section}{\numberline {1.5}Thermonuclear Supernova Theory}{24}{section.1.5}
 \contentsline {subsection}{\numberline {1.5.1}Progenitors of Type Ia Supernovae}{24}{subsection.1.5.1}
-\contentsline {subsubsection}{Single Degenerate Scenario}{24}{section*.18}
-\contentsline {subsubsection}{Donor Stars}{25}{section*.18}
-\contentsline {subsubsection}{Double Degenerate Scenario}{27}{figure.caption.20}
+\contentsline {subsubsection}{Single Degenerate Scenario}{24}{subsection.1.5.1}
+\contentsline {subsubsection}{Donor Stars}{25}{subsection.1.5.1}
+\contentsline {subsubsection}{Double Degenerate Scenario}{27}{figure.caption.18}
 \contentsline {subsection}{\numberline {1.5.2}Evolution and Explosion of Type Ia Supernovae}{27}{subsection.1.5.2}
-\contentsline {subsubsection}{White Dwarfs}{27}{section*.21}
-\contentsline {subsubsection}{Pre-supernova evolution}{28}{section*.21}
+\contentsline {subsubsection}{White Dwarfs}{27}{subsection.1.5.2}
+\contentsline {subsubsection}{Pre-supernova evolution}{28}{subsection.1.5.2}
 \contentsline {subsubsection}{Explosion mechanisms}{28}{equation.1.5.4}
 \contentsline {paragraph}{Ignition}{28}{equation.1.5.4}
 \contentsline {paragraph}{Thermonuclear Explosion}{29}{equation.1.5.4}
-\contentsline {paragraph}{sub-Chandrasekhar-mass detonations}{29}{figure.caption.22}
-\contentsline {paragraph}{super-Chandraskehar-mass detonations}{29}{figure.caption.23}
+\contentsline {paragraph}{sub-Chandrasekhar-mass detonations}{29}{figure.caption.19}
+\contentsline {paragraph}{super-Chandraskehar-mass detonations}{30}{figure.caption.20}
 \contentsline {subsection}{\numberline {1.5.3}Constrains for different progenitor scenarios}{30}{subsection.1.5.3}
 \contentsline {section}{\numberline {1.6}Thesis motivation}{33}{section.1.6}
-\contentsline {chapter}{\numberline {2}SN1572}{35}{chapter.2}
+\contentsline {chapter}{\numberline {2}Subaru High-Resolution Spectroscopy of Tycho-G}{35}{chapter.2}
 \contentsline {section}{\numberline {2.1}Introduction}{35}{section.2.1}
 \contentsline {section}{\numberline {2.2}Observational Characteristics of the Tycho Remnant and Star-G}{37}{section.2.2}
-\contentsline {section}{\numberline {2.3}Rapid Rotation: A Key Signature in SN Ia Donor Stars}{38}{section.2.3}
+\contentsline {section}{\numberline {2.3}Rapid Rotation: A Key Signature in Type~Ia (SN~Ia) Donor Stars}{39}{section.2.3}
 \contentsline {section}{\numberline {2.4}Subaru Observations}{40}{section.2.4}
 \contentsline {section}{\numberline {2.5}Analysis and Results}{41}{section.2.5}
 \contentsline {subsection}{\numberline {2.5.1}Rotational measurement}{41}{subsection.2.5.1}
-\contentsline {subsection}{\numberline {2.5.2}Radial velocity}{41}{subsection.2.5.2}
+\contentsline {subsection}{\numberline {2.5.2}Radial velocity}{42}{subsection.2.5.2}
 \contentsline {subsection}{\numberline {2.5.3}Astrometry}{42}{subsection.2.5.3}
 \contentsline {section}{\numberline {2.6}Discussion}{45}{section.2.6}
 \contentsline {subsection}{\numberline {2.6.1}A Background interloper?}{45}{subsection.2.6.1}
-\contentsline {subsection}{\numberline {2.6.2}Tycho-G\ as the Donor Star to the Tycho SN}{47}{subsection.2.6.2}
-\contentsline {section}{\numberline {2.7}Outlook and Future Observations}{48}{section.2.7}
-\contentsline {chapter}{\numberline {3}Tycho's Six: High-Resolution spectroscopy search for the remaining donor for the Tycho supernova}{51}{chapter.3}
+\contentsline {subsection}{\numberline {2.6.2}Tycho-G as the Donor Star to the Tycho SN}{47}{subsection.2.6.2}
+\contentsline {section}{\numberline {2.7}Outlook and Future Observations}{49}{section.2.7}
+\contentsline {chapter}{\numberline {3}Tycho's Six}{51}{chapter.3}
 \contentsline {section}{\numberline {3.1}Introduction}{51}{section.3.1}
 \contentsline {section}{\numberline {3.2}Observations and Data Reduction}{53}{section.3.2}
 \contentsline {section}{\numberline {3.3}Analysis}{54}{section.3.3}
@@ -62,46 +62,46 @@
 \contentsline {subsection}{\numberline {3.3.2}Radial Velocity}{55}{subsection.3.3.2}
 \contentsline {subsection}{\numberline {3.3.3}Rotational Velocity}{56}{subsection.3.3.3}
 \contentsline {subsection}{\numberline {3.3.4}Stellar parameters}{57}{subsection.3.3.4}
-\contentsline {subsection}{\numberline {3.3.5}Distance}{61}{subsection.3.3.5}
-\contentsline {section}{\numberline {3.4}Discussion}{64}{section.3.4}
-\contentsline {section}{\numberline {3.5}Conclusion}{65}{section.3.5}
-\contentsline {section}{\numberline {3.6}Acknowledgments}{66}{section.3.6}
-\contentsline {section}{\numberline {3.7}Line list}{66}{section.3.7}
-\contentsline {chapter}{\numberline {4}Progenitor search in SN 1006}{69}{chapter.4}
-\contentsline {section}{\numberline {4.1}Introduction}{69}{section.4.1}
-\contentsline {section}{\numberline {4.2}Observations and Data Reduction}{70}{section.4.2}
-\contentsline {section}{\numberline {4.3}Analysis}{74}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Radial Velocity}{74}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Rotational Velocity}{74}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {4.3.3}Stellar Parameters}{75}{subsection.4.3.3}
-\contentsline {section}{\numberline {4.4}Conclusions}{77}{section.4.4}
-\contentsline {chapter}{\numberline {5}Automatic fitting of Type~Ia~Supernova~spectra}{81}{chapter.5}
-\contentsline {section}{\numberline {5.1}Introduction}{81}{section.5.1}
-\contentsline {section}{\numberline {5.2}The MLMC Code}{82}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Radiative Transfer}{82}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}Monte Carlo Radiative Transfer}{85}{subsection.5.2.2}
-\contentsline {section}{\numberline {5.3}Manually fitting a Type Ia supernova}{86}{section.5.3}
-\contentsline {section}{\numberline {5.4}Brief Introduction to Genetic Algorithms}{91}{section.5.4}
-\contentsline {section}{\numberline {5.5}Genetic Algorithms fit Type Ia Supernovae: The Dalek Code}{93}{section.5.5}
-\contentsline {section}{\numberline {5.6}Conclusion}{98}{section.5.6}
-\contentsline {chapter}{\numberline {6}Conclusions and Future~Work}{101}{chapter.6}
-\contentsline {section}{\numberline {6.1}Single or Double Degenerate?}{101}{section.6.1}
-\contentsline {section}{\numberline {6.2}The curious case of Kepler}{102}{section.6.2}
-\contentsline {section}{\numberline {6.3}Divide et impera}{103}{section.6.3}
-\contentsline {section}{\numberline {6.4}Dalek}{104}{section.6.4}
-\contentsline {section}{\numberline {6.5}Trouble in Paradise}{104}{section.6.5}
-\contentsline {chapter}{Glossary}{107}{section*.63}
-\contentsline {chapter}{\numberline {A}Linear interpolation in N Dimensions}{129}{chapter.1}
-\contentsline {section}{\numberline {A.1}Delauney triangulation}{130}{section.1.1}
-\contentsline {section}{\numberline {A.2}Convex Hull}{131}{section.1.2}
-\contentsline {section}{\numberline {A.3}Barycentric coordinates system}{133}{section.1.3}
-\contentsline {section}{\numberline {A.4}Triangle Finding and Interpolation}{133}{section.1.4}
-\contentsline {section}{\numberline {A.5}Conclusion}{134}{section.1.5}
-\contentsline {chapter}{\numberline {B}Genetic Algorithms}{135}{chapter.2}
-\contentsline {section}{\numberline {B.1}Introduction}{135}{section.2.1}
-\contentsline {section}{\numberline {B.2}Genetic Algorithms}{136}{section.2.2}
-\contentsline {section}{\numberline {B.3}Convergence in Genetic Algorithms}{142}{section.2.3}
-\contentsline {section}{\numberline {B.4}Genetic Algorithm Theory}{142}{section.2.4}
-\contentsline {section}{\numberline {B.5}A Simple Example}{143}{section.2.5}
-\contentsline {section}{\numberline {B.6}Conclusion}{143}{section.2.6}
-\contentsline {chapter}{\numberline {C}SN1006 Data}{145}{chapter.3}
+\contentsline {subsection}{\numberline {3.3.5}Distances}{62}{subsection.3.3.5}
+\contentsline {section}{\numberline {3.4}Discussion}{65}{section.3.4}
+\contentsline {section}{\numberline {3.5}Conclusion}{66}{section.3.5}
+\contentsline {chapter}{\numberline {4}Progenitor search in SN 1006}{67}{chapter.4}
+\contentsline {section}{\numberline {4.1}Introduction}{67}{section.4.1}
+\contentsline {section}{\numberline {4.2}Observations and Data Reduction}{68}{section.4.2}
+\contentsline {section}{\numberline {4.3}Analysis}{71}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Radial Velocity}{71}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Rotational Velocity}{72}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}Stellar Parameters}{73}{subsection.4.3.3}
+\contentsline {section}{\numberline {4.4}Conclusions}{75}{section.4.4}
+\contentsline {chapter}{\numberline {5}Automatic fitting of Type~Ia~Supernova~spectra}{79}{chapter.5}
+\contentsline {section}{\numberline {5.1}Introduction}{79}{section.5.1}
+\contentsline {section}{\numberline {5.2}The MLMC Code}{80}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Radiative Transfer}{80}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Monte Carlo Radiative Transfer}{83}{subsection.5.2.2}
+\contentsline {section}{\numberline {5.3}Manually fitting a Type Ia supernova}{84}{section.5.3}
+\contentsline {section}{\numberline {5.4}Brief Introduction to Genetic Algorithms}{90}{section.5.4}
+\contentsline {section}{\numberline {5.5}Genetic Algorithms fit Type Ia Supernovae: The Dalek Code}{91}{section.5.5}
+\contentsline {section}{\numberline {5.6}Conclusion}{97}{section.5.6}
+\contentsline {chapter}{\numberline {6}Conclusions and Future~Work}{99}{chapter.6}
+\contentsline {section}{\numberline {6.1}Single or Double Degenerate?}{100}{section.6.1}
+\contentsline {section}{\numberline {6.2}The curious case of Kepler}{101}{section.6.2}
+\contentsline {section}{\numberline {6.3}Divide et impera}{102}{section.6.3}
+\contentsline {section}{\numberline {6.4}The Dalek Code}{103}{section.6.4}
+\contentsline {section}{\numberline {6.5}Trouble in Paradise}{103}{section.6.5}
+\contentsline {chapter}{Glossary}{105}{section*.61}
+\contentsline {chapter}{Bibliography}{109}{section*.62}
+\contentsline {chapter}{Appendices}{125}{section*.63}
+\contentsline {chapter}{Appendix \numberline {A}Linear interpolation in N~Dimensions}{127}{Appendix.1.A}
+\contentsline {section}{\numberline {A.1}Delauney triangulation}{128}{section.1.A.1}
+\contentsline {section}{\numberline {A.2}Convex Hull}{129}{section.1.A.2}
+\contentsline {section}{\numberline {A.3}Barycentric coordinates system}{131}{section.1.A.3}
+\contentsline {section}{\numberline {A.4}Triangle Finding and Interpolation}{131}{section.1.A.4}
+\contentsline {section}{\numberline {A.5}Conclusion}{132}{section.1.A.5}
+\contentsline {chapter}{Appendix \numberline {B}Genetic Algorithms}{133}{Appendix.1.B}
+\contentsline {section}{\numberline {B.1}Introduction}{133}{section.1.B.1}
+\contentsline {section}{\numberline {B.2}Genetic Algorithms}{134}{section.1.B.2}
+\contentsline {section}{\numberline {B.3}Convergence in Genetic Algorithms}{140}{section.1.B.3}
+\contentsline {section}{\numberline {B.4}Genetic Algorithm Theory}{140}{section.1.B.4}
+\contentsline {section}{\numberline {B.5}A Simple Example}{141}{section.1.B.5}
+\contentsline {section}{\numberline {B.6}Conclusion}{141}{section.1.B.6}
+\contentsline {chapter}{Appendix \numberline {C}SN1006 Data}{143}{Appendix.1.C}
