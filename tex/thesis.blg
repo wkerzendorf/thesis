@@ -1,0 +1,83 @@
+This is BibTeX, Version 0.99d (TeX Live 2011)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: thesis.aux
+A level-1 auxiliary file: disclaimer.aux
+A level-1 auxiliary file: acknowledgments.aux
+A level-1 auxiliary file: abstract.aux
+A level-1 auxiliary file: chapter_intro/chapter_intro.aux
+A level-1 auxiliary file: chapter_sn1572_starg/chapter_sn1572_starg.aux
+A level-1 auxiliary file: chapter_sn1572_hires/chapter_sn1572_hires.aux
+A level-1 auxiliary file: chapter_sn1006/chapter_sn1006.aux
+A level-1 auxiliary file: chapter_dalek/chapter_dalek.aux
+A level-1 auxiliary file: chapter_conclusion/chapter_conclusion.aux
+The style file: apj.bst
+A level-1 auxiliary file: chapter_ndinterp/chapter_ndinterp.aux
+A level-1 auxiliary file: chapter_ga/chapter_ga.aux
+A level-1 auxiliary file: chapter_sn1006/chapter_sn1006_appendix.aux
+Reallocated field_info (elt_size=4) to 12521 items from 5000.
+Database file #1: thesis.bib
+Warning--string name "august" is undefined
+--line 1402 of file thesis.bib
+Reallocated str_pool (elt_size=1) to 130000 items from 65000.
+Warning--empty institution in 2006acs..rept....1A
+Warning--can't use both author and editor fields in 1602QB41.B73.......
+Warning--empty publisher in 1602QB41.B73.......
+Warning--can't use both author and editor fields in 1977QB841.C58......
+Warning--empty publisher in 1977QB841.C58......
+Warning--empty journal in Han:2008p726
+Warning--can't use both author and editor fields in 2000vnia.book.....H
+Warning--empty publisher in 2000vnia.book.....H
+Warning--can't use both author and editor fields in 2007nps..book.....I
+Warning--empty publisher in kepler1606
+Warning--can't use both author and editor fields in 1984sfat.book.....K
+Warning--empty publisher in 1984sfat.book.....K
+Warning--can't use both author and editor fields in 1978stat.book.....M
+Warning--empty publisher in 1978stat.book.....M
+Warning--no book title in Nelemans:2010fk
+`booktitle' is a missing field, not a string, for entry Nelemans:2010fk
+while executing---line 1645 of file apj.bst
+Warning--empty journal in 2003astro.ph..3660P
+Warning--can't use both author and editor fields in 1960mes..book.....S
+Warning--empty publisher in 1960mes..book.....S
+You've used 327 entries,
+            2988 wiz_defined-function locations,
+            2645 strings with 82575 characters,
+and the built_in function-call counts, 156801 in all, are:
+= -- 12366
+> -- 11743
+< -- 155
++ -- 3961
+- -- 3614
+* -- 13908
+:= -- 29568
+add.period$ -- 327
+call.type$ -- 327
+change.case$ -- 2177
+chr.to.int$ -- 328
+cite$ -- 345
+duplicate$ -- 6247
+empty$ -- 9282
+format.name$ -- 4636
+if$ -- 30717
+int.to.chr$ -- 3
+int.to.str$ -- 1
+missing$ -- 295
+newline$ -- 985
+num.names$ -- 1334
+pop$ -- 2376
+preamble$ -- 1
+purify$ -- 2171
+quote$ -- 0
+skip$ -- 5335
+stack$ -- 0
+substring$ -- 6956
+swap$ -- 245
+text.length$ -- 22
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 2901
+warning$ -- 18
+while$ -- 1208
+width$ -- 0
+write$ -- 3249
+(There was 1 error message)

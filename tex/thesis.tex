@@ -16,14 +16,16 @@
 % you have installed.  Besides, why use that style file if you 
 % have no idea what it actually does?  You will probably just redefine
 % all of its customisations anyway...
-\documentclass[11pt,openright, pdftex]{report} 
+\documentclass[11pt,twoside,openright, pdftex]{report} 
 
 % define some constants that can be used in various places to easily
 % specify title, subjects, author etc.
-\newcommand{\thesistitle}{Type Ia Supernovae: Explosions and Progenitors}
+\newcommand{\thesistitle}{Type Ia Supernovae: Explosions~and~Progenitors}
 \newcommand{\fullname}{Wolfgang Eitel Kerzendorf}
 \newcommand{\shortname}{W. E. Kerzendorf}
-\newcommand{\thesissubjects}{supernova:progenitors}
+\newcommand{\thesisdate}{August 2011}
+\newcommand{\thesissubjects}{stars: supernovae: progenitors --- stars: binaries: symbiotic ---
+stars: supernovae: individual (SN 1572, SN 1006)}
 
 %%NOTES ABOUT BABEL PACKAGE:
 % It requires two components; the 
@@ -125,7 +127,6 @@
 \usepackage[round]{natbib}
 % Super-nice looking tables, better than deluxetable
 \usepackage{ctable, longtable}
-
 %%NOTES ABOUT CAPTION AND SUBFIG PACKAGES
 % I'm using the caption package to style my captions.
 % You need to read the documentation for this package (on CTAN) as it
@@ -142,7 +143,7 @@
 \usepackage[l2tabu, orthodox]{nag}
 \usepackage[]{caption,subfig}
 \usepackage{captcont}
-\captionsetup{format=hang,%
+\captionsetup{format=default,%
 %  indention=-1.5cm,%
   labelsep=quad,%
   labelfont={footnotesize,bf},%
@@ -185,7 +186,7 @@ bookmarksnumbered=false,%
 % Stops figures and tables 'floating' past the section in which they
 % are declared.
 \usepackage[section]{placeins}
-\usepackage[toc,page,title,titletoc]{appendix}
+\usepackage[toc,titletoc]{appendix}
 
 %%NOTES ABOUT NAG
 % this is a very good package to use.  If you want to write good LaTeX
@@ -245,19 +246,19 @@ bookmarksnumbered=false,%
 \usepackage{fancyhdr}
 
 \pagestyle{fancy}
-\fancyhead[LO]{\usefont{OT1}{qbk}{m}{n}\selectfont \rightmark}
-\fancyhead[RE]{\usefont{OT1}{qbk}{m}{n}\selectfont \leftmark}
-\fancyhead[LE]{\usefont{OT1}{qbk}{m}{n}\selectfont \thepage}
-\fancyhead[RO]{\usefont{OT1}{qbk}{m}{n}\selectfont \thepage}
+\fancyhead[LO]{\usefont{OT1}{qbk}{m}{n}\selectfont \nouppercase\rightmark}
+\fancyhead[RE]{\usefont{OT1}{qbk}{m}{n}\selectfont \nouppercase\leftmark}
+\fancyhead[LE]{\usefont{OT1}{qbk}{m}{n}\selectfont \nouppercase\thepage}
+\fancyhead[RO]{\usefont{OT1}{qbk}{m}{n}\selectfont \nouppercase\thepage}
 \fancyfoot{}
-\renewcommand{\footrulewidth}{0.5pt}
-\renewcommand{\footruleskip}{0mm}
+%\renewcommand{\footrulewidth}{0.5pt}
+%\renewcommand{\footruleskip}{0mm}
 % plain page header/footer styles (i.e. chapter pages)
 %\fancypagestyle{plain}{
 %\fancyhf{}
 %\fancyfoot[LE]{\usefont{OT1}{qbk}{m}{n}\selectfont \thepage}
 %\fancyfoot[RO]{\usefont{OT1}{qbk}{m}{n}\selectfont \thepage}
-%\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\headrulewidth}{1pt}
 %\renewcommand{\footrulewidth}{0pt}
 %}
 
@@ -291,7 +292,6 @@ bookmarksnumbered=false,%
 
 % this contains various command definitions and other misc. options
 
-
 \begin{document}
 
 \pagestyle{empty}
@@ -307,27 +307,52 @@ bookmarksnumbered=false,%
 % Remove or change the \usefont..\selectfont if you don't have the
 % TeX Gyre Bonum font.
 %
+
 \begin{titlepage}\usefont{OT1}{qbk}{m}{n}\selectfont
-  \begin{center}
-    \LARGE{\thesistitle}
-    \\[2cm]
-    \Large{\fullname}
-    \\[2cm]
-    \normalsize{A thesis submitted for the degree of\\[0.5cm]
-      Doctor of Philosophy\\[0.5cm]
-      of The Australian National University}
-    \\[1.5cm]
+ \begin{center}
+ \phantom{}
+ \vspace{0cm}
+   \huge{\thesistitle}
+   \\[2.5cm]
+   \huge{\fullname}
+   \\[2.5cm]
+   \LARGE{A thesis submitted for the degree of}\\[0.5cm]
+     \LARGE{Doctor of Philosophy}\\[0.5cm]
+     \LARGE{of The Australian National University}
+   \\[4.cm]
     \includegraphics[width=0.5\textwidth]{anu-logo-colour}
-    \\[1.5cm]
-    \large{Research School of Astronomy and Astrophysics \\[0.25cm]
-      The Australian National University \\[0.25cm]
-      Canberra ACT 0200 \\[0.25cm]
-      Australia}
-    \\[2cm]
-    \textsf{July 2011}
-  \end{center}
+    \\[5mm]
+       \LARGE{Research School of Astronomy \& Astrophysics}\\[5mm]
+       \LARGE{\thesisdate}\\[6mm]
+       \setlength\fboxsep{3mm}
+       \setlength\fboxrule{1pt}
+       \framebox{\huge{\textsc{Examination Copy}}}
+       %\Large{First submitted \thesisdate}\\[1mm]
+       %\Large{Resubmitted with corrections \resubmissiondate}
+ \end{center}
 \end{titlepage}
 
+%\begin{titlepage}\usefont{OT1}{qbk}{m}{n}\selectfont
+%  \begin{center}
+%    \LARGE{\thesistitle}
+%    \\[2cm]
+%    \Large{\fullname}
+%    \\[2cm]
+%    \normalsize{A thesis submitted for the degree of\\[0.5cm]
+%      Doctor of Philosophy\\[0.5cm]
+%      of The Australian National University}
+%    \\[1.5cm]
+%    \includegraphics[width=0.5\textwidth]{anu-logo-colour}
+%    \\[1.5cm]
+%    \large{Research School of Astronomy and Astrophysics \\[0.25cm]
+%      The Australian National University \\[0.25cm]
+%      Canberra ACT 0200 \\[0.25cm]
+%      Australia}
+%    \\[2cm]
+%    \textsf{August 2011}
+%  \end{center}
+%\end{titlepage}
+\cleardoublepage
 %
 %%% DEDICATION:
 %
@@ -346,15 +371,17 @@ bookmarksnumbered=false,%
 \setlength{\parskip}{1ex plus 0.5ex minus 0.2ex}
 %
 % disclaimer
-\phantomsection\addcontentsline{toc}{section}{Disclaimer}
+%\phantomsection\addcontentsline{toc}{section}{Disclaimer}
 \include{disclaimer}
 %
 % acknowledgements
-% \phantomsection\addcontentsline{toc}{section}{Acknowledgments}
+%\phantomsection\addcontentsline{toc}{section}{Acknowledgments}
+\cleardoublepage
 \include{acknowledgments}
 %
 % abstract
-\phantomsection\addcontentsline{toc}{section}{Abstract}
+%\phantomsection\addcontentsline{toc}{section}{Abstract}
+\cleardoublepage
 \include{abstract}
 %
 % table of contents, figures and tables
@@ -373,6 +400,7 @@ bookmarksnumbered=false,%
 \pagenumbering{arabic}
 \pagestyle{fancy}
 %\glsadd{sn}
+\cleardoublepage
 \include{chapter_intro/chapter_intro}
 \include{chapter_sn1572_starg/chapter_sn1572_starg}
 \include{chapter_sn1572_hires/chapter_sn1572_hires}
@@ -388,20 +416,20 @@ bookmarksnumbered=false,%
 %
 \cleardoublepage
 % for back matter, plain page style with no head/foot rules
-\fancypagestyle{plain}{
-\fancyhf{}
-\fancyfoot[RO]{\bfseries \thepage}
-\fancyfoot[LE]{\bfseries \thepage}
-\renewcommand{\headrulewidth}{0pt}
-\renewcommand{\footrulewidth}{0pt}
-}
-\pagestyle{plain}
+%\fancypagestyle{plain}{
+%\fancyhf{}
+%\fancyfoot[RO]{\bfseries \thepage}
+%\fancyfoot[LE]{\bfseries \thepage}
+%\renewcommand{\headrulewidth}{0pt}
+%\renewcommand{\footrulewidth}{0pt}
+%}
+%\pagestyle{plain}
 %
 % bibliography
 
 \printglossaries
 %\printglossary[type=gastro]
-\bibliographystyle{astroads}
+\bibliographystyle{apj}
 \phantomsection\addcontentsline{toc}{chapter}{Bibliography}
 \bibliography{thesis}
 

@@ -1,10 +1,9 @@
-This is BibTeX, Version 0.99d (TeX Live 2010)
+This is BibTeX, Version 0.99d (TeX Live 2011)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: single_chapter_sn1006.aux
-A level-1 auxiliary file: chapter_sn1006.aux
+A level-1 auxiliary file: chapter_sn1006/chapter_sn1006.aux
 The style file: astroads.bst
 Database file #1: thesis.bib
-Warning--I didn't find a database entry for "1996A&AS..117..393B"
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--can't use both author and editor fields in 2000vnia.book.....H
 Warning--empty publisher in 2000vnia.book.....H
@@ -12,34 +11,34 @@ Warning--can't use both author and editor fields in 1984sfat.book.....K
 Warning--empty publisher in 1984sfat.book.....K
 You've used 25 entries,
             3098 wiz_defined-function locations,
-            838 strings with 11001 characters,
-and the built_in function-call counts, 12195 in all, are:
-= -- 972
-> -- 819
-< -- 10
-+ -- 280
-- -- 253
-* -- 1098
-:= -- 2198
+            837 strings with 10916 characters,
+and the built_in function-call counts, 12113 in all, are:
+= -- 969
+> -- 803
+< -- 11
++ -- 274
+- -- 247
+* -- 1085
+:= -- 2180
 add.period$ -- 25
 call.type$ -- 25
-change.case$ -- 181
+change.case$ -- 179
 chr.to.int$ -- 25
 cite$ -- 29
 duplicate$ -- 524
 empty$ -- 805
-format.name$ -- 331
-if$ -- 2403
+format.name$ -- 327
+if$ -- 2391
 int.to.chr$ -- 1
 int.to.str$ -- 1
 missing$ -- 24
 newline$ -- 135
 num.names$ -- 103
-pop$ -- 198
+pop$ -- 196
 preamble$ -- 1
-purify$ -- 181
+purify$ -- 179
 quote$ -- 0
-skip$ -- 404
+skip$ -- 405
 stack$ -- 0
 substring$ -- 527
 swap$ -- 12
@@ -51,4 +50,4 @@ warning$ -- 4
 while$ -- 99
 width$ -- 0
 write$ -- 307
-(There were 5 warnings)
+(There were 4 warnings)

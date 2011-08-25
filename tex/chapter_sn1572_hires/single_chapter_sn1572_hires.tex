@@ -16,15 +16,15 @@
 % you have installed.  Besides, why use that style file if you 
 % have no idea what it actually does?  You will probably just redefine
 % all of its customisations anyway...
-\documentclass[11pt,openright]{report} 
-\setcounter{secnumdepth}{3}
+\documentclass[11pt,twoside,openright, pdftex]{report} 
+
 % define some constants that can be used in various places to easily
 % specify title, subjects, author etc.
-\newcommand{\thesistitle}{Type Ia Supernovae:
-	Explosions and Progenitors}
+\newcommand{\thesistitle}{Type Ia Supernovae: Explosions and Progenitors}
 \newcommand{\fullname}{Wolfgang Eitel Kerzendorf}
 \newcommand{\shortname}{W. E. Kerzendorf}
-\newcommand{\thesissubjects}{supernova:progenitors ????add some more?????}
+\newcommand{\thesissubjects}{stars: supernovae: progenitors --- stars: binaries: symbiotic ---
+stars: supernovae: individual (SN 1572, SN 1006)}
 
 %%NOTES ABOUT BABEL PACKAGE:
 % It requires two components; the 
@@ -111,6 +111,7 @@
 % Although the above list includes some really nice fonts, their
 % availability in TeX distributions varies.  You may have to install
 % them manually...
+\usepackage{xfrac}
 \usepackage[T1]{fontenc}
 \usepackage{textcomp}
 \usepackage{ucs}
@@ -124,9 +125,7 @@
 % bibliography uses natbib, this will be a requirement
 \usepackage[round]{natbib}
 % Super-nice looking tables, better than deluxetable
-\usepackage{longtable,booktabs,multirow,ctable}
-%\usepackage{deluxetable}
-
+\usepackage{ctable, longtable}
 %%NOTES ABOUT CAPTION AND SUBFIG PACKAGES
 % I'm using the caption package to style my captions.
 % You need to read the documentation for this package (on CTAN) as it
@@ -140,16 +139,18 @@
 % The subfig package inherits options from the caption package, so
 % declare them together.
 %
+\usepackage[l2tabu, orthodox]{nag}
 \usepackage[]{caption,subfig}
+\usepackage{captcont}
 \captionsetup{format=hang,%
-  indention=-1.5cm,%
+%  indention=-1.5cm,%
   labelsep=quad,%
   labelfont={footnotesize,bf},%
   textfont={footnotesize}}
 % The hyperref package is a must while editing.  It provides urls
 % inside your document; you can then click to go to certain pages,
 % figures or bibliography entries.
-\usepackage[unicode,pageanchor,colorlinks,plainpages=false]{hyperref}
+\usepackage[pdftex,hyperindex, unicode,pageanchor,plainpages=false]{hyperref}
 % \hypersetup{pdftitle=\thesistitle\ - \shortname,%
 %   pdfauthor=\fullname,%
 %   pdfsubject={\thesissubjects},%
@@ -158,31 +159,50 @@
 %   anchorcolor=CadetBlue4}
 %for printing, make all colours black...
 \hypersetup{pdftitle=\thesistitle\ - \shortname,%
-pdfauthor=\fullname,%
+pdfauthor={\fullname},%
 pdfsubject={\thesissubjects},%
+colorlinks=false,%
+breaklinks=true,%
+bookmarks=true,%
+bookmarksnumbered=false,%
+%hidelinks
 %citecolor=green,%
 %filecolor=blue,%
 %linkcolor=blue,%
 %urlcolor=blue%
 }
+\usepackage{bookmark}
+\usepackage{varioref}
 % Drop capitals at the start of chapters
-\usepackage{lettrine}
 % Allow defining of colours. Useful for:
 % - defining the colours of links, citations etc.
 % together with hyperref (i.e. in hyperrefsetup)
 % - get alternating row colours or shades in tables
-\usepackage[hyperref,x11names]{xcolor}
+\usepackage[hyperref,x11names, table]{xcolor}
+\usepackage{xstring}
+
+
 % Stops figures and tables 'floating' past the section in which they
 % are declared.
 \usepackage[section]{placeins}
-\usepackage[toc,page,title,title]{appendix}
+\usepackage[toc,titletoc]{appendix}
+
 %%NOTES ABOUT NAG
 % this is a very good package to use.  If you want to write good LaTeX
 % code and want to make sure you aren't using outdated methods (like
 % your supervisor does), then use this package.  It will complain when
 % you use outdated or wrong LaTeX commands.
-\usepackage[l2tabu, orthodox]{nag}
+
 \usepackage{ifthen}
+\usepackage{pseudocode}
+\usepackage{chronology}
+
+
+\usepackage[xindy, toc, hyperfirst=false, sanitize={name=false,description=false,symbol=false}]{glossaries}
+%\makeglossaries
+\glossarystyle{index}
+\input{macros}
+\makeglossaries
 
 % ---------------------------------------------------------------------
 % styles for header, footer, pages, bibliography
@@ -198,7 +218,7 @@ pdfsubject={\thesissubjects},%
 \usepackage{fncychap}
 \makeatletter
 \ChNameUpperCase
-\ChTitleUpperCase  
+%\ChTitleUpperCase  
 \ChNameVar{\centering\Huge\usefont{OT1}{qbk}{m}{n}\selectfont}
 \ChNumVar{\Huge}
 \ChTitleVar{\centering\Huge\usefont{OT1}{qbk}{m}{n}\selectfont}
@@ -223,26 +243,23 @@ pdfsubject={\thesissubjects},%
 %%% page styles:
 %
 \usepackage{fancyhdr}
-\fancyhead{}
+
+\pagestyle{fancy}
+\fancyhead[LO]{\usefont{OT1}{qbk}{m}{n}\selectfont \nouppercase\rightmark}
+\fancyhead[RE]{\usefont{OT1}{qbk}{m}{n}\selectfont \nouppercase\leftmark}
+\fancyhead[LE]{\usefont{OT1}{qbk}{m}{n}\selectfont \nouppercase\thepage}
+\fancyhead[RO]{\usefont{OT1}{qbk}{m}{n}\selectfont \nouppercase\thepage}
 \fancyfoot{}
-%% make the odd pages have the section name on the top right
-%\fancyhead[RO]{\usefont{OT1}{qbk}{m}{n}\selectfont \rightmark}
-%% make the even pages have the chapter name on the top left
-%\fancyhead[LE]{\usefont{OT1}{qbk}{m}{n}\selectfont \leftmark}
-%
-% fancy (main content) page header/footer styles
-\fancyfoot[LE]{\usefont{OT1}{qbk}{m}{n}\selectfont \thepage}
-\fancyfoot[RO]{\usefont{OT1}{qbk}{m}{n}\selectfont \thepage}
-\renewcommand{\footrulewidth}{0.5pt}
-\renewcommand{\footruleskip}{0mm}
+%\renewcommand{\footrulewidth}{0.5pt}
+%\renewcommand{\footruleskip}{0mm}
 % plain page header/footer styles (i.e. chapter pages)
-\fancypagestyle{plain}{
-\fancyhf{}
-\fancyfoot[LE]{\usefont{OT1}{qbk}{m}{n}\selectfont \thepage}
-\fancyfoot[RO]{\usefont{OT1}{qbk}{m}{n}\selectfont \thepage}
-\renewcommand{\headrulewidth}{0pt}
-\renewcommand{\footrulewidth}{0pt}
-}
+%\fancypagestyle{plain}{
+%\fancyhf{}
+%\fancyfoot[LE]{\usefont{OT1}{qbk}{m}{n}\selectfont \thepage}
+%\fancyfoot[RO]{\usefont{OT1}{qbk}{m}{n}\selectfont \thepage}
+\renewcommand{\headrulewidth}{1pt}
+%\renewcommand{\footrulewidth}{0pt}
+%}
 
 %
 % this next section (till \makeatother) makes sure that blank pages
@@ -270,19 +287,31 @@ pdfsubject={\thesissubjects},%
 
 % uncomment if you would like an index (make sure you actually define
 % index terms in your document as well...
-\makeindex
+%\makeindex
 
 % this contains various command definitions and other misc. options
-\include{macros}
 
 \begin{document}
-\tableofcontents \newpage
-\include{chapter_sn1572_hires}
 
-%\include{chapter5/chapter5}
+\pagestyle{empty}
 
 %
+%%% TITLE PAGE:
+%
+% This title-page is based on many bits of information found on the
+% Internet by searching for 'thesis title page latex'.  Packages are
+% also available on CTAN if you don't like this style and don't feel
+% confident creating a style yourself.
+%
+% Remove or change the \usefont..\selectfont if you don't have the
+% TeX Gyre Bonum font.
+%
+\include{chapter_sn1572_hires/chapter_sn1572_hires}
+
+\printglossaries
+%\printglossary[type=gastro]
 \bibliographystyle{astroads}
+\phantomsection\addcontentsline{toc}{chapter}{Bibliography}
 \bibliography{thesis}
 
 \end{document}

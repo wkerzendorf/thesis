@@ -1,75 +1,74 @@
 \select@language {british}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Chaco canyon petroglyphs}}{2}{figure.caption.3}
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Star chart of SN 1572 by Tycho Brahe}}{3}{figure.caption.4}
-\contentsline {figure}{\numberline {1.3}{\ignorespaces Lightcurve of SN 1604}}{4}{figure.caption.5}
-\contentsline {figure}{\numberline {1.4}{\ignorespaces HST image of SN 1994D}}{6}{figure.caption.6}
-\contentsline {figure}{\numberline {1.5}{\ignorespaces Classification scheme by \citet {2003LNP...598...21T}\relax }}{8}{figure.caption.7}
-\contentsline {figure}{\numberline {1.6}{\ignorespaces Spectral comparison from \citet {2003LNP...598...21T}\relax }}{9}{figure.caption.8}
-\contentsline {figure}{\numberline {1.7}{\ignorespaces Fraction of different SN Ia classes}}{10}{figure.caption.9}
-\contentsline {figure}{\numberline {1.8}{\ignorespaces Fraction of different SN II classes}}{10}{figure.caption.10}
-\contentsline {figure}{\numberline {1.9}{\ignorespaces Lightcurve templates from \citet {2011MNRAS.412.1441L}}}{11}{figure.caption.11}
-\contentsline {figure}{\numberline {1.10}{\ignorespaces Supernova rate versus galaxy morphology}}{12}{figure.caption.12}
-\contentsline {figure}{\numberline {1.11}{\ignorespaces Lightcurves of \object {SN 2002bo} \citep [data from ][]{2004MNRAS.348..261B}\relax }}{13}{figure.caption.13}
-\contentsline {figure}{\numberline {1.12}{\ignorespaces Premaximum and nebular evolution of SN 2003du}}{16}{figure.caption.14}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\object {SN 2003du}\ ten days before maximum light. The P Cygni-profiles of Silicon are clearly visible}}}{16}{subfigure.1.12.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\object {SN 2003du} spectrum at maximum light. The light in the UV is being supressed and fluoresced into the red part of the spectrum.}}}{16}{subfigure.1.12.2}
-\contentsline {figure}{\numberline {1.13}{\ignorespaces Postmaximum evolution of SN 2003du}}{17}{figure.caption.15}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {SN 2003du 17 days past maximum light. The contribution of IGE is still rising.}}}{17}{subfigure.1.13.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {In the nebular phase strong emission lines are visible. This phase is not observed very often but contains crucial information about the explosion physics.}}}{17}{subfigure.1.13.2}
-\contentsline {figure}{\numberline {1.14}{\ignorespaces Shell Burning of a massive star before SN II}}{22}{figure.caption.16}
-\contentsline {figure}{\numberline {1.15}{\ignorespaces Expected escape velocities for donor stars}}{26}{figure.caption.17}
-\contentsline {figure}{\numberline {1.16}{\ignorespaces Expected rotational velocities of donor stars}}{26}{figure.caption.18}
-\contentsline {figure}{\numberline {1.17}{\ignorespaces Delayed detonation simulation from \citet {2008NJPh...10l5009R}}}{30}{figure.caption.19}
-\contentsline {figure}{\numberline {1.18}{\ignorespaces Helium shell ignition leading to sub-Chandrasekhar mass detonation}}{31}{figure.caption.20}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Chaco canyon petroglyphs}}{2}{figure.caption.1}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Star chart of SN 1572 by Tycho Brahe}}{3}{figure.caption.2}
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Light curve of SN 1604}}{4}{figure.caption.3}
+\contentsline {figure}{\numberline {1.4}{\ignorespaces HST image of SN 1994D}}{6}{figure.caption.4}
+\contentsline {figure}{\numberline {1.5}{\ignorespaces Classification scheme by \citet {2003LNP...598...21T}\relax }}{9}{figure.caption.5}
+\contentsline {figure}{\numberline {1.6}{\ignorespaces Spectral comparison from \citet {2003LNP...598...21T}\relax }}{10}{figure.caption.6}
+\contentsline {figure}{\numberline {1.7}{\ignorespaces Fraction of different SN Ia classes}}{11}{figure.caption.7}
+\contentsline {figure}{\numberline {1.8}{\ignorespaces Fraction of different SN II classes}}{12}{figure.caption.8}
+\contentsline {figure}{\numberline {1.9}{\ignorespaces Light curve templates from \citet {2011MNRAS.412.1441L}}}{13}{figure.caption.9}
+\contentsline {figure}{\numberline {1.10}{\ignorespaces Supernova rate versus galaxy morphology}}{14}{figure.caption.10}
+\contentsline {figure}{\numberline {1.11}{\ignorespaces Light curves of \object {SN~2002bo} \citep [data from ][]{2004MNRAS.348..261B}\relax }}{15}{figure.caption.11}
+\contentsline {figure}{\numberline {1.12}{\ignorespaces Pre-Maximum spectrum of SN 2003du}}{16}{figure.caption.12}
+\contentsline {figure}{\numberline {1.13}{\ignorespaces Maximum light spectrum of SN 2003du}}{17}{figure.caption.13}
+\contentsline {figure}{\numberline {1.14}{\ignorespaces SN 2003du 17 days past maximum light. The contribution of IGE is still rising \citep [Figure kindly provided by M. Tanaka;][]{2011MNRAS.410.1725T}.\relax }}{18}{figure.caption.14}
+\contentsline {figure}{\numberline {1.15}{\ignorespaces Nebular phase spectrum of SN 2003du}}{19}{figure.caption.15}
+\contentsline {figure}{\numberline {1.16}{\ignorespaces Shell Burning of a massive star before SN II}}{25}{figure.caption.16}
+\contentsline {figure}{\numberline {1.17}{\ignorespaces Expected escape velocities for donor stars}}{29}{figure.caption.17}
+\contentsline {figure}{\numberline {1.18}{\ignorespaces Expected rotational velocities of donor stars}}{30}{figure.caption.18}
+\contentsline {figure}{\numberline {1.19}{\ignorespaces Delayed detonation simulation from \citet {2008NJPh...10l5009R}}}{34}{figure.caption.19}
+\contentsline {figure}{\numberline {1.20}{\ignorespaces Helium shell ignition leading to sub Chandrasekhar Mass~ detonation}}{35}{figure.caption.20}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces SN 1572 overview of candidate stars}}{38}{figure.caption.21}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Expected rotation for Tycho-G}}{39}{figure.caption.22}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Rotation of Tycho-G from HDS spectrum}}{42}{figure.caption.23}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Proper motion measurements for stars in SN 1572 from plates and HST images}}{45}{figure.caption.25}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Radial velocity of Tycho-G compared with the Besan\c {c}on Model}}{46}{figure.caption.26}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces SN 1572 overview of candidate stars}}{42}{figure.caption.21}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Expected rotation for Tycho-G}}{43}{figure.caption.22}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Rotation of Tycho-G from HDS spectrum}}{46}{figure.caption.23}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Proper motion measurements for stars in SN 1572 from plates and HST images}}{49}{figure.caption.25}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Radial velocity of Tycho-G compared with the Besan\c {c}on Model}}{51}{figure.caption.26}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Proper motion measurement of stars in SN 1572 using only HST images}}{56}{figure.caption.29}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Radial velocity of all candidate stars in SN 1572 with the Besan\c {c}on Model}}{57}{figure.caption.31}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Rotation measurement for all candidate stars in SN 1572}}{58}{figure.caption.32}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Comparison of nickel and iron abundance measurement of stars in SN 1572}}{59}{figure.caption.35}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Fit of low resolution spectrum of Tycho-B}}{63}{figure.caption.37}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Distance, extinction and mass measurements in \object {SN 1572}}}{64}{figure.caption.38}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Proper motion measurement of stars in SN 1572 using only HST images}}{60}{figure.caption.29}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Radial velocity of all candidate stars in SN 1572 with the Besan\c {c}on Model}}{61}{figure.caption.31}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Rotation measurement for all candidate stars in SN 1572}}{62}{figure.caption.32}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Comparison of nickel and iron abundance measurement of stars in SN 1572}}{64}{figure.caption.35}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Fit of low resolution spectrum of Tycho-B}}{65}{figure.caption.37}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Distance, extinction and mass measurements in \object {SN~1572}}}{67}{figure.caption.38}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Comparison between PPMXL catalog and the Besan\c {c}on Model}}{72}{figure.caption.40}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Overview of candidates and remnantin SN 1006}}{69}{figure.caption.40}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Close-up of the candidates in SN 1006}}{70}{figure.caption.42}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Colour-colour plot of all candidates in SN 1006 to check photometry}}{71}{figure.caption.43}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Radial velocity of all candidates in SN 1006 compared with Besan\c {c}on Model}}{72}{figure.caption.44}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Comparison of rotation and surface gravity of SN 1006 candidates}}{76}{figure.caption.46}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Background UV sources probing the remnant}}{77}{figure.caption.47}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Colour-colour plot of all candidates in SN 1006 to check photometry}}{77}{figure.caption.41}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Overview of candidates and remnantin SN 1006}}{79}{figure.caption.42}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Close-up of the candidates in SN 1006}}{80}{figure.caption.44}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Radial velocity of all candidates in SN 1006 compared with Besan\c {c}on Model}}{81}{figure.caption.45}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Comparison of rotation and surface gravity of SN 1006 candidates}}{85}{figure.caption.47}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Background UV sources probing the remnant}}{86}{figure.caption.48}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Spectrum on SN 2002bo with MLMC fit}}{85}{figure.caption.48}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Effect of luminosity on MLMC fit}}{86}{figure.caption.49}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Effect of photospheric velocity on MLMC fit}}{86}{figure.caption.50}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Effect of iron group elements on MLMC fit}}{87}{figure.caption.51}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Best-Fit of SN 2002bo with MLMC including line identification}}{88}{figure.caption.52}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Flow chart overview over the process of a GA\relax }}{91}{figure.caption.54}
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Estimated initial guess for photospheric velocity against days after explosion}}{93}{figure.caption.55}
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Evolution of fitness over the generations}}{95}{figure.caption.56}
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Evolution of both luminosity and photospheric velocity over generations}}{96}{figure.caption.57}
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Results of optimizations with Genetic Algorithms}}{96}{figure.caption.58}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Spectrum on SN 2002bo with MLMC fit}}{93}{figure.caption.49}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Effect of luminosity on MLMC fit}}{94}{figure.caption.50}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Effect of photospheric velocity on MLMC fit}}{95}{figure.caption.51}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Effect of iron group elements on MLMC fit}}{96}{figure.caption.52}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Best-Fit of SN 2002bo with MLMC including line identification}}{97}{figure.caption.53}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Flow chart overview over the process of a GA\relax }}{100}{figure.caption.55}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Estimated initial guess for photospheric velocity against days after explosion}}{102}{figure.caption.56}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Evolution of fitness over the generations}}{105}{figure.caption.57}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Evolution of both luminosity and photospheric velocity over generations}}{105}{figure.caption.58}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Results of optimisations with Genetic Algorithms}}{107}{figure.caption.59}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Close-up of the inner region of SN 1572 with candidates}}{101}{figure.caption.59}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces VLA contours of Kepler's remnant (SN1604) overlayed on a 2MASS image}}{102}{figure.caption.60}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Close-up of the inner region of SN 1572 with candidates}}{111}{figure.caption.60}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces VLA contours of Kepler's remnant (SN1604) overlayed on a 2MASS image}}{112}{figure.caption.61}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Delauney Triangulation\ of 20 points in two dimensions.\relax }}{128}{figure.caption.64}
-\contentsline {figure}{\numberline {A.2}{\ignorespaces Change from a `illegal' triangulation to a Delauney Triangulation}}{129}{figure.caption.65}
-\contentsline {figure}{\numberline {A.3}{\ignorespaces Stereogram of the projection of the convex hull in three dimensions}}{129}{figure.caption.66}
-\contentsline {figure}{\numberline {A.4}{\ignorespaces Determination of a convex hull in two dimensions. \relax }}{130}{figure.caption.67}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Twenty points for which we are trying to find the convex hull.}}}{130}{subfigure.A.4.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {We find the points with the lowest and highest x-value and connect them with a line.}}}{130}{subfigure.A.4.2}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Continuing with the points on the left (same process happens recursively on the right) we find the point furthest away from the line. We then draw two more lines and build a triangle. The points inside of the triangle are not part of the convex hull and are discarded. We will repeat the current step with the two new lines of the triangle. }}}{130}{subfigure.A.4.3}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {We have found points of the convex hull once we can't build a new triangle anymore.}}}{130}{subfigure.A.4.4}
-\contentsline {figure}{\numberline {A.5}{\ignorespaces The triangle and its barycenter marked by the intersection of lines. \relax }}{131}{figure.caption.68}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Delauney Triangulation\ of 20 points in two dimensions.\relax }}{136}{figure.caption.65}
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Change from a `illegal' triangulation to a Delauney Triangulation}}{137}{figure.caption.66}
+\contentsline {figure}{\numberline {A.3}{\ignorespaces Stereogram of the projection of the convex hull in three dimensions}}{137}{figure.caption.67}
+\contentsline {figure}{\numberline {A.4}{\ignorespaces Determination of a convex hull in two dimensions. \relax }}{138}{figure.caption.68}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Twenty points for which we are trying to find the convex hull.}}}{138}{subfigure.A.4.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {We find the points with the lowest and highest x-value and connect them with a line.}}}{138}{subfigure.A.4.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Continuing with the points on the left (same process happens recursively on the right) we find the point furthest away from the line. We then draw two more lines and build a triangle. The points inside of the triangle are not part of the convex hull and are discarded. We will repeat the current step with the two new lines of the triangle. }}}{138}{subfigure.A.4.3}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {We have found points of the convex hull once we can't build a new triangle anymore.}}}{138}{subfigure.A.4.4}
+\contentsline {figure}{\numberline {A.5}{\ignorespaces The triangle and its barycenter marked by the intersection of lines. \relax }}{139}{figure.caption.69}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {B.1}{\ignorespaces Timeline of milestones in numerical optimization\relax }}{133}{figure.caption.69}
-\contentsline {figure}{\numberline {B.2}{\ignorespaces Roulette Wheel Selection}}{138}{figure.caption.70}
-\contentsline {figure}{\numberline {B.3}{\ignorespaces Rank Selection with subsequent Roulette Wheel Selection}}{139}{figure.caption.71}
-\contentsline {figure}{\numberline {B.4}{\ignorespaces Single-point and multi-point crossover}}{139}{figure.caption.72}
+\contentsline {figure}{\numberline {B.1}{\ignorespaces Time line of milestones in numerical optimisation\relax }}{141}{figure.caption.70}
+\contentsline {figure}{\numberline {B.2}{\ignorespaces Roulette Wheel Selection}}{146}{figure.caption.71}
+\contentsline {figure}{\numberline {B.3}{\ignorespaces Rank Selection with subsequent Roulette Wheel Selection}}{147}{figure.caption.72}
+\contentsline {figure}{\numberline {B.4}{\ignorespaces Single-point and multi-point crossover}}{148}{figure.caption.73}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {C.1}{\ignorespaces Fit of SN1006 candidate spectra}}{150}{figure.caption.73}
+\contentsline {figure}{\numberline {C.1}{\ignorespaces Fit of SN 1006 candidate spectra}}{158}{figure.caption.74}

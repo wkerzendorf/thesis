@@ -24,252 +24,289 @@
 \begin{theglossary}\glossaryheader
 \glsgroupheading{glsnumbers}\relax\glsresetentrylist
 \glossaryentryfield{2mass}{\glsnamefont{2MASS}}{Two Micron All Sky Survey \protect \citep  {2006AJ....131.1163S}}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{43}\delimN 
-\glsXpageXglsnumberformat{}{68}\delimN 
-\glsXpageXglsnumberformat{}{69}\delimN 
-\glsXpageXglsnumberformat{}{71}\delimN 
-\glsXpageXglsnumberformat{}{102}}}\glsgroupskip
+\glsXpageXglsnumberformat{}{47}\delimN 
+\glsXpageXglsnumberformat{}{76}\delimN 
+\glsXpageXglsnumberformat{}{77}\delimN 
+\glsXpageXglsnumberformat{}{112}}}\glsgroupskip
 \glsgroupheading{A}\relax\glsresetentrylist
 \glossaryentryfield{acs}{\glsnamefont{ACS}}{Advanced Camera for Surveys mounted on the \gls {hst}}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{54}}}\relax\glsresetentrylist
+\glsXpageXglsnumberformat{}{58}}}\relax\glsresetentrylist
 \glossaryentryfield{agb}{\glsnamefont{AGB}}{Asymptotic Giant Branch}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{101}}}\relax\glsresetentrylist
+\glsXpageXglsnumberformat{}{37}\delimN 
+\glsXpageXglsnumberformat{}{73}\delimN 
+\glsXpageXglsnumberformat{}{112}}}\relax\glsresetentrylist
 \glossaryentryfield{aic}{\glsnamefont{AIC}}{Accretion Induced Collapse}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{27}\delimN 
 \glsXpageXglsnumberformat{}{30}\delimN 
-\glsXpageXglsnumberformat{}{99}}}\relax\glsresetentrylist
+\glsXpageXglsnumberformat{}{33}\delimN 
+\glsXpageXglsnumberformat{}{109}}}\relax\glsresetentrylist
 \glossaryentryfield{alphacen}{\glsnamefont{\protect \object {Alpha Centauri}}}{one of the brightest stars in the night sky and a close binary}{\relax }{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{1}}}\relax\glsresetentrylist
 \glossaryentryfield{amcvn}{\glsnamefont{AM CVn}}{AM Canum Venaticorum star (white dwarf accreting hydrogen poor matter from a companion star; see \protect \cite  {2005ASPC..330...27N})}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{25}\delimN 
-\glsXpageXglsnumberformat{}{32}}}\relax\glsresetentrylist
+\glsXpageXglsnumberformat{}{28}\delimN 
+\glsXpageXglsnumberformat{}{36}}}\relax\glsresetentrylist
 \glossaryentryfield{api}{\glsnamefont{API}}{application program interface}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{92}\delimN 
-\glsXpageXglsnumberformat{}{97}}}\relax\glsresetentrylist
+\glsXpageXglsnumberformat{}{101}\delimN 
+\glsXpageXglsnumberformat{}{108}}}\relax\glsresetentrylist
 \glossaryentryfield{atlas9}{\glsnamefont{ATLAS9}}{grid of stellar atmospheres \protect \citep  {2004astro.ph..5087C}}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{46}}}\glsgroupskip
+\glsXpageXglsnumberformat{}{50}}}\glsgroupskip
 \glsgroupheading{B}\relax\glsresetentrylist
 \glossaryentryfield{bait}{\glsnamefont{BAIT}}{Berkley Automatic Imaging Telescope \protect \citep  {1993PASP..105.1164R}}{\relax }{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{5}}}\relax\glsresetentrylist
 \glossaryentryfield{batse}{\glsnamefont{BATSE}}{Burst and Transient Source Experiment mounted on the Compton Gamma Ray Observatory}{\relax }{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{7}}}\relax\glsresetentrylist
 \glossaryentryfield{bepposax}{\glsnamefont{BeppoSAX}}{X-ray\ satellite named in honor of Giuseppe "Beppo" Occhialini}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{7}}}\glsgroupskip
+\glsXpageXglsnumberformat{}{7}}}\relax\glsresetentrylist
+\glsnonextpages \glossaryentryfield{besancon}{\glsnamefont{Besan\c {c}on Model}}{Model of stellar population synthesis of the Galaxy, including kinematics. \protect \url  {http://model.obs-besancon.fr/}}{\relax }{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{114}}}\glsgroupskip
 \glsgroupheading{C}\relax\glsresetentrylist
 \glossaryentryfield{casa}{\glsnamefont{\protect \object {Cas A}}}{Cassiopeia A supernova remnant - probably a \gls {snib} event}{\relax }{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{4}}}\relax\glsresetentrylist
 \glossaryentryfield{ccd}{\glsnamefont{CCD}}{Charged Coupled Device}{\relax }{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{5}\delimN 
-\glsXpageXglsnumberformat{}{19}}}\relax\glsresetentrylist
+\glsXpageXglsnumberformat{}{21}\delimN 
+\glsXpageXglsnumberformat{}{76}}}\relax\glsresetentrylist
 \glossaryentryfield{cdm}{\glsnamefont{CDM}}{Cold Dark Matter}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{18}}}\relax\glsresetentrylist
+\glsXpageXglsnumberformat{}{20}}}\relax\glsresetentrylist
 \glossaryentryfield{cepheid}{\glsnamefont{Cepheid}}{very luminous variable star with a strong luminosity period relationship}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{18}}}\relax\glsresetentrylist
-\glossaryentryfield{chandra}{\glsnamefont{Chandra}}{Chandra???}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{54}\delimN 
-\glsXpageXglsnumberformat{}{55}}}\relax\glsresetentrylist
-\glossaryentryfield{mchan}{\glsnamefont{Chandrasekhar Mass}}{Chandrasekhar mass ($1.38\protect \tmspace  +\thinmuskip {.1667em}M_\odot $; see \protect \citet  {1931ApJ....74...81C})}{$M_\protect \textrm  {Chan}$}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{11}\delimN 
-\glsXpageXglsnumberformat{}{22}\delimN 
-\glsXpageXglsnumberformat{}{24}\delimN 
-\glsXpageXglsnumberformat{}{27}\delimN 
-\glsXpageXglsnumberformat{}{28}\delimN 
-\glsXpageXglsnumberformat{}{30}\delimN 
-\glsXpageXglsnumberformat{}{32}\delimN 
-\glsXpageXglsnumberformat{}{35}\delimN 
-\glsXpageXglsnumberformat{}{99}\delimN 
-\glsXpageXglsnumberformat{}{102}}}\relax\glsresetentrylist
-\glossaryentryfield{child}{\glsnamefont{child}}{member of the new generation created by parents (members of the old generation)}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{90}\delimN 
-\glsXpageXglsnumberformat{}{138}}}\relax\glsresetentrylist
-\glossaryentryfield{crossover}{\glsnamefont{crossover}}{binary operator to create new individual from two or more old individuals}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{90}\delimN 
-\glsXpageXglsnumberformat{}{94}\delimN 
-\glsXpageXglsnumberformat{}{135}\delimN 
-\glsXpageXglsnumberformat{}{136}\delimN 
-\glsXpageXglsnumberformat{}{138}\delimN 
-\glsXpageXglsnumberformat{}{139}}}\relax\glsresetentrylist
+\glsXpageXglsnumberformat{}{20}}}\relax\glsresetentrylist
+\glossaryentryfield{chandra}{\glsnamefont{Chandra}}{Chandra X-ray\ Observatory (space-based)}{\relax }{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{58}\delimN 
+\glsXpageXglsnumberformat{}{59}}}\relax\glsresetentrylist
+\glossaryentryfield{cmb}{\glsnamefont{CMB}}{Cosmic Microwave Background}{\relax }{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{20}}}\relax\glsresetentrylist
 \glossaryentryfield{csi}{\glsnamefont{CSI}}{Circumstellar Interaction}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{66}}}\relax\glsresetentrylist
+\glsXpageXglsnumberformat{}{72}\delimN 
+\glsXpageXglsnumberformat{}{73}\delimN 
+\glsXpageXglsnumberformat{}{112}}}\relax\glsresetentrylist
 \glossaryentryfield{csm}{\glsnamefont{CSM}}{Circumstellar Medium}{\relax }{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{9}\delimN 
-\glsXpageXglsnumberformat{}{15}\delimN 
-\glsXpageXglsnumberformat{}{17}\delimN 
-\glsXpageXglsnumberformat{}{23}\delimN 
-\glsXpageXglsnumberformat{}{31}\delimN 
-\glsXpageXglsnumberformat{}{76}}}\relax\glsresetentrylist
+\glsXpageXglsnumberformat{}{16}\delimN 
+\glsXpageXglsnumberformat{}{19}\delimN 
+\glsXpageXglsnumberformat{}{26}\delimN 
+\glsXpageXglsnumberformat{}{34}\delimN 
+\glsXpageXglsnumberformat{}{36}\delimN 
+\glsXpageXglsnumberformat{}{85}}}\relax\glsresetentrylist
 \glossaryentryfield{ctss}{\glsnamefont{CTSS}}{Cal\'{a}n/Tololo Supernova Survey \protect \citep  {1993AJ....106.2392H}}{\relax }{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{5}\delimN 
-\glsXpageXglsnumberformat{}{19}}}\glsgroupskip
+\glsXpageXglsnumberformat{}{21}}}\glsgroupskip
 \glsgroupheading{D}\relax\glsresetentrylist
 \glossaryentryfield{dalek}{\glsnamefont{\protect \textsc  {Dalek} code}}{Automatic SN Ia spectrum fitting code}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{80}\delimN 
-\glsXpageXglsnumberformat{}{93}\delimR 
-\glsXpageXglsnumberformat{}{97}\delimN 
-\glsXpageXglsnumberformat{}{102}\delimN 
-\glsXpageXglsnumberformat{}{104}}}\relax\glsresetentrylist
+\glsXpageXglsnumberformat{}{88}\delimN 
+\glsXpageXglsnumberformat{}{102}\delimR 
+\glsXpageXglsnumberformat{}{104}\delimN 
+\glsXpageXglsnumberformat{}{108}\delimN 
+\glsXpageXglsnumberformat{}{113}\delimN 
+\glsXpageXglsnumberformat{}{114}}}\relax\glsresetentrylist
 \glossaryentryfield{dass}{\glsnamefont{DASS}}{Digitized Astronomy Supernova Survey \protect \citep  {1975PASP...87..565C}}{\relax }{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{5}}}\relax\glsresetentrylist
 \glossaryentryfield{dds}{\glsnamefont{DD-Scenario}}{double degenerate scenario (merging of two white dwarfs)}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{24}\delimN 
 \glsXpageXglsnumberformat{}{27}\delimN 
 \glsXpageXglsnumberformat{}{30}\delimN 
-\glsXpageXglsnumberformat{}{32}\delimN 
-\glsXpageXglsnumberformat{}{51}\delimN 
-\glsXpageXglsnumberformat{}{76}\delimN 
-\glsXpageXglsnumberformat{}{99}\delimN 
-\glsXpageXglsnumberformat{}{102}\delimN 
-\glsXpageXglsnumberformat{}{103}}}\relax\glsresetentrylist
-\glossaryentryfield{donor}{\glsnamefont{donor}}{Donor}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{37}\delimN 
-\glsXpageXglsnumberformat{}{51}\delimR 
-\glsXpageXglsnumberformat{}{53}\delimN 
-\glsXpageXglsnumberformat{}{100}\delimN 
-\glsXpageXglsnumberformat{}{101}}}\relax\glsresetentrylist
-\glossaryentryfield{dss}{\glsnamefont{DSS}}{Digitized Sky Survey}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{68}}}\relax\glsresetentrylist
+\glsXpageXglsnumberformat{}{33}\delimN 
+\glsXpageXglsnumberformat{}{36}\delimN 
+\glsXpageXglsnumberformat{}{55}\delimN 
+\glsXpageXglsnumberformat{}{84}\delimN 
+\glsXpageXglsnumberformat{}{109}\delimN 
+\glsXpageXglsnumberformat{}{113}\delimN 
+\glsXpageXglsnumberformat{}{114}}}\relax\glsresetentrylist
+\glossaryentryfield{donor}{\glsnamefont{donor}}{non-degenerate companion in the \gls {sds}}{\relax }{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{27}\delimN 
+\glsXpageXglsnumberformat{}{41}\delimN 
+\glsXpageXglsnumberformat{}{55}\delimR 
+\glsXpageXglsnumberformat{}{57}\delimN 
+\glsXpageXglsnumberformat{}{72}\delimN 
+\glsXpageXglsnumberformat{}{75}\delimN 
+\glsXpageXglsnumberformat{}{77}\delimN 
+\glsXpageXglsnumberformat{}{81}\delimN 
+\glsXpageXglsnumberformat{}{110}\delimR 
+\glsXpageXglsnumberformat{}{112}}}\relax\glsresetentrylist
 \glossaryentryfield{dtd}{\glsnamefont{DTD}}{delay time distribution - expected supernova rate over time after a brief outburst of starformation}{\relax }{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{11}\delimN 
 \glsXpageXglsnumberformat{}{12}\delimN 
-\glsXpageXglsnumberformat{}{13}\delimN 
-\glsXpageXglsnumberformat{}{20}\delimN 
-\glsXpageXglsnumberformat{}{32}}}\glsgroupskip
+\glsXpageXglsnumberformat{}{23}\delimN 
+\glsXpageXglsnumberformat{}{36}}}\glsgroupskip
 \glsgroupheading{E}\relax\glsresetentrylist
-\glossaryentryfield{elitism}{\glsnamefont{elitism}}{elitism}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{95}\delimN 
-\glsXpageXglsnumberformat{}{137}\delimN 
-\glsXpageXglsnumberformat{}{138}}}\relax\glsresetentrylist
 \glossaryentryfield{epm}{\glsnamefont{EPM}}{Expanding Photosphere Method \protect \citep  {1974ApJ...193...27K}}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{19}}}\relax\glsresetentrylist
+\glsXpageXglsnumberformat{}{21}}}\relax\glsresetentrylist
 \glossaryentryfield{ew}{\glsnamefont{Equivalent Width}}{width of a rectangle that has the same area as a spectral line when taken to zero flux}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{56}\delimR 
-\glsXpageXglsnumberformat{}{59}\delimN 
-\glsXpageXglsnumberformat{}{61}}}\relax\glsresetentrylist
+\glsXpageXglsnumberformat{}{60}\delimN 
+\glsXpageXglsnumberformat{}{62}\delimR 
+\glsXpageXglsnumberformat{}{64}}}\relax\glsresetentrylist
 \glossaryentryfield{essence}{\glsnamefont{ESSENCE}}{The `Equation of State: SupErNovae trace Cosmic Expansion' project \protect \citep  [ESSENCE;][]{2002AAS...201.7809G}}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{5}}}\relax\glsresetentrylist
+\glsXpageXglsnumberformat{}{6}}}\relax\glsresetentrylist
 \glossaryentryfield{evla}{\glsnamefont{EVLA}}{Extended Very Large Array radio telescope located in North America}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{31}}}\glsgroupskip
+\glsXpageXglsnumberformat{}{36}}}\glsgroupskip
 \glsgroupheading{F}\relax\glsresetentrylist
-\glossaryentryfield{feh}{\glsnamefont{iron abundance}}{iron abundance relative to the sun}{\protect \textrm  {[Fe/H]}}{\glossaryentrynumbers{\relax 
+\glossaryentryfield{feh}{\glsnamefont{metallicity~}}{iron abundance relative to the sun}{\protect \textrm  {[Fe/H]}}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{i}, 
-\glsXpageXglsnumberformat{}{37}\delimN 
-\glsXpageXglsnumberformat{}{59}\delimN 
-\glsXpageXglsnumberformat{}{61}\delimN 
-\glsXpageXglsnumberformat{}{62}\delimN 
-\glsXpageXglsnumberformat{}{71}\delimN 
-\glsXpageXglsnumberformat{}{73}\delimN 
-\glsXpageXglsnumberformat{}{132}\delimN 
+\glsXpageXglsnumberformat{}{41}\delimN 
+\glsXpageXglsnumberformat{}{63}\delimR 
+\glsXpageXglsnumberformat{}{66}\delimN 
+\glsXpageXglsnumberformat{}{76}\delimN 
+\glsXpageXglsnumberformat{}{82}\delimN 
+\glsXpageXglsnumberformat{}{83}\delimN 
+\glsXpageXglsnumberformat{}{110}\delimN 
 \glsXpageXglsnumberformat{}{140}\delimN 
-\glsXpageXglsnumberformat{}{141}}}\relax\glsresetentrylist
-\glossaryentryfield{fitness}{\glsnamefont{fitness}}{goodness of fit term in Genetic Algorithms}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{90}\delimN 
-\glsXpageXglsnumberformat{}{91}\delimN 
-\glsXpageXglsnumberformat{}{134}\delimN 
-\glsXpageXglsnumberformat{}{136}\delimN 
-\glsXpageXglsnumberformat{}{137}\delimN 
-\glsXpageXglsnumberformat{}{139}}}\relax\glsresetentrylist
+\glsXpageXglsnumberformat{}{149}}}\relax\glsresetentrylist
 \glossaryentryfield{flames}{\glsnamefont{FLAMES}}{Multi-object, intermediate and high resolution spectrograph mounted on the \gls {vlt}}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{100}\delimN 
-\glsXpageXglsnumberformat{}{102}}}\relax\glsresetentrylist
+\glsXpageXglsnumberformat{}{76}\delimN 
+\glsXpageXglsnumberformat{}{77}\delimN 
+\glsXpageXglsnumberformat{}{110}\delimN 
+\glsXpageXglsnumberformat{}{113}}}\relax\glsresetentrylist
 \glossaryentryfield{fwhm}{\glsnamefont{FWHM}}{Full Width Half Maximum}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{42}}}\glsgroupskip
+\glsXpageXglsnumberformat{}{47}}}\glsgroupskip
 \glsgroupheading{G}\relax\glsresetentrylist
-\glossaryentryfield{ga}{\glsnamefont{GA}}{genetic algorithm}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{80}\delimN 
-\glsXpageXglsnumberformat{}{89}\delimR 
-\glsXpageXglsnumberformat{}{97}\delimN 
-\glsXpageXglsnumberformat{}{99}\delimN 
-\glsXpageXglsnumberformat{}{103}\delimN 
+\glsnonextpages \glossaryentryfield{ga}{\glsnamefont{GA}}{genetic algorithm}{\relax }{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{88}\delimN 
+\glsXpageXglsnumberformat{}{98}\delimR 
 \glsXpageXglsnumberformat{}{104}\delimN 
-\glsXpageXglsnumberformat{}{133}\delimR 
-\glsXpageXglsnumberformat{}{137}\delimN 
-\glsXpageXglsnumberformat{}{140}\delimN 
-\glsXpageXglsnumberformat{}{141}}}\relax\glsresetentrylist
+\glsXpageXglsnumberformat{}{108}\delimN 
+\glsXpageXglsnumberformat{}{109}\delimN 
+\glsXpageXglsnumberformat{}{113}\delimN 
+\glsXpageXglsnumberformat{}{114}\delimN 
+\glsXpageXglsnumberformat{}{141}\delimR 
+\glsXpageXglsnumberformat{}{145}\delimN 
+\glsXpageXglsnumberformat{}{148}\delimR 
+\glsXpageXglsnumberformat{}{150}}}\relax\glsresetentrylist
+\glossarysubentryfield{1}{child}{\glsnamefont{child}}{member of the new generation created by parents (members of the old generation)}{\relax }{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{99}\delimN 
+\glsXpageXglsnumberformat{}{146}}}\relax\glsresetentrylist
+\glossarysubentryfield{1}{crossover}{\glsnamefont{crossover}}{binary operator to create new individual from two or more old individuals}{\relax }{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{99}\delimN 
+\glsXpageXglsnumberformat{}{104}\delimN 
+\glsXpageXglsnumberformat{}{143}\delimN 
+\glsXpageXglsnumberformat{}{144}\delimN 
+\glsXpageXglsnumberformat{}{146}\delimN 
+\glsXpageXglsnumberformat{}{147}}}\relax\glsresetentrylist
+\glossarysubentryfield{1}{elitism}{\glsnamefont{elitism}}{certain percentage of the fittest \glspl {individual} advance unaltered to the next generation}{\relax }{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{104}\delimN 
+\glsXpageXglsnumberformat{}{145}\delimN 
+\glsXpageXglsnumberformat{}{146}\delimN 
+\glsXpageXglsnumberformat{}{149}}}\relax\glsresetentrylist
+\glossarysubentryfield{1}{fitness}{\glsnamefont{fitness}}{goodness of fit term in Genetic Algorithms}{\relax }{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{99}\delimN 
+\glsXpageXglsnumberformat{}{142}\delimN 
+\glsXpageXglsnumberformat{}{144}\delimN 
+\glsXpageXglsnumberformat{}{145}\delimN 
+\glsXpageXglsnumberformat{}{147}}}\relax\glsresetentrylist
+\glossarysubentryfield{1}{gene}{\glsnamefont{gene}}{Genetic Algorithm term for an individual parameter}{\relax }{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{142}\delimN 
+\glsXpageXglsnumberformat{}{144}\delimR 
+\glsXpageXglsnumberformat{}{146}}}\relax\glsresetentrylist
+\glossarysubentryfield{1}{genome}{\glsnamefont{genome}}{describes the parameter set of an indivdual}{\relax }{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{99}\delimN 
+\glsXpageXglsnumberformat{}{142}\delimN 
+\glsXpageXglsnumberformat{}{144}\delimN 
+\glsXpageXglsnumberformat{}{146}}}\relax\glsresetentrylist
+\glossarysubentryfield{1}{genotype}{\glsnamefont{genotype}}{vectorized representation of the parameters}{\relax }{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{99}\delimN 
+\glsXpageXglsnumberformat{}{142}}}\relax\glsresetentrylist
+\glossarysubentryfield{1}{individual}{\glsnamefont{individual}}{single representation of a parameter set}{\relax }{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{99}\delimN 
+\glsXpageXglsnumberformat{}{104}\delimN 
+\glsXpageXglsnumberformat{}{116}\delimN 
+\glsXpageXglsnumberformat{}{142}\delimR 
+\glsXpageXglsnumberformat{}{148}}}\relax\glsresetentrylist
+\glossarysubentryfield{1}{mutation}{\glsnamefont{mutation}}{unary operator to alter a newly created individual}{\relax }{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{143}\delimN 
+\glsXpageXglsnumberformat{}{144}\delimN 
+\glsXpageXglsnumberformat{}{146}\delimN 
+\glsXpageXglsnumberformat{}{147}}}\relax\glsresetentrylist
+\glossarysubentryfield{1}{parent}{\glsnamefont{parent}}{member of the old generation creating a child (member of the next generation)}{\relax }{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{146}}}\relax\glsresetentrylist
+\glossarysubentryfield{1}{phenotype}{\glsnamefont{phenotype}}{solution to a set of parameters}{\relax }{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{99}\delimN 
+\glsXpageXglsnumberformat{}{142}\delimN 
+\glsXpageXglsnumberformat{}{144}}}\relax\glsresetentrylist
+\glossarysubentryfield{1}{rws}{\glsnamefont{roulette~wheel~selection}}{special selection function in Genetic algorithms see Figure~\protect \vref  {fig:roulettewheel}}{\relax }{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{103}\delimN 
+\glsXpageXglsnumberformat{}{145}\delimN 
+\glsXpageXglsnumberformat{}{147}\delimN 
+\glsXpageXglsnumberformat{}{149}}}\relax\glsresetentrylist
+\glossarysubentryfield{1}{superindividual}{\glsnamefont{superindividual}}{Individual with extremely high fitness, which has only one parameter close to optimal}{\relax }{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{144}\delimN 
+\glsXpageXglsnumberformat{}{145}}}\relax\glsresetentrylist
 \glossaryentryfield{gaia}{\glsnamefont{GAIA}}{Global Astrometric Interferometer for Astrophysics \protect \citep  {2001A&A...369..339P}}{\relax }{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{6}}}\relax\glsresetentrylist
-\glossaryentryfield{gene}{\glsnamefont{gene}}{Genetic Algorithm term for an individual parameter}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{134}\delimN 
-\glsXpageXglsnumberformat{}{136}\delimR 
-\glsXpageXglsnumberformat{}{138}}}\relax\glsresetentrylist
-\glossaryentryfield{genome}{\glsnamefont{genome}}{describes the parameter set of an indivdual}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{90}\delimN 
-\glsXpageXglsnumberformat{}{134}\delimN 
-\glsXpageXglsnumberformat{}{136}\delimN 
-\glsXpageXglsnumberformat{}{138}}}\relax\glsresetentrylist
-\glossaryentryfield{genotype}{\glsnamefont{genotype}}{vectorized representation of the parameters}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{90}\delimN 
-\glsXpageXglsnumberformat{}{134}}}\relax\glsresetentrylist
+\glossaryentryfield{gh09}{\glsnamefont{GH09}}{short for \protect \citet  {2009ApJ...691....1G}}{\relax }{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{40}\delimR 
+\glsXpageXglsnumberformat{}{42}\delimN 
+\glsXpageXglsnumberformat{}{45}\delimN 
+\glsXpageXglsnumberformat{}{50}\delimN 
+\glsXpageXglsnumberformat{}{51}\delimN 
+\glsXpageXglsnumberformat{}{57}\delimN 
+\glsXpageXglsnumberformat{}{60}\delimN 
+\glsXpageXglsnumberformat{}{70}\delimN 
+\glsXpageXglsnumberformat{}{71}}}\relax\glsresetentrylist
 \glossaryentryfield{gnirs}{\glsnamefont{GNIRS}}{Gemini Near InfraRed Spectrograph mounted on the Gemini North Telescope}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{100}}}\relax\glsresetentrylist
+\glsXpageXglsnumberformat{}{110}}}\relax\glsresetentrylist
 \glossaryentryfield{grb}{\glsnamefont{GRB}}{Gamma Ray Burst}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{6}\delimN 
 \glsXpageXglsnumberformat{}{7}\delimN 
-\glsXpageXglsnumberformat{}{17}}}\glsgroupskip
+\glsXpageXglsnumberformat{}{19}}}\glsgroupskip
 \glsgroupheading{H}\relax\glsresetentrylist
 \glossaryentryfield{halpha}{\glsnamefont{\protect \ensuremath  {\protect \textrm  {H}\alpha }}}{First line of the Balmer series at 6563\protect \tmspace  +\thinmuskip {.1667em}\r A}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{7}\delimN 
-\glsXpageXglsnumberformat{}{62}}}\relax\glsresetentrylist
+\glsXpageXglsnumberformat{}{8}\delimN 
+\glsXpageXglsnumberformat{}{65}}}\relax\glsresetentrylist
 \glossaryentryfield{hete2}{\glsnamefont{HETE2}}{High Energy Transient Explorer}{\relax }{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{7}}}\relax\glsresetentrylist
 \glossaryentryfield{hires}{\glsnamefont{HIRES}}{High Resolution Echelle Spectrometer mounted on the Keck Telescope}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{36}\delimN 
-\glsXpageXglsnumberformat{}{53}\delimN 
-\glsXpageXglsnumberformat{}{61}}}\relax\glsresetentrylist
+\glsXpageXglsnumberformat{}{40}\delimN 
+\glsXpageXglsnumberformat{}{57}\delimN 
+\glsXpageXglsnumberformat{}{63}}}\relax\glsresetentrylist
 \glossaryentryfield{hst}{\glsnamefont{HST}}{Hubble Space Telescope}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{5}\delimN 
-\glsXpageXglsnumberformat{}{42}\delimN 
-\glsXpageXglsnumberformat{}{43}\delimN 
-\glsXpageXglsnumberformat{}{49}\delimN 
-\glsXpageXglsnumberformat{}{54}\delimN 
-\glsXpageXglsnumberformat{}{105}\delimN 
-\glsXpageXglsnumberformat{}{109}}}\relax\glsresetentrylist
+\glsXpageXglsnumberformat{}{6}\delimN 
+\glsXpageXglsnumberformat{}{47}\delimN 
+\glsXpageXglsnumberformat{}{48}\delimN 
+\glsXpageXglsnumberformat{}{53}\delimN 
+\glsXpageXglsnumberformat{}{58}\delimN 
+\glsXpageXglsnumberformat{}{70}\delimN 
+\glsXpageXglsnumberformat{}{115}\delimN 
+\glsXpageXglsnumberformat{}{119}}}\relax\glsresetentrylist
 \glossaryentryfield{hzsns}{\glsnamefont{HZSNS}}{High Z Supernova Search, led by Brian Schmidt}{\relax }{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{5}\delimN 
-\glsXpageXglsnumberformat{}{19}}}\glsgroupskip
+\glsXpageXglsnumberformat{}{21}}}\glsgroupskip
 \glsgroupheading{I}\relax\glsresetentrylist
 \glossaryentryfield{iau}{\glsnamefont{IAU}}{International Astronomical Union}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{41}}}\relax\glsresetentrylist
+\glsXpageXglsnumberformat{}{45}}}\relax\glsresetentrylist
 \glossaryentryfield{idl}{\glsnamefont{IDL}}{Interactive Data Language}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{53}}}\relax\glsresetentrylist
+\glsXpageXglsnumberformat{}{57}}}\relax\glsresetentrylist
 \glossaryentryfield{ifu}{\glsnamefont{IFU}}{Optical instrument combining spectrographic and imaging capabilities, used to obtain spatially resolved spectra}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{5}\delimN 
-\glsXpageXglsnumberformat{}{109}}}\relax\glsresetentrylist
+\glsXpageXglsnumberformat{}{6}\delimN 
+\glsXpageXglsnumberformat{}{119}}}\relax\glsresetentrylist
 \glossaryentryfield{ige}{\glsnamefont{IGE}}{Iron Group Element}{\relax }{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{8}\delimN 
 \glsXpageXglsnumberformat{}{14}\delimR 
-\glsXpageXglsnumberformat{}{16}\delimN 
-\glsXpageXglsnumberformat{}{22}\delimN 
-\glsXpageXglsnumberformat{}{51}\delimN 
-\glsXpageXglsnumberformat{}{85}\delimN 
-\glsXpageXglsnumberformat{}{86}\delimN 
-\glsXpageXglsnumberformat{}{88}\delimN 
-\glsXpageXglsnumberformat{}{91}}}\relax\glsresetentrylist
+\glsXpageXglsnumberformat{}{18}\delimN 
+\glsXpageXglsnumberformat{}{25}\delimN 
+\glsXpageXglsnumberformat{}{55}\delimN 
+\glsXpageXglsnumberformat{}{93}\delimN 
+\glsXpageXglsnumberformat{}{94}\delimN 
+\glsXpageXglsnumberformat{}{97}\delimN 
+\glsXpageXglsnumberformat{}{100}}}\relax\glsresetentrylist
 \glossaryentryfield{ime}{\glsnamefont{IME}}{Intermediate Mass Element}{\relax }{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{14}\delimR 
-\glsXpageXglsnumberformat{}{16}\delimN 
-\glsXpageXglsnumberformat{}{29}}}\relax\glsresetentrylist
-\glossaryentryfield{individual}{\glsnamefont{individual}}{single representation of a parameter set}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{90}\delimN 
-\glsXpageXglsnumberformat{}{91}\delimN 
-\glsXpageXglsnumberformat{}{95}\delimN 
-\glsXpageXglsnumberformat{}{134}\delimR 
-\glsXpageXglsnumberformat{}{140}}}\relax\glsresetentrylist
+\glsXpageXglsnumberformat{}{17}\delimN 
+\glsXpageXglsnumberformat{}{32}}}\relax\glsresetentrylist
 \glossaryentryfield{int}{\glsnamefont{INT}}{Isaac Newton 2.5\protect \tmspace  +\thinmuskip {.1667em}m Telescope}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{37}\delimN 
-\glsXpageXglsnumberformat{}{42}\delimN 
-\glsXpageXglsnumberformat{}{43}}}\relax\glsresetentrylist
-\glossaryentryfield{iraf}{\glsnamefont{IRAF}}{Image Reduction and Analysis Facility maintained by NOAO}{\relax }{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{41}\delimN 
-\glsXpageXglsnumberformat{}{53}}}\relax\glsresetentrylist
+\glsXpageXglsnumberformat{}{47}}}\relax\glsresetentrylist
+\glossaryentryfield{iraf}{\glsnamefont{IRAF}}{Image Reduction and Analysis Facility maintained by NOAO}{\relax }{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{45}\delimN 
+\glsXpageXglsnumberformat{}{57}\delimN 
+\glsXpageXglsnumberformat{}{59}\delimN 
+\glsXpageXglsnumberformat{}{63}\delimN 
+\glsXpageXglsnumberformat{}{118}}}\relax\glsresetentrylist
 \glossaryentryfield{ism}{\glsnamefont{ISM}}{Interstellar Medium}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{20}\delimN 
-\glsXpageXglsnumberformat{}{35}\delimN 
-\glsXpageXglsnumberformat{}{48}\delimN 
-\glsXpageXglsnumberformat{}{75}}}\glsgroupskip
+\glsXpageXglsnumberformat{}{22}\delimN 
+\glsXpageXglsnumberformat{}{39}\delimN 
+\glsXpageXglsnumberformat{}{52}\delimN 
+\glsXpageXglsnumberformat{}{84}}}\glsgroupskip
 \glsgroupheading{K}\relax\glsresetentrylist
 \glossaryentryfield{kait}{\glsnamefont{KAIT}}{Katzman Automatic Imaging Telescope \protect \citep  {2001ASPC..246..121F}}{\relax }{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{5}}}\glsgroupskip
 \glsgroupheading{L}\relax\glsresetentrylist
 \glossaryentryfield{lbol}{\glsnamefont{\protect \ensuremath  {L_\protect \textrm  {bol}}}}{bolometric luminosity}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{83}}}\relax\glsresetentrylist
+\glsXpageXglsnumberformat{}{91}}}\relax\glsresetentrylist
 \glossaryentryfield{ligo}{\glsnamefont{LIGO}}{Laser Interferometer Gravitational Wave Observatory}{\relax }{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{7}}}\relax\glsresetentrylist
 \glossaryentryfield{aligo}{\glsnamefont{Advanced LIGO}}{Advanced LIGO}{\relax }{\glossaryentrynumbers{\relax 
@@ -277,329 +314,398 @@
 \glossaryentryfield{lisa}{\glsnamefont{LISA}}{Laser Interferometer Space Antenna \protect \citep  {1994ESAJ...18..219J}}{\relax }{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{7}}}\relax\glsresetentrylist
 \glossaryentryfield{lmc}{\glsnamefont{\protect \object {LMC}}}{Large Magellanic Cloud}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{20}}}\relax\glsresetentrylist
-\glossaryentryfield{logg}{\glsnamefont{surface gravity}}{surface gravity}{\protect \ensuremath  {\protect \textrm  {log}\protect \tmspace  +\thinmuskip {.1667em}g}}{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{22}\delimN 
+\glsXpageXglsnumberformat{}{23}}}\relax\glsresetentrylist
+\glossaryentryfield{logg}{\glsnamefont{surface gravity~}}{gravity at the surface of a star}{\protect \ensuremath  {\protect \textrm  {log}\protect \tmspace  +\thinmuskip {.1667em}g}}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{i}, 
-\glsXpageXglsnumberformat{}{58}\delimN 
-\glsXpageXglsnumberformat{}{59}\delimN 
-\glsXpageXglsnumberformat{}{61}\delimN 
-\glsXpageXglsnumberformat{}{62}\delimN 
-\glsXpageXglsnumberformat{}{73}\delimN 
-\glsXpageXglsnumberformat{}{132}\delimN 
+\glsXpageXglsnumberformat{}{63}\delimR 
+\glsXpageXglsnumberformat{}{66}\delimN 
+\glsXpageXglsnumberformat{}{82}\delimN 
+\glsXpageXglsnumberformat{}{83}\delimN 
+\glsXpageXglsnumberformat{}{110}\delimN 
 \glsXpageXglsnumberformat{}{140}\delimN 
-\glsXpageXglsnumberformat{}{141}}}\relax\glsresetentrylist
+\glsXpageXglsnumberformat{}{149}}}\relax\glsresetentrylist
 \glossaryentryfield{loss}{\glsnamefont{LOSS}}{Lick Observatory Supernova Search \protect \citep  {2000AIPC..522..103L}}{\relax }{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{5}\delimN 
 \glsXpageXglsnumberformat{}{8}\delimN 
-\glsXpageXglsnumberformat{}{14}}}\relax\glsresetentrylist
+\glsXpageXglsnumberformat{}{13}}}\relax\glsresetentrylist
 \glossaryentryfield{lris}{\glsnamefont{LRIS}}{Low Resolution Imaging Spectrometer mounted on the Keck Telescope}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{53}}}\relax\glsresetentrylist
+\glsXpageXglsnumberformat{}{57}\delimN 
+\glsXpageXglsnumberformat{}{64}}}\relax\glsresetentrylist
 \glossaryentryfield{lsr}{\glsnamefont{LSR}}{Local Standard of Rest}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{37}\delimN 
 \glsXpageXglsnumberformat{}{41}\delimN 
-\glsXpageXglsnumberformat{}{46}\delimN 
-\glsXpageXglsnumberformat{}{48}}}\relax\glsresetentrylist
+\glsXpageXglsnumberformat{}{45}\delimN 
+\glsXpageXglsnumberformat{}{50}\delimN 
+\glsXpageXglsnumberformat{}{52}\delimN 
+\glsXpageXglsnumberformat{}{59}}}\relax\glsresetentrylist
 \glossaryentryfield{lsst}{\glsnamefont{LSST}}{Large Synoptic Survey Telescope}{\relax }{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{6}}}\relax\glsresetentrylist
 \glossaryentryfield{lte}{\glsnamefont{LTE}}{Local Thermodynamic Equilibrium}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{81}\delimN 
-\glsXpageXglsnumberformat{}{82}}}\glsgroupskip
+\glsXpageXglsnumberformat{}{63}\delimN 
+\glsXpageXglsnumberformat{}{64}\delimN 
+\glsXpageXglsnumberformat{}{89}\delimN 
+\glsXpageXglsnumberformat{}{90}}}\glsgroupskip
 \glsgroupheading{M}\relax\glsresetentrylist
 \glossaryentryfield{mainsequence}{\glsnamefont{main sequence}}{main sequence star}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{66}\delimN 
-\glsXpageXglsnumberformat{}{99}}}\relax\glsresetentrylist
+\glsXpageXglsnumberformat{}{72}\delimN 
+\glsXpageXglsnumberformat{}{109}}}\relax\glsresetentrylist
 \glossaryentryfield{makee}{\glsnamefont{MAKEE}}{MAuna Kea Echelle Extraction by Tom Barlow available at \protect \url  {http://spider.ipac.caltech.edu/staff/tab/makee/index.html}}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{53}}}\relax\glsresetentrylist
-\glossaryentryfield{mc}{\glsnamefont{MC}}{Monte Carlo}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{62}\delimN 
-\glsXpageXglsnumberformat{}{82}\delimR 
-\glsXpageXglsnumberformat{}{84}}}\relax\glsresetentrylist
-\glossaryentryfield{mgb}{\glsnamefont{Mg \protect \textsc  {i} b}}{Triplet at 5167\protect \tmspace  +\thinmuskip {.1667em}\r A, 5173\protect \tmspace  +\thinmuskip {.1667em}\r Aand 5184\protect \tmspace  +\thinmuskip {.1667em}\r A}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{68}}}\relax\glsresetentrylist
-\glossaryentryfield{migrad}{\glsnamefont{MIGRAD}}{numerical gradient optimization tools - part of \gls {minuit}}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{62}}}\relax\glsresetentrylist
-\glossaryentryfield{minuit}{\glsnamefont{MINUIT}}{collection of numerical optimization tools \protect \citep  {James:1975dr}}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{62}\delimN 
-\glsXpageXglsnumberformat{}{107}}}\relax\glsresetentrylist
-\glossaryentryfield{mlcs}{\glsnamefont{MLCS}}{Multicolor Light Curve Shape method \protect \citep  [MLCS;][]{1996ApJ...473...88R}}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{19}}}\relax\glsresetentrylist
-\glossaryentryfield{mlc}{\glsnamefont{MLMC}}{Mazzali and Lucy SN Ia spectrum synthesis code}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{79}\delimR 
-\glsXpageXglsnumberformat{}{84}\delimN 
-\glsXpageXglsnumberformat{}{88}\delimN 
-\glsXpageXglsnumberformat{}{89}\delimN 
-\glsXpageXglsnumberformat{}{91}\delimR 
-\glsXpageXglsnumberformat{}{93}\delimN 
-\glsXpageXglsnumberformat{}{97}\delimN 
-\glsXpageXglsnumberformat{}{103}}}\relax\glsresetentrylist
-\glossaryentryfield{moog}{\glsnamefont{MOOG}}{spectral synthesis software \protect \citep  {1973ApJ...184..839S}}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{41}\delimN 
 \glsXpageXglsnumberformat{}{57}}}\relax\glsresetentrylist
-\glossaryentryfield{mutation}{\glsnamefont{mutation}}{unary operator to alter a newly created individual}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{135}\delimN 
-\glsXpageXglsnumberformat{}{136}\delimN 
-\glsXpageXglsnumberformat{}{138}\delimN 
-\glsXpageXglsnumberformat{}{139}}}\glsgroupskip
-\glsgroupheading{N}\relax\glsresetentrylist
-\glossaryentryfield{nebularapprox}{\glsnamefont{nebular approximation}}{Assumes that the plasma condition are controlled by a central radiation source. The radiation field decreases with the distance to the source by geometrical dilution. See \protect \citet  {1978stat.book.....M} for details}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{82}\delimN 
-\glsXpageXglsnumberformat{}{107}}}\relax\glsresetentrylist
-\glossarysubentryfield{1}{modnebularapprox}{\glsnamefont{modified nebular approximation}}{In contrast to \gls {nebularapprox} where only geometrical dilution is taken into account, the modified nebular approximation also takes dilution by other radiative processes into account}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{82}}}\relax\glsresetentrylist
-\glossaryentryfield{nir}{\glsnamefont{NIR}}{near infrared}{\relax }{\glossaryentrynumbers{\relax 
+\glossaryentryfield{mc}{\glsnamefont{MC}}{Monte Carlo}{\relax }{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{66}\delimN 
+\glsXpageXglsnumberformat{}{90}\delimR 
+\glsXpageXglsnumberformat{}{92}}}\relax\glsresetentrylist
+\glossaryentryfield{mchan}{\glsnamefont{Chandrasekhar Mass~}}{Mass when the core of a star collapses due to insufficient degeneracy pressure - for a white dwarf $\approx 1.38\protect \tmspace  +\thinmuskip {.1667em}M_\odot $ see \protect \citet  {1931ApJ....74...81C}}{\protect \ensuremath  {M_\protect \textrm  {Chan}}}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{11}\delimN 
-\glsXpageXglsnumberformat{}{14}\delimN 
-\glsXpageXglsnumberformat{}{84}\delimN 
-\glsXpageXglsnumberformat{}{87}}}\relax\glsresetentrylist
-\glossaryentryfield{nfl}{\glsnamefont{No Free Lunch Theorem}}{`No Free Lunch' theorem described in \protect \citet  {DBLP:journals/tec/DolpertM97}}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{134}\delimN 
-\glsXpageXglsnumberformat{}{136}}}\relax\glsresetentrylist
-\glossaryentryfield{nse}{\glsnamefont{NSE}}{Nuclear Statistical Equilibrium}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{29}}}\glsgroupskip
-\glsgroupheading{P}\relax\glsresetentrylist
-\glossaryentryfield{pcygni}{\glsnamefont{P Cygni}}{a hypergiant luminous blue variable with strong winds. often referred to as a description for line profiles}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{15}\delimN 
-\glsXpageXglsnumberformat{}{16}}}\relax\glsresetentrylist
-\glossaryentryfield{panstarrs}{\glsnamefont{PanSTARRS}}{Panoramic Survey Telescope \& Rapid Response System \protect \citep  {2004SPIE.5489...11K}}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{6}}}\relax\glsresetentrylist
-\glossaryentryfield{parent}{\glsnamefont{parent}}{member of the old generation creating a child (member of the next generation)}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{138}}}\relax\glsresetentrylist
-\glossaryentryfield{phenotype}{\glsnamefont{phenotype}}{solution to a set of parameters}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{90}\delimN 
-\glsXpageXglsnumberformat{}{134}\delimN 
-\glsXpageXglsnumberformat{}{136}}}\relax\glsresetentrylist
-\glossaryentryfield{psf}{\glsnamefont{PSF}}{Point Spread Function}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{42}\delimN 
-\glsXpageXglsnumberformat{}{43}}}\relax\glsresetentrylist
-\glossaryentryfield{ptf}{\glsnamefont{PTF}}{Palomar Transient Factory \protect \citep  {2009PASP..121.1334R}}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{6}}}\glsgroupskip
-\glsgroupheading{R}\relax\glsresetentrylist
-\glossaryentryfield{radeq}{\glsnamefont{radiative equilibrium}}{The net flux of energy between matter and radiation field is zero}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{79}\delimN 
-\glsXpageXglsnumberformat{}{83}}}\relax\glsresetentrylist
-\glossaryentryfield{rcw86}{\glsnamefont{\protect \object [SNR G315.0-02.3]{RCW 86}}}{supernova remnant sometimes associated with \protect \object {SN 185}}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{102}}}\relax\glsresetentrylist
-\glossaryentryfield{redgiant}{\glsnamefont{red giant}}{red giant star}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{52}\delimN 
-\glsXpageXglsnumberformat{}{99}}}\relax\glsresetentrylist
-\glossaryentryfield{rlof}{\glsnamefont{RLOF}}{Roche Lobe Overflow (see \protect \citet  {1971ARA&A...9..183P} for a more detailed description)}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{24}\delimN 
-\glsXpageXglsnumberformat{}{25}\delimN 
-\glsXpageXglsnumberformat{}{32}\delimN 
-\glsXpageXglsnumberformat{}{51}\delimN 
-\glsXpageXglsnumberformat{}{52}\delimN 
-\glsXpageXglsnumberformat{}{100}}}\relax\glsresetentrylist
-\glossaryentryfield{rms}{\glsnamefont{RMS}}{Root Mean Square}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{43}}}\relax\glsresetentrylist
-\glossaryentryfield{rosat}{\glsnamefont{ROSAT}}{ROSAT???}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{54}}}\relax\glsresetentrylist
-\glossaryentryfield{rsoph}{\glsnamefont{\protect \object [rs oph]{RS Ophiuci}}}{white dwarf accreting from a red giant - assumed progenitor of the \gls {sds}}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{24}\delimN 
-\glsXpageXglsnumberformat{}{48}}}\relax\glsresetentrylist
-\glossaryentryfield{rws}{\glsnamefont{RWS}}{roulette wheel selection}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{94}\delimN 
-\glsXpageXglsnumberformat{}{137}\delimN 
-\glsXpageXglsnumberformat{}{139}\delimN 
-\glsXpageXglsnumberformat{}{141}}}\glsgroupskip
-\glsgroupheading{S}\relax\glsresetentrylist
-\glossaryentryfield{scipy}{\glsnamefont{SciPy}}{Scientific Python \protect \cite  {Jones:2001fk}}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{62}}}\relax\glsresetentrylist
-\glossaryentryfield{scp}{\glsnamefont{SCP}}{Supernova Cosmology Project, led by Saul Perlmutter}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{5}\delimN 
-\glsXpageXglsnumberformat{}{19}}}\relax\glsresetentrylist
-\glossaryentryfield{sds}{\glsnamefont{SD-Scenario}}{single degenerate scenario (single white dwarf accreting from non-degenerate companion)}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{24}\delimN 
 \glsXpageXglsnumberformat{}{25}\delimN 
 \glsXpageXglsnumberformat{}{27}\delimN 
-\glsXpageXglsnumberformat{}{30}\delimR 
-\glsXpageXglsnumberformat{}{34}\delimN 
-\glsXpageXglsnumberformat{}{51}\delimN 
-\glsXpageXglsnumberformat{}{52}\delimN 
-\glsXpageXglsnumberformat{}{66}\delimN 
-\glsXpageXglsnumberformat{}{99}\delimR 
+\glsXpageXglsnumberformat{}{30}\delimN 
+\glsXpageXglsnumberformat{}{31}\delimN 
+\glsXpageXglsnumberformat{}{33}\delimN 
+\glsXpageXglsnumberformat{}{37}\delimN 
+\glsXpageXglsnumberformat{}{39}\delimN 
+\glsXpageXglsnumberformat{}{109}\delimN 
+\glsXpageXglsnumberformat{}{113}}}\relax\glsresetentrylist
+\glossaryentryfield{mgb}{\glsnamefont{Mg \protect \textsc  {i} b}}{Triplet at 5167\protect \tmspace  +\thinmuskip {.1667em}\r A, 5173\protect \tmspace  +\thinmuskip {.1667em}\r Aand 5184\protect \tmspace  +\thinmuskip {.1667em}\r A}{\relax }{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{77}}}\relax\glsresetentrylist
+\glossaryentryfield{migrad}{\glsnamefont{MIGRAD}}{numerical gradient optimization tools - part of \gls {minuit}}{\relax }{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{65}\delimN 
+\glsXpageXglsnumberformat{}{66}}}\relax\glsresetentrylist
+\glossaryentryfield{minuit}{\glsnamefont{MINUIT}}{collection of numerical optimization tools \protect \citep  {James:1975dr}}{\relax }{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{65}\delimN 
+\glsXpageXglsnumberformat{}{82}\delimN 
+\glsXpageXglsnumberformat{}{117}}}\relax\glsresetentrylist
+\glossaryentryfield{mlcs}{\glsnamefont{MLCS}}{Multicolor Light Curve Shape method \protect \citep  [MLCS;][]{1996ApJ...473...88R}}{\relax }{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{21}}}\relax\glsresetentrylist
+\glossaryentryfield{mlc}{\glsnamefont{MLMC}}{Mazzali and Lucy SN Ia spectrum synthesis code}{\relax }{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{87}\delimR 
+\glsXpageXglsnumberformat{}{92}\delimN 
+\glsXpageXglsnumberformat{}{97}\delimN 
+\glsXpageXglsnumberformat{}{98}\delimN 
+\glsXpageXglsnumberformat{}{100}\delimN 
+\glsXpageXglsnumberformat{}{101}\delimN 
 \glsXpageXglsnumberformat{}{103}\delimN 
 \glsXpageXglsnumberformat{}{108}\delimN 
+\glsXpageXglsnumberformat{}{113}}}\relax\glsresetentrylist
+\glossaryentryfield{moog}{\glsnamefont{MOOG}}{spectral synthesis software \protect \citep  {1973ApJ...184..839S}}{\relax }{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{45}\delimN 
+\glsXpageXglsnumberformat{}{60}\delimN 
+\glsXpageXglsnumberformat{}{63}\delimN 
+\glsXpageXglsnumberformat{}{82}}}\glsgroupskip
+\glsgroupheading{N}\relax\glsresetentrylist
+\glossaryentryfield{nebularapprox}{\glsnamefont{nebular approximation}}{Assumes that the plasma condition are controlled by a central radiation source. The radiation field decreases with the distance to the source by geometrical dilution. See \protect \citet  {1978stat.book.....M} for details}{\relax }{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{90}\delimN 
+\glsXpageXglsnumberformat{}{117}}}\relax\glsresetentrylist
+\glossarysubentryfield{1}{modnebularapprox}{\glsnamefont{modified nebular approximation}}{In contrast to \gls {nebularapprox} where only geometrical dilution is taken into account, the modified nebular approximation also takes dilution by other radiative processes into account}{\relax }{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{90}}}\relax\glsresetentrylist
+\glossaryentryfield{nir}{\glsnamefont{NIR}}{near infrared}{\relax }{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{10}\delimN 
+\glsXpageXglsnumberformat{}{13}\delimN 
+\glsXpageXglsnumberformat{}{22}\delimN 
+\glsXpageXglsnumberformat{}{92}\delimN 
+\glsXpageXglsnumberformat{}{95}}}\relax\glsresetentrylist
+\glossaryentryfield{nfl}{\glsnamefont{No Free Lunch Theorem}}{`No Free Lunch' theorem described in \protect \citet  {DBLP:journals/tec/DolpertM97}}{\relax }{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{142}\delimN 
+\glsXpageXglsnumberformat{}{144}}}\relax\glsresetentrylist
+\glossaryentryfield{nse}{\glsnamefont{NSE}}{Nuclear Statistical Equilibrium}{\relax }{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{32}}}\glsgroupskip
+\glsgroupheading{P}\relax\glsresetentrylist
+\glossaryentryfield{pcygni}{\glsnamefont{P Cygni}}{a hypergiant luminous blue variable with strong winds. Often referred to as a description for their line profiles showing a emission peak at the rest wavelength of the line and a blue-shifted absorption trough.}{\relax }{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{16}\delimN 
+\glsXpageXglsnumberformat{}{18}}}\relax\glsresetentrylist
+\glossaryentryfield{panstarrs}{\glsnamefont{PanSTARRS}}{Panoramic Survey Telescope \& Rapid Response System \protect \citep  {2004SPIE.5489...11K}}{\relax }{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{6}}}\relax\glsresetentrylist
+\glossaryentryfield{ppmxl}{\glsnamefont{PPMXL}}{PPMXL Catalog of Positions and Proper Motions on the ICRS \protect \citep  {2010AJ....139.2440R}}{\relax }{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{70}\delimN 
+\glsXpageXglsnumberformat{}{71}}}\relax\glsresetentrylist
+\glossaryentryfield{psf}{\glsnamefont{PSF}}{Point Spread Function}{\relax }{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{47}}}\relax\glsresetentrylist
+\glossaryentryfield{ptf}{\glsnamefont{PTF}}{Palomar Transient Factory \protect \citep  {2009PASP..121.1334R}}{\relax }{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{6}}}\relax\glsresetentrylist
+\glossaryentryfield{pyraf}{\glsnamefont{PyRAF}}{Python wrap of \gls {iraf} maintained by STSCI}{\relax }{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{76}\delimN 
+\glsXpageXglsnumberformat{}{80}}}\glsgroupskip
+\glsgroupheading{R}\relax\glsresetentrylist
+\glossaryentryfield{radeq}{\glsnamefont{radiative equilibrium}}{The net flux of energy between matter and radiation field is zero}{\relax }{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{87}\delimN 
+\glsXpageXglsnumberformat{}{91}}}\relax\glsresetentrylist
+\glossaryentryfield{rcw86}{\glsnamefont{\protect \object [SNR G315.0-02.3]{RCW 86}}}{supernova remnant sometimes associated with \protect \object {SN~185}}{\relax }{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{113}}}\relax\glsresetentrylist
+\glossaryentryfield{redgiant}{\glsnamefont{red giant}}{red giant star}{\relax }{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{56}\delimN 
 \glsXpageXglsnumberformat{}{109}}}\relax\glsresetentrylist
-\glossaryentryfield{sdss}{\glsnamefont{SDSS}}{Sloan Digital Sky Survey}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{32}}}\relax\glsresetentrylist
-\glossaryentryfield{sfit}{\glsnamefont{SFIT}}{spectral fitting program for hot stars \protect \citep  {2001A&A...376..497J}}{\relax }{\glossaryentrynumbers{\relax 
+\glossaryentryfield{rlof}{\glsnamefont{RLOF}}{Roche Lobe Overflow (see \protect \citet  {1971ARA&A...9..183P} for a more detailed description)}{\relax }{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{27}\delimN 
+\glsXpageXglsnumberformat{}{29}\delimN 
+\glsXpageXglsnumberformat{}{36}\delimN 
+\glsXpageXglsnumberformat{}{37}\delimN 
 \glsXpageXglsnumberformat{}{55}\delimN 
-\glsXpageXglsnumberformat{}{57}\delimN 
-\glsXpageXglsnumberformat{}{61}}}\relax\glsresetentrylist
+\glsXpageXglsnumberformat{}{56}\delimN 
+\glsXpageXglsnumberformat{}{110}}}\relax\glsresetentrylist
+\glossaryentryfield{rms}{\glsnamefont{RMS}}{Root Mean Square}{\relax }{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{47}\delimN 
+\glsXpageXglsnumberformat{}{48}\delimN 
+\glsXpageXglsnumberformat{}{82}}}\relax\glsresetentrylist
+\glossaryentryfield{rosat}{\glsnamefont{ROSAT}}{short for R\"{o}ntgensatellit}{\relax }{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{58}}}\relax\glsresetentrylist
+\glossaryentryfield{rp04}{\glsnamefont{RP04}}{short for \protect \citet  {2004Natur.431.1069R}}{\relax }{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{40}\delimR 
+\glsXpageXglsnumberformat{}{43}\delimN 
+\glsXpageXglsnumberformat{}{45}\delimN 
+\glsXpageXglsnumberformat{}{47}\delimN 
+\glsXpageXglsnumberformat{}{48}\delimN 
+\glsXpageXglsnumberformat{}{50}\delimN 
+\glsXpageXglsnumberformat{}{51}\delimN 
+\glsXpageXglsnumberformat{}{53}\delimN 
+\glsXpageXglsnumberformat{}{56}\delimN 
+\glsXpageXglsnumberformat{}{58}\delimN 
+\glsXpageXglsnumberformat{}{59}\delimN 
+\glsXpageXglsnumberformat{}{70}}}\relax\glsresetentrylist
+\glossaryentryfield{rsoph}{\glsnamefont{\protect \object [rs oph]{RS Ophiuci}}}{white dwarf accreting from a red giant - assumed progenitor of the \gls {sds}}{\relax }{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{28}\delimN 
+\glsXpageXglsnumberformat{}{34}\delimN 
+\glsXpageXglsnumberformat{}{52}}}\glsgroupskip
+\glsgroupheading{S}\relax\glsresetentrylist
+\glossaryentryfield{scipy}{\glsnamefont{SciPy}}{Scientific Python \protect \cite  {Jones:2001fk}}{\relax }{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{65}\delimN 
+\glsXpageXglsnumberformat{}{140}}}\relax\glsresetentrylist
+\glossaryentryfield{scp}{\glsnamefont{SCP}}{Supernova Cosmology Project, led by Saul Perlmutter}{\relax }{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{5}\delimN 
+\glsXpageXglsnumberformat{}{21}}}\relax\glsresetentrylist
+\glossaryentryfield{sds}{\glsnamefont{SD-Scenario}}{single degenerate scenario (single white dwarf accreting from non-degenerate companion)}{\relax }{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{27}\delimN 
+\glsXpageXglsnumberformat{}{28}\delimN 
+\glsXpageXglsnumberformat{}{30}\delimN 
+\glsXpageXglsnumberformat{}{33}\delimN 
+\glsXpageXglsnumberformat{}{36}\delimR 
+\glsXpageXglsnumberformat{}{38}\delimN 
+\glsXpageXglsnumberformat{}{55}\delimN 
+\glsXpageXglsnumberformat{}{56}\delimN 
+\glsXpageXglsnumberformat{}{73}\delimN 
+\glsXpageXglsnumberformat{}{109}\delimR 
+\glsXpageXglsnumberformat{}{115}\delimN 
+\glsXpageXglsnumberformat{}{118}\delimN 
+\glsXpageXglsnumberformat{}{119}}}\relax\glsresetentrylist
+\glossaryentryfield{sdss}{\glsnamefont{SDSS}}{Sloan Digital Sky Survey}{\relax }{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{36}}}\relax\glsresetentrylist
+\glossaryentryfield{sextractor}{\glsnamefont{SExtractor}}{Source Extractor photometry program \protect \citep  {1996A&AS..117..393B}}{\relax }{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{76}}}\relax\glsresetentrylist
+\glossaryentryfield{sfit}{\glsnamefont{SFIT}}{spectral fitting program for hot stars \protect \citep  {2001A&A...376..497J}}{\relax }{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{59}\delimN 
+\glsXpageXglsnumberformat{}{62}\delimN 
+\glsXpageXglsnumberformat{}{63}}}\relax\glsresetentrylist
 \glossaryentryfield{skymapper}{\glsnamefont{SkyMapper}}{SkyMapper telescope \protect \citep  {2007PASA...24....1K}}{\relax }{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{6}}}\relax\glsresetentrylist
 \glossaryentryfield{snls}{\glsnamefont{SNLS}}{Supernova Legacy Survey \protect \citep  {2003AAS...203.8209P}}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{5}\delimN 
-\glsXpageXglsnumberformat{}{32}}}\relax\glsresetentrylist
+\glsXpageXglsnumberformat{}{6}\delimN 
+\glsXpageXglsnumberformat{}{36}}}\relax\glsresetentrylist
 \glossaryentryfield{sobolevapprox}{\glsnamefont{Sobolev approximation}}{Lines are approximation with an infinitley thin interaction region \protect \citep  [e.g. no broadening][]{1960mes..book.....S}}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{81}}}\relax\glsresetentrylist
+\glsXpageXglsnumberformat{}{89}}}\relax\glsresetentrylist
 \glossaryentryfield{sss}{\glsnamefont{SSS}}{supersoft X-ray\ source - believed to be emitted by nuclear fusion on a white dwarf's surface}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{25}\delimN 
-\glsXpageXglsnumberformat{}{32}\delimN 
-\glsXpageXglsnumberformat{}{102}}}\relax\glsresetentrylist
-\glossaryentryfield{superindividual}{\glsnamefont{\protect \textit  {superindividual}}}{Individual with extremely high fitness, which has only one parameter close to optimal}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{136}\delimN 
-\glsXpageXglsnumberformat{}{137}}}\relax\glsresetentrylist
+\glsXpageXglsnumberformat{}{28}\delimN 
+\glsXpageXglsnumberformat{}{36}\delimN 
+\glsXpageXglsnumberformat{}{113}}}\relax\glsresetentrylist
 \glsnonextpages \glossaryentryfield{sn}{\glsnamefont{Supernova}}{exploding star}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{36}\delimR 
-\glsXpageXglsnumberformat{}{38}\delimN 
-\glsXpageXglsnumberformat{}{40}\delimN 
-\glsXpageXglsnumberformat{}{46}\delimN 
-\glsXpageXglsnumberformat{}{47}\delimN 
-\glsXpageXglsnumberformat{}{49}\delimN 
-\glsXpageXglsnumberformat{}{52}\delimN 
-\glsXpageXglsnumberformat{}{66}}}\relax\glsresetentrylist
+\glsXpageXglsnumberformat{}{10}\delimN 
+\glsXpageXglsnumberformat{}{40}\delimR 
+\glsXpageXglsnumberformat{}{42}\delimN 
+\glsXpageXglsnumberformat{}{44}\delimN 
+\glsXpageXglsnumberformat{}{50}\delimR 
+\glsXpageXglsnumberformat{}{53}\delimN 
+\glsXpageXglsnumberformat{}{56}\delimN 
+\glsXpageXglsnumberformat{}{73}}}\relax\glsresetentrylist
 \glossarysubentryfield{1}{snr}{\glsnamefont{Remnant (SNR)}}{Remnant left visible post-explosion}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{46}}}\relax\glsresetentrylist
+\glsXpageXglsnumberformat{}{36}\delimN 
+\glsXpageXglsnumberformat{}{37}\delimN 
+\glsXpageXglsnumberformat{}{50}}}\relax\glsresetentrylist
 \glsnonextpages \glossarysubentryfield{1}{snia}{\glsnamefont{Type~Ia (SN~Ia)}}{Thermonuclear explosion of a white dwarf - spectra show no hydrogen but a strong silicon line}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{7}\delimR 
-\glsXpageXglsnumberformat{}{9}\delimN 
-\glsXpageXglsnumberformat{}{11}\delimR 
-\glsXpageXglsnumberformat{}{20}\delimN 
-\glsXpageXglsnumberformat{}{24}\delimR 
-\glsXpageXglsnumberformat{}{33}\delimN 
-\glsXpageXglsnumberformat{}{35}\delimR 
-\glsXpageXglsnumberformat{}{38}\delimN 
-\glsXpageXglsnumberformat{}{48}\delimN 
-\glsXpageXglsnumberformat{}{51}\delimN 
+\glsXpageXglsnumberformat{}{6}\delimR 
+\glsXpageXglsnumberformat{}{19}\delimN 
+\glsXpageXglsnumberformat{}{21}\delimN 
+\glsXpageXglsnumberformat{}{22}\delimN 
+\glsXpageXglsnumberformat{}{27}\delimR 
+\glsXpageXglsnumberformat{}{34}\delimN 
+\glsXpageXglsnumberformat{}{36}\delimR 
+\glsXpageXglsnumberformat{}{42}\delimN 
 \glsXpageXglsnumberformat{}{52}\delimN 
-\glsXpageXglsnumberformat{}{66}\delimR 
-\glsXpageXglsnumberformat{}{68}\delimN 
+\glsXpageXglsnumberformat{}{55}\delimN 
+\glsXpageXglsnumberformat{}{56}\delimN 
+\glsXpageXglsnumberformat{}{73}\delimN 
+\glsXpageXglsnumberformat{}{75}\delimN 
 \glsXpageXglsnumberformat{}{76}\delimN 
-\glsXpageXglsnumberformat{}{79}\delimN 
-\glsXpageXglsnumberformat{}{80}\delimN 
 \glsXpageXglsnumberformat{}{84}\delimN 
 \glsXpageXglsnumberformat{}{87}\delimN 
-\glsXpageXglsnumberformat{}{90}\delimR 
+\glsXpageXglsnumberformat{}{88}\delimN 
 \glsXpageXglsnumberformat{}{92}\delimN 
 \glsXpageXglsnumberformat{}{96}\delimN 
-\glsXpageXglsnumberformat{}{97}\delimN 
-\glsXpageXglsnumberformat{}{99}\delimN 
-\glsXpageXglsnumberformat{}{101}\delimR 
-\glsXpageXglsnumberformat{}{104}}}\relax\glsresetentrylist
-\glossarysubentryfield{2}{91bg}{\glsnamefont{91bg-like}}{Faint class of Type Ia supernovae similar to \protect \object {SN 1991bg} \protect \citep  {1992AJ....104.1543F}}{\relax }{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{99}\delimR 
+\glsXpageXglsnumberformat{}{101}\delimN 
+\glsXpageXglsnumberformat{}{104}\delimN 
+\glsXpageXglsnumberformat{}{108}\delimN 
+\glsXpageXglsnumberformat{}{109}\delimN 
+\glsXpageXglsnumberformat{}{111}\delimR 
+\glsXpageXglsnumberformat{}{114}}}\relax\glsresetentrylist
+\glossarysubentryfield{2}{02cx}{\glsnamefont{02cx-like}}{Peculiar class of Type Ia supernovae similar to \protect \object {SN~2002cx} \protect \citep  {2003PASP..115..453L}}{\relax }{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{8}}}\relax\glsresetentrylist
+\glossarysubentryfield{2}{91bg}{\glsnamefont{91bg-like}}{Faint class of Type Ia supernovae similar to \protect \object {SN~1991bg} \protect \citep  {1992AJ....104.1543F}}{\relax }{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{8}\delimN 
-\glsXpageXglsnumberformat{}{30}\delimN 
-\glsXpageXglsnumberformat{}{52}\delimN 
-\glsXpageXglsnumberformat{}{79}}}\relax\glsresetentrylist
-\glossarysubentryfield{2}{91t}{\glsnamefont{91T-like}}{Luminous class of Type Ia supernovae similar to \protect \object {SN 1991T} \protect \citep  {1992AJ....103.1632P}}{\relax }{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{33}\delimN 
+\glsXpageXglsnumberformat{}{56}\delimN 
+\glsXpageXglsnumberformat{}{88}}}\relax\glsresetentrylist
+\glossarysubentryfield{2}{91t}{\glsnamefont{91T-like}}{Luminous class of Type Ia supernovae similar to \protect \object {SN~1991T} \protect \citep  {1992AJ....103.1632P}}{\relax }{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{8}\delimN 
-\glsXpageXglsnumberformat{}{79}}}\relax\glsresetentrylist
+\glsXpageXglsnumberformat{}{88}}}\relax\glsresetentrylist
 \glossarysubentryfield{2}{branchnormal}{\glsnamefont{branch-normal}}{Large homogeneous class of Type Ia Supernovae, defined in \protect \citet  {1993AJ....106.2383B}}{\relax }{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{8}\delimN 
 \glsXpageXglsnumberformat{}{9}\delimN 
-\glsXpageXglsnumberformat{}{15}\delimN 
-\glsXpageXglsnumberformat{}{20}\delimN 
-\glsXpageXglsnumberformat{}{27}\delimN 
-\glsXpageXglsnumberformat{}{30}}}\relax\glsresetentrylist
-\glossarysubentryfield{2}{hvg}{\glsnamefont{HVG}}{high velocity group - Type Ia supernovae with a high photospheric velocity}{\relax }{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{16}\delimN 
+\glsXpageXglsnumberformat{}{22}\delimN 
+\glsXpageXglsnumberformat{}{31}\delimN 
+\glsXpageXglsnumberformat{}{33}}}\relax\glsresetentrylist
+\glossarysubentryfield{2}{hvg}{\glsnamefont{HVG}}{high velocity gradient - Type Ia supernovae with a fast evolution of photospheric velocity}{\relax }{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{8}}}\relax\glsresetentrylist
-\glossarysubentryfield{2}{lvg}{\glsnamefont{LVG}}{low velocity group - Type Ia supernovae with a low photospheric velocity}{\relax }{\glossaryentrynumbers{\relax 
+\glossarysubentryfield{2}{lvg}{\glsnamefont{LVG}}{low velocity gradient - Type Ia supernovae with a slow evolution of photospheric velocity}{\relax }{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{8}}}\relax\glsresetentrylist
 \glossarysubentryfield{1}{snibc}{\glsnamefont{Type~Ib/c}}{Collapse of the core of a massive star - spectrum shows no hydrogen and no silicon line}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{7}\delimN 
-\glsXpageXglsnumberformat{}{9}\delimN 
+\glsXpageXglsnumberformat{}{8}\delimR 
 \glsXpageXglsnumberformat{}{11}\delimN 
-\glsXpageXglsnumberformat{}{15}\delimN 
-\glsXpageXglsnumberformat{}{17}\delimN 
-\glsXpageXglsnumberformat{}{18}\delimN 
+\glsXpageXglsnumberformat{}{16}\delimN 
+\glsXpageXglsnumberformat{}{19}\delimN 
 \glsXpageXglsnumberformat{}{20}\delimN 
-\glsXpageXglsnumberformat{}{21}\delimN 
-\glsXpageXglsnumberformat{}{23}}}\relax\glsresetentrylist
+\glsXpageXglsnumberformat{}{22}\delimN 
+\glsXpageXglsnumberformat{}{24}\delimN 
+\glsXpageXglsnumberformat{}{26}\delimN 
+\glsXpageXglsnumberformat{}{27}}}\relax\glsresetentrylist
 \glossarysubentryfield{2}{snib}{\glsnamefont{Type~Ib}}{Spectrum shows no hydrogen and no silicon, but helium line}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{7}\delimN 
+\glsXpageXglsnumberformat{}{8}\delimN 
 \glsXpageXglsnumberformat{}{9}\delimN 
-\glsXpageXglsnumberformat{}{101}\delimN 
-\glsXpageXglsnumberformat{}{105}}}\relax\glsresetentrylist
+\glsXpageXglsnumberformat{}{112}\delimN 
+\glsXpageXglsnumberformat{}{115}}}\relax\glsresetentrylist
 \glossarysubentryfield{2}{snic}{\glsnamefont{Type~Ic}}{Spectrum shows no hydrogen, no silicon and no helium line}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{7}\delimN 
+\glsXpageXglsnumberformat{}{8}\delimN 
 \glsXpageXglsnumberformat{}{9}}}\relax\glsresetentrylist
 \glossarysubentryfield{1}{snii}{\glsnamefont{Type~II}}{Collapse of the core of a massive star - spectrum shows strong hydrogen line}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{7}\delimR 
-\glsXpageXglsnumberformat{}{9}\delimN 
-\glsXpageXglsnumberformat{}{11}\delimN 
+\glsXpageXglsnumberformat{}{8}\delimR 
+\glsXpageXglsnumberformat{}{12}\delimN 
 \glsXpageXglsnumberformat{}{14}\delimN 
-\glsXpageXglsnumberformat{}{16}\delimR 
-\glsXpageXglsnumberformat{}{22}}}\relax\glsresetentrylist
+\glsXpageXglsnumberformat{}{18}\delimN 
+\glsXpageXglsnumberformat{}{19}\delimN 
+\glsXpageXglsnumberformat{}{21}\delimN 
+\glsXpageXglsnumberformat{}{22}\delimN 
+\glsXpageXglsnumberformat{}{24}\delimN 
+\glsXpageXglsnumberformat{}{26}}}\relax\glsresetentrylist
 \glossarysubentryfield{2}{sniil}{\glsnamefont{SN~II~Linear}}{Lightcurve shows no plateau, but linear decline}{\relax }{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{9}\delimN 
-\glsXpageXglsnumberformat{}{23}}}\relax\glsresetentrylist
+\glsXpageXglsnumberformat{}{26}\delimN 
+\glsXpageXglsnumberformat{}{27}}}\relax\glsresetentrylist
 \glossarysubentryfield{2}{sniin}{\glsnamefont{Type II narrow-lined (Type IIn)}}{Spectrum shows narrow lines}{\relax }{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{9}}}\relax\glsresetentrylist
 \glossarysubentryfield{2}{sniip}{\glsnamefont{Type~II~Plateau (Type IIP)}}{Lightcurve shows plateau}{\relax }{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{9}\delimN 
-\glsXpageXglsnumberformat{}{19}}}\relax\glsresetentrylist
+\glsXpageXglsnumberformat{}{21}\delimN 
+\glsXpageXglsnumberformat{}{26}}}\relax\glsresetentrylist
 \glossarysubentryfield{2}{sniib}{\glsnamefont{Type~IIb}}{Spectrum shows hydrogen and helium lines}{\relax }{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{9}}}\relax\glsresetentrylist
 \glossaryentryfield{swift}{\glsnamefont{Swift}}{Swift Gamma-Ray Burst Mission}{\relax }{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{7}\delimN 
-\glsXpageXglsnumberformat{}{18}}}\glsgroupskip
+\glsXpageXglsnumberformat{}{20}}}\glsgroupskip
 \glsgroupheading{T}\relax\glsresetentrylist
-\glossaryentryfield{texp}{\glsnamefont{\protect \ensuremath  {t_{\protect \rm  exp}}}}{time since explosion (measured in days)}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{84}\delimN 
-\glsXpageXglsnumberformat{}{85}}}\relax\glsresetentrylist
-\glossaryentryfield{teff}{\glsnamefont{effective temperature}}{effective temperature - Temperature of a blackbody emitting the same total energy}{\protect \ensuremath  {T_\protect \textrm  {eff}}}{\glossaryentrynumbers{\relax 
+\glossaryentryfield{teff}{\glsnamefont{effective temperature~}}{Temperature of a blackbody emitting the same total energy}{\protect \ensuremath  {T_\protect \textrm  {eff}}}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{i}, 
-\glsXpageXglsnumberformat{}{37}\delimN 
-\glsXpageXglsnumberformat{}{58}\delimN 
-\glsXpageXglsnumberformat{}{59}\delimN 
-\glsXpageXglsnumberformat{}{61}\delimN 
-\glsXpageXglsnumberformat{}{62}\delimN 
-\glsXpageXglsnumberformat{}{73}\delimN 
-\glsXpageXglsnumberformat{}{85}\delimN 
-\glsXpageXglsnumberformat{}{132}\delimN 
-\glsXpageXglsnumberformat{}{140}\delimN 
-\glsXpageXglsnumberformat{}{141}}}\relax\glsresetentrylist
-\glossaryentryfield{thompsonscat}{\glsnamefont{Thomson scattering}}{Scattering of photons on low energy electrons}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{80}\delimN 
+\glsXpageXglsnumberformat{}{13}\delimN 
+\glsXpageXglsnumberformat{}{41}\delimN 
+\glsXpageXglsnumberformat{}{63}\delimR 
+\glsXpageXglsnumberformat{}{66}\delimN 
 \glsXpageXglsnumberformat{}{82}\delimN 
-\glsXpageXglsnumberformat{}{83}}}\glsgroupskip
+\glsXpageXglsnumberformat{}{83}\delimN 
+\glsXpageXglsnumberformat{}{94}\delimN 
+\glsXpageXglsnumberformat{}{110}\delimN 
+\glsXpageXglsnumberformat{}{140}\delimN 
+\glsXpageXglsnumberformat{}{149}}}\relax\glsresetentrylist
+\glossaryentryfield{texp}{\glsnamefont{time since explosion~}}{time since explosion (measured in days)}{\protect \ensuremath  {t_{\protect \rm  exp}}}{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{92}\delimN 
+\glsXpageXglsnumberformat{}{94}}}\relax\glsresetentrylist
+\glossaryentryfield{thompsonscat}{\glsnamefont{Thomson scattering}}{Scattering of photons on low energy electrons}{\relax }{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{88}\delimN 
+\glsXpageXglsnumberformat{}{90}\delimN 
+\glsXpageXglsnumberformat{}{91}}}\glsgroupskip
 \glsgroupheading{U}\relax\glsresetentrylist
 \glossaryentryfield{urca}{\glsnamefont{Urca}}{process predominatly contributing to cooling in stars. The \protect \textit  {Urca} process consists of alternating electron-capture and $\beta ^{-}$ decay of two nuclei pairs.}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{28}}}\relax\glsresetentrylist
+\glsXpageXglsnumberformat{}{32}}}\relax\glsresetentrylist
 \glossaryentryfield{usco}{\glsnamefont{\protect \object {U Scorpii}}}{white dwarf accreting from a main sequence star - assumed progenitor of the \gls {sds}}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{24}}}\relax\glsresetentrylist
+\glsXpageXglsnumberformat{}{28}}}\relax\glsresetentrylist
 \glossaryentryfield{uv}{\glsnamefont{UV}}{ultra violet}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{62}\delimN 
-\glsXpageXglsnumberformat{}{82}\delimN 
-\glsXpageXglsnumberformat{}{86}}}\glsgroupskip
+\glsXpageXglsnumberformat{}{36}\delimN 
+\glsXpageXglsnumberformat{}{65}\delimN 
+\glsXpageXglsnumberformat{}{90}\delimN 
+\glsXpageXglsnumberformat{}{94}}}\glsgroupskip
 \glsgroupheading{V}\relax\glsresetentrylist
+\glossaryentryfield{vald}{\glsnamefont{VALD}}{Vienna Atomic Line Database \protect \citep  {2000BaltA...9..590K}}{\relax }{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{64}\delimN 
+\glsXpageXglsnumberformat{}{82}}}\relax\glsresetentrylist
 \glossaryentryfield{vla}{\glsnamefont{VLA}}{Very Large Array radio telescope located in North America}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{54}}}\relax\glsresetentrylist
+\glsXpageXglsnumberformat{}{58}}}\relax\glsresetentrylist
 \glossaryentryfield{vlt}{\glsnamefont{VLT}}{Very Large Telescope located on Cerro Paranal (Chile)}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{68}\delimN 
-\glsXpageXglsnumberformat{}{100}\delimN 
-\glsXpageXglsnumberformat{}{106}}}\relax\glsresetentrylist
-\glossaryentryfield{vph}{\glsnamefont{\protect \ensuremath  {v_\protect \textrm  {ph}}}}{photospheric velocity of a supernova}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{83}\delimN 
-\glsXpageXglsnumberformat{}{85}\delimN 
-\glsXpageXglsnumberformat{}{88}\delimN 
+\glsXpageXglsnumberformat{}{76}\delimN 
+\glsXpageXglsnumberformat{}{77}\delimN 
+\glsXpageXglsnumberformat{}{110}\delimN 
+\glsXpageXglsnumberformat{}{116}}}\relax\glsresetentrylist
+\glossaryentryfield{vph}{\glsnamefont{photospheric velocity~}}{photospheric velocity of a supernova}{\protect \ensuremath  {v_\protect \textrm  {ph}}}{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{8}\delimN 
+\glsXpageXglsnumberformat{}{16}\delimN 
+\glsXpageXglsnumberformat{}{17}\delimN 
 \glsXpageXglsnumberformat{}{91}\delimN 
-\glsXpageXglsnumberformat{}{92}}}\glsgroupskip
+\glsXpageXglsnumberformat{}{94}\delimN 
+\glsXpageXglsnumberformat{}{97}\delimN 
+\glsXpageXglsnumberformat{}{100}\delimN 
+\glsXpageXglsnumberformat{}{101}}}\relax\glsresetentrylist
+\glossaryentryfield{vrad}{\glsnamefont{radial velocity~}}{radial velocity}{\protect \ensuremath  {v_\protect \textrm  {rad}}}{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{41}\delimN 
+\glsXpageXglsnumberformat{}{50}\delimN 
+\glsXpageXglsnumberformat{}{70}\delimN 
+\glsXpageXglsnumberformat{}{82}\delimN 
+\glsXpageXglsnumberformat{}{84}\delimN 
+\glsXpageXglsnumberformat{}{149}\delimN 
+\glsXpageXglsnumberformat{}{156}}}\relax\glsresetentrylist
+\glossaryentryfield{vrot}{\glsnamefont{stellar rotation}}{radial velocity}{\protect \ensuremath  {v_\protect \textrm  {rot}}}{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{51}\delimN 
+\glsXpageXglsnumberformat{}{60}\delimN 
+\glsXpageXglsnumberformat{}{62}\delimN 
+\glsXpageXglsnumberformat{}{63}\delimN 
+\glsXpageXglsnumberformat{}{83}\delimN 
+\glsXpageXglsnumberformat{}{84}\delimN 
+\glsXpageXglsnumberformat{}{110}\delimN 
+\glsXpageXglsnumberformat{}{149}\delimN 
+\glsXpageXglsnumberformat{}{156}}}\glsgroupskip
 \glsgroupheading{W}\relax\glsresetentrylist
 \glossaryentryfield{w7}{\glsnamefont{W7 model}}{W7 model \protect \citep  {1984ApJ...286..644N}}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{83}\delimN 
-\glsXpageXglsnumberformat{}{88}\delimN 
-\glsXpageXglsnumberformat{}{92}}}\relax\glsresetentrylist
+\glsXpageXglsnumberformat{}{91}\delimN 
+\glsXpageXglsnumberformat{}{96}\delimN 
+\glsXpageXglsnumberformat{}{101}}}\relax\glsresetentrylist
+\glossaryentryfield{wek09}{\glsnamefont{WEK09}}{short for \protect \citet  {2009ApJ...701.1665K}}{\relax }{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{56}\delimN 
+\glsXpageXglsnumberformat{}{57}\delimN 
+\glsXpageXglsnumberformat{}{60}\delimN 
+\glsXpageXglsnumberformat{}{70}\delimN 
+\glsXpageXglsnumberformat{}{71}}}\relax\glsresetentrylist
 \glossaryentryfield{wfpc2}{\glsnamefont{WFPC2}}{Wide-Field Planetary Camera 2 mounted on the \gls {hst}}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{42}\delimN 
-\glsXpageXglsnumberformat{}{43}}}\relax\glsresetentrylist
+\glsXpageXglsnumberformat{}{47}\delimN 
+\glsXpageXglsnumberformat{}{48}}}\relax\glsresetentrylist
 \glossaryentryfield{wd}{\glsnamefont{White Dwarf (WD)}}{White Dwarf - extremely dense stellar remnant}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{25}\delimN 
-\glsXpageXglsnumberformat{}{27}\delimN 
-\glsXpageXglsnumberformat{}{28}}}\relax\glsresetentrylist
+\glsXpageXglsnumberformat{}{28}\delimN 
+\glsXpageXglsnumberformat{}{31}}}\relax\glsresetentrylist
 \glossarysubentryfield{1}{cowd}{\glsnamefont{Carbon/Oxygen (CO)}}{Carbon/Oxygen White Dwarf}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{25}\delimN 
-\glsXpageXglsnumberformat{}{27}\delimR 
-\glsXpageXglsnumberformat{}{30}\delimN 
-\glsXpageXglsnumberformat{}{35}\delimN 
-\glsXpageXglsnumberformat{}{51}\delimN 
-\glsXpageXglsnumberformat{}{93}\delimN 
-\glsXpageXglsnumberformat{}{99}\delimN 
-\glsXpageXglsnumberformat{}{102}}}\relax\glsresetentrylist
+\glsXpageXglsnumberformat{}{28}\delimN 
+\glsXpageXglsnumberformat{}{30}\delimR 
+\glsXpageXglsnumberformat{}{33}\delimN 
+\glsXpageXglsnumberformat{}{39}\delimN 
+\glsXpageXglsnumberformat{}{55}\delimN 
+\glsXpageXglsnumberformat{}{102}\delimN 
+\glsXpageXglsnumberformat{}{109}\delimN 
+\glsXpageXglsnumberformat{}{113}}}\relax\glsresetentrylist
 \glossarysubentryfield{1}{onemgwd}{\glsnamefont{Oxygen/Neon (ONe)}}{Oxygen/Neon White Dwarf}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{25}\delimN 
-\glsXpageXglsnumberformat{}{27}}}\relax\glsresetentrylist
+\glsXpageXglsnumberformat{}{28}\delimN 
+\glsXpageXglsnumberformat{}{31}}}\relax\glsresetentrylist
 \glossaryentryfield{wifes}{\glsnamefont{WiFeS}}{Wide Field Spectrograph - \gls {ifu} mounted on the 2.3\protect \tmspace  +\thinmuskip {.1667em}m telescope at Siding Spring Observatory}{\relax }{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{102}}}%
+\glsXpageXglsnumberformat{}{112}}}%
 \end{theglossary}\glossarypostamble
